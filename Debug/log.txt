@@ -1,0 +1,71 @@
+28-03-2018 15:56:16[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+28-03-2018 15:56:16[ INFO ] test
+28-03-2018 15:56:37[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+28-03-2018 16:05:17[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+28-03-2018 16:05:17[ INFO ] test
+28-03-2018 16:05:38[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+28-03-2018 16:05:38[ ENTREE ] Attente de la connection de tous les client
+28-03-2018 16:05:39[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+28-03-2018 16:05:39[ SORTIE ] Attente de la connection de tous les client
+28-03-2018 16:06:00[ INFO ] [ Utilisateur ] Utilisateur avec id RFID 02006D7223 Inconnu 
+28-03-2018 16:06:31[ DEBUG ] System.Exception: ID_RFID Introuvable
+   ? DataBddProxy.getUserByIdRFID(String id_Rfid) dans c:\users\a125\desktop\dechetterie\dechetterie\dechetterie-serveur\databddproxy.cpp:ligne 172
+   ? Dechetterie.deleteUtilisateur(String id_rfid) dans c:\users\a125\desktop\dechetterie\dechetterie\dechetterie-serveur\dechetterie.cpp:ligne 305
+28-03-2018 16:13:11[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+28-03-2018 16:13:11[ INFO ] test
+28-03-2018 16:13:11[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+28-03-2018 16:13:11[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+28-03-2018 16:13:11[ ENTREE ] Attente de la connection de tous les client
+28-03-2018 16:13:11[ SORTIE ] Attente de la connection de tous les client
+28-03-2018 16:13:11[ INFO ] [ Utilisateur ] Nouvelle utilisateur dans la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+28-03-2018 16:13:21[ INFO ] [ Utilisateur ] L'utilisateur quitte la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+28-03-2018 16:15:15[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+28-03-2018 16:15:15[ INFO ] test
+28-03-2018 16:15:15[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+28-03-2018 16:15:15[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+28-03-2018 16:15:15[ ENTREE ] Attente de la connection de tous les client
+28-03-2018 16:15:15[ SORTIE ] Attente de la connection de tous les client
+28-03-2018 16:15:15[ INFO ] [ Utilisateur ] Nouvelle utilisateur dans la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+28-03-2018 16:15:25[ INFO ] [ Utilisateur ] L'utilisateur quitte la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+28-03-2018 16:20:01[ ENTREE ] Tous les client sont connect?s
+28-03-2018 16:22:30[ ENTREE ] [ RFID ] Demande d'acc?s avec l'id RFID 02006D7223
+28-03-2018 16:22:30[ ENTREE ] [ RFID ] Acc?s autoris?
+29-03-2018 14:01:01[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+29-03-2018 14:01:01[ INFO ] test
+29-03-2018 14:01:01[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+29-03-2018 14:03:21[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+29-03-2018 14:03:21[ INFO ] test
+29-03-2018 14:03:21[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+29-03-2018 14:17:36[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+29-03-2018 14:17:36[ INFO ] test
+29-03-2018 14:17:36[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+04-04-2018 11:20:12[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+04-04-2018 11:20:12[ INFO ] test
+04-04-2018 11:20:12[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+04-04-2018 11:20:12[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+04-04-2018 11:20:12[ ENTREE ] Attente de la connection de tous les client
+04-04-2018 11:20:12[ SORTIE ] Attente de la connection de tous les client
+04-04-2018 11:20:12[ INFO ] [ Utilisateur ] Nouvelle utilisateur dans la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+04-04-2018 11:20:22[ INFO ] [ Utilisateur ] L'utilisateur quitte la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+04-04-2018 11:21:06[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+04-04-2018 11:21:06[ INFO ] test
+04-04-2018 11:21:06[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+04-04-2018 11:21:06[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+04-04-2018 11:21:06[ ENTREE ] Attente de la connection de tous les client
+04-04-2018 11:21:06[ SORTIE ] Attente de la connection de tous les client
+04-04-2018 11:21:06[ INFO ] [ Utilisateur ] Nouvelle utilisateur dans la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+04-04-2018 11:21:16[ INFO ] [ Utilisateur ] L'utilisateur quitte la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+04-04-2018 11:23:47[ ENTREE ] Tous les client sont connect?s
+04-04-2018 11:23:57[ ENTREE ] [ RFID ] Demande d'acc?s avec l'id RFID gfghfhggfh
+04-04-2018 11:23:57[ DEBUG ] [ Entree ] ID_RFID Introuvable
+04-04-2018 11:23:57[ ENTREE ] [ RFID ] Acc?s Refus?
+04-04-2018 11:25:32[ ENTREE ] [ RFID ] Demande d'acc?s avec l'id RFID 02006D7223
+04-04-2018 11:25:32[ ENTREE ] [ RFID ] Acc?s autoris?
+04-04-2018 11:42:26[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+04-04-2018 11:42:26[ INFO ] test
+04-04-2018 11:42:26[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+04-04-2018 11:42:26[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+04-04-2018 11:42:26[ ENTREE ] Attente de la connection de tous les client
+04-04-2018 11:42:26[ SORTIE ] Attente de la connection de tous les client
+04-04-2018 11:42:26[ INFO ] [ Utilisateur ] Nouvelle utilisateur dans la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+04-04-2018 11:42:36[ INFO ] [ Utilisateur ] L'utilisateur quitte la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223

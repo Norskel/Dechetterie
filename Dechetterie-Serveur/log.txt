@@ -1,0 +1,313 @@
+21-03-2018 18:47:35[ INFO ] [ Utilisateur ] Utilisateur avec id RFID 02006D7225 Inconnu 
+
+21-03-2018 18:48:28[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+
+21-03-2018 18:48:28[ INFO ] test
+
+21-03-2018 18:48:43[ ENTREE ]  Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+
+21-03-2018 18:49:22[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+21-03-2018 18:49:22[ INFO ] test
+21-03-2018 18:49:37[ ENTREE ]  Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+21-03-2018 18:54:39[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+21-03-2018 18:54:39[ INFO ] test
+21-03-2018 18:54:54[ ENTREE ]  Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+21-03-2018 18:54:54[ ENTREE ] Attente de la connection de tous les client
+22-03-2018 11:26:37[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+22-03-2018 11:26:37[ INFO ] test
+22-03-2018 11:27:01[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+22-03-2018 11:27:01[ ENTREE ] Attente de la connection de tous les client
+22-03-2018 11:27:01[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+22-03-2018 11:27:01[ SORTIE ] Attente de la connection de tous les client
+22-03-2018 11:27:06[ ENTREE ] Tous les client sont connect?s
+22-03-2018 11:27:17[ INFO ] [ Utilisateur ] Utilisateur avec id RFID 02006D7225 Inconnu 
+22-03-2018 11:27:42[ DEBUG ] System.MissingMemberException: Tentative d'acc?s ? un membre introuvable.
+   ? DataBddProxy.getUserByIdRFID(String id_Rfid) dans c:\users\a125\desktop\dechetterie\dechetterie\dechetterie-serveur\databddproxy.cpp:ligne 164
+   ? Dechetterie.deleteUtilisateur(String id_rfid) dans c:\users\a125\desktop\dechetterie\dechetterie\dechetterie-serveur\dechetterie.cpp:ligne 305
+22-03-2018 11:39:27[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+22-03-2018 11:39:27[ INFO ] test
+22-03-2018 11:39:42[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+22-03-2018 11:39:42[ ENTREE ] Attente de la connection de tous les client
+22-03-2018 11:39:42[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+22-03-2018 11:39:42[ SORTIE ] Attente de la connection de tous les client
+22-03-2018 11:39:55[ ENTREE ] Tous les client sont connect?s
+22-03-2018 11:39:58[ INFO ] [ Utilisateur ] Utilisateur avec id RFID 02006D7225 Inconnu 
+22-03-2018 11:40:23[ DEBUG ] System.Exception: ID_RFID Introuvable
+   ? DataBddProxy.getUserByIdRFID(String id_Rfid) dans c:\users\a125\desktop\dechetterie\dechetterie\dechetterie-serveur\databddproxy.cpp:ligne 164
+   ? Dechetterie.deleteUtilisateur(String id_rfid) dans c:\users\a125\desktop\dechetterie\dechetterie\dechetterie-serveur\dechetterie.cpp:ligne 305
+22-03-2018 11:40:28[ ENTREE ] [ RFID ] Demande d'acc?s avec l'id RFID dgdgdgdgdg
+22-03-2018 11:42:16[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+22-03-2018 11:42:16[ INFO ] test
+22-03-2018 11:42:31[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+22-03-2018 11:42:31[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+22-03-2018 11:42:31[ ENTREE ] Attente de la connection de tous les client
+22-03-2018 11:42:31[ SORTIE ] Attente de la connection de tous les client
+22-03-2018 11:42:46[ INFO ] [ Utilisateur ] Utilisateur avec id RFID 02006D7225 Inconnu 
+22-03-2018 11:43:00[ ENTREE ] Tous les client sont connect?s
+22-03-2018 11:43:11[ DEBUG ] System.Exception: ID_RFID Introuvable
+   ? DataBddProxy.getUserByIdRFID(String id_Rfid) dans c:\users\a125\desktop\dechetterie\dechetterie\dechetterie-serveur\databddproxy.cpp:ligne 164
+   ? Dechetterie.deleteUtilisateur(String id_rfid) dans c:\users\a125\desktop\dechetterie\dechetterie\dechetterie-serveur\dechetterie.cpp:ligne 305
+22-03-2018 11:43:21[ ENTREE ] [ RFID ] Demande d'acc?s avec l'id RFID 465865631
+22-03-2018 11:43:36[ DEBUG ] [ Entree ] ID_RFID Introuvable
+22-03-2018 11:44:17[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+22-03-2018 11:44:17[ INFO ] test
+22-03-2018 11:44:33[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+22-03-2018 11:44:33[ ENTREE ] Attente de la connection de tous les client
+22-03-2018 11:44:33[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+22-03-2018 11:44:33[ SORTIE ] Attente de la connection de tous les client
+22-03-2018 11:44:37[ ENTREE ] Tous les client sont connect?s
+22-03-2018 11:44:48[ INFO ] [ Utilisateur ] Utilisateur avec id RFID 02006D7225 Inconnu 
+22-03-2018 11:44:57[ ENTREE ] [ RFID ] Demande d'acc?s avec l'id RFID 2323232323
+22-03-2018 11:45:12[ DEBUG ] [ Entree ] ID_RFID Introuvable
+22-03-2018 11:45:12[ ENTREE ] [ RFID ] Acc?s Refus?
+22-03-2018 11:45:14[ DEBUG ] System.Exception: ID_RFID Introuvable
+   ? DataBddProxy.getUserByIdRFID(String id_Rfid) dans c:\users\a125\desktop\dechetterie\dechetterie\dechetterie-serveur\databddproxy.cpp:ligne 164
+   ? Dechetterie.deleteUtilisateur(String id_rfid) dans c:\users\a125\desktop\dechetterie\dechetterie\dechetterie-serveur\dechetterie.cpp:ligne 305
+22-03-2018 12:01:14[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+22-03-2018 12:01:14[ INFO ] test
+22-03-2018 12:31:00[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+22-03-2018 12:31:00[ INFO ] test
+22-03-2018 12:31:31[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+22-03-2018 12:31:31[ INFO ] test
+22-03-2018 12:31:43[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+22-03-2018 12:31:43[ INFO ] test
+22-03-2018 12:32:04[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+22-03-2018 12:32:04[ INFO ] test
+22-03-2018 12:44:27[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+22-03-2018 12:44:27[ INFO ] test
+22-03-2018 13:38:57[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+22-03-2018 13:38:57[ INFO ] test
+22-03-2018 13:39:28[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+22-03-2018 13:39:28[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+22-03-2018 13:39:28[ ENTREE ] Attente de la connection de tous les client
+22-03-2018 13:39:28[ SORTIE ] Attente de la connection de tous les client
+22-03-2018 13:41:48[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+22-03-2018 13:41:48[ INFO ] test
+22-03-2018 13:41:49[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+22-03-2018 13:41:49[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+22-03-2018 13:41:49[ ENTREE ] Attente de la connection de tous les client
+22-03-2018 13:41:49[ SORTIE ] Attente de la connection de tous les client
+22-03-2018 13:41:50[ INFO ] [ Utilisateur ] Utilisateur avec id RFID 02006D7225 Inconnu 
+22-03-2018 13:42:01[ DEBUG ] System.Exception: ID_RFID Introuvable
+   ? DataBddProxy.getUserByIdRFID(String id_Rfid) dans c:\users\a125\desktop\dechetterie\dechetterie\dechetterie-serveur\databddproxy.cpp:ligne 172
+   ? Dechetterie.deleteUtilisateur(String id_rfid) dans c:\users\a125\desktop\dechetterie\dechetterie\dechetterie-serveur\dechetterie.cpp:ligne 305
+22-03-2018 13:42:25[ ENTREE ] Tous les client sont connect?s
+22-03-2018 13:42:55[ ENTREE ] [ RFID ] Demande d'acc?s avec l'id RFID 1212121212
+22-03-2018 13:42:56[ DEBUG ] [ Entree ] ID_RFID Introuvable
+22-03-2018 13:42:56[ ENTREE ] [ RFID ] Acc?s Refus?
+22-03-2018 14:53:20[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+22-03-2018 14:53:20[ INFO ] test
+22-03-2018 14:53:21[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+22-03-2018 14:53:21[ ENTREE ] Attente de la connection de tous les client
+22-03-2018 14:53:21[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+22-03-2018 14:53:21[ SORTIE ] Attente de la connection de tous les client
+22-03-2018 14:53:22[ INFO ] [ Utilisateur ] Utilisateur avec id RFID 02006D7225 Inconnu 
+22-03-2018 14:53:32[ DEBUG ] System.Exception: ID_RFID Introuvable
+   ? DataBddProxy.getUserByIdRFID(String id_Rfid) dans c:\users\a125\desktop\dechetterie\dechetterie\dechetterie-serveur\databddproxy.cpp:ligne 172
+   ? Dechetterie.deleteUtilisateur(String id_rfid) dans c:\users\a125\desktop\dechetterie\dechetterie\dechetterie-serveur\dechetterie.cpp:ligne 305
+22-03-2018 14:54:45[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+22-03-2018 14:54:45[ INFO ] test
+22-03-2018 14:54:46[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+22-03-2018 14:54:46[ ENTREE ] Attente de la connection de tous les client
+22-03-2018 14:54:46[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+22-03-2018 14:54:46[ SORTIE ] Attente de la connection de tous les client
+22-03-2018 14:54:46[ INFO ] [ Utilisateur ] Utilisateur avec id RFID 02006D7225 Inconnu 
+22-03-2018 14:54:56[ DEBUG ] System.Exception: ID_RFID Introuvable
+   ? DataBddProxy.getUserByIdRFID(String id_Rfid) dans c:\users\a125\desktop\dechetterie\dechetterie\dechetterie-serveur\databddproxy.cpp:ligne 172
+   ? Dechetterie.deleteUtilisateur(String id_rfid) dans c:\users\a125\desktop\dechetterie\dechetterie\dechetterie-serveur\dechetterie.cpp:ligne 305
+22-03-2018 15:02:08[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+22-03-2018 15:02:08[ INFO ] test
+22-03-2018 15:02:09[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+22-03-2018 15:02:09[ ENTREE ] Attente de la connection de tous les client
+22-03-2018 15:02:09[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+22-03-2018 15:02:09[ SORTIE ] Attente de la connection de tous les client
+22-03-2018 15:02:09[ INFO ] [ Utilisateur ] Utilisateur avec id RFID 02006D7225 Inconnu 
+22-03-2018 15:02:19[ DEBUG ] System.Exception: ID_RFID Introuvable
+   ? DataBddProxy.getUserByIdRFID(String id_Rfid) dans c:\users\a125\desktop\dechetterie\dechetterie\dechetterie-serveur\databddproxy.cpp:ligne 172
+   ? Dechetterie.deleteUtilisateur(String id_rfid) dans c:\users\a125\desktop\dechetterie\dechetterie\dechetterie-serveur\dechetterie.cpp:ligne 305
+22-03-2018 15:03:13[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+22-03-2018 15:03:13[ INFO ] test
+22-03-2018 15:03:13[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+22-03-2018 15:03:13[ ENTREE ] Attente de la connection de tous les client
+22-03-2018 15:03:13[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+22-03-2018 15:03:13[ SORTIE ] Attente de la connection de tous les client
+22-03-2018 15:03:14[ INFO ] [ Utilisateur ] Utilisateur avec id RFID 02006D7223 Inconnu 
+22-03-2018 15:03:46[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+22-03-2018 15:03:46[ INFO ] test
+22-03-2018 15:03:46[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+22-03-2018 15:03:46[ ENTREE ] Attente de la connection de tous les client
+22-03-2018 15:03:46[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+22-03-2018 15:03:46[ SORTIE ] Attente de la connection de tous les client
+22-03-2018 15:03:47[ INFO ] [ Utilisateur ] Utilisateur avec id RFID 02006D7223 Inconnu 
+22-03-2018 15:05:18[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+22-03-2018 15:05:18[ INFO ] test
+22-03-2018 15:05:18[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+22-03-2018 15:05:18[ ENTREE ] Attente de la connection de tous les client
+22-03-2018 15:05:18[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+22-03-2018 15:05:18[ SORTIE ] Attente de la connection de tous les client
+22-03-2018 15:05:18[ INFO ] [ Utilisateur ] Utilisateur avec id RFID 02006D7223 Inconnu 
+22-03-2018 15:05:29[ INFO ] [ Utilisateur ] L'utilisateur quitte la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+22-03-2018 15:05:29[ DEBUG ] System.MissingMemberException: Tentative d'acc?s ? un membre introuvable.
+   ? DataBddProxy.getEntreeByUserID(Int32 id) dans c:\users\a125\desktop\dechetterie\dechetterie\dechetterie-serveur\databddproxy.cpp:ligne 223
+   ? Dechetterie.deleteUtilisateur(String id_rfid) dans c:\users\a125\desktop\dechetterie\dechetterie\dechetterie-serveur\dechetterie.cpp:ligne 306
+22-03-2018 15:05:58[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+22-03-2018 15:05:58[ INFO ] test
+22-03-2018 15:05:59[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+22-03-2018 15:05:59[ ENTREE ] Attente de la connection de tous les client
+22-03-2018 15:05:59[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+22-03-2018 15:05:59[ SORTIE ] Attente de la connection de tous les client
+22-03-2018 15:05:59[ INFO ] [ Utilisateur ] Utilisateur avec id RFID 02006D7223 Inconnu 
+22-03-2018 15:06:41[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+22-03-2018 15:06:41[ INFO ] test
+22-03-2018 15:06:41[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+22-03-2018 15:06:41[ ENTREE ] Attente de la connection de tous les client
+22-03-2018 15:06:42[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+22-03-2018 15:06:42[ SORTIE ] Attente de la connection de tous les client
+22-03-2018 15:06:42[ INFO ] [ Utilisateur ] Utilisateur avec id RFID 02006D7223 Inconnu 
+22-03-2018 15:06:50[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+22-03-2018 15:06:50[ INFO ] test
+22-03-2018 15:06:50[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+22-03-2018 15:06:50[ ENTREE ] Attente de la connection de tous les client
+22-03-2018 15:06:50[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+22-03-2018 15:06:50[ SORTIE ] Attente de la connection de tous les client
+22-03-2018 15:07:40[ INFO ] [ Utilisateur ] Utilisateur avec id RFID 02006D7223 Inconnu 
+22-03-2018 15:07:50[ INFO ] [ Utilisateur ] L'utilisateur quitte la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+22-03-2018 15:07:50[ DEBUG ] System.MissingMemberException: Tentative d'acc?s ? un membre introuvable.
+   ? DataBddProxy.getEntreeByUserID(Int32 id) dans c:\users\a125\desktop\dechetterie\dechetterie\dechetterie-serveur\databddproxy.cpp:ligne 223
+   ? Dechetterie.deleteUtilisateur(String id_rfid) dans c:\users\a125\desktop\dechetterie\dechetterie\dechetterie-serveur\dechetterie.cpp:ligne 306
+22-03-2018 15:08:30[ ENTREE ] Tous les client sont connect?s
+22-03-2018 15:08:36[ ENTREE ] [ RFID ] Demande d'acc?s avec l'id RFID 02006D7223
+22-03-2018 15:08:36[ ENTREE ] [ RFID ] Acc?s autoris?
+22-03-2018 15:08:56[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+22-03-2018 15:08:56[ INFO ] test
+22-03-2018 15:08:57[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+22-03-2018 15:08:57[ ENTREE ] Attente de la connection de tous les client
+22-03-2018 15:08:57[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+22-03-2018 15:08:57[ SORTIE ] Attente de la connection de tous les client
+22-03-2018 15:08:57[ INFO ] [ Utilisateur ] Utilisateur avec id RFID 02006D7223 Inconnu 
+22-03-2018 15:09:07[ INFO ] [ Utilisateur ] L'utilisateur quitte la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+22-03-2018 15:09:07[ DEBUG ] System.MissingMemberException: Tentative d'acc?s ? un membre introuvable.
+   ? DataBddProxy.getEntreeByUserID(Int32 id) dans c:\users\a125\desktop\dechetterie\dechetterie\dechetterie-serveur\databddproxy.cpp:ligne 223
+   ? Dechetterie.deleteUtilisateur(String id_rfid) dans c:\users\a125\desktop\dechetterie\dechetterie\dechetterie-serveur\dechetterie.cpp:ligne 306
+22-03-2018 15:10:38[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+22-03-2018 15:10:38[ INFO ] test
+22-03-2018 15:10:38[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+22-03-2018 15:10:38[ ENTREE ] Attente de la connection de tous les client
+22-03-2018 15:10:38[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+22-03-2018 15:10:38[ SORTIE ] Attente de la connection de tous les client
+22-03-2018 15:10:38[ INFO ] [ Utilisateur ] Utilisateur avec id RFID 02006D7223 Inconnu 
+22-03-2018 15:10:48[ INFO ] [ Utilisateur ] L'utilisateur quitte la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+22-03-2018 15:10:49[ DEBUG ] System.MissingMemberException: Tentative d'acc?s ? un membre introuvable.
+   ? DataBddProxy.getEntreeByUserID(Int32 id) dans c:\users\a125\desktop\dechetterie\dechetterie\dechetterie-serveur\databddproxy.cpp:ligne 223
+   ? Dechetterie.deleteUtilisateur(String id_rfid) dans c:\users\a125\desktop\dechetterie\dechetterie\dechetterie-serveur\dechetterie.cpp:ligne 306
+22-03-2018 15:11:13[ ENTREE ] Tous les client sont connect?s
+22-03-2018 15:11:20[ ENTREE ] [ RFID ] Demande d'acc?s avec l'id RFID 02006D7223
+22-03-2018 15:11:20[ ENTREE ] [ RFID ] Acc?s autoris?
+22-03-2018 15:12:38[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+22-03-2018 15:12:38[ INFO ] test
+22-03-2018 15:12:39[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+22-03-2018 15:12:39[ ENTREE ] Attente de la connection de tous les client
+22-03-2018 15:12:39[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+22-03-2018 15:12:39[ SORTIE ] Attente de la connection de tous les client
+22-03-2018 15:12:39[ INFO ] [ Utilisateur ] Utilisateur avec id RFID 02006D7223 Inconnu 
+22-03-2018 15:12:49[ INFO ] [ Utilisateur ] L'utilisateur quitte la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+22-03-2018 15:12:49[ DEBUG ] System.MissingMemberException: Tentative d'acc?s ? un membre introuvable.
+   ? DataBddProxy.getEntreeByUserID(Int32 id) dans c:\users\a125\desktop\dechetterie\dechetterie\dechetterie-serveur\databddproxy.cpp:ligne 223
+   ? Dechetterie.deleteUtilisateur(String id_rfid) dans c:\users\a125\desktop\dechetterie\dechetterie\dechetterie-serveur\dechetterie.cpp:ligne 306
+22-03-2018 15:14:48[ ENTREE ] Tous les client sont connect?s
+22-03-2018 15:14:54[ ENTREE ] [ RFID ] Demande d'acc?s avec l'id RFID 02006D7223
+22-03-2018 15:14:54[ ENTREE ] [ RFID ] Acc?s autoris?
+22-03-2018 15:16:14[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+22-03-2018 15:16:14[ INFO ] test
+22-03-2018 15:16:14[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+22-03-2018 15:16:14[ ENTREE ] Attente de la connection de tous les client
+22-03-2018 15:16:14[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+22-03-2018 15:16:15[ SORTIE ] Attente de la connection de tous les client
+22-03-2018 15:16:15[ INFO ] [ Utilisateur ] Utilisateur avec id RFID 02006D7223 Inconnu 
+22-03-2018 15:16:25[ INFO ] [ Utilisateur ] L'utilisateur quitte la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+22-03-2018 15:16:25[ DEBUG ] System.MissingMemberException: Tentative d'acc?s ? un membre introuvable.
+   ? DataBddProxy.getEntreeByUserID(Int32 id) dans c:\users\a125\desktop\dechetterie\dechetterie\dechetterie-serveur\databddproxy.cpp:ligne 223
+   ? Dechetterie.deleteUtilisateur(String id_rfid) dans c:\users\a125\desktop\dechetterie\dechetterie\dechetterie-serveur\dechetterie.cpp:ligne 306
+22-03-2018 15:16:42[ ENTREE ] Tous les client sont connect?s
+22-03-2018 15:16:48[ ENTREE ] [ RFID ] Demande d'acc?s avec l'id RFID 02006D7223
+22-03-2018 15:16:48[ ENTREE ] [ RFID ] Acc?s autoris?
+22-03-2018 15:17:22[ INFO ] [ Utilisateur ] Utilisateur avec id RFID 02006D7223 Inconnu 
+23-03-2018 16:15:36[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+23-03-2018 16:15:36[ INFO ] test
+23-03-2018 16:15:37[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+28-03-2018 16:25:42[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+28-03-2018 16:25:42[ INFO ] test
+28-03-2018 16:25:42[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+28-03-2018 16:25:42[ ENTREE ] Attente de la connection de tous les client
+28-03-2018 16:25:42[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+28-03-2018 16:25:42[ SORTIE ] Attente de la connection de tous les client
+28-03-2018 16:25:42[ INFO ] [ Utilisateur ] Nouvelle utilisateur dans la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+28-03-2018 16:25:53[ INFO ] [ Utilisateur ] L'utilisateur quitte la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+28-03-2018 16:28:04[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+28-03-2018 16:28:04[ INFO ] test
+28-03-2018 16:28:04[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+28-03-2018 16:28:04[ ENTREE ] Attente de la connection de tous les client
+28-03-2018 16:28:04[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+28-03-2018 16:28:04[ SORTIE ] Attente de la connection de tous les client
+28-03-2018 16:28:05[ INFO ] [ Utilisateur ] Nouvelle utilisateur dans la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+28-03-2018 16:31:12[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+28-03-2018 16:31:12[ INFO ] test
+28-03-2018 16:31:12[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+28-03-2018 16:31:12[ ENTREE ] Attente de la connection de tous les client
+28-03-2018 16:31:12[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+28-03-2018 16:31:12[ SORTIE ] Attente de la connection de tous les client
+28-03-2018 16:31:13[ INFO ] [ Utilisateur ] Nouvelle utilisateur dans la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+28-03-2018 16:31:23[ INFO ] [ Utilisateur ] L'utilisateur quitte la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+28-03-2018 16:35:45[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+28-03-2018 16:35:45[ INFO ] test
+28-03-2018 16:35:46[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+28-03-2018 16:35:46[ ENTREE ] Attente de la connection de tous les client
+28-03-2018 16:35:46[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+28-03-2018 16:35:46[ SORTIE ] Attente de la connection de tous les client
+28-03-2018 16:35:46[ INFO ] [ Utilisateur ] Nouvelle utilisateur dans la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+28-03-2018 16:35:56[ INFO ] [ Utilisateur ] L'utilisateur quitte la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+28-03-2018 16:41:22[ ENTREE ] Tous les client sont connect?s
+28-03-2018 16:41:41[ ENTREE ] [ RFID ] Demande d'acc?s avec l'id RFID 02006D7223
+28-03-2018 16:41:41[ ENTREE ] [ RFID ] Acc?s autoris?
+28-03-2018 16:52:11[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+28-03-2018 16:52:11[ INFO ] test
+28-03-2018 16:52:11[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+28-03-2018 16:52:11[ ENTREE ] Attente de la connection de tous les client
+28-03-2018 16:52:11[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+28-03-2018 16:52:11[ SORTIE ] Attente de la connection de tous les client
+28-03-2018 16:52:11[ INFO ] [ Utilisateur ] Nouvelle utilisateur dans la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+28-03-2018 16:52:19[ ENTREE ] Tous les client sont connect?s
+28-03-2018 16:52:22[ INFO ] [ Utilisateur ] L'utilisateur quitte la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+28-03-2018 16:53:46[ ENTREE ] [ RFID ] Demande d'acc?s avec l'id RFID 02006D7223
+28-03-2018 16:53:46[ ENTREE ] [ RFID ] Acc?s autoris?
+28-03-2018 16:55:52[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+28-03-2018 16:55:52[ INFO ] test
+28-03-2018 16:55:52[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+28-03-2018 16:55:52[ ENTREE ] Attente de la connection de tous les client
+28-03-2018 16:55:52[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+28-03-2018 16:55:52[ SORTIE ] Attente de la connection de tous les client
+28-03-2018 16:55:52[ INFO ] [ Utilisateur ] Nouvelle utilisateur dans la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+28-03-2018 16:55:57[ ENTREE ] Tous les client sont connect?s
+28-03-2018 16:56:02[ INFO ] [ Utilisateur ] L'utilisateur quitte la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+28-03-2018 16:57:14[ ENTREE ] [ RFID ] Demande d'acc?s avec l'id RFID 02006D7223
+28-03-2018 16:57:14[ ENTREE ] [ RFID ] Acc?s autoris?
+04-04-2018 11:19:24[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+04-04-2018 11:19:24[ INFO ] test
+04-04-2018 11:19:25[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+04-04-2018 11:19:25[ ENTREE ] Attente de la connection de tous les client
+04-04-2018 11:19:25[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+04-04-2018 11:19:25[ SORTIE ] Attente de la connection de tous les client
+04-04-2018 11:19:25[ INFO ] [ Utilisateur ] Nouvelle utilisateur dans la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+04-04-2018 11:19:35[ INFO ] [ Utilisateur ] L'utilisateur quitte la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+04-04-2018 12:35:41[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+04-04-2018 12:35:41[ INFO ] test
+04-04-2018 12:35:41[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+04-04-2018 12:35:41[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+04-04-2018 12:35:41[ ENTREE ] Attente de la connection de tous les client
+04-04-2018 12:35:41[ SORTIE ] Attente de la connection de tous les client
+04-04-2018 12:35:42[ INFO ] [ Utilisateur ] Utilisateur avec id RFID 02006D7223 Inconnu 
+04-04-2018 12:35:52[ DEBUG ] System.Exception: ID_RFID Introuvable
+   ? DataBddProxy.getUserByIdRFID(String id_Rfid) dans c:\users\a125\desktop\dechetterie\dechetterie\dechetterie-serveur\databddproxy.cpp:ligne 172
+   ? Dechetterie.deleteUtilisateur(String id_rfid) dans c:\users\a125\desktop\dechetterie\dechetterie\dechetterie-serveur\dechetterie.cpp:ligne 305
+04-04-2018 12:36:23[ ENTREE ] Tous les client sont connect?s
+04-04-2018 12:36:33[ Ping ] Demande de ping de 127.0.0.1(Entr?e ClientRFID

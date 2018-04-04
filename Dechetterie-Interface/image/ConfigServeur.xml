@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<DataConfigServeur xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Entree>
+    <portServeur>2501</portServeur>
+    <Interface>0.0.0.0</Interface>
+    <IPBalance>192.168.0.244</IPBalance>
+    <IPBarriere>192.168.0.245</IPBarriere>
+    <IPRFID>127.0.0.1</IPRFID>
+  </Entree>
+  <Sortie>
+    <portServeur>2502</portServeur>
+    <Interface>0.0.0.0</Interface>
+    <IPBalance>192.168.1.244</IPBalance>
+    <IPBarriere>192.168.1.245</IPBarriere>
+    <IPRFID>127.0.0.1</IPRFID>
+  </Sortie>
+  <NomBDD>Dechetterie</NomBDD>
+  <IPBDD>192.168.0.150</IPBDD>
+  <PortBDD>3306</PortBDD>
+  <UsernameBDD>root</UsernameBDD>
+  <PasswordBDD>root</PasswordBDD>
+</DataConfigServeur>

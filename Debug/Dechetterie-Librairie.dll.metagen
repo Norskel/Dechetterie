@@ -1,0 +1,70 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly Dechetterie-Librairie, Version=1.0.*, Culture=Langue indifférente (Pays indifférent): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class ControlInterface.ControlEtat: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.UserControl
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Single texteSize 'get set' : 
+    Boolean state 'get set' : 
+    System.Drawing.Color colorTexte 'get set' : 
+    System.Drawing.Color colorTrue 'get set' : 
+    System.Drawing.Color colorFalse 'get set' : 
+    System.String textTrue 'get set' : 
+    System.String textFalse 'get set' : 
+  Methods:
+    get_textFalse(): PrivateScope, Public, HideBySig, SpecialName
+    set_textFalse(String): PrivateScope, Public, HideBySig, SpecialName
+    get_textTrue(): PrivateScope, Public, HideBySig, SpecialName
+    set_textTrue(String): PrivateScope, Public, HideBySig, SpecialName
+    get_colorFalse(): PrivateScope, Public, HideBySig, SpecialName
+    set_colorFalse(Color): PrivateScope, Public, HideBySig, SpecialName
+    get_colorTrue(): PrivateScope, Public, HideBySig, SpecialName
+    set_colorTrue(Color): PrivateScope, Public, HideBySig, SpecialName
+    get_colorTexte(): PrivateScope, Public, HideBySig, SpecialName
+    set_colorTexte(Color): PrivateScope, Public, HideBySig, SpecialName
+    get_state(): PrivateScope, Public, HideBySig, SpecialName
+    set_state(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_texteSize(): PrivateScope, Public, HideBySig, SpecialName
+    set_texteSize(Single): PrivateScope, Public, HideBySig, SpecialName
+Class ControlInterface.ControlIPBox: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.UserControl
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String IP 'get set' : 
+  Methods:
+    IsValid(): PrivateScope, Public, HideBySig
+    get_IP(): PrivateScope, Public, HideBySig, SpecialName
+    set_IP(String): PrivateScope, Public, HideBySig, SpecialName
+Class ControlInterface.ControlUtilisateur: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.UserControl
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.DateTime temp 'get set' : 
+    Int32 typeDechet 'get set' : 
+    System.String prenom 'get set' : 
+    System.String nom 'get set' : 
+    System.Drawing.Bitmap photo 'get set' : 
+  Methods:
+    get_photo(): PrivateScope, Public, HideBySig, SpecialName
+    set_photo(Bitmap): PrivateScope, Public, HideBySig, SpecialName
+    get_nom(): PrivateScope, Public, HideBySig, SpecialName
+    set_nom(String): PrivateScope, Public, HideBySig, SpecialName
+    get_prenom(): PrivateScope, Public, HideBySig, SpecialName
+    set_prenom(String): PrivateScope, Public, HideBySig, SpecialName
+    get_typeDechet(): PrivateScope, Public, HideBySig, SpecialName
+    set_typeDechet(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_temp(): PrivateScope, Public, HideBySig, SpecialName
+    set_temp(DateTime): PrivateScope, Public, HideBySig, SpecialName
