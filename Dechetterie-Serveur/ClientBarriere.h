@@ -35,13 +35,14 @@ private:
 						if (pm->type == p->GetTypeProtocoleByID("AllPing"))
 						{
 							this->Send(p->RetourPing());
-							Logger::PrintLog("Ping", "Demande de ping de " + _ip->ToString() + "( " + id_groupe(_groupe).ToString() + " " + id_client(_type).ToString() + " )");
+							Logger::PrintLog("PING", "Demande de ping de " + _ip->ToString() + "( " + id_groupe(_groupe).ToString() + " " + id_client(_type).ToString() + " )");
 						}
 						else
 						{
-							if (pm->type == p->GetTypeProtocoleByID("brRDEtat"))
+							if (pm->type == p->GetTypeProtocoleByID("brRDPos"))
 							{
-
+								_pos = pm->getData1Int();
+								Logger::PrintLog("", "Demande de ping de " + _ip->ToString() + "( " + id_groupe(_groupe).ToString() + " " + id_client(_type).ToString() + " )");
 							}
 							else
 							{
