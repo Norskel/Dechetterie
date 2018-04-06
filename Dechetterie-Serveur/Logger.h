@@ -16,6 +16,7 @@ public:
 	static void PrintLog(String^ text);
 	static void PrintLog(String^ entete,String^ text);
 	static void PrintLogCode(int entete,String^ text);
+	static void PrintLogCode(EnteteCode entete, String^ text);
 	static void PrintLogCode(int entete, int t);
 
 

@@ -13,7 +13,7 @@ using namespace System::Collections::Generic;
 
 ref class Client
 {
-private:
+protected:
 	int _groupe; // 1 entree 2 sortie
 	int _type; // 1 barriere 2 balance 3 rfid	
 	IPAddress^ _ip;
@@ -21,6 +21,7 @@ private:
 	Socket^ _clientSocket = nullptr;
 	Thread^ _thread;
 	array<Byte>^ bufferRecv = nullptr;
+
 	void fctThread()
 	{
 		Protocole^ p = Protocole::getProtocole();
@@ -51,9 +52,7 @@ private:
 				}
 				else
 				{
-					Console::WriteLine("[ Serveur " + id_groupe(_groupe).ToString() + " ] " + id_client(_type).ToString() + " viens de ce déconnectée");
-					_isConnected = false;
-					_clientSocket->Close();
+					this->Disconnect();
 				}
 			}
 			catch (Exception^e)
@@ -93,6 +92,23 @@ public:
 	void setState(Boolean i) { _isConnected = i; }
 	void setSocket(Socket^ s) { _clientSocket = s; }
 
+	void Disconnect()
+	{
+		try
+		{
+			_clientSocket->Disconnect(true);
+			_isConnected = false;
+			Logger::PrintLog("[ SERVEUR " + id_groupe(_groupe).ToString() + " ][ CLIENT ]", id_client(_type).ToString() + " viens de ce déconnectée");
+	
+		}
+		catch (...)
+		{
+			Logger::PrintLogCode(EnteteCode::DEBUG, "[CLIENT] Problème lors de la deconnexion de " + _ip->ToString());
+		}
+		
+
+	}
+
 	Boolean Send(array<Byte>^ data)
 	{
 		try
@@ -104,9 +120,7 @@ public:
 			}
 			else
 			{
-				Console::WriteLine("[ Serveur " + id_groupe(_groupe).ToString() + " ] " + id_client(_type).ToString() + " viens de ce déconnectée");
-				_isConnected = false;
-				_clientSocket->Close();
+				this->Disconnect();
 				return false;
 			}
 
@@ -122,6 +136,7 @@ public:
 
 	array<Byte>^ Receive()
 	{
+
 		array<Byte>^ data = gcnew array<Byte>(1024);
 		try
 		{

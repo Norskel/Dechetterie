@@ -54,6 +54,11 @@ void Logger::PrintLogCode(int entete, String ^ text)
 	print("[ " + Convert::ToString(EnteteCode(entete)) + " ] " + text);
 }
 
+void Logger::PrintLogCode(EnteteCode entete, String ^ text)
+{
+	print("[ " + Convert::ToString(entete) + " ] " + text);
+}
+
 void Logger::PrintLogCode(int entete, int t)
 {
 	throw gcnew System::NotImplementedException();

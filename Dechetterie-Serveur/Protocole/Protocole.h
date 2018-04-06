@@ -25,8 +25,8 @@ private:
 
 		_listTypeMsg->Add(gcnew TypeMessage("brOuvre",31, 1, "Ouvrir Barrière"));
 		_listTypeMsg->Add(gcnew TypeMessage("brFerme",32, 1, "Fermé Barrière"));
-		_listTypeMsg->Add(gcnew TypeMessage("brDEtat",33, 1, "Demande de l'état de la barrière"));
-		_listTypeMsg->Add(gcnew TypeMessage("brRDEtat",34, 3, "Retour de l'état de la barrière", "Etat", "bool", 1));
+		_listTypeMsg->Add(gcnew TypeMessage("brDPos",33, 1, "Demande de la position de la barrière"));
+		_listTypeMsg->Add(gcnew TypeMessage("brRDPos",34, 3, "Retour de la position de la barrière", "Etat", "int", 2));
 
 		_listTypeMsg->Add(gcnew TypeMessage("RfDAcces",41, 4, "Demande d'accès", "ID RFID", "string", 10));
 		_listTypeMsg->Add(gcnew TypeMessage("RfRDAcces",42, 1, "Retour demande d'accès", "Autorisation", "bool", 1));
@@ -140,11 +140,11 @@ public:
 	{
 		return translate(GetTypeProtocoleByID("brFerme"), "");
 	}
-	array<Byte>^ GetEtatBarriere()
+	array<Byte>^ GetPositionBarriere()
 	{
-		return translate(GetTypeProtocoleByID("brDEtat"), "");
+		return translate(GetTypeProtocoleByID("brDPos"), "");
 	}
-	array<Byte>^ RetourGetEtatBarriere(Boolean state)
+	array<Byte>^ RetourGetPositionBarriere(int pos)
 	{
 		if (state)
 		{
@@ -155,6 +155,7 @@ public:
 		{
 			return translate(GetTypeProtocoleByID("brRDEtat"), "0");
 		}
+		return translate(GetTypeProtocoleByID("brRDPos"), );
 	}
 
 	array<Byte>^ RFIDAccesDemand(String^ RFID_ID)
