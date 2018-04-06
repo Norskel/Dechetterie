@@ -1,5 +1,8 @@
 #pragma once
 #include "Client.h"
+#include "ClientBarriere.h"
+#include "ClientBalance.h"
+#include "ClientRFID.h"
 #include "Enum.h"
 
 using namespace System;
@@ -20,6 +23,7 @@ protected:
 	int _groupe = 0;
 public:
 	Serveur(IPAddress^ listenip, int listenPort,int groupe);
+	Serveur(IPAddress^ listenip, int listenPort, int groupe,ClientBalance %cba,ClientBarriere %cbr,ClientRFID %cr);
 	Boolean Start();
 	void WaitClient();
 	List<Client^>^ getClientList();

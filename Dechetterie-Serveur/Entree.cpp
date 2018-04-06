@@ -15,6 +15,20 @@ Entree::Entree(IPAddress ^ listenip, int listenPort)
 
 }
 
+Entree::Entree(IPAddress ^ listenip, int listenPort, IPAddress ^ ipBarriered, IPAddress ^ ipBalance, IPAddress ^ ipRfi)
+{
+	Logger::PrintLogCode(3, "Interface d'écoute : " + listenip + " Port d'écoute : " + listenPort);
+	_srv = gcnew Serveur(listenip, listenPort, 1);
+	_srv->Start();
+	_tEntree = gcnew Thread(gcnew ThreadStart(this, &Entree::ThreadEntree));
+	_tEntree->Name = "Thread Entree";
+	_tEntree->Start();
+	_bdd = DataBddProxy::getDataBddProxy();
+	protocole = Protocole::getProtocole();
+	listCLient.Add(gcnew ClientBarriere())
+
+}
+
 void Entree::ThreadEntree()
 {
 	Boolean connected = false;

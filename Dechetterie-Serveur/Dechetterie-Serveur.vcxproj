@@ -142,6 +142,7 @@
   <ItemGroup>
     <ClInclude Include="ClientBalance.h" />
     <ClInclude Include="ClientBarriere.h" />
+    <ClInclude Include="ClientRFID.h" />
     <ClInclude Include="DataBdd.h" />
     <ClInclude Include="DataBddProxy.h" />
     <ClInclude Include="Dechetterie.h" />

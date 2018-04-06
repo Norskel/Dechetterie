@@ -13,6 +13,17 @@ Serveur::Serveur(IPAddress ^ listenip, int listenPort,int groupe)
 	IPEndPoint^ local = gcnew IPEndPoint(listenip, listenPort);
 	_socketServeur->Bind(local);
 }
+Serveur(IPAddress^ listenip, int listenPort, int groupe, ClientBalance %cba, ClientBarriere %cbr, ClientRFID %cr)
+{
+	_interface = listenip;
+	_port = listenPort;
+	_groupe = groupe;
+
+	_socketServeur = gcnew Socket(AddressFamily::InterNetwork, SocketType::Stream, ProtocolType::Tcp);
+	IPEndPoint^ local = gcnew IPEndPoint(listenip, listenPort);
+	_socketServeur->Bind(local);
+}
+
 Boolean Serveur::Start()
 {
 	try

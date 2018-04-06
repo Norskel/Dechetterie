@@ -72,4 +72,8 @@ public:
 	{
 		return _pos;
 	}
+	ClientBarriere(int groupe, IPAddress^ip) : Client(groupe, 2, ip)
+	{
+
+	}
 };
