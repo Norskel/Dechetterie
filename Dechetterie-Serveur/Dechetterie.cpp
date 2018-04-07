@@ -179,12 +179,11 @@ Dechetterie::Dechetterie(String^ configFile)
 {
 	if (loadConfigFile(configFile))
 	{
-		Logger::PrintLog("test");
 
 		_bdd = DataBddProxy::getDataBddProxy(_config->IPBDD, _config->PortBDD.ToString(), _config->NomBDD, _config->UsernameBDD, _config->PasswordBDD);
 		
 		
-		_entree = gcnew Entree(IPAddress::Parse(_config->Entree->Interface), _config->Entree->portServeur);
+		_entree = gcnew Entree(IPAddress::Parse(_config->Entree->Interface), _config->Entree->portServeur, IPAddress::Parse(_config->Entree->IPBarriere), IPAddress::Parse(_config->Entree->IPBalance), IPAddress::Parse(_config->Entree->IPRFID));
 		_sortie = gcnew Sortie(IPAddress::Parse(_config->Sortie->Interface), _config->Sortie->portServeur);
 		_pipeServerState = gcnew NamedPipeServerStream(PIPE_NAME_STATE_SERV, PipeDirection::InOut, 1);
 		_pipeServerUser = gcnew NamedPipeServerStream(PIPE_NAME_USER_INFOS_SERV, PipeDirection::InOut, 1);
@@ -197,7 +196,7 @@ Dechetterie::Dechetterie(String^ configFile)
 	}
 	else
 	{
-		Logger::PrintLogCode(1,"[ Dechetterie ] Impossible de démarrer ");
+		Logger::PrintLog(EnteteCode::ERROR,"[ Dechetterie ] Impossible de démarrer ");
 		this->~Dechetterie();
 	}
 
@@ -240,12 +239,12 @@ Boolean Dechetterie::loadConfigFile(String ^ file)
 		t->Add(gcnew Client((int)id_groupe::Sortie, (int)id_client::ClientBarrière, IPAddress::Parse(_config->Sortie->IPBarriere)));
 		t->Add(gcnew Client((int)id_groupe::Sortie, (int)id_client::ClientRFID, IPAddress::Parse(_config->Sortie->IPRFID)));
 		Dechetterie::SetListClient(t);
-		Logger::PrintLogCode(0,"[ Configuration ] Fichier de configuration bien chargée");
+		Logger::PrintLog(0,"[ Configuration ] Fichier de configuration bien chargée");
 		return true;
 	}
 	else
 	{
-		Logger::PrintLogCode(1, "[ Configuration ] Fichier de configuration " + file + " est manquant. Démarer l'interface au moins une fois pour faire la configuration");
+		Logger::PrintLog(1, "[ Configuration ] Fichier de configuration " + file + " est manquant. Démarer l'interface au moins une fois pour faire la configuration");
 		return false;
 	}
 }
@@ -277,12 +276,12 @@ void Dechetterie::addUtilisateur(String ^ id_rfid, int tDechet, int poids, array
 		de->Poids = poids;
 		de->dt = DateTime::Now;
 		bdd->addEntree(de);
-		Logger::PrintLogCode(0, "[ Utilisateur ] Nouvelle utilisateur dans la dechetterie : " + du->Nom +" "+ du->Prenom + " ID_RFID = " + id_rfid);
+		Logger::PrintLog(0, "[ Utilisateur ] Nouvelle utilisateur dans la dechetterie : " + du->Nom +" "+ du->Prenom + " ID_RFID = " + id_rfid);
 
 	}
 	catch (...)
 	{
-		Logger::PrintLogCode(0,"[ Utilisateur ] Utilisateur avec id RFID " + id_rfid + " Inconnu ");
+		Logger::PrintLog(0,"[ Utilisateur ] Utilisateur avec id RFID " + id_rfid + " Inconnu ");
 	}
 	//
 }
@@ -293,7 +292,7 @@ void Dechetterie::deleteUtilisateur(String ^ id_rfid)
 	{
 		if (_listUtilisateur[i]->getRFIDID() == id_rfid)
 		{
-			Logger::PrintLogCode(0, "[ Utilisateur ] L'utilisateur quitte la dechetterie : " + _listUtilisateur[i]->getNom() + " " + _listUtilisateur[i]->getPrenom() + " ID_RFID = " + id_rfid);
+			Logger::PrintLog(0, "[ Utilisateur ] L'utilisateur quitte la dechetterie : " + _listUtilisateur[i]->getNom() + " " + _listUtilisateur[i]->getPrenom() + " ID_RFID = " + id_rfid);
 			_listUtilisateur->RemoveAt(i);
 			Console::WriteLine(_listUtilisateur->Count);
 
@@ -308,7 +307,7 @@ void Dechetterie::deleteUtilisateur(String ^ id_rfid)
 	}
 	catch (Exception^ e)
 	{
-		Logger::PrintLogCode(2, e->ToString());
+		Logger::PrintLog(2, e->ToString());
 	}
 
 

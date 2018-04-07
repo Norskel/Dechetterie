@@ -17,10 +17,8 @@ ref class ClientBarriere : public Client
 private:
 	int _pos;
 
-	void fctThread()
+	void fctThread() override
 	{
-		Protocole^ p = Protocole::getProtocole();
-
 		while (true)
 		{
 			if (_clientSocket != nullptr)
@@ -31,30 +29,29 @@ private:
 					{
 						array<Byte>^ data = gcnew array<Byte>(1024);
 						_clientSocket->Receive(data);
-						ProtocolMsg^ pm = p->translateReceive(data);
-						if (pm->type == p->GetTypeProtocoleByID("AllPing"))
+						ProtocolMsg^ pm = protocole->translateReceive(data);
+
+						if (pm->type == protocole->GetTypeProtocoleByID("AllPing"))
 						{
-							this->Send(p->RetourPing());
-							Logger::PrintLog("PING", "Demande de ping de " + _ip->ToString() + "( " + id_groupe(_groupe).ToString() + " " + id_client(_type).ToString() + " )");
+							this->Send(protocole->RetourPing());
+							Logger::PrintLog("PING", "Demande de ping de " + _ip->ToString() + "( " + _groupe.ToString() + " " + _type.ToString() + " )");
 						}
 						else
 						{
-							if (pm->type == p->GetTypeProtocoleByID("brRDPos"))
+							if (pm->type == protocole->GetTypeProtocoleByID("brRDPos"))
 							{
 								_pos = pm->getData1Int();
-								Logger::PrintLog("", "Demande de ping de " + _ip->ToString() + "( " + id_groupe(_groupe).ToString() + " " + id_client(_type).ToString() + " )");
+								Logger::PrintLog("");
 							}
 							else
 							{
-
+								bufferRecv = data;
 							}
 						}
 					}
 					else
 					{
-						Console::WriteLine("[ Serveur " + id_groupe(_groupe).ToString() + " ] " + id_client(_type).ToString() + " viens de ce déconnectée");
-						_isConnected = false;
-						_clientSocket->Close();
+						this->Disconnect();
 					}
 				}
 				catch (Exception^e)
@@ -64,16 +61,28 @@ private:
 
 				}
 			}
-			Thread::Sleep(1000);
+			Thread::Sleep(100);
 		}
 	}
-public:
-	int getPosition()
+	void startReceive() override
 	{
-		return _pos;
+		_thread = gcnew Thread(gcnew ThreadStart(this, &ClientBarriere::fctThread));
+		_thread->Name = "Client IP " + _ip->ToString();
+		_thread->Start();
 	}
-	ClientBarriere(int groupe, IPAddress^ip) : Client(groupe, 2, ip)
+
+public:
+	int getPosition(){ return _pos; }
+	ClientBarriere(id_groupe groupe, IPAddress^ip) : Client(groupe, id_client::ClientBarrière, ip)
 	{
 
+	}
+	void OuvrirBarriere()
+	{
+		this->Send(protocole->OuvrirBarriere());
+	}
+	void FermerBarriere()
+	{
+		this->Send(protocole->FermerBarriere());
 	}
 };

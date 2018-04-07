@@ -14,8 +14,10 @@ using namespace System::Collections::Generic;
 ref class Client
 {
 protected:
-	int _groupe; // 1 entree 2 sortie
-	int _type; // 1 barriere 2 balance 3 rfid	
+
+	Protocole^ protocole = Protocole::getProtocole();
+	id_groupe _groupe;
+	id_client _type;
 	IPAddress^ _ip;
 	Boolean _isConnected = false;
 	Socket^ _clientSocket = nullptr;
@@ -24,70 +26,70 @@ protected:
 
 	void fctThread()
 	{
-		Protocole^ p = Protocole::getProtocole();
-		
 		while (true)
 		{
 			if (_clientSocket != nullptr)
 			{
-				_clientSocket->ReceiveTimeout = 120;
-
-			
-			try
-			{
-				if (_clientSocket->Connected)
+				try
 				{
-					array<Byte>^ data = gcnew array<Byte>(1024);
-					_clientSocket->Receive(data);
-					ProtocolMsg^ pm = p->translateReceive(data);
-					if (pm->type == p->GetTypeProtocoleByID("AllPing"))
+					if (_clientSocket->Connected)
 					{
-						this->Send(p->RetourPing());
-						Logger::PrintLog("Ping", "Demande de ping de "+ _ip->ToString()+ "( "+id_groupe(_groupe).ToString() +" "+id_client(_type).ToString()+" )");
+						array<Byte>^ data = gcnew array<Byte>(1024);
+						_clientSocket->Receive(data);
+						ProtocolMsg^ pm = protocole->translateReceive(data);
+						if (pm->type == protocole->GetTypeProtocoleByID("AllPing"))
+						{
+							this->Send(protocole->RetourPing());
+							Logger::PrintLog(EnteteCode::CLIENT, "Ping", "Demande de ping de " + _ip->ToString() + "( " + id_groupe(_groupe).ToString() + " " + id_client(_type).ToString() + " )");
+						}
+						else
+						{
+							bufferRecv = data;
+						}
 					}
 					else
 					{
-						bufferRecv = data;
+						this->Disconnect();
 					}
 				}
-				else
+				catch (Exception^e)
 				{
-					this->Disconnect();
+				
+					//Console::WriteLine("[ Client ][ Thread Receive ]" + e);
+
 				}
 			}
-			catch (Exception^e)
-			{
-
-				//Console::WriteLine("[ Client ][ Thread Receive ]" + e);
-
-			}
-			}
-			Thread::Sleep(1000);
+			Thread::Sleep(100);
 		}
 	}
+	void startReceive()
+	{
+		_thread = gcnew Thread(gcnew ThreadStart(this, &Client::fctThread));
+		_thread->Name = "Client IP " + _ip->ToString();
+		_thread->Start();
+	}
+
 public:
-	Client(int groupe, int type, IPAddress^ip) 
+	Client(id_groupe groupe, id_client type, IPAddress^ip)
 	{ 
 		_groupe = groupe;
 		_type = type; 
 		_ip = ip; 
-		_thread = gcnew Thread(gcnew ThreadStart(this,&Client::fctThread));
-		_thread->Name = "Client IP "+ _ip->ToString();
-		_thread->Start();
+		startReceive();
 	}
 
 	~Client()
 	{
 		_thread->Abort();
 	}
-	int getGroupe() { return _groupe; }
-	int getType() { return _type; }
+	id_groupe getGroupe() { return _groupe; }
+	id_client getType() { return _type; }
 	IPAddress^ getIP() { return _ip; }
 	Boolean getState() { return _isConnected; }
 	Socket^ getSocket() { return _clientSocket; }
 
-	void setGroupe(int i) { _groupe = i; }
-	void setType(int i) { _type = i; }
+	void setGroupe(id_groupe i) { _groupe = i; }
+	void setType(id_client i) { _type = i; }
 	void setIP(IPAddress^ i) { _ip = i; }
 	void setState(Boolean i) { _isConnected = i; }
 	void setSocket(Socket^ s) { _clientSocket = s; }
@@ -98,12 +100,12 @@ public:
 		{
 			_clientSocket->Disconnect(true);
 			_isConnected = false;
-			Logger::PrintLog("[ SERVEUR " + id_groupe(_groupe).ToString() + " ][ CLIENT ]", id_client(_type).ToString() + " viens de ce déconnectée");
-	
+			Logger::PrintLog(EnteteCode::CLIENT, _groupe.ToString(), _type.ToString() + " viens de ce déconnectée");
+			
 		}
 		catch (...)
 		{
-			Logger::PrintLogCode(EnteteCode::DEBUG, "[CLIENT] Problème lors de la deconnexion de " + _ip->ToString());
+			Logger::PrintLog(EnteteCode::ERROR, EnteteCode::CLIENT, " Problème lors de la deconnexion de " + _ip->ToString());
 		}
 		
 
@@ -127,16 +129,13 @@ public:
 		}
 		catch (Exception^e)
 		{
-
-				//Console::WriteLine("[ Client ][ Send ]" + e);
-			
+			Logger::PrintLog(EnteteCode::ERROR, EnteteCode::CLIENT, _groupe.ToString(), "[ Send ] " + e->ToString());
 			return false;
 		}
 	}
 
 	array<Byte>^ Receive()
 	{
-
 		array<Byte>^ data = gcnew array<Byte>(1024);
 		try
 		{
@@ -147,23 +146,11 @@ public:
 			data = bufferRecv;
 			bufferRecv = nullptr;
 			return data;
-			//if (_clientSocket->Connected)
-			//{
-			//	_clientSocket->Receive(data);
-			//	return data;
-			//}
-			//else
-			//{
-			//	Console::WriteLine("[ Serveur " + id_groupe(_groupe).ToString() + " ] " + id_client(_type).ToString() + " viens de ce déconnectée");
-			//	_isConnected = false;
-			//	_clientSocket->Close();
-			//}
+
 		}
 		catch (Exception^e)
 		{
-
 				//Console::WriteLine("[ Client ][ Receive ]" + e);
-			
 		}
 	}
 	

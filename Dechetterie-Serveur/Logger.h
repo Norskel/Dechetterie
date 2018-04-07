@@ -5,7 +5,7 @@ using namespace System::Text;
 using namespace System::IO;
 
 
-static public enum class EnteteCode : char { INFO, ERROR, DEBUG, ENTREE, SORTIE , INTERFACE };
+static public enum class EnteteCode : char { INFO, ERROR, DEBUG, ENTREE, SORTIE, INTERFACE,SERVEUR,CLIENT };
 
 static ref class Logger
 {
@@ -15,12 +15,11 @@ public:
 	String^ nameFile = "log.txt";
 	static void PrintLog(String^ text);
 	static void PrintLog(String^ entete,String^ text);
-	static void PrintLogCode(int entete,String^ text);
-	static void PrintLogCode(EnteteCode entete, String^ text);
-	static void PrintLogCode(int entete, int t);
-
-
-
+	static void PrintLog(int entete,String^ text);
+	static void PrintLog(EnteteCode entete, String^ text);
+	static void PrintLog(EnteteCode entete, String^ entete2, String^ text);
+	static void PrintLog(EnteteCode entete, EnteteCode entete2, String^ text);
+	static void PrintLog(EnteteCode entete, EnteteCode entete2, String^ entete3, String^ text);
 	Logger();
 };
 

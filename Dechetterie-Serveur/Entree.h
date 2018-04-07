@@ -23,7 +23,7 @@ private:
 	int WaitDechetType(Client ^ cl);
 	//void WaitAllConnection();
 	DataBddProxy^ _bdd;
-	List<Client^> listCLient;
+	List<Client^>^ _listClient = gcnew List<Client^>(3);
 
 	Protocole^ protocole;
 
@@ -34,7 +34,6 @@ private:
 	void getClientFromList(List<Client^>^ l);
 
 public:
-	Entree(IPAddress ^ listenip, int listenPort);
 	Entree(IPAddress ^ listenip, int listenPort, IPAddress ^ ipBarriered, IPAddress ^ ipBalance, IPAddress ^ ipRfi)
 
 };

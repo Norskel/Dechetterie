@@ -1,11 +1,14 @@
 #include "Entree.h"
 
 
-
-Entree::Entree(IPAddress ^ listenip, int listenPort)
+Entree::Entree(IPAddress ^ listenip, int listenPort, IPAddress ^ ipBarriere, IPAddress ^ ipBalance, IPAddress ^ ipRfid)
 {
-	Logger::PrintLogCode(3, "Interface d'écoute : " + listenip + " Port d'écoute : " + listenPort);
-	_srv = gcnew Serveur(listenip, listenPort,1);
+	Logger::PrintLog(EnteteCode::ENTREE, "Interface d'écoute : " + listenip + " Port d'écoute : " + listenPort);
+	
+	_listClient[0] = gcnew ClientBarriere(id_groupe::Entrée, ipBarriere);
+	_listClient[1] = gcnew ClientBalance(id_groupe::Entrée, ipBalance);
+	_listClient[2] = gcnew ClientRFID(id_groupe::Entrée, ipRfid);
+	_srv = gcnew Serveur(listenip, listenPort, id_groupe::Entrée,_listClient);
 	_srv->Start();
 	_tEntree = gcnew Thread(gcnew ThreadStart(this, &Entree::ThreadEntree));
 	_tEntree->Name = "Thread Entree";
@@ -13,19 +16,6 @@ Entree::Entree(IPAddress ^ listenip, int listenPort)
 	_bdd = DataBddProxy::getDataBddProxy();
 	protocole = Protocole::getProtocole();
 
-}
-
-Entree::Entree(IPAddress ^ listenip, int listenPort, IPAddress ^ ipBarriered, IPAddress ^ ipBalance, IPAddress ^ ipRfi)
-{
-	Logger::PrintLogCode(3, "Interface d'écoute : " + listenip + " Port d'écoute : " + listenPort);
-	_srv = gcnew Serveur(listenip, listenPort, 1);
-	_srv->Start();
-	_tEntree = gcnew Thread(gcnew ThreadStart(this, &Entree::ThreadEntree));
-	_tEntree->Name = "Thread Entree";
-	_tEntree->Start();
-	_bdd = DataBddProxy::getDataBddProxy();
-	protocole = Protocole::getProtocole();
-	listCLient.Add(gcnew ClientBarriere())
 
 }
 
@@ -37,7 +27,7 @@ void Entree::ThreadEntree()
 	{	
 		if (!logstate)
 		{
-			Logger::PrintLogCode(3, "Attente de la connection de tous les client");
+			Logger::PrintLog(3, "Attente de la connection de tous les client");
 			logstate = true;
 		}
 
@@ -49,7 +39,7 @@ void Entree::ThreadEntree()
 		
 	}
 	while (!connected);
-	Logger::PrintLogCode(3, "Tous les client sont connectés");
+	Logger::PrintLog(3, "Tous les client sont connectés");
 	logstate = false;
 
 
@@ -60,14 +50,14 @@ void Entree::ThreadEntree()
 		{
 			//===================================== Attente de Demande d'accès ========================================================================
 			String^ rfid_id = WaitAccesDemand(_ClientRFID);
-			Logger::PrintLogCode(3, "[ RFID ] Demande d'accès avec l'id RFID " + rfid_id);
+			Logger::PrintLog(3, "[ RFID ] Demande d'accès avec l'id RFID " + rfid_id);
 			
 			//===================================== Demande d'accès ====================================================================================
 			try
 			{
 				//Console::WriteLine("[Entree] Demande d'accès avec l'id RFID " + Encoding::Default->GetString(msgRev->data1));
 				DataUser^ user = _bdd->getUserByIdRFID(rfid_id);
-				Logger::PrintLogCode(3, "[ RFID ] Accès autorisé");
+				Logger::PrintLog(3, "[ RFID ] Accès autorisé");
 				_ClientRFID->Send(protocole->RetourRFIDAccesDemand(true));
 
 				int dechet_type = WaitDechetType(_ClientRFID);
@@ -86,11 +76,11 @@ void Entree::ThreadEntree()
 			catch (Exception^ e)
 			{
 				
-				Logger::PrintLogCode(2, "[ Entree ] " + e->Message);
+				Logger::PrintLog(2, "[ Entree ] " + e->Message);
 				
 				if (e->Message == "ID_RFID Introuvable")
 				{
-					Logger::PrintLogCode(3, "[ RFID ] Accès Refusé");
+					Logger::PrintLog(3, "[ RFID ] Accès Refusé");
 					_ClientRFID->Send(protocole->RetourRFIDAccesDemand(false));
 				}
 				
@@ -107,55 +97,7 @@ void Entree::ThreadEntree()
 	}
 }
 
-array<Byte>^ Entree::ReceptionPhoto(Client^ cl)
-{
-	cl->Send(protocole->GetPhoto());
 
-	ProtocolMsg^ msgRev = gcnew ProtocolMsg();
-	do
-	{
-		msgRev = protocole->translateReceive(_ClientRFID->Receive());
-		Console::WriteLine("Type = " + msgRev->type);
-
-	} while (msgRev->type != protocole->GetTypeProtocoleByID("RfPhotoInit"));
-
-	int nbPacket = msgRev->getData1Int();
-	Console::WriteLine("[ Reception Photo ] Initialisation de la reception de la Photo ");
-	Console::WriteLine("[ Reception Photo ] Nombre de packet à recevoir : " + nbPacket);
-
-	array<Byte>^ photo = gcnew array<Byte>(1024 * nbPacket);
-
-	int iPhoto = 0;
-	ProtocolMsg^ receptionMsg;
-	do
-	{
-		receptionMsg = protocole->translateReceive(cl->Receive());
-		if (receptionMsg->type == protocole->GetTypeProtocoleByID("RfPhotoSend"))
-		{
-			for (int i = 0; i < receptionMsg->data2->Length; i++)
-			{
-
-
-				photo[iPhoto] = receptionMsg->data2[i];
-				iPhoto++;
-
-
-
-			}
-			if (receptionMsg->getData1Int() == nbPacket)
-			{
-				break;
-			}
-		}
-
-
-	} while (receptionMsg->type != protocole->GetTypeProtocoleByID("RfPhotoEnd"));
-
-	Console::WriteLine("[ Reception Photo ] Fin de transmission ");
-	Console::WriteLine("[ Reception Photo ] Taille de la photo recu en octet (Byte) : " + iPhoto);
-
-	return photo;
-}
 String^ Entree::WaitAccesDemand(Client^ cl)
 {
 	ProtocolMsg^ msgRev = gcnew ProtocolMsg();

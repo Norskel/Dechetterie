@@ -49,20 +49,31 @@ void Logger::PrintLog(String ^ entete, String ^ text)
 
 }
 
-void Logger::PrintLogCode(int entete, String ^ text)
+void Logger::PrintLog(int entete, String ^ text)
 {
 	print("[ " + Convert::ToString(EnteteCode(entete)) + " ] " + text);
 }
 
-void Logger::PrintLogCode(EnteteCode entete, String ^ text)
+void Logger::PrintLog(EnteteCode entete, String ^ text)
 {
 	print("[ " + Convert::ToString(entete) + " ] " + text);
 }
 
-void Logger::PrintLogCode(int entete, int t)
+void Logger::PrintLog(EnteteCode entete, String^ entete2, String^ text)
 {
-	throw gcnew System::NotImplementedException();
+	print("[ " + Convert::ToString(entete) + " ][ " + entete2 + " ] " + text);
 }
+
+void Logger::PrintLog(EnteteCode entete, EnteteCode entete2, String ^ text)
+{
+	print("[ " + Convert::ToString(entete) + " ][ " + Convert::ToString(entete2) + " ] " + text);
+}
+
+void Logger::PrintLog(EnteteCode entete, EnteteCode entete2, String ^ entete3, String ^ text)
+{
+	print("[ " + Convert::ToString(entete) + " ][ " + Convert::ToString(entete2) + " ][ " + entete3 + " ] " + text);
+}
+
 
 Logger::Logger()
 {

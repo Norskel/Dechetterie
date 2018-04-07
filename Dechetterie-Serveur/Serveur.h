@@ -20,10 +20,12 @@ protected:
 	Boolean _isRunning;
 	Thread^ _tWaitClient;
 	List<Client^>^ _listClient;
-	int _groupe = 0;
+	id_groupe _groupe;
 public:
-	Serveur(IPAddress^ listenip, int listenPort,int groupe);
-	Serveur(IPAddress^ listenip, int listenPort, int groupe,ClientBalance %cba,ClientBarriere %cbr,ClientRFID %cr);
+	Serveur(IPAddress ^ listenip, int listenPort, id_groupe groupe);
+	Serveur(IPAddress^ listenip, int listenPort, id_groupe groupe, List<Client^>^ %l);
+
+
 	Boolean Start();
 	void WaitClient();
 	List<Client^>^ getClientList();
