@@ -24,7 +24,7 @@ protected:
 	Thread^ _thread;
 	array<Byte>^ bufferRecv = nullptr;
 
-	void fctThread()
+	virtual void fctThread()
 	{
 		while (true)
 		{
@@ -62,7 +62,7 @@ protected:
 			Thread::Sleep(100);
 		}
 	}
-	void startReceive()
+	virtual void startReceive()
 	{
 		_thread = gcnew Thread(gcnew ThreadStart(this, &Client::fctThread));
 		_thread->Name = "Client IP " + _ip->ToString();
@@ -77,6 +77,7 @@ public:
 		_ip = ip; 
 		startReceive();
 	}
+
 
 	~Client()
 	{

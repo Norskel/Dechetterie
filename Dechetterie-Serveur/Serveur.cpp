@@ -5,6 +5,12 @@
 
 Serveur::Serveur(IPAddress ^ listenip, int listenPort, id_groupe groupe)
 {
+
+}
+
+
+Serveur::Serveur(IPAddress ^ listenip, int listenPort, id_groupe groupe, GroupeClient ^% l)
+{
 	_interface = listenip;
 	_port = listenPort;
 	_groupe = groupe;
@@ -12,30 +18,25 @@ Serveur::Serveur(IPAddress ^ listenip, int listenPort, id_groupe groupe)
 	_socketServeur = gcnew Socket(AddressFamily::InterNetwork, SocketType::Stream, ProtocolType::Tcp);
 	IPEndPoint^ local = gcnew IPEndPoint(listenip, listenPort);
 	_socketServeur->Bind(local);
-}
-
-Serveur::Serveur(IPAddress ^ listenip, int listenPort, id_groupe groupe, List<Client^>^% l)
-{
-	Serveur(listenip, listenPort, groupe);
 	_listClient = l;
 }
 
 
 Boolean Serveur::Start()
 {
-	try
-	{
+	//try
+	//{
 		Logger::PrintLog(EnteteCode::SERVEUR, _groupe.ToString(), "Démarage du serveur TCP " + _groupe.ToString() + " qui ecoute sur le port " + _port + " et l'interface " + _interface->ToString() + "  ");
 		this->_socketServeur->Listen(1);
 		this->_isRunning = true;
 		this->_tWaitClient = gcnew Thread(gcnew ThreadStart(this, &Serveur::WaitClient));
 		this->_tWaitClient->Name = "Thread TCP SERVEUR PORT " + _port;
 		this->_tWaitClient->Start();
-	}
-	catch (Exception^ e)
-	{
-		Logger::PrintLog(EnteteCode::ERROR, EnteteCode::SERVEUR, _groupe.ToString(), "[ Start ] "+ e);
-	}
+	//}
+	//catch (Exception^ e)
+	//{
+//		Logger::PrintLog(EnteteCode::ERROR, EnteteCode::SERVEUR, _groupe.ToString(), "[ Start ] "+ e);
+	//}
 	return true;
 }
 void Serveur::WaitClient()
@@ -46,35 +47,40 @@ void Serveur::WaitClient()
 		{
 			Socket^ cliSocket;
 			cliSocket = _socketServeur->Accept();
-			int i;
 
 			IPAddress^ ipAdresseClient = (IPAddress^)(((IPEndPoint^)cliSocket->RemoteEndPoint)->Address);
 
-			for (i = 0; i < _listClient->Count; i++)
-
+			if (_listClient->ClientBalance->getIP()->ToString() == ipAdresseClient->ToString())
 			{
-				IPAddress^ IPAdresseList = _listClient[i]->getIP();
-				id_groupe idGroupe = _listClient[i]->getGroupe();
+				_listClient->ClientBalance->setSocket(cliSocket);
+				_listClient->ClientBalance->setState(true);
+				Logger::PrintLog(EnteteCode::SERVEUR, _groupe.ToString(), id_client::ClientBalance.ToString() + " viens de ce connectée");
 
-
-
-				if (ipAdresseClient->ToString() == IPAdresseList->ToString() && idGroupe == _groupe)
+			}
+			else
+			{
+				if (_listClient->ClientBarriere->getIP()->ToString() == ipAdresseClient->ToString())
 				{
-					_listClient[i]->setSocket(cliSocket);
-					_listClient[i]->setState(true);
-					Logger::PrintLog(EnteteCode::SERVEUR, _groupe.ToString(), _listClient[i]->getType().ToString() + " viens de ce connectée");
-					break;
-
+					_listClient->ClientBarriere->setSocket(cliSocket);
+					_listClient->ClientBarriere->setState(true);
+					Logger::PrintLog(EnteteCode::SERVEUR, _groupe.ToString(), id_client::ClientBarrière.ToString() + " viens de ce connectée");
 				}
-			}
+				else
+				{
+					if (_listClient->ClientRFID->getIP()->ToString() == ipAdresseClient->ToString())
+					{
+						_listClient->ClientRFID->setSocket(cliSocket);
+						_listClient->ClientRFID->setState(true);
+						Logger::PrintLog(EnteteCode::SERVEUR, _groupe.ToString(), id_client::ClientRFID.ToString() + " viens de ce connectée");
+					}
+					else
+					{
+						Logger::PrintLog(EnteteCode::SERVEUR, _groupe.ToString(), "Un Client avec l'ip " + ipAdresseClient->ToString() + " a essayé de ce connectée");
+						cliSocket->Close();
+					}
+				}
 
-			if (i == _listClient->Count)
-			{
-				Logger::PrintLog(EnteteCode::SERVEUR,_groupe.ToString(), "Un Client avec l'ip "+ipAdresseClient->ToString()+" a essayé de ce connectée");
-				cliSocket->Close();
 			}
-			
-
 
 		}
 		catch (Exception^ e)
@@ -86,7 +92,4 @@ void Serveur::WaitClient()
 	}
 }
 
-List<Client^>^ Serveur::getClientList()
-{
-	return _listClient;
-}
+

@@ -5,7 +5,7 @@ using namespace System::Text;
 using namespace System::IO;
 
 
-static public enum class EnteteCode : char { INFO, ERROR, DEBUG, ENTREE, SORTIE, INTERFACE,SERVEUR,CLIENT };
+static public enum class EnteteCode : char { INFO, ERROR, DEBUG, ENTREE, SORTIE, INTERFACE, SERVEUR, CLIENT, UTILISATEUR,CONFIG };
 
 static ref class Logger
 {

@@ -58,8 +58,8 @@ Struct id_groupe: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
   Fields:
     SByte value__ IsSignUnspecifiedByte : Public, SpecialName, RTSpecialName
     id_groupe nonDef = 0 : Public, Static, Literal, HasDefault
-    id_groupe Entrée = 1 : Public, Static, Literal, HasDefault
-    id_groupe Sortie = 2 : Public, Static, Literal, HasDefault
+    id_groupe ENTREE = 1 : Public, Static, Literal, HasDefault
+    id_groupe SORTIE = 2 : Public, Static, Literal, HasDefault
 Struct id_client: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
   :System.Enum
   Fields:
@@ -78,3 +78,7 @@ Struct EnteteCode: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
     EnteteCode ENTREE = 3 : Public, Static, Literal, HasDefault
     EnteteCode SORTIE = 4 : Public, Static, Literal, HasDefault
     EnteteCode INTERFACE = 5 : Public, Static, Literal, HasDefault
+    EnteteCode SERVEUR = 6 : Public, Static, Literal, HasDefault
+    EnteteCode CLIENT = 7 : Public, Static, Literal, HasDefault
+    EnteteCode UTILISATEUR = 8 : Public, Static, Literal, HasDefault
+    EnteteCode CONFIG = 9 : Public, Static, Literal, HasDefault

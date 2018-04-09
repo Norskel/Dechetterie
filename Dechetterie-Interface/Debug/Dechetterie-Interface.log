@@ -1,10 +1,3 @@
-﻿  stdafx.cpp
-  AssemblyInfo.cpp
-  ConfigForm.cpp
-  Dechetterie-Interface.cpp
-  MainForm.cpp
-  Génération de code en cours...
-  .NETFramework,Version=v4.6.1.AssemblyAttributes.cpp
-  AssemblyInfo.obj : /DEBUG:FASTLINK n'est pas pris en charge en présence de code managé ; redémarrage de l'édition des liens avec /DEBUG:FULL
+﻿  AssemblyInfo.obj : /DEBUG:FASTLINK n'est pas pris en charge en présence de code managé ; redémarrage de l'édition des liens avec /DEBUG:FULL
   Dechetterie-Interface.vcxproj -> C:\Users\Martin KLEIN-NORTH\Source\Repos\Dechetterie\Debug\Dechetterie-Interface.exe
   Dechetterie-Interface.vcxproj -> C:\Users\Martin KLEIN-NORTH\Source\Repos\Dechetterie\Debug\Dechetterie-Interface.pdb (Partial PDB)

@@ -1,6 +1,6 @@
 #include "Dechetterie.h"
 #define FILE_NAME_USER "user.xml"
-
+/*
 void Dechetterie::fctServerStateMsg()
 {
 	while (true)
@@ -140,7 +140,7 @@ void Dechetterie::sendStateMsg()
 	for each (Client^ var in Dechetterie::GetListClient())
 	{
 		int ib = 0;
-		if (var->getGroupe() == (int)id_groupe::Entrée)
+		if (var->getGroupe() == (int)id_groupe::ENTREE)
 		{
 			ib = -1;
 		}
@@ -174,29 +174,29 @@ void Dechetterie::sendUserMsg(FileStream^ fs)
 		Console::WriteLine("[ Send User Msg ] Envoie");
 	}
 }
-
+*/
 Dechetterie::Dechetterie(String^ configFile)
 {
 	if (loadConfigFile(configFile))
 	{
 
 		_bdd = DataBddProxy::getDataBddProxy(_config->IPBDD, _config->PortBDD.ToString(), _config->NomBDD, _config->UsernameBDD, _config->PasswordBDD);
-		
-		
+
 		_entree = gcnew Entree(IPAddress::Parse(_config->Entree->Interface), _config->Entree->portServeur, IPAddress::Parse(_config->Entree->IPBarriere), IPAddress::Parse(_config->Entree->IPBalance), IPAddress::Parse(_config->Entree->IPRFID));
-		_sortie = gcnew Sortie(IPAddress::Parse(_config->Sortie->Interface), _config->Sortie->portServeur);
+		_sortie = gcnew Sortie(IPAddress::Parse(_config->Sortie->Interface), _config->Sortie->portServeur, IPAddress::Parse(_config->Sortie->IPBarriere), IPAddress::Parse(_config->Sortie->IPBalance), IPAddress::Parse(_config->Sortie->IPRFID));
 		_pipeServerState = gcnew NamedPipeServerStream(PIPE_NAME_STATE_SERV, PipeDirection::InOut, 1);
 		_pipeServerUser = gcnew NamedPipeServerStream(PIPE_NAME_USER_INFOS_SERV, PipeDirection::InOut, 1);
-		_tServerStateMsg = gcnew Thread(gcnew ThreadStart(this, &Dechetterie::fctServerStateMsg));
-		_tServerUserMsg = gcnew Thread(gcnew ThreadStart(this, &Dechetterie::fctServerUserMsg));
-		_tServerStateMsg->Name = "Thread Wait connection server State";
-		_tServerUserMsg->Name = "Thread Wait connection server User";
-		_tServerStateMsg->Start();
-		_tServerUserMsg->Start();
+//		_tServerStateMsg = gcnew Thread(gcnew ThreadStart(this, &Dechetterie::fctServerStateMsg));
+		//_tServerUserMsg = gcnew Thread(gcnew ThreadStart(this, &Dechetterie::fctServerUserMsg));
+		//_tServerStateMsg->Name = "Thread Wait connection server State";
+		//_tServerUserMsg->Name = "Thread Wait connection server User";
+		//_tServerStateMsg->Start();
+		//_tServerUserMsg->Start();
 	}
 	else
 	{
 		Logger::PrintLog(EnteteCode::ERROR,"[ Dechetterie ] Impossible de démarrer ");
+		Thread::Sleep(2000);
 		this->~Dechetterie();
 	}
 
@@ -230,15 +230,6 @@ Boolean Dechetterie::loadConfigFile(String ^ file)
 		XmlSerializer^ serializer = gcnew XmlSerializer(DataConfigServeur::typeid);
 		_config = (DataConfigServeur^)serializer->Deserialize(fs);
 		fs->Close();
-
-		List<Client^>^ t = Dechetterie::GetListClient();
-		t->Add(gcnew Client((int)id_groupe::Entrée, (int)id_client::ClientBalance, IPAddress::Parse(_config->Entree->IPBalance)));
-		t->Add(gcnew Client((int)id_groupe::Entrée, (int)id_client::ClientBarrière, IPAddress::Parse(_config->Entree->IPBarriere)));
-		t->Add(gcnew Client((int)id_groupe::Entrée, (int)id_client::ClientRFID, IPAddress::Parse(_config->Entree->IPRFID)));
-		t->Add(gcnew Client((int)id_groupe::Sortie, (int)id_client::ClientBalance, IPAddress::Parse(_config->Sortie->IPBalance)));
-		t->Add(gcnew Client((int)id_groupe::Sortie, (int)id_client::ClientBarrière, IPAddress::Parse(_config->Sortie->IPBarriere)));
-		t->Add(gcnew Client((int)id_groupe::Sortie, (int)id_client::ClientRFID, IPAddress::Parse(_config->Sortie->IPRFID)));
-		Dechetterie::SetListClient(t);
 		Logger::PrintLog(0,"[ Configuration ] Fichier de configuration bien chargée");
 		return true;
 	}
@@ -249,14 +240,7 @@ Boolean Dechetterie::loadConfigFile(String ^ file)
 	}
 }
 
-List<Client^>^ Dechetterie::GetListClient()
-{
-	return _listClient;
-}
-void Dechetterie::SetListClient(List<Client^>^ l)
-{
-	_listClient = l;
-}
+
 
 List<Utilisateur^>^ Dechetterie::GetListUtilisateur()
 {
@@ -264,30 +248,40 @@ List<Utilisateur^>^ Dechetterie::GetListUtilisateur()
 }
 void Dechetterie::addUtilisateur(String ^ id_rfid, int tDechet, int poids, array<Byte>^ photo)
 {
-
 	DataBddProxy^ bdd = DataBddProxy::getDataBddProxy();
 	try
 	{
-		DataUser^ du = bdd->getUserByIdRFID(id_rfid);
-		_listUtilisateur->Add(gcnew Utilisateur(du->Nom, du->Prenom, tDechet, id_rfid,poids,photo));
-		DataEntree^ de = gcnew DataEntree();
+		DataUser^ du = bdd->getUserByIdRFID(id_rfid); // On recupere les info de la personne grace a son id rfid
+
+		_listUtilisateur->Add(gcnew Utilisateur(du->Nom, du->Prenom, tDechet, id_rfid,poids,photo)); // on rajoute la personne dans le tableau utilisateur de toutes les personne  qui sont dans la dechetterie
+		
+		DataEntree^ de = gcnew DataEntree(); 
 		de->ID_Dechet = tDechet;
 		de->ID_User = bdd->getUserByIdRFID(id_rfid)->ID;
 		de->Poids = poids;
 		de->dt = DateTime::Now;
-		bdd->addEntree(de);
-		Logger::PrintLog(0, "[ Utilisateur ] Nouvelle utilisateur dans la dechetterie : " + du->Nom +" "+ du->Prenom + " ID_RFID = " + id_rfid);
+		bdd->addEntree(de); //on ajoute dans la BDD Entree l'entree
+
+		Logger::PrintLog(EnteteCode::INFO,EnteteCode::UTILISATEUR,"Nouvelle utilisateur dans la dechetterie : " + du->Nom +" "+ du->Prenom + " ID_RFID = " + id_rfid);
 
 	}
-	catch (...)
+	catch (Exception^e)
 	{
-		Logger::PrintLog(0,"[ Utilisateur ] Utilisateur avec id RFID " + id_rfid + " Inconnu ");
+		if (e->Message == "ID_RFID Introuvable")
+		{
+			Logger::PrintLog(EnteteCode::ERROR, EnteteCode::UTILISATEUR, "Utilisateur avec id RFID " + id_rfid + " Inconnu ");
+		}
+		else
+		{
+			Logger::PrintLog(EnteteCode::ERROR, EnteteCode::UTILISATEUR,"addUtilisateur",e->ToString());
+		}
 	}
 	//
 }
 void Dechetterie::deleteUtilisateur(String ^ id_rfid)
 {
 	DataBddProxy^ bdd = DataBddProxy::getDataBddProxy();
+	
 	for (int i = 0; i < _listUtilisateur->Count; i++)
 	{
 		if (_listUtilisateur[i]->getRFIDID() == id_rfid)

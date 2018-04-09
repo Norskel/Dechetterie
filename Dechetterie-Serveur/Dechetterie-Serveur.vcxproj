@@ -148,6 +148,7 @@
     <ClInclude Include="Dechetterie.h" />
     <ClInclude Include="Entree.h" />
     <ClInclude Include="Enum.h" />
+    <ClInclude Include="Groupe.h" />
     <ClInclude Include="IDataBdd.h" />
     <ClInclude Include="Logger.h" />
     <ClInclude Include="Protocole\Protocole.h" />
@@ -163,6 +164,7 @@
     <ClInclude Include="StructDataEntree.h" />
     <ClInclude Include="StructDataHistorique.h" />
     <ClInclude Include="StructDataUser.h" />
+    <ClInclude Include="StructGroupeClient.h" />
     <ClInclude Include="Utilisateur.h" />
   </ItemGroup>
   <ItemGroup>
@@ -174,6 +176,7 @@
     <ClCompile Include="DataBddProxy.cpp" />
     <ClCompile Include="Dechetterie.cpp" />
     <ClCompile Include="Entree.cpp" />
+    <ClCompile Include="Groupe.cpp" />
     <ClCompile Include="Logger.cpp" />
     <ClCompile Include="Serveur.cpp" />
     <ClCompile Include="Sortie.cpp" />

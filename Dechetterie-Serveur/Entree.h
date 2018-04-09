@@ -4,37 +4,20 @@
 #include "Dechetterie.h"
 #include "Protocole\Protocole.h"
 #include "ClientBalance.h"
-#include "ClientBarriere.h"
+#include "Groupe.h"
 
 
 using namespace System;
 using namespace System::Threading;
 using namespace System::Text;
 
-
-ref class Entree
+ 
+ref class Entree : public Groupe
 {
-private:
-	Serveur^ _srv;
-	Thread^ _tEntree;
-	void ThreadEntree();
-	array<Byte>^ ReceptionPhoto(Client ^ cl);
-	String ^ WaitAccesDemand(Client ^ cl);
-	int WaitDechetType(Client ^ cl);
-	//void WaitAllConnection();
-	DataBddProxy^ _bdd;
-	List<Client^>^ _listClient = gcnew List<Client^>(3);
-
-	Protocole^ protocole;
-
-	ClientBarriere^ _ClientBarrière;
-	ClientBalance^ _ClientBalance;
-	Client^ _ClientRFID;
-	int getPoids(Client ^ cl);
-	void getClientFromList(List<Client^>^ l);
-
+protected:
+	void AccesDemandEvent(String^ rfid) override; 
 public:
-	Entree(IPAddress ^ listenip, int listenPort, IPAddress ^ ipBarriered, IPAddress ^ ipBalance, IPAddress ^ ipRfi)
+	Entree(IPAddress ^ listenip, int listenPort, IPAddress ^ ipBarriere, IPAddress ^ ipBalance, IPAddress ^ ipRfid);
 
 };
 

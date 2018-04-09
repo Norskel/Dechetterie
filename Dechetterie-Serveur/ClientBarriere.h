@@ -14,10 +14,10 @@ using namespace System::Collections::Generic;
 
 ref class ClientBarriere : public Client
 {
-private:
+protected:
 	int _pos;
 
-	void fctThread() override
+	void fctThread() override 
 	{
 		while (true)
 		{

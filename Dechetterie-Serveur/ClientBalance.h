@@ -5,7 +5,7 @@
 ref class ClientBalance : public Client
 {
 
-private:
+protected:
 	int _poids = 0;
 
 	void fctThread() override
@@ -83,7 +83,6 @@ public:
 			_poids = 0;
 			return r;
 		}
-
 	}
 	ClientBalance(id_groupe groupe, IPAddress^ip) : Client(groupe, id_client::ClientBalance, ip)
 	{

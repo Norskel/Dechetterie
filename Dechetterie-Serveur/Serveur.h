@@ -4,6 +4,7 @@
 #include "ClientBalance.h"
 #include "ClientRFID.h"
 #include "Enum.h"
+#include "StructGroupeClient.h"
 
 using namespace System;
 using namespace System::Threading;
@@ -17,17 +18,15 @@ protected:
 	IPAddress^ _interface = IPAddress::Any;
 	int _port;
 	Socket^ _socketServeur;
-	Boolean _isRunning;
+	Boolean _isRunning = false;
 	Thread^ _tWaitClient;
-	List<Client^>^ _listClient;
+	GroupeClient^ _listClient;
 	id_groupe _groupe;
 public:
 	Serveur(IPAddress ^ listenip, int listenPort, id_groupe groupe);
-	Serveur(IPAddress^ listenip, int listenPort, id_groupe groupe, List<Client^>^ %l);
-
+	Serveur(IPAddress^ listenip, int listenPort, id_groupe groupe, GroupeClient^ %l);
 
 	Boolean Start();
 	void WaitClient();
-	List<Client^>^ getClientList();
 };
 

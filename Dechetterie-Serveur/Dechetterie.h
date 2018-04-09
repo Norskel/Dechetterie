@@ -45,23 +45,19 @@ private:
 	Thread^ _tServerStateMsg;
 	Thread^ _tServerUserMsg;
 
-	void fctServerStateMsg();
-	void fctServerUserMsg();
+	//void fctServerStateMsg();
+	//void fctServerUserMsg();
 
 public:
 
-	void sendStateMsg();
-	void sendUserMsg(FileStream^ fs);
+	//void sendStateMsg();
+	//void sendUserMsg(FileStream^ fs);
 	static Boolean Debug = false;
 
 	Dechetterie(String^ configFile);
 	~Dechetterie();
 
 	Boolean loadConfigFile(String^ file);
-
-	//================ Client =================================
-	static void SetListClient(List<Client^>^ l);
-	static List<Client^>^ GetListClient();
 
 	//================ Utilisateur =================================
 	static void addUtilisateur(String ^ id_rfid, int tDechet, int poids, array<Byte>^ photo);
