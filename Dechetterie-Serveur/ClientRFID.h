@@ -2,7 +2,7 @@
 #include "Protocole\Protocole.h"
 #include "Client.h"
 
-#define TIMEOUT_GET_DECHET 30 //*0.5s
+#define TIMEOUT_GET_DECHET 600 //*0.5s
 #define TIMEOUT_GET_PHOTO 60 //*0.5s
 
 delegate void AccesDemandDelegate(String^);
@@ -14,6 +14,7 @@ protected:
 	String^ _RFID = nullptr;
 	int _dechet = 0;
 	Mutex^ m = gcnew Mutex();
+	SetIntDelegate^ setDechetDelegate;
 
 	void fctThread() override
 	{
@@ -63,6 +64,7 @@ protected:
 										Logger::PrintLog(EnteteCode::DEBUG, "dechet :" + pm->getData1Int());
 										this->_dechet = pm->getData1Int();
 										m->ReleaseMutex();
+										this->Invoke((this->setDechetDelegate), pm->getData1Int());
 									}
 									else
 									{
@@ -140,6 +142,7 @@ public:
 	event AccesDemandDelegate^ AccesDemand;
 	ClientRFID(id_groupe groupe, IPAddress^ip) : Client(groupe, id_client::ClientRFID, ip)
 	{
+		setDechetDelegate += gcnew SetIntDelegate(this, &ClientRFID::setDechet);
 
 	}
 
@@ -170,7 +173,7 @@ public:
 		int r;
 		while (_dechet == 0 && timeout < TIMEOUT_GET_DECHET)
 		{
-			Thread::Sleep(500);
+			Thread::Sleep(10);
 			timeout++;
 		}
 		if (timeout >= TIMEOUT_GET_DECHET)

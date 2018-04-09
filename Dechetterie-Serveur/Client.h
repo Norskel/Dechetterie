@@ -11,6 +11,8 @@ using namespace System::Net;
 using namespace System::Net::Sockets;
 using namespace System::Collections::Generic;
 
+delegate void SetIntDelegate(int);
+
 ref class Client
 {
 protected:
