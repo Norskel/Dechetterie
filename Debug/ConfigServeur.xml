@@ -15,8 +15,8 @@
     <IPRFID>127.0.0.1</IPRFID>
   </Sortie>
   <NomBDD>Dechetterie</NomBDD>
-  <IPBDD>192.168.0.150</IPBDD>
+  <IPBDD>127.0.0.1</IPBDD>
   <PortBDD>3306</PortBDD>
   <UsernameBDD>root</UsernameBDD>
-  <PasswordBDD>root</PasswordBDD>
+  <PasswordBDD></PasswordBDD>
 </DataConfigServeur>

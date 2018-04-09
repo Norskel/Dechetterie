@@ -4183,3 +4183,797 @@
 08-04-2018 20:50:02[ DEBUG ] Type :10
 08-04-2018 20:50:02[ PING ] Demande de ping de 127.0.0.1( ENTREE ClientRFID )
 08-04-2018 21:01:06[ DEBUG ] Je recois 
+09-04-2018 10:23:11[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+09-04-2018 10:23:12[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+09-04-2018 10:23:12[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+09-04-2018 10:23:12[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+09-04-2018 10:23:12[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+09-04-2018 10:23:12[ ERROR ][ UTILISATEUR ] Utilisateur avec id RFID 02006D7223 Inconnu 
+09-04-2018 10:23:22[ DEBUG ] System.Exception: ID_RFID Introuvable
+   ? DataBddProxy.getUserByIdRFID(String id_Rfid) dans c:\users\a125\source\repos\dechetterie\dechetterie-serveur\databddproxy.cpp:ligne 172
+   ? Dechetterie.deleteUtilisateur(String id_rfid) dans c:\users\a125\source\repos\dechetterie\dechetterie-serveur\dechetterie.cpp:ligne 298
+09-04-2018 10:25:36[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+09-04-2018 10:25:36[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+09-04-2018 10:25:36[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+09-04-2018 10:25:36[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+09-04-2018 10:25:36[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+09-04-2018 10:25:37[ ERROR ][ UTILISATEUR ] Utilisateur avec id RFID 02006D7223 Inconnu 
+09-04-2018 10:26:06[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+09-04-2018 10:26:07[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+09-04-2018 10:26:07[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+09-04-2018 10:26:07[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+09-04-2018 10:26:07[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+09-04-2018 10:26:09[ ERROR ][ UTILISATEUR ] Utilisateur avec id RFID 02006D7223 Inconnu 
+09-04-2018 10:26:20[ DEBUG ] System.Exception: ID_RFID Introuvable
+   ? DataBddProxy.getUserByIdRFID(String id_Rfid) dans c:\users\a125\source\repos\dechetterie\dechetterie-serveur\databddproxy.cpp:ligne 172
+   ? Dechetterie.deleteUtilisateur(String id_rfid) dans c:\users\a125\source\repos\dechetterie\dechetterie-serveur\dechetterie.cpp:ligne 298
+09-04-2018 10:27:00[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+09-04-2018 10:27:02[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+09-04-2018 10:27:02[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+09-04-2018 10:27:02[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+09-04-2018 10:27:02[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+09-04-2018 10:27:03[ ERROR ][ UTILISATEUR ][ addUtilisateur ] MySql.Data.MySqlClient.MySqlException (0x80004005): Champ 'Utilisateur_ID' inconnu dans field list
+   ? MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   ? MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   ? MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   ? MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   ? MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   ? MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   ? MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   ? DataBddProxy.addEntree(DataEntree e) dans c:\users\a125\source\repos\dechetterie\dechetterie-serveur\databddproxy.cpp:ligne 239
+   ? Dechetterie.addUtilisateur(String id_rfid, Int32 tDechet, Int32 poids, Byte[] photo) dans c:\users\a125\source\repos\dechetterie\dechetterie-serveur\dechetterie.cpp:ligne 263
+09-04-2018 10:27:13[ INFO ] [ Utilisateur ] L'utilisateur quitte la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+09-04-2018 10:27:13[ DEBUG ] System.MissingMemberException: Tentative d'acc?s ? un membre introuvable.
+   ? DataBddProxy.getEntreeByUserID(Int32 id) dans c:\users\a125\source\repos\dechetterie\dechetterie-serveur\databddproxy.cpp:ligne 223
+   ? Dechetterie.deleteUtilisateur(String id_rfid) dans c:\users\a125\source\repos\dechetterie\dechetterie-serveur\dechetterie.cpp:ligne 299
+09-04-2018 10:53:44[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+09-04-2018 10:53:45[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+09-04-2018 10:53:45[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+09-04-2018 10:53:45[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+09-04-2018 10:53:45[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+09-04-2018 10:53:45[ ERROR ][ UTILISATEUR ][ addUtilisateur ] MySql.Data.MySqlClient.MySqlException (0x80004005): Champ 'Utilisateur_ID' inconnu dans field list
+   ? MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   ? MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   ? MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   ? MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   ? MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   ? MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   ? MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   ? DataBddProxy.addEntree(DataEntree e) dans c:\users\a125\source\repos\dechetterie\dechetterie-serveur\databddproxy.cpp:ligne 239
+   ? Dechetterie.addUtilisateur(String id_rfid, Int32 tDechet, Int32 poids, Byte[] photo) dans c:\users\a125\source\repos\dechetterie\dechetterie-serveur\dechetterie.cpp:ligne 263
+09-04-2018 11:06:19[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+09-04-2018 11:06:20[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+09-04-2018 11:06:20[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+09-04-2018 11:06:20[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+09-04-2018 11:06:20[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+09-04-2018 11:06:20[ ERROR ][ UTILISATEUR ][ addUtilisateur ] MySql.Data.MySqlClient.MySqlException (0x80004005): Cannot add or update a child row: a foreign key constraint fails (`dechetterie`.`entree`, CONSTRAINT `TypeDechet` FOREIGN KEY (`TypeDechet_ID`) REFERENCES `typedechet` (`ID`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+   ? MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   ? MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   ? MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   ? MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   ? MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   ? MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   ? MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   ? DataBddProxy.addEntree(DataEntree e) dans c:\users\a125\source\repos\dechetterie\dechetterie-serveur\databddproxy.cpp:ligne 239
+   ? Dechetterie.addUtilisateur(String id_rfid, Int32 tDechet, Int32 poids, Byte[] photo) dans c:\users\a125\source\repos\dechetterie\dechetterie-serveur\dechetterie.cpp:ligne 263
+09-04-2018 11:06:30[ INFO ] [ Utilisateur ] L'utilisateur quitte la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+09-04-2018 11:06:30[ DEBUG ] System.MissingMemberException: Tentative d'acc?s ? un membre introuvable.
+   ? DataBddProxy.getEntreeByUserID(Int32 id) dans c:\users\a125\source\repos\dechetterie\dechetterie-serveur\databddproxy.cpp:ligne 223
+   ? Dechetterie.deleteUtilisateur(String id_rfid) dans c:\users\a125\source\repos\dechetterie\dechetterie-serveur\dechetterie.cpp:ligne 299
+09-04-2018 11:08:05[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+09-04-2018 11:08:06[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+09-04-2018 11:08:06[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+09-04-2018 11:08:06[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+09-04-2018 11:08:06[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+09-04-2018 11:08:06[ ERROR ][ UTILISATEUR ][ addUtilisateur ] MySql.Data.MySqlClient.MySqlException (0x80004005): Cannot add or update a child row: a foreign key constraint fails (`dechetterie`.`entree`, CONSTRAINT `TypeDechet` FOREIGN KEY (`TypeDechet_ID`) REFERENCES `typedechet` (`ID`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+   ? MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   ? MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   ? MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   ? MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   ? MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   ? MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   ? MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   ? DataBddProxy.addEntree(DataEntree e) dans c:\users\a125\source\repos\dechetterie\dechetterie-serveur\databddproxy.cpp:ligne 239
+   ? Dechetterie.addUtilisateur(String id_rfid, Int32 tDechet, Int32 poids, Byte[] photo) dans c:\users\a125\source\repos\dechetterie\dechetterie-serveur\dechetterie.cpp:ligne 263
+09-04-2018 11:08:16[ INFO ] [ Utilisateur ] L'utilisateur quitte la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+09-04-2018 11:08:17[ DEBUG ] System.MissingMemberException: Tentative d'acc?s ? un membre introuvable.
+   ? DataBddProxy.getEntreeByUserID(Int32 id) dans c:\users\a125\source\repos\dechetterie\dechetterie-serveur\databddproxy.cpp:ligne 223
+   ? Dechetterie.deleteUtilisateur(String id_rfid) dans c:\users\a125\source\repos\dechetterie\dechetterie-serveur\dechetterie.cpp:ligne 299
+09-04-2018 11:12:06[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+09-04-2018 11:12:07[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+09-04-2018 11:12:07[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+09-04-2018 11:12:07[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+09-04-2018 11:12:08[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+09-04-2018 11:12:08[ ERROR ][ UTILISATEUR ][ addUtilisateur ] MySql.Data.MySqlClient.MySqlException (0x80004005): Cannot add or update a child row: a foreign key constraint fails (`dechetterie`.`entree`, CONSTRAINT `TypeDechet` FOREIGN KEY (`TypeDechet_ID`) REFERENCES `typedechet` (`ID`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+   ? MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   ? MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   ? MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   ? MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   ? MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   ? MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   ? MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   ? DataBddProxy.addEntree(DataEntree e) dans c:\users\a125\source\repos\dechetterie\dechetterie-serveur\databddproxy.cpp:ligne 239
+   ? Dechetterie.addUtilisateur(String id_rfid, Int32 tDechet, Int32 poids, Byte[] photo) dans c:\users\a125\source\repos\dechetterie\dechetterie-serveur\dechetterie.cpp:ligne 263
+09-04-2018 11:14:14[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+09-04-2018 11:14:15[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+09-04-2018 11:14:15[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+09-04-2018 11:14:15[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+09-04-2018 11:14:15[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+09-04-2018 11:14:15[ INFO ][ UTILISATEUR ] Nouvelle utilisateur dans la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+09-04-2018 11:14:25[ INFO ] [ Utilisateur ] L'utilisateur quitte la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+09-04-2018 11:14:33[ SERVEUR ][ ENTREE ] ClientRFID viens de ce connect?e
+09-04-2018 11:14:43[ DEBUG ] Je recois 
+09-04-2018 11:14:43[ DEBUG ] 000610                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+09-04-2018 11:14:43[ DEBUG ] Type :10
+09-04-2018 11:14:43[ PING ] Demande de ping de 127.0.0.1( ENTREE ClientRFID )
+09-04-2018 11:16:49[ DEBUG ] Je recois 
+09-04-2018 11:16:49[ DEBUG ] 00164102006D7223                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+09-04-2018 11:16:49[ DEBUG ] Type :41
+09-04-2018 11:16:49[ nonDef ] [ RFID ] Demande d'acc?s avec l'id RFID 02006D7223
+09-04-2018 11:16:49[ nonDef ] [ RFID ] Acc?s autoris?
+09-04-2018 11:16:57[ ERROR ][ nonDef ]  Pas de type de dechet
+09-04-2018 11:16:57[ nonDef ] Fin de procedure !
+09-04-2018 11:16:57[ DEBUG ] Je recois 
+09-04-2018 11:16:57[ DEBUG ] 000743100074310007431000743100074310007431                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+09-04-2018 11:16:57[ DEBUG ] Type :43
+09-04-2018 11:16:57[ DEBUG ] dechet :1
+09-04-2018 11:20:23[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+09-04-2018 11:20:24[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+09-04-2018 11:20:24[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+09-04-2018 11:20:24[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+09-04-2018 11:20:24[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+09-04-2018 11:20:25[ INFO ][ UTILISATEUR ] Nouvelle utilisateur dans la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+09-04-2018 11:20:25[ SERVEUR ][ ENTREE ] ClientRFID viens de ce connect?e
+09-04-2018 11:20:29[ DEBUG ] Je recois 
+09-04-2018 11:20:29[ DEBUG ] 000610                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+09-04-2018 11:20:29[ DEBUG ] Type :10
+09-04-2018 11:20:29[ PING ] Demande de ping de 127.0.0.1( ENTREE ClientRFID )
+09-04-2018 11:20:31[ DEBUG ] Je recois 
+09-04-2018 11:20:31[ DEBUG ] 00164102006D7223                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+09-04-2018 11:20:31[ DEBUG ] Type :41
+09-04-2018 11:20:31[ nonDef ] [ RFID ] Demande d'acc?s avec l'id RFID 02006D7223
+09-04-2018 11:20:31[ nonDef ] [ RFID ] Acc?s autoris?
+09-04-2018 11:20:35[ INFO ] [ Utilisateur ] L'utilisateur quitte la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+09-04-2018 11:20:40[ ERROR ][ nonDef ]  Pas de type de dechet
+09-04-2018 11:20:40[ nonDef ] Fin de procedure !
+09-04-2018 11:20:40[ DEBUG ] Je recois 
+09-04-2018 11:20:40[ DEBUG ] 0007431                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+09-04-2018 11:20:40[ DEBUG ] Type :43
+09-04-2018 11:20:40[ DEBUG ] dechet :1
+09-04-2018 11:22:46[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+09-04-2018 11:22:46[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+09-04-2018 11:22:46[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+09-04-2018 11:22:46[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+09-04-2018 11:22:46[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+09-04-2018 11:22:47[ INFO ][ UTILISATEUR ] Nouvelle utilisateur dans la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+09-04-2018 11:22:51[ SERVEUR ][ ENTREE ] ClientRFID viens de ce connect?e
+09-04-2018 11:22:51[ DEBUG ] J'attends 
+09-04-2018 11:22:53[ DEBUG ] Je recois 
+09-04-2018 11:22:53[ DEBUG ] 000610                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+09-04-2018 11:22:53[ DEBUG ] Type :10
+09-04-2018 11:22:53[ PING ] Demande de ping de 127.0.0.1( ENTREE ClientRFID )
+09-04-2018 11:22:53[ DEBUG ] J'attends 
+09-04-2018 11:22:57[ INFO ] [ Utilisateur ] L'utilisateur quitte la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+09-04-2018 11:22:58[ DEBUG ] Je recois 
+09-04-2018 11:22:58[ DEBUG ] 00164102006D7223                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+09-04-2018 11:22:58[ DEBUG ] Type :41
+09-04-2018 11:22:58[ nonDef ] [ RFID ] Demande d'acc?s avec l'id RFID 02006D7223
+09-04-2018 11:22:58[ nonDef ] [ RFID ] Acc?s autoris?
+09-04-2018 11:23:05[ ERROR ][ nonDef ]  Pas de type de dechet
+09-04-2018 11:23:05[ nonDef ] Fin de procedure !
+09-04-2018 11:23:05[ DEBUG ] J'attends 
+09-04-2018 11:23:05[ DEBUG ] Je recois 
+09-04-2018 11:23:05[ DEBUG ] 0007431                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+09-04-2018 11:23:05[ DEBUG ] Type :43
+09-04-2018 11:23:05[ DEBUG ] dechet :1
+09-04-2018 11:23:05[ DEBUG ] J'attends 
+09-04-2018 11:23:08[ DEBUG ] Je recois 
+09-04-2018 11:23:08[ DEBUG ] 0007431                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+09-04-2018 11:23:08[ DEBUG ] Type :43
+09-04-2018 11:23:08[ DEBUG ] dechet :1
+09-04-2018 11:23:08[ DEBUG ] J'attends 
+09-04-2018 11:23:11[ DEBUG ] Je recois 
+09-04-2018 11:23:11[ DEBUG ] 00164102006D7223                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+09-04-2018 11:23:11[ DEBUG ] Type :41
+09-04-2018 11:23:11[ nonDef ] [ RFID ] Demande d'acc?s avec l'id RFID 02006D7223
+09-04-2018 11:23:11[ nonDef ] [ RFID ] Acc?s autoris?
+09-04-2018 11:23:11[ nonDef ] [ RFID ] Type de dechet selectionner : 5
+09-04-2018 11:23:11[ nonDef ] [ RFID ] Poids du vehicule : 2500
+09-04-2018 11:23:41[ ERROR ][ nonDef ]  Pas de photo
+09-04-2018 11:23:41[ nonDef ] Fin de procedure !
+09-04-2018 11:23:41[ DEBUG ] J'attends 
+09-04-2018 11:23:41[ DEBUG ] Je recois 
+09-04-2018 11:23:41[ DEBUG ] 000610                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+09-04-2018 11:23:41[ DEBUG ] Type :10
+09-04-2018 11:23:41[ PING ] Demande de ping de 127.0.0.1( ENTREE ClientRFID )
+09-04-2018 11:23:41[ DEBUG ] J'attends 
+09-04-2018 11:24:52[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+09-04-2018 11:24:53[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+09-04-2018 11:24:53[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+09-04-2018 11:24:53[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+09-04-2018 11:24:53[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+09-04-2018 11:24:53[ INFO ][ UTILISATEUR ] Nouvelle utilisateur dans la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+09-04-2018 11:24:59[ SERVEUR ][ ENTREE ] ClientRFID viens de ce connect?e
+09-04-2018 11:24:59[ DEBUG ] Boucle 
+09-04-2018 11:24:59[ DEBUG ] J'attends 
+09-04-2018 11:25:03[ DEBUG ] Je recois 
+09-04-2018 11:25:03[ DEBUG ] 000610                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+09-04-2018 11:25:03[ DEBUG ] Type :10
+09-04-2018 11:25:03[ PING ] Demande de ping de 127.0.0.1( ENTREE ClientRFID )
+09-04-2018 11:25:03[ DEBUG ] Boucle 
+09-04-2018 11:25:03[ DEBUG ] J'attends 
+09-04-2018 11:25:04[ INFO ] [ Utilisateur ] L'utilisateur quitte la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+09-04-2018 11:25:06[ DEBUG ] Je recois 
+09-04-2018 11:25:06[ DEBUG ] 000610                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+09-04-2018 11:25:06[ DEBUG ] Type :10
+09-04-2018 11:25:06[ PING ] Demande de ping de 127.0.0.1( ENTREE ClientRFID )
+09-04-2018 11:25:06[ DEBUG ] Boucle 
+09-04-2018 11:25:06[ DEBUG ] J'attends 
+09-04-2018 11:25:09[ DEBUG ] Je recois 
+09-04-2018 11:25:09[ DEBUG ] 00164102006D7223                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+09-04-2018 11:25:09[ DEBUG ] Type :41
+09-04-2018 11:25:09[ nonDef ] [ RFID ] Demande d'acc?s avec l'id RFID 02006D7223
+09-04-2018 11:25:09[ nonDef ] [ RFID ] Acc?s autoris?
+09-04-2018 11:25:19[ ERROR ][ nonDef ]  Pas de type de dechet
+09-04-2018 11:25:19[ nonDef ] Fin de procedure !
+09-04-2018 11:25:19[ DEBUG ] Boucle 
+09-04-2018 11:25:19[ DEBUG ] J'attends 
+09-04-2018 11:25:19[ DEBUG ] Je recois 
+09-04-2018 11:25:19[ DEBUG ] 0007431                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+09-04-2018 11:25:19[ DEBUG ] Type :43
+09-04-2018 11:25:19[ DEBUG ] dechet :1
+09-04-2018 11:25:19[ DEBUG ] Boucle 
+09-04-2018 11:25:19[ DEBUG ] J'attends 
+09-04-2018 11:26:50[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+09-04-2018 11:26:51[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+09-04-2018 11:26:51[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+09-04-2018 11:26:51[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+09-04-2018 11:26:51[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+09-04-2018 11:26:51[ INFO ][ UTILISATEUR ] Nouvelle utilisateur dans la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+09-04-2018 11:26:56[ SERVEUR ][ ENTREE ] ClientRFID viens de ce connect?e
+09-04-2018 11:26:56[ DEBUG ] Boucle 
+09-04-2018 11:26:56[ DEBUG ] J'attends 
+09-04-2018 11:27:01[ INFO ] [ Utilisateur ] L'utilisateur quitte la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+09-04-2018 11:27:04[ DEBUG ] Je recois 
+09-04-2018 11:27:04[ DEBUG ] 000610                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+09-04-2018 11:27:05[ DEBUG ] Type :10
+09-04-2018 11:27:05[ PING ] Demande de ping de 127.0.0.1( ENTREE ClientRFID )
+09-04-2018 11:27:05[ DEBUG ] Boucle 
+09-04-2018 11:27:05[ DEBUG ] J'attends 
+09-04-2018 11:27:08[ DEBUG ] Je recois 
+09-04-2018 11:27:08[ DEBUG ] 00164102006D7223                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+09-04-2018 11:27:08[ DEBUG ] Type :41
+09-04-2018 11:27:08[ nonDef ] [ RFID ] Demande d'acc?s avec l'id RFID 02006D7223
+09-04-2018 11:27:08[ nonDef ] [ RFID ] Acc?s autoris?
+09-04-2018 11:27:17[ ERROR ][ nonDef ]  Pas de type de dechet
+09-04-2018 11:27:17[ nonDef ] Fin de procedure !
+09-04-2018 11:27:17[ INFO ] Sortie de l'event
+09-04-2018 11:27:17[ DEBUG ] Boucle 
+09-04-2018 11:27:17[ DEBUG ] J'attends 
+09-04-2018 11:27:17[ DEBUG ] Je recois 
+09-04-2018 11:27:17[ DEBUG ] 0007431                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+09-04-2018 11:27:17[ DEBUG ] Type :43
+09-04-2018 11:27:17[ DEBUG ] dechet :1
+09-04-2018 11:27:17[ DEBUG ] Boucle 
+09-04-2018 11:27:17[ DEBUG ] J'attends 
+09-04-2018 13:16:28[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+09-04-2018 13:16:29[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+09-04-2018 13:16:29[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+09-04-2018 13:16:29[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+09-04-2018 13:16:29[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+09-04-2018 13:16:29[ INFO ][ UTILISATEUR ] Nouvelle utilisateur dans la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+09-04-2018 13:16:31[ SERVEUR ][ ENTREE ] ClientRFID viens de ce connect?e
+09-04-2018 13:16:31[ DEBUG ] Boucle 
+09-04-2018 13:16:31[ DEBUG ] J'attends 
+09-04-2018 13:16:35[ DEBUG ] Je recois 
+09-04-2018 13:16:35[ DEBUG ] 000610                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+09-04-2018 13:16:35[ DEBUG ] Type :10
+09-04-2018 13:16:35[ PING ] Demande de ping de 127.0.0.1( ENTREE ClientRFID )
+09-04-2018 13:16:35[ DEBUG ] Boucle 
+09-04-2018 13:16:35[ DEBUG ] J'attends 
+09-04-2018 13:16:38[ DEBUG ] Je recois 
+09-04-2018 13:16:38[ DEBUG ] 00164102006D7223                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+09-04-2018 13:16:38[ DEBUG ] Type :41
+09-04-2018 13:16:38[ nonDef ] [ RFID ] Demande d'acc?s avec l'id RFID 02006D7223
+09-04-2018 13:16:38[ nonDef ] [ RFID ] Acc?s autoris?
+09-04-2018 13:16:38[ INFO ] Sortie de l'event
+09-04-2018 13:16:38[ DEBUG ] Boucle 
+09-04-2018 13:16:38[ DEBUG ] J'attends 
+09-04-2018 13:16:39[ INFO ] [ Utilisateur ] L'utilisateur quitte la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+09-04-2018 13:16:41[ DEBUG ] Je recois 
+09-04-2018 13:16:41[ DEBUG ] 0007431                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+09-04-2018 13:16:41[ DEBUG ] Type :43
+09-04-2018 13:16:41[ DEBUG ] dechet :1
+09-04-2018 13:16:41[ nonDef ] [ RFID ] Type de dechet selectionner : 5
+09-04-2018 13:16:41[ nonDef ] [ RFID ] Poids du vehicule : 2500
+09-04-2018 13:16:41[ DEBUG ] Boucle 
+09-04-2018 13:16:41[ DEBUG ] J'attends 
+09-04-2018 13:16:49[ DEBUG ] Je recois 
+09-04-2018 13:16:50[ DEBUG ] Boucle 
+09-04-2018 13:16:50[ DEBUG ] J'attends 
+09-04-2018 13:16:50[ DEBUG ] Je recois 
+09-04-2018 13:16:50[ DEBUG ] Boucle 
+09-04-2018 13:16:50[ DEBUG ] J'attends 
+09-04-2018 13:16:50[ DEBUG ] Je recois 
+09-04-2018 13:16:50[ DEBUG ] Boucle 
+09-04-2018 13:16:50[ DEBUG ] J'attends 
+09-04-2018 13:16:50[ DEBUG ] Je recois 
+09-04-2018 13:16:50[ DEBUG ] Boucle 
+09-04-2018 13:16:50[ DEBUG ] J'attends 
+09-04-2018 13:16:50[ DEBUG ] Je recois 
+09-04-2018 13:16:50[ DEBUG ] Boucle 
+09-04-2018 13:16:50[ DEBUG ] J'attends 
+09-04-2018 13:16:50[ DEBUG ] Je recois 
+09-04-2018 13:16:51[ DEBUG ] Boucle 
+09-04-2018 13:16:51[ DEBUG ] J'attends 
+09-04-2018 13:16:51[ DEBUG ] Je recois 
+09-04-2018 13:16:51[ DEBUG ] Boucle 
+09-04-2018 13:16:51[ DEBUG ] J'attends 
+09-04-2018 13:16:51[ DEBUG ] Je recois 
+09-04-2018 13:16:51[ DEBUG ] Boucle 
+09-04-2018 13:16:51[ DEBUG ] J'attends 
+09-04-2018 13:16:51[ DEBUG ] Je recois 
+09-04-2018 13:16:51[ DEBUG ] Boucle 
+09-04-2018 13:16:51[ DEBUG ] J'attends 
+09-04-2018 13:16:51[ DEBUG ] Je recois 
+09-04-2018 13:16:51[ DEBUG ] Boucle 
+09-04-2018 13:16:51[ DEBUG ] J'attends 
+09-04-2018 13:16:51[ DEBUG ] Je recois 
+09-04-2018 13:16:51[ DEBUG ] Boucle 
+09-04-2018 13:16:51[ DEBUG ] J'attends 
+09-04-2018 13:16:51[ DEBUG ] Je recois 
+09-04-2018 13:16:52[ DEBUG ] Boucle 
+09-04-2018 13:16:52[ DEBUG ] J'attends 
+09-04-2018 13:16:52[ DEBUG ] Je recois 
+09-04-2018 13:16:52[ DEBUG ] Boucle 
+09-04-2018 13:16:52[ DEBUG ] J'attends 
+09-04-2018 13:16:52[ DEBUG ] Je recois 
+09-04-2018 13:16:52[ DEBUG ] Boucle 
+09-04-2018 13:16:52[ DEBUG ] J'attends 
+09-04-2018 13:16:52[ DEBUG ] Je recois 
+09-04-2018 13:16:52[ DEBUG ] Boucle 
+09-04-2018 13:16:52[ DEBUG ] J'attends 
+09-04-2018 13:16:52[ DEBUG ] Je recois 
+09-04-2018 13:16:52[ DEBUG ] Boucle 
+09-04-2018 13:16:52[ DEBUG ] J'attends 
+09-04-2018 13:16:52[ DEBUG ] Je recois 
+09-04-2018 13:16:53[ DEBUG ] Boucle 
+09-04-2018 13:16:53[ DEBUG ] J'attends 
+09-04-2018 13:16:53[ DEBUG ] Je recois 
+09-04-2018 13:16:53[ DEBUG ] Boucle 
+09-04-2018 13:16:53[ DEBUG ] J'attends 
+09-04-2018 13:16:53[ DEBUG ] Je recois 
+09-04-2018 13:16:53[ DEBUG ] Boucle 
+09-04-2018 13:16:53[ DEBUG ] J'attends 
+09-04-2018 13:16:53[ DEBUG ] Je recois 
+09-04-2018 13:16:53[ DEBUG ] Boucle 
+09-04-2018 13:16:53[ DEBUG ] J'attends 
+09-04-2018 13:16:53[ DEBUG ] Je recois 
+09-04-2018 13:16:53[ DEBUG ] Boucle 
+09-04-2018 13:16:53[ DEBUG ] J'attends 
+09-04-2018 13:16:53[ DEBUG ] Je recois 
+09-04-2018 13:16:54[ DEBUG ] Boucle 
+09-04-2018 13:16:54[ DEBUG ] J'attends 
+09-04-2018 13:16:54[ DEBUG ] Je recois 
+09-04-2018 13:16:54[ DEBUG ] Boucle 
+09-04-2018 13:16:54[ DEBUG ] J'attends 
+09-04-2018 13:16:54[ DEBUG ] Je recois 
+09-04-2018 13:16:54[ DEBUG ] Boucle 
+09-04-2018 13:16:54[ DEBUG ] J'attends 
+09-04-2018 13:16:54[ DEBUG ] Je recois 
+09-04-2018 13:16:54[ DEBUG ] Boucle 
+09-04-2018 13:16:54[ DEBUG ] J'attends 
+09-04-2018 13:16:54[ DEBUG ] Je recois 
+09-04-2018 13:16:54[ DEBUG ] Boucle 
+09-04-2018 13:16:54[ DEBUG ] J'attends 
+09-04-2018 13:16:54[ DEBUG ] Je recois 
+09-04-2018 13:16:55[ DEBUG ] Boucle 
+09-04-2018 13:16:55[ DEBUG ] J'attends 
+09-04-2018 13:16:55[ DEBUG ] Je recois 
+09-04-2018 13:16:55[ DEBUG ] Boucle 
+09-04-2018 13:16:55[ DEBUG ] J'attends 
+09-04-2018 13:16:55[ DEBUG ] Je recois 
+09-04-2018 13:16:55[ DEBUG ] Boucle 
+09-04-2018 13:16:55[ DEBUG ] J'attends 
+09-04-2018 13:16:55[ DEBUG ] Je recois 
+09-04-2018 13:16:55[ DEBUG ] Boucle 
+09-04-2018 13:16:55[ DEBUG ] J'attends 
+09-04-2018 13:16:55[ DEBUG ] Je recois 
+09-04-2018 13:16:55[ DEBUG ] Boucle 
+09-04-2018 13:16:55[ DEBUG ] J'attends 
+09-04-2018 13:16:55[ DEBUG ] Je recois 
+09-04-2018 13:16:55[ DEBUG ] Boucle 
+09-04-2018 13:16:55[ DEBUG ] J'attends 
+09-04-2018 13:16:55[ DEBUG ] Je recois 
+09-04-2018 13:16:56[ DEBUG ] Boucle 
+09-04-2018 13:16:56[ DEBUG ] J'attends 
+09-04-2018 13:16:56[ DEBUG ] Je recois 
+09-04-2018 13:16:56[ DEBUG ] Boucle 
+09-04-2018 13:16:56[ DEBUG ] J'attends 
+09-04-2018 13:16:56[ DEBUG ] Je recois 
+09-04-2018 13:16:56[ DEBUG ] Boucle 
+09-04-2018 13:16:56[ DEBUG ] J'attends 
+09-04-2018 13:16:56[ DEBUG ] Je recois 
+09-04-2018 13:16:56[ DEBUG ] Boucle 
+09-04-2018 13:16:56[ DEBUG ] J'attends 
+09-04-2018 13:16:56[ DEBUG ] Je recois 
+09-04-2018 13:16:56[ DEBUG ] Boucle 
+09-04-2018 13:16:56[ DEBUG ] J'attends 
+09-04-2018 13:16:56[ DEBUG ] Je recois 
+09-04-2018 13:16:57[ DEBUG ] Boucle 
+09-04-2018 13:16:57[ DEBUG ] J'attends 
+09-04-2018 13:16:57[ DEBUG ] Je recois 
+09-04-2018 13:16:57[ DEBUG ] Boucle 
+09-04-2018 13:16:57[ DEBUG ] J'attends 
+09-04-2018 13:16:57[ DEBUG ] Je recois 
+09-04-2018 13:16:57[ DEBUG ] Boucle 
+09-04-2018 13:16:57[ DEBUG ] J'attends 
+09-04-2018 13:16:57[ DEBUG ] Je recois 
+09-04-2018 13:16:57[ DEBUG ] Boucle 
+09-04-2018 13:16:57[ DEBUG ] J'attends 
+09-04-2018 13:16:57[ DEBUG ] Je recois 
+09-04-2018 13:16:57[ DEBUG ] Boucle 
+09-04-2018 13:16:57[ DEBUG ] J'attends 
+09-04-2018 13:16:57[ DEBUG ] Je recois 
+09-04-2018 13:16:58[ DEBUG ] Boucle 
+09-04-2018 13:16:58[ DEBUG ] J'attends 
+09-04-2018 13:16:58[ DEBUG ] Je recois 
+09-04-2018 13:16:58[ DEBUG ] Boucle 
+09-04-2018 13:16:58[ DEBUG ] J'attends 
+09-04-2018 13:16:58[ DEBUG ] Je recois 
+09-04-2018 13:16:58[ DEBUG ] Boucle 
+09-04-2018 13:16:58[ DEBUG ] J'attends 
+09-04-2018 13:16:58[ DEBUG ] Je recois 
+09-04-2018 13:16:58[ DEBUG ] Boucle 
+09-04-2018 13:16:58[ DEBUG ] J'attends 
+09-04-2018 13:16:58[ DEBUG ] Je recois 
+09-04-2018 13:16:58[ DEBUG ] Boucle 
+09-04-2018 13:16:58[ DEBUG ] J'attends 
+09-04-2018 13:16:58[ DEBUG ] Je recois 
+09-04-2018 13:16:59[ DEBUG ] Boucle 
+09-04-2018 13:16:59[ DEBUG ] J'attends 
+09-04-2018 13:16:59[ DEBUG ] Je recois 
+09-04-2018 13:16:59[ DEBUG ] Boucle 
+09-04-2018 13:16:59[ DEBUG ] J'attends 
+09-04-2018 13:16:59[ DEBUG ] Je recois 
+09-04-2018 13:16:59[ DEBUG ] Boucle 
+09-04-2018 13:16:59[ DEBUG ] J'attends 
+09-04-2018 13:16:59[ DEBUG ] Je recois 
+09-04-2018 13:16:59[ DEBUG ] Boucle 
+09-04-2018 13:16:59[ DEBUG ] J'attends 
+09-04-2018 13:16:59[ DEBUG ] Je recois 
+09-04-2018 13:16:59[ DEBUG ] Boucle 
+09-04-2018 13:16:59[ DEBUG ] J'attends 
+09-04-2018 13:16:59[ DEBUG ] Je recois 
+09-04-2018 13:16:59[ DEBUG ] Boucle 
+09-04-2018 13:16:59[ DEBUG ] J'attends 
+09-04-2018 13:17:00[ DEBUG ] Je recois 
+09-04-2018 13:17:00[ DEBUG ] Boucle 
+09-04-2018 13:17:00[ DEBUG ] J'attends 
+09-04-2018 13:17:00[ DEBUG ] Je recois 
+09-04-2018 13:17:00[ DEBUG ] Boucle 
+09-04-2018 13:17:00[ DEBUG ] J'attends 
+09-04-2018 13:17:00[ DEBUG ] Je recois 
+09-04-2018 13:17:00[ DEBUG ] Boucle 
+09-04-2018 13:17:00[ DEBUG ] J'attends 
+09-04-2018 13:17:00[ DEBUG ] Je recois 
+09-04-2018 13:17:00[ DEBUG ] Boucle 
+09-04-2018 13:17:00[ DEBUG ] J'attends 
+09-04-2018 13:17:00[ DEBUG ] Je recois 
+09-04-2018 13:17:00[ DEBUG ] Boucle 
+09-04-2018 13:17:00[ DEBUG ] J'attends 
+09-04-2018 13:17:00[ DEBUG ] Je recois 
+09-04-2018 13:17:01[ DEBUG ] Boucle 
+09-04-2018 13:17:01[ DEBUG ] J'attends 
+09-04-2018 13:17:01[ DEBUG ] Je recois 
+09-04-2018 13:17:01[ DEBUG ] Boucle 
+09-04-2018 13:17:01[ DEBUG ] J'attends 
+09-04-2018 13:17:01[ DEBUG ] Je recois 
+09-04-2018 13:17:01[ DEBUG ] Boucle 
+09-04-2018 13:17:01[ DEBUG ] J'attends 
+09-04-2018 13:17:01[ DEBUG ] Je recois 
+09-04-2018 13:17:01[ DEBUG ] Boucle 
+09-04-2018 13:17:01[ DEBUG ] J'attends 
+09-04-2018 13:17:01[ DEBUG ] Je recois 
+09-04-2018 13:17:01[ DEBUG ] Boucle 
+09-04-2018 13:17:01[ DEBUG ] J'attends 
+09-04-2018 13:17:01[ DEBUG ] Je recois 
+09-04-2018 13:17:02[ DEBUG ] Boucle 
+09-04-2018 13:17:02[ DEBUG ] J'attends 
+09-04-2018 13:17:02[ DEBUG ] Je recois 
+09-04-2018 13:17:02[ DEBUG ] Boucle 
+09-04-2018 13:17:02[ DEBUG ] J'attends 
+09-04-2018 13:17:02[ DEBUG ] Je recois 
+09-04-2018 13:17:02[ DEBUG ] Boucle 
+09-04-2018 13:17:02[ DEBUG ] J'attends 
+09-04-2018 13:17:02[ DEBUG ] Je recois 
+09-04-2018 13:17:02[ DEBUG ] Boucle 
+09-04-2018 13:17:02[ DEBUG ] J'attends 
+09-04-2018 13:17:02[ DEBUG ] Je recois 
+09-04-2018 13:17:02[ DEBUG ] Boucle 
+09-04-2018 13:17:02[ DEBUG ] J'attends 
+09-04-2018 13:17:02[ DEBUG ] Je recois 
+09-04-2018 13:17:03[ DEBUG ] Boucle 
+09-04-2018 13:17:03[ DEBUG ] J'attends 
+09-04-2018 13:17:03[ DEBUG ] Je recois 
+09-04-2018 13:17:03[ DEBUG ] Boucle 
+09-04-2018 13:17:03[ DEBUG ] J'attends 
+09-04-2018 13:17:03[ DEBUG ] Je recois 
+09-04-2018 13:17:03[ DEBUG ] Boucle 
+09-04-2018 13:17:03[ DEBUG ] J'attends 
+09-04-2018 13:17:03[ DEBUG ] Je recois 
+09-04-2018 13:17:03[ DEBUG ] Boucle 
+09-04-2018 13:17:03[ DEBUG ] J'attends 
+09-04-2018 13:17:03[ DEBUG ] Je recois 
+09-04-2018 13:17:03[ DEBUG ] Boucle 
+09-04-2018 13:17:03[ DEBUG ] J'attends 
+09-04-2018 13:17:03[ DEBUG ] Je recois 
+09-04-2018 13:17:03[ DEBUG ] Boucle 
+09-04-2018 13:17:03[ DEBUG ] J'attends 
+09-04-2018 13:17:03[ DEBUG ] Je recois 
+09-04-2018 13:17:04[ DEBUG ] Boucle 
+09-04-2018 13:17:04[ DEBUG ] J'attends 
+09-04-2018 13:17:04[ DEBUG ] Je recois 
+09-04-2018 13:17:04[ DEBUG ] Boucle 
+09-04-2018 13:17:04[ DEBUG ] J'attends 
+09-04-2018 13:17:04[ DEBUG ] Je recois 
+09-04-2018 13:17:04[ DEBUG ] Boucle 
+09-04-2018 13:17:04[ DEBUG ] J'attends 
+09-04-2018 13:17:04[ DEBUG ] Je recois 
+09-04-2018 13:17:04[ DEBUG ] Boucle 
+09-04-2018 13:17:04[ DEBUG ] J'attends 
+09-04-2018 13:17:04[ DEBUG ] Je recois 
+09-04-2018 13:17:05[ DEBUG ] Boucle 
+09-04-2018 13:17:05[ DEBUG ] J'attends 
+09-04-2018 13:17:05[ DEBUG ] Je recois 
+09-04-2018 13:17:05[ DEBUG ] Boucle 
+09-04-2018 13:17:05[ DEBUG ] J'attends 
+09-04-2018 13:17:05[ DEBUG ] Je recois 
+09-04-2018 13:17:05[ DEBUG ] Boucle 
+09-04-2018 13:17:05[ DEBUG ] J'attends 
+09-04-2018 13:17:05[ DEBUG ] Je recois 
+09-04-2018 13:17:05[ DEBUG ] Boucle 
+09-04-2018 13:17:05[ DEBUG ] J'attends 
+09-04-2018 13:17:05[ DEBUG ] Je recois 
+09-04-2018 13:17:05[ DEBUG ] Boucle 
+09-04-2018 13:17:05[ DEBUG ] J'attends 
+09-04-2018 13:17:05[ DEBUG ] Je recois 
+09-04-2018 13:17:05[ DEBUG ] Boucle 
+09-04-2018 13:17:05[ DEBUG ] J'attends 
+09-04-2018 13:17:05[ DEBUG ] Je recois 
+09-04-2018 13:17:06[ DEBUG ] Boucle 
+09-04-2018 13:17:06[ DEBUG ] J'attends 
+09-04-2018 13:17:06[ DEBUG ] Je recois 
+09-04-2018 13:17:06[ DEBUG ] Boucle 
+09-04-2018 13:17:06[ DEBUG ] J'attends 
+09-04-2018 13:17:06[ DEBUG ] Je recois 
+09-04-2018 13:17:06[ DEBUG ] Boucle 
+09-04-2018 13:17:06[ DEBUG ] J'attends 
+09-04-2018 13:17:06[ DEBUG ] Je recois 
+09-04-2018 13:17:06[ DEBUG ] Boucle 
+09-04-2018 13:17:06[ DEBUG ] J'attends 
+09-04-2018 13:17:06[ DEBUG ] Je recois 
+09-04-2018 13:17:06[ DEBUG ] Boucle 
+09-04-2018 13:17:06[ DEBUG ] J'attends 
+09-04-2018 13:17:06[ DEBUG ] Je recois 
+09-04-2018 13:17:07[ DEBUG ] Boucle 
+09-04-2018 13:17:07[ DEBUG ] J'attends 
+09-04-2018 13:17:07[ DEBUG ] Je recois 
+09-04-2018 13:17:07[ DEBUG ] Boucle 
+09-04-2018 13:17:07[ DEBUG ] J'attends 
+09-04-2018 13:17:07[ DEBUG ] Je recois 
+09-04-2018 13:17:07[ DEBUG ] Boucle 
+09-04-2018 13:17:07[ DEBUG ] J'attends 
+09-04-2018 13:17:07[ DEBUG ] Je recois 
+09-04-2018 13:17:07[ DEBUG ] Boucle 
+09-04-2018 13:17:07[ DEBUG ] J'attends 
+09-04-2018 13:17:07[ DEBUG ] Je recois 
+09-04-2018 13:17:07[ DEBUG ] Boucle 
+09-04-2018 13:17:07[ DEBUG ] J'attends 
+09-04-2018 13:17:07[ DEBUG ] Je recois 
+09-04-2018 13:17:08[ DEBUG ] Boucle 
+09-04-2018 13:17:08[ DEBUG ] J'attends 
+09-04-2018 13:17:08[ DEBUG ] Je recois 
+09-04-2018 13:17:08[ DEBUG ] Boucle 
+09-04-2018 13:17:08[ DEBUG ] J'attends 
+09-04-2018 13:17:08[ DEBUG ] Je recois 
+09-04-2018 13:17:08[ DEBUG ] Boucle 
+09-04-2018 13:17:08[ DEBUG ] J'attends 
+09-04-2018 13:17:08[ DEBUG ] Je recois 
+09-04-2018 13:17:08[ DEBUG ] Boucle 
+09-04-2018 13:17:08[ DEBUG ] J'attends 
+09-04-2018 13:17:08[ DEBUG ] Je recois 
+09-04-2018 13:17:08[ DEBUG ] Boucle 
+09-04-2018 13:17:08[ DEBUG ] J'attends 
+09-04-2018 13:17:08[ DEBUG ] Je recois 
+09-04-2018 13:17:09[ DEBUG ] Boucle 
+09-04-2018 13:17:09[ DEBUG ] J'attends 
+09-04-2018 13:17:09[ DEBUG ] Je recois 
+09-04-2018 13:17:09[ DEBUG ] Boucle 
+09-04-2018 13:17:09[ DEBUG ] J'attends 
+09-04-2018 13:17:09[ DEBUG ] Je recois 
+09-04-2018 13:17:09[ DEBUG ] Boucle 
+09-04-2018 13:17:09[ DEBUG ] J'attends 
+09-04-2018 13:17:09[ DEBUG ] Je recois 
+09-04-2018 13:17:09[ DEBUG ] Boucle 
+09-04-2018 13:17:09[ DEBUG ] J'attends 
+09-04-2018 13:17:09[ DEBUG ] Je recois 
+09-04-2018 13:17:09[ DEBUG ] Boucle 
+09-04-2018 13:17:09[ DEBUG ] J'attends 
+09-04-2018 13:17:09[ DEBUG ] Je recois 
+09-04-2018 13:17:10[ DEBUG ] Boucle 
+09-04-2018 13:17:10[ DEBUG ] J'attends 
+09-04-2018 13:17:10[ DEBUG ] Je recois 
+09-04-2018 13:17:10[ DEBUG ] Boucle 
+09-04-2018 13:17:10[ DEBUG ] J'attends 
+09-04-2018 13:17:10[ DEBUG ] Je recois 
+09-04-2018 13:17:10[ SERVEUR ][ ENTREE ] ClientRFID viens de ce connect?e
+09-04-2018 13:17:10[ DEBUG ] Boucle 
+09-04-2018 13:17:10[ DEBUG ] J'attends 
+09-04-2018 13:17:13[ ERROR ][ nonDef ]  Pas de photo
+09-04-2018 13:17:13[ nonDef ] Fin de procedure !
+09-04-2018 13:17:28[ DEBUG ] Je recois 
+09-04-2018 13:17:28[ DEBUG ] 00164102006D7223                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+09-04-2018 13:17:28[ DEBUG ] Type :41
+09-04-2018 13:17:29[ DEBUG ] Boucle 
+09-04-2018 13:17:29[ DEBUG ] J'attends 
+09-04-2018 13:21:28[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+09-04-2018 13:21:29[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+09-04-2018 13:21:29[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+09-04-2018 13:21:29[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+09-04-2018 13:21:29[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+09-04-2018 13:21:30[ INFO ][ UTILISATEUR ] Nouvelle utilisateur dans la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+09-04-2018 13:21:40[ INFO ] [ Utilisateur ] L'utilisateur quitte la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+09-04-2018 13:21:44[ SERVEUR ][ ENTREE ] ClientRFID viens de ce connect?e
+09-04-2018 13:21:44[ DEBUG ] Boucle 
+09-04-2018 13:21:44[ DEBUG ] J'attends 
+09-04-2018 13:22:00[ DEBUG ] Je recois 
+09-04-2018 13:22:00[ DEBUG ] 00164102006D7223                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+09-04-2018 13:22:00[ DEBUG ] Type :41
+09-04-2018 13:22:00[ nonDef ] [ RFID ] Demande d'acc?s avec l'id RFID 02006D7223
+09-04-2018 13:22:00[ nonDef ] [ RFID ] Acc?s autoris?
+09-04-2018 13:22:00[ INFO ] Sortie de l'event
+09-04-2018 13:22:00[ DEBUG ] Boucle 
+09-04-2018 13:22:00[ DEBUG ] J'attends 
+09-04-2018 13:22:01[ DEBUG ] Je recois 
+09-04-2018 13:22:01[ DEBUG ] 0007431                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+09-04-2018 13:22:01[ DEBUG ] Type :43
+09-04-2018 13:22:01[ DEBUG ] dechet :1
+09-04-2018 13:22:02[ nonDef ] [ RFID ] Type de dechet selectionner : 5
+09-04-2018 13:22:02[ nonDef ] [ RFID ] Poids du vehicule : 2500
+09-04-2018 13:22:02[ DEBUG ] Boucle 
+09-04-2018 13:22:02[ DEBUG ] J'attends 
+09-04-2018 13:22:02[ DEBUG ] Je recois 
+09-04-2018 13:22:02[ DEBUG ] 00114500100                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+09-04-2018 13:22:02[ DEBUG ] Type :45
+09-04-2018 13:22:27[ DEBUG ] Boucle 
+09-04-2018 13:22:27[ DEBUG ] J'attends 
+09-04-2018 13:22:27[ DEBUG ] Je recois 
+09-04-2018 13:22:27[ DEBUG ] 000647                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+09-04-2018 13:22:27[ DEBUG ] Type :47
+09-04-2018 13:22:27[ DEBUG ] Boucle 
+09-04-2018 13:22:27[ DEBUG ] J'attends 
+09-04-2018 13:22:28[ ERROR ][ UTILISATEUR ][ addUtilisateur ] MySql.Data.MySqlClient.MySqlException (0x80004005): Cannot add or update a child row: a foreign key constraint fails (`dechetterie`.`entree`, CONSTRAINT `TypeDechet` FOREIGN KEY (`TypeDechet_ID`) REFERENCES `typedechet` (`ID`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+   ? MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   ? MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   ? MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   ? MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   ? MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   ? MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   ? MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   ? DataBddProxy.addEntree(DataEntree e) dans c:\users\a125\source\repos\dechetterie\dechetterie-serveur\databddproxy.cpp:ligne 239
+   ? Dechetterie.addUtilisateur(String id_rfid, Int32 tDechet, Int32 poids, Byte[] photo) dans c:\users\a125\source\repos\dechetterie\dechetterie-serveur\dechetterie.cpp:ligne 263
+09-04-2018 13:22:28[ ERROR ][ CLIENT ][ ENTREE ] [ Send ] System.NullReferenceException: La r?f?rence d'objet n'est pas d?finie ? une instance d'un objet.
+   ? System.Net.Sockets.Socket.get_Connected()
+   ? Client.Send(Byte[] data) dans c:\users\a125\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 121
+09-04-2018 13:22:48[ ERROR ][ CLIENT ][ ENTREE ] [ Send ] System.NullReferenceException: La r?f?rence d'objet n'est pas d?finie ? une instance d'un objet.
+   ? System.Net.Sockets.Socket.get_Connected()
+   ? Client.Send(Byte[] data) dans c:\users\a125\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 121
+09-04-2018 13:22:48[ nonDef ] Fin de procedure !
+09-04-2018 13:54:31[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+09-04-2018 13:54:32[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+09-04-2018 13:54:32[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+09-04-2018 13:54:32[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+09-04-2018 13:54:32[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+09-04-2018 13:54:32[ ERROR ][ UTILISATEUR ] Utilisateur avec id RFID 02006D7223 Inconnu 
+09-04-2018 13:56:29[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+09-04-2018 13:56:29[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+09-04-2018 13:56:29[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+09-04-2018 13:56:29[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+09-04-2018 13:56:29[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+09-04-2018 13:56:29[ INFO ][ UTILISATEUR ] Nouvelle utilisateur dans la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+09-04-2018 13:56:39[ INFO ] [ Utilisateur ] L'utilisateur quitte la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+09-04-2018 13:56:45[ SERVEUR ][ ENTREE ] ClientRFID viens de ce connect?e
+09-04-2018 13:56:45[ DEBUG ] Boucle 
+09-04-2018 13:56:45[ DEBUG ] J'attends 
+09-04-2018 13:56:51[ DEBUG ] Je recois 
+09-04-2018 13:56:51[ INFO ] Sortie de l'event
+09-04-2018 13:56:51[ nonDef ] [ RFID ] Demande d'acc?s avec l'id RFID 02006D7223
+09-04-2018 13:56:51[ nonDef ] [ RFID ] Acc?s autoris?
+09-04-2018 13:56:51[ DEBUG ] Boucle 
+09-04-2018 13:56:51[ DEBUG ] J'attends 
+09-04-2018 13:56:54[ DEBUG ] Je recois 
+09-04-2018 13:56:54[ DEBUG ] dechet :1
+09-04-2018 13:56:54[ nonDef ] [ RFID ] Type de dechet selectionner : 1
+09-04-2018 13:56:54[ nonDef ] [ RFID ] Poids du vehicule : 2500
+09-04-2018 13:56:54[ DEBUG ] Boucle 
+09-04-2018 13:56:54[ DEBUG ] J'attends 
+09-04-2018 13:56:54[ DEBUG ] Je recois 
+09-04-2018 13:57:19[ DEBUG ] Boucle 
+09-04-2018 13:57:19[ DEBUG ] J'attends 
+09-04-2018 13:57:19[ INFO ][ UTILISATEUR ] Nouvelle utilisateur dans la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+09-04-2018 13:57:19[ ERROR ][ CLIENT ][ ENTREE ] [ Send ] System.NullReferenceException: La r?f?rence d'objet n'est pas d?finie ? une instance d'un objet.
+   ? System.Net.Sockets.Socket.get_Connected()
+   ? Client.Send(Byte[] data) dans c:\users\a125\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 121
+09-04-2018 13:57:19[ DEBUG ] Je recois 
+09-04-2018 13:57:20[ DEBUG ] Boucle 
+09-04-2018 13:57:20[ DEBUG ] J'attends 
+09-04-2018 13:57:39[ ERROR ][ CLIENT ][ ENTREE ] [ Send ] System.NullReferenceException: La r?f?rence d'objet n'est pas d?finie ? une instance d'un objet.
+   ? System.Net.Sockets.Socket.get_Connected()
+   ? Client.Send(Byte[] data) dans c:\users\a125\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 121
+09-04-2018 13:57:39[ nonDef ] Fin de procedure !
+09-04-2018 14:29:22[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+09-04-2018 14:29:22[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+09-04-2018 14:29:22[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+09-04-2018 14:29:22[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+09-04-2018 14:29:22[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+09-04-2018 14:29:22[ INFO ][ UTILISATEUR ] Nouvelle utilisateur dans la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+09-04-2018 14:29:32[ INFO ] [ Utilisateur ] L'utilisateur quitte la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+09-04-2018 14:29:39[ SERVEUR ][ ENTREE ] ClientRFID viens de ce connect?e
+09-04-2018 14:29:39[ DEBUG ] Boucle 
+09-04-2018 14:30:03[ INFO ] Sortie de l'event
+09-04-2018 14:30:03[ nonDef ] [ RFID ] Demande d'acc?s avec l'id RFID 02006D722f
+09-04-2018 14:31:00[ SERVEUR ][ ENTREE ] ClientRFID viens de ce connect?e
+09-04-2018 14:31:46[ SERVEUR ][ SORTIE ] ClientRFID viens de ce connect?e
+09-04-2018 14:31:46[ DEBUG ] Boucle 
+09-04-2018 14:32:55[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+09-04-2018 14:32:56[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+09-04-2018 14:32:56[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+09-04-2018 14:32:56[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+09-04-2018 14:32:56[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+09-04-2018 14:32:56[ INFO ][ UTILISATEUR ] Nouvelle utilisateur dans la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+09-04-2018 14:33:09[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+09-04-2018 14:33:09[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+09-04-2018 14:33:09[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+09-04-2018 14:33:09[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+09-04-2018 14:33:10[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+09-04-2018 14:33:10[ INFO ][ UTILISATEUR ] Nouvelle utilisateur dans la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+09-04-2018 14:33:13[ SERVEUR ][ ENTREE ] ClientRFID viens de ce connect?e
+09-04-2018 14:33:13[ DEBUG ] Boucle 
+09-04-2018 14:33:16[ PING ] Demande de ping de 127.0.0.1( ENTREE ClientRFID )
+09-04-2018 14:33:16[ DEBUG ] Boucle 
+09-04-2018 14:33:20[ INFO ] [ Utilisateur ] L'utilisateur quitte la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+09-04-2018 14:33:21[ PING ] Demande de ping de 127.0.0.1( ENTREE ClientRFID )
+09-04-2018 14:33:21[ DEBUG ] Boucle 
+09-04-2018 14:33:22[ PING ] Demande de ping de 127.0.0.1( ENTREE ClientRFID )
+09-04-2018 14:33:22[ DEBUG ] Boucle 
+09-04-2018 14:33:22[ PING ] Demande de ping de 127.0.0.1( ENTREE ClientRFID )
+09-04-2018 14:33:22[ DEBUG ] Boucle 
+09-04-2018 14:33:22[ PING ] Demande de ping de 127.0.0.1( ENTREE ClientRFID )
+09-04-2018 14:33:22[ DEBUG ] Boucle 
+09-04-2018 14:33:23[ PING ] Demande de ping de 127.0.0.1( ENTREE ClientRFID )
+09-04-2018 14:33:23[ DEBUG ] Boucle 
+09-04-2018 14:33:24[ PING ] Demande de ping de 127.0.0.1( ENTREE ClientRFID )
+09-04-2018 14:33:24[ DEBUG ] Boucle 
+09-04-2018 14:33:24[ PING ] Demande de ping de 127.0.0.1( ENTREE ClientRFID )
+09-04-2018 14:33:24[ DEBUG ] Boucle 
+09-04-2018 14:33:24[ PING ] Demande de ping de 127.0.0.1( ENTREE ClientRFID )
+09-04-2018 14:33:24[ DEBUG ] Boucle 
+09-04-2018 14:33:24[ PING ] Demande de ping de 127.0.0.1( ENTREE ClientRFID )
+09-04-2018 14:33:24[ DEBUG ] Boucle 
+09-04-2018 14:33:25[ PING ] Demande de ping de 127.0.0.1( ENTREE ClientRFID )
+09-04-2018 14:33:25[ DEBUG ] Boucle 
+09-04-2018 14:33:25[ PING ] Demande de ping de 127.0.0.1( ENTREE ClientRFID )
+09-04-2018 14:33:25[ DEBUG ] Boucle 
+09-04-2018 14:33:25[ PING ] Demande de ping de 127.0.0.1( ENTREE ClientRFID )
+09-04-2018 14:33:25[ DEBUG ] Boucle 
+09-04-2018 14:33:25[ PING ] Demande de ping de 127.0.0.1( ENTREE ClientRFID )
+09-04-2018 14:33:25[ DEBUG ] Boucle 
+09-04-2018 14:33:27[ nonDef ] [ RFID ] Demande d'acc?s avec l'id RFID 02006D7223
+09-04-2018 14:33:27[ nonDef ] [ RFID ] Acc?s autoris?
+09-04-2018 14:33:27[ INFO ] Sortie de l'event
+09-04-2018 14:33:27[ DEBUG ] Boucle 
+09-04-2018 14:33:29[ DEBUG ] dechet :1
+09-04-2018 14:33:29[ DEBUG ] Boucle 
+09-04-2018 14:33:29[ nonDef ] [ RFID ] Type de dechet selectionner : 1
+09-04-2018 14:33:29[ nonDef ] [ RFID ] Poids du vehicule : 2500

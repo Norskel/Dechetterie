@@ -12,6 +12,8 @@ Groupe::Groupe(id_groupe id,IPAddress ^ listenip, int listenPort, IPAddress ^ ip
 	_srv = gcnew Serveur(listenip, listenPort, id, _listClient);
 	_srv->Start();
 
+	_idGroupe = id;
+
 	this->_listClient->ClientRFID->AccesDemand += gcnew AccesDemandDelegate(this, &Groupe::AccesDemandEvent);
 
 	_bdd = DataBddProxy::getDataBddProxy();

@@ -2,8 +2,10 @@
 #include "Protocole\Protocole.h"
 #include "Client.h"
 
-#define TIMEOUT_GET_DECHET 600 //*0.5s
+#define TIMEOUT_GET_DECHET 30 //*0.5s
 #define TIMEOUT_GET_PHOTO 60 //*0.5s
+
+using namespace System::Windows::Forms;
 
 delegate void AccesDemandDelegate(String^);
 
@@ -13,8 +15,8 @@ protected:
 	array<Byte>^ _photo = nullptr;
 	String^ _RFID = nullptr;
 	int _dechet = 0;
-	Mutex^ m = gcnew Mutex();
 	SetIntDelegate^ setDechetDelegate;
+	Thread^ accesDemandThread;
 
 	void fctThread() override
 	{
@@ -23,19 +25,20 @@ protected:
 			
 			if (_clientSocket != nullptr)
 			{
-				
+				Logger::PrintLog(EnteteCode::DEBUG, "Boucle ");
 				try
 				{
 					if (_clientSocket->Connected)
 					{
+						//Logger::PrintLog(EnteteCode::DEBUG, "J'attends ");
 						array<Byte>^ data = gcnew array<Byte>(1024);
 						_clientSocket->Receive(data);
-						Logger::PrintLog(EnteteCode::DEBUG, "Je recois ");
+						//Logger::PrintLog(EnteteCode::DEBUG, "Je recois ");
 						ProtocolMsg^ pm = protocole->translateReceive(data);
 
 						Encoding^ encoder = Encoding::ASCII;
-						Logger::PrintLog(EnteteCode::DEBUG, encoder->GetString(data));
-						Logger::PrintLog(EnteteCode::DEBUG,"Type :" + pm->type);
+						//Logger::PrintLog(EnteteCode::DEBUG, encoder->GetString(data));
+						//Logger::PrintLog(EnteteCode::DEBUG,"Type :" + pm->type);
 						if (pm->type == protocole->GetTypeProtocoleByID("AllPing"))
 						{
 							this->Send(protocole->RetourPing());
@@ -46,8 +49,8 @@ protected:
 							if (pm->type == protocole->GetTypeProtocoleByID("RfDAcces"))
 							{
 								_RFID = pm->getData1String();
-								AccesDemand(_RFID);
-								//Logger::PrintLog("");
+								accesDemandThread->Start(_RFID);
+								Logger::PrintLog("Sortie de l'event");
 							}
 							else
 							{
@@ -60,11 +63,11 @@ protected:
 								{
 									if (pm->type == protocole->GetTypeProtocoleByID("RfDechet"))
 									{
-										m->WaitOne();
+										//m->WaitOne();
 										Logger::PrintLog(EnteteCode::DEBUG, "dechet :" + pm->getData1Int());
 										this->_dechet = pm->getData1Int();
-										m->ReleaseMutex();
-										this->Invoke((this->setDechetDelegate), pm->getData1Int());
+										//m->ReleaseMutex();
+										
 									}
 									else
 									{
@@ -83,7 +86,7 @@ protected:
 				catch (Exception^e)
 				{
 
-					//Console::WriteLine("[ Client ][ Thread Receive ]" + e);
+					Console::WriteLine("[ Client ][ Thread Receive ]" + e);
 
 				}
 			}
@@ -137,11 +140,16 @@ protected:
 
 		_photo = photo;
 	}
-
+	void AccesDemandEvent(Object^ o)
+	{
+		AccesDemand((String^)o);
+	}
 public:
 	event AccesDemandDelegate^ AccesDemand;
 	ClientRFID(id_groupe groupe, IPAddress^ip) : Client(groupe, id_client::ClientRFID, ip)
 	{
+		accesDemandThread = gcnew Thread(gcnew ParameterizedThreadStart(this,&ClientRFID::AccesDemandEvent));
+		accesDemandThread->Name = "Thread Acces Demand";
 		setDechetDelegate += gcnew SetIntDelegate(this, &ClientRFID::setDechet);
 
 	}
@@ -173,7 +181,7 @@ public:
 		int r;
 		while (_dechet == 0 && timeout < TIMEOUT_GET_DECHET)
 		{
-			Thread::Sleep(10);
+			Thread::Sleep(500);
 			timeout++;
 		}
 		if (timeout >= TIMEOUT_GET_DECHET)

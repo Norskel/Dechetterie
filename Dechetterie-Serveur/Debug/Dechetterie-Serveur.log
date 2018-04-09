@@ -1,84 +1,78 @@
 ﻿  Dechetterie.cpp
-c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\Enum.h(3): warning C4091: 'static value ' : ignoré à gauche de 'id_groupe' quand aucune variable n'est déclarée
-c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\Enum.h(4): warning C4091: 'static value ' : ignoré à gauche de 'id_client' quand aucune variable n'est déclarée
-c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\Logger.h(8): warning C4091: 'static value ' : ignoré à gauche de 'EnteteCode' quand aucune variable n'est déclarée
-c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\Logger.h(24): warning C4091: 'static ' : ignoré à gauche de 'Logger' quand aucune variable n'est déclarée
-c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\Client.h(55): warning C4101: 'e' : variable locale non référencée
-c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\Client.h(152): warning C4101: 'e' : variable locale non référencée
-c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\ClientBarriere.h(57): warning C4101: 'e' : variable locale non référencée
-c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\ClientBalance.h(48): warning C4101: 'e' : variable locale non référencée
-c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\ClientRFID.h(81): warning C4101: 'e' : variable locale non référencée
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\Enum.h(3): warning C4091: 'static value ' : ignoré à gauche de 'id_groupe' quand aucune variable n'est déclarée
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\Enum.h(4): warning C4091: 'static value ' : ignoré à gauche de 'id_client' quand aucune variable n'est déclarée
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\Logger.h(8): warning C4091: 'static value ' : ignoré à gauche de 'EnteteCode' quand aucune variable n'est déclarée
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\Logger.h(24): warning C4091: 'static ' : ignoré à gauche de 'Logger' quand aucune variable n'est déclarée
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\Client.h(57): warning C4101: 'e' : variable locale non référencée
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\Client.h(154): warning C4101: 'e' : variable locale non référencée
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\ClientBarriere.h(57): warning C4101: 'e' : variable locale non référencée
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\ClientBalance.h(48): warning C4101: 'e' : variable locale non référencée
   Entree.cpp
-c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\Enum.h(3): warning C4091: 'static value ' : ignoré à gauche de 'id_groupe' quand aucune variable n'est déclarée
-c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\Enum.h(4): warning C4091: 'static value ' : ignoré à gauche de 'id_client' quand aucune variable n'est déclarée
-c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\Logger.h(8): warning C4091: 'static value ' : ignoré à gauche de 'EnteteCode' quand aucune variable n'est déclarée
-c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\Logger.h(24): warning C4091: 'static ' : ignoré à gauche de 'Logger' quand aucune variable n'est déclarée
-c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\Client.h(55): warning C4101: 'e' : variable locale non référencée
-c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\Client.h(152): warning C4101: 'e' : variable locale non référencée
-c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\ClientBarriere.h(57): warning C4101: 'e' : variable locale non référencée
-c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\ClientBalance.h(48): warning C4101: 'e' : variable locale non référencée
-c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\ClientRFID.h(81): warning C4101: 'e' : variable locale non référencée
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\Enum.h(3): warning C4091: 'static value ' : ignoré à gauche de 'id_groupe' quand aucune variable n'est déclarée
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\Enum.h(4): warning C4091: 'static value ' : ignoré à gauche de 'id_client' quand aucune variable n'est déclarée
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\Logger.h(8): warning C4091: 'static value ' : ignoré à gauche de 'EnteteCode' quand aucune variable n'est déclarée
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\Logger.h(24): warning C4091: 'static ' : ignoré à gauche de 'Logger' quand aucune variable n'est déclarée
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\Client.h(57): warning C4101: 'e' : variable locale non référencée
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\Client.h(154): warning C4101: 'e' : variable locale non référencée
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\ClientBarriere.h(57): warning C4101: 'e' : variable locale non référencée
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\ClientBalance.h(48): warning C4101: 'e' : variable locale non référencée
   Groupe.cpp
-c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\Enum.h(3): warning C4091: 'static value ' : ignoré à gauche de 'id_groupe' quand aucune variable n'est déclarée
-c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\Enum.h(4): warning C4091: 'static value ' : ignoré à gauche de 'id_client' quand aucune variable n'est déclarée
-c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\Logger.h(8): warning C4091: 'static value ' : ignoré à gauche de 'EnteteCode' quand aucune variable n'est déclarée
-c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\Logger.h(24): warning C4091: 'static ' : ignoré à gauche de 'Logger' quand aucune variable n'est déclarée
-c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\Client.h(55): warning C4101: 'e' : variable locale non référencée
-c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\Client.h(152): warning C4101: 'e' : variable locale non référencée
-c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\ClientBarriere.h(57): warning C4101: 'e' : variable locale non référencée
-c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\ClientBalance.h(48): warning C4101: 'e' : variable locale non référencée
-c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\ClientRFID.h(81): warning C4101: 'e' : variable locale non référencée
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\Enum.h(3): warning C4091: 'static value ' : ignoré à gauche de 'id_groupe' quand aucune variable n'est déclarée
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\Enum.h(4): warning C4091: 'static value ' : ignoré à gauche de 'id_client' quand aucune variable n'est déclarée
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\Logger.h(8): warning C4091: 'static value ' : ignoré à gauche de 'EnteteCode' quand aucune variable n'est déclarée
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\Logger.h(24): warning C4091: 'static ' : ignoré à gauche de 'Logger' quand aucune variable n'est déclarée
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\Client.h(57): warning C4101: 'e' : variable locale non référencée
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\Client.h(154): warning C4101: 'e' : variable locale non référencée
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\ClientBarriere.h(57): warning C4101: 'e' : variable locale non référencée
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\ClientBalance.h(48): warning C4101: 'e' : variable locale non référencée
   Serveur.cpp
-c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\Enum.h(3): warning C4091: 'static value ' : ignoré à gauche de 'id_groupe' quand aucune variable n'est déclarée
-c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\Enum.h(4): warning C4091: 'static value ' : ignoré à gauche de 'id_client' quand aucune variable n'est déclarée
-c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\Logger.h(8): warning C4091: 'static value ' : ignoré à gauche de 'EnteteCode' quand aucune variable n'est déclarée
-c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\Logger.h(24): warning C4091: 'static ' : ignoré à gauche de 'Logger' quand aucune variable n'est déclarée
-c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\Client.h(55): warning C4101: 'e' : variable locale non référencée
-c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\Client.h(152): warning C4101: 'e' : variable locale non référencée
-c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\ClientBarriere.h(57): warning C4101: 'e' : variable locale non référencée
-c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\ClientBalance.h(48): warning C4101: 'e' : variable locale non référencée
-c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\ClientRFID.h(81): warning C4101: 'e' : variable locale non référencée
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\Enum.h(3): warning C4091: 'static value ' : ignoré à gauche de 'id_groupe' quand aucune variable n'est déclarée
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\Enum.h(4): warning C4091: 'static value ' : ignoré à gauche de 'id_client' quand aucune variable n'est déclarée
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\Logger.h(8): warning C4091: 'static value ' : ignoré à gauche de 'EnteteCode' quand aucune variable n'est déclarée
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\Logger.h(24): warning C4091: 'static ' : ignoré à gauche de 'Logger' quand aucune variable n'est déclarée
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\Client.h(57): warning C4101: 'e' : variable locale non référencée
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\Client.h(154): warning C4101: 'e' : variable locale non référencée
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\ClientBarriere.h(57): warning C4101: 'e' : variable locale non référencée
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\ClientBalance.h(48): warning C4101: 'e' : variable locale non référencée
   Sortie.cpp
-c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\Enum.h(3): warning C4091: 'static value ' : ignoré à gauche de 'id_groupe' quand aucune variable n'est déclarée
-c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\Enum.h(4): warning C4091: 'static value ' : ignoré à gauche de 'id_client' quand aucune variable n'est déclarée
-c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\Logger.h(8): warning C4091: 'static value ' : ignoré à gauche de 'EnteteCode' quand aucune variable n'est déclarée
-c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\Logger.h(24): warning C4091: 'static ' : ignoré à gauche de 'Logger' quand aucune variable n'est déclarée
-c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\Client.h(55): warning C4101: 'e' : variable locale non référencée
-c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\Client.h(152): warning C4101: 'e' : variable locale non référencée
-c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\ClientBarriere.h(57): warning C4101: 'e' : variable locale non référencée
-c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\ClientBalance.h(48): warning C4101: 'e' : variable locale non référencée
-c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\ClientRFID.h(81): warning C4101: 'e' : variable locale non référencée
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\Enum.h(3): warning C4091: 'static value ' : ignoré à gauche de 'id_groupe' quand aucune variable n'est déclarée
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\Enum.h(4): warning C4091: 'static value ' : ignoré à gauche de 'id_client' quand aucune variable n'est déclarée
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\Logger.h(8): warning C4091: 'static value ' : ignoré à gauche de 'EnteteCode' quand aucune variable n'est déclarée
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\Logger.h(24): warning C4091: 'static ' : ignoré à gauche de 'Logger' quand aucune variable n'est déclarée
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\Client.h(57): warning C4101: 'e' : variable locale non référencée
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\Client.h(154): warning C4101: 'e' : variable locale non référencée
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\ClientBarriere.h(57): warning C4101: 'e' : variable locale non référencée
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\ClientBalance.h(48): warning C4101: 'e' : variable locale non référencée
   Source.cpp
-c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\Enum.h(3): warning C4091: 'static value ' : ignoré à gauche de 'id_groupe' quand aucune variable n'est déclarée
-c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\Enum.h(4): warning C4091: 'static value ' : ignoré à gauche de 'id_client' quand aucune variable n'est déclarée
-c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\Logger.h(8): warning C4091: 'static value ' : ignoré à gauche de 'EnteteCode' quand aucune variable n'est déclarée
-c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\Logger.h(24): warning C4091: 'static ' : ignoré à gauche de 'Logger' quand aucune variable n'est déclarée
-c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\Client.h(55): warning C4101: 'e' : variable locale non référencée
-c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\Client.h(152): warning C4101: 'e' : variable locale non référencée
-c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\ClientBarriere.h(57): warning C4101: 'e' : variable locale non référencée
-c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\ClientBalance.h(48): warning C4101: 'e' : variable locale non référencée
-c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\ClientRFID.h(81): warning C4101: 'e' : variable locale non référencée
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\Enum.h(3): warning C4091: 'static value ' : ignoré à gauche de 'id_groupe' quand aucune variable n'est déclarée
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\Enum.h(4): warning C4091: 'static value ' : ignoré à gauche de 'id_client' quand aucune variable n'est déclarée
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\Logger.h(8): warning C4091: 'static value ' : ignoré à gauche de 'EnteteCode' quand aucune variable n'est déclarée
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\Logger.h(24): warning C4091: 'static ' : ignoré à gauche de 'Logger' quand aucune variable n'est déclarée
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\Client.h(57): warning C4101: 'e' : variable locale non référencée
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\Client.h(154): warning C4101: 'e' : variable locale non référencée
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\ClientBarriere.h(57): warning C4101: 'e' : variable locale non référencée
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\ClientBalance.h(48): warning C4101: 'e' : variable locale non référencée
 Source.cpp(7): warning C4005: 'PIPE_NAME_USER_INFOS_SERV' : redéfinition de macro
-  c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\Dechetterie.h(15): note: voir la définition précédente de 'PIPE_NAME_USER_INFOS_SERV'
+  c:\users\a125\source\repos\dechetterie\dechetterie-serveur\Dechetterie.h(15): note: voir la définition précédente de 'PIPE_NAME_USER_INFOS_SERV'
   Génération de code en cours...
-c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h(309): warning C4715: 'Protocole::getTypeMessageByType' : les chemins de contrôle ne retournent pas tous une valeur
-c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h(320): warning C4715: 'Protocole::GetTypeProtocoleByID' : les chemins de contrôle ne retournent pas tous une valeur
-c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h(297): warning C4715: 'Protocole::translateByID' : les chemins de contrôle ne retournent pas tous une valeur
-c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h(309): warning C4715: 'Protocole::getTypeMessageByType' : les chemins de contrôle ne retournent pas tous une valeur
-c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h(320): warning C4715: 'Protocole::GetTypeProtocoleByID' : les chemins de contrôle ne retournent pas tous une valeur
-c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h(297): warning C4715: 'Protocole::translateByID' : les chemins de contrôle ne retournent pas tous une valeur
-c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h(309): warning C4715: 'Protocole::getTypeMessageByType' : les chemins de contrôle ne retournent pas tous une valeur
-c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h(320): warning C4715: 'Protocole::GetTypeProtocoleByID' : les chemins de contrôle ne retournent pas tous une valeur
-c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h(297): warning C4715: 'Protocole::translateByID' : les chemins de contrôle ne retournent pas tous une valeur
-c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h(309): warning C4715: 'Protocole::getTypeMessageByType' : les chemins de contrôle ne retournent pas tous une valeur
-c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h(320): warning C4715: 'Protocole::GetTypeProtocoleByID' : les chemins de contrôle ne retournent pas tous une valeur
-c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h(297): warning C4715: 'Protocole::translateByID' : les chemins de contrôle ne retournent pas tous une valeur
-c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h(309): warning C4715: 'Protocole::getTypeMessageByType' : les chemins de contrôle ne retournent pas tous une valeur
-c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h(320): warning C4715: 'Protocole::GetTypeProtocoleByID' : les chemins de contrôle ne retournent pas tous une valeur
-c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h(297): warning C4715: 'Protocole::translateByID' : les chemins de contrôle ne retournent pas tous une valeur
-c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h(309): warning C4715: 'Protocole::getTypeMessageByType' : les chemins de contrôle ne retournent pas tous une valeur
-c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h(320): warning C4715: 'Protocole::GetTypeProtocoleByID' : les chemins de contrôle ne retournent pas tous une valeur
-c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h(297): warning C4715: 'Protocole::translateByID' : les chemins de contrôle ne retournent pas tous une valeur
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h(309): warning C4715: 'Protocole::getTypeMessageByType' : les chemins de contrôle ne retournent pas tous une valeur
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h(320): warning C4715: 'Protocole::GetTypeProtocoleByID' : les chemins de contrôle ne retournent pas tous une valeur
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h(297): warning C4715: 'Protocole::translateByID' : les chemins de contrôle ne retournent pas tous une valeur
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h(309): warning C4715: 'Protocole::getTypeMessageByType' : les chemins de contrôle ne retournent pas tous une valeur
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h(320): warning C4715: 'Protocole::GetTypeProtocoleByID' : les chemins de contrôle ne retournent pas tous une valeur
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h(297): warning C4715: 'Protocole::translateByID' : les chemins de contrôle ne retournent pas tous une valeur
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h(309): warning C4715: 'Protocole::getTypeMessageByType' : les chemins de contrôle ne retournent pas tous une valeur
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h(320): warning C4715: 'Protocole::GetTypeProtocoleByID' : les chemins de contrôle ne retournent pas tous une valeur
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h(297): warning C4715: 'Protocole::translateByID' : les chemins de contrôle ne retournent pas tous une valeur
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h(309): warning C4715: 'Protocole::getTypeMessageByType' : les chemins de contrôle ne retournent pas tous une valeur
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h(320): warning C4715: 'Protocole::GetTypeProtocoleByID' : les chemins de contrôle ne retournent pas tous une valeur
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h(297): warning C4715: 'Protocole::translateByID' : les chemins de contrôle ne retournent pas tous une valeur
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h(309): warning C4715: 'Protocole::getTypeMessageByType' : les chemins de contrôle ne retournent pas tous une valeur
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h(320): warning C4715: 'Protocole::GetTypeProtocoleByID' : les chemins de contrôle ne retournent pas tous une valeur
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h(297): warning C4715: 'Protocole::translateByID' : les chemins de contrôle ne retournent pas tous une valeur
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h(309): warning C4715: 'Protocole::getTypeMessageByType' : les chemins de contrôle ne retournent pas tous une valeur
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h(320): warning C4715: 'Protocole::GetTypeProtocoleByID' : les chemins de contrôle ne retournent pas tous une valeur
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h(297): warning C4715: 'Protocole::translateByID' : les chemins de contrôle ne retournent pas tous une valeur
   AssemblyInfo.obj : /DEBUG:FASTLINK n'est pas pris en charge en présence de code managé ; redémarrage de l'édition des liens avec /DEBUG:FULL
-  Dechetterie-Serveur.vcxproj -> C:\Users\Martin KLEIN-NORTH\Source\Repos\Dechetterie\Debug\Dechetterie-Serveur.exe
-  Dechetterie-Serveur.vcxproj -> C:\Users\Martin KLEIN-NORTH\Source\Repos\Dechetterie\Debug\Dechetterie-Serveur.pdb (Partial PDB)
+  Dechetterie-Serveur.vcxproj -> C:\Users\A125\Source\Repos\Dechetterie\Debug\Dechetterie-Serveur.exe
+  Dechetterie-Serveur.vcxproj -> C:\Users\A125\Source\Repos\Dechetterie\Debug\Dechetterie-Serveur.pdb (Partial PDB)
