@@ -151,6 +151,7 @@
     <ClInclude Include="Enum.h" />
     <ClInclude Include="Groupe.h" />
     <ClInclude Include="IDataBdd.h" />
+    <ClInclude Include="Interface.h" />
     <ClInclude Include="Logger.h" />
     <ClInclude Include="Protocole\Protocole.h" />
     <ClInclude Include="Protocole\StructProtocolMsg.h" />
@@ -178,6 +179,7 @@
     <ClCompile Include="Dechetterie.cpp" />
     <ClCompile Include="Entree.cpp" />
     <ClCompile Include="Groupe.cpp" />
+    <ClCompile Include="Interface.cpp" />
     <ClCompile Include="Logger.cpp" />
     <ClCompile Include="Serveur.cpp" />
     <ClCompile Include="Sortie.cpp" />

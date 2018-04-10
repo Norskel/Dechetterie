@@ -26,7 +26,7 @@ private:
 		_listTypeMsg->Add(gcnew TypeMessage("brOuvre",31, 1, "Ouvrir Barrière"));
 		_listTypeMsg->Add(gcnew TypeMessage("brFerme",32, 1, "Fermé Barrière"));
 		_listTypeMsg->Add(gcnew TypeMessage("brDPos",33, 1, "Demande de la position de la barrière"));
-		_listTypeMsg->Add(gcnew TypeMessage("brRDPos",34, 3, "Retour de la position de la barrière", "Etat", "int", 3));
+		_listTypeMsg->Add(gcnew TypeMessage("brRDPos",34, 3, "Retour de la position de la barrière", "Pos", "int", 3));
 
 		_listTypeMsg->Add(gcnew TypeMessage("RfDAcces",41, 4, "Demande d'accès", "ID RFID", "string", 10));
 		_listTypeMsg->Add(gcnew TypeMessage("RfRDAcces",42, 1, "Retour demande d'accès", "Autorisation", "bool", 1));
@@ -38,6 +38,16 @@ private:
 
 		_listTypeMsg->Add(gcnew TypeMessage("AllPing",10, 0, "Ping"));
 		_listTypeMsg->Add(gcnew TypeMessage("AllRPing",11, 0, "Retour Ping"));
+
+		_listTypeMsg->Add(gcnew TypeMessage("inEtatClient", 61, 5, "Demande de l'état des clients"));
+		_listTypeMsg->Add(gcnew TypeMessage("inREtatClient", 62, 1, "Retour de l'état des clients","Etat des clients","Byte",6));
+		_listTypeMsg->Add(gcnew TypeMessage("inOuvre", 63, 5, "Ouvrir Barrière","Groupe","int",1));
+		_listTypeMsg->Add(gcnew TypeMessage("inFerme", 64, 5, "Fermé Barrière", "Groupe", "int", 1));
+		_listTypeMsg->Add(gcnew TypeMessage("inDPos", 65, 5, "Demande de la position de la barrière", "Groupe", "int", 1));
+		_listTypeMsg->Add(gcnew TypeMessage("inRDPos", 66, 1, "Retour de la position de la barrière", "Groupe", "int", 1,"Pos","int",3));
+		_listTypeMsg->Add(gcnew TypeMessage("inStop", 67, 5, "Arret du Serveur"));
+
+
 	}
 
 	//copie le tableau b dans le tableau a à partir de ai
@@ -217,6 +227,36 @@ public:
 	{
 		return translate(GetTypeProtocoleByID("AllRPing"), "");
 	}
+
+	array<Byte>^ InterfaceGetEtatClients()
+	{
+		return translate(GetTypeProtocoleByID("inEtatClient"), "");
+	}
+	array<Byte>^ InterfaceRetourGetEtatClients(String^ etat)
+	{
+		return translate(GetTypeProtocoleByID("inREtatClient"),etat);
+	}
+	array<Byte>^ InterfaceOuvrirBarriere(int groupe)
+	{
+		return translate(GetTypeProtocoleByID("inOuvre"), addData(1, groupe));
+	}
+	array<Byte>^ InterfaceFermerBarriere(int groupe)
+	{
+		return translate(GetTypeProtocoleByID("inFerme"), addData(1, groupe));
+	}
+	array<Byte>^ InterfaceGetPositionBarriere(int groupe)
+	{
+		return translate(GetTypeProtocoleByID("brDPos"), addData(1, groupe));
+	}
+	array<Byte>^ InterfaceRetourGetPositionBarriere(int groupe,int pos)
+	{
+		array<Byte>^ t = gcnew array<Byte>(4);
+		t[0] = groupe;
+		cpyTableByteI(t, 3, addData(3, pos));
+		return translate(GetTypeProtocoleByID("brRDPos"), t);
+	}
+
+
 
 	List<TypeMessage^>^  GetListTypeMessage()
 	{

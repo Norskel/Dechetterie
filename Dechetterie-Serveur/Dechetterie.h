@@ -10,8 +10,9 @@
 #include "Protocole\StructTypeMessage.h"
 #include "StructDataConfigServeur.h"
 #include "Logger.h"
+#include "Interface.h"
 
-#define PIPE_NAME_STATE_SERV "StateServeur"
+#define PIPE_NAME_INTER_SERV "InterServeur"
 #define PIPE_NAME_USER_INFOS_SERV "UserServeur"
 #define INTERFACE_PROCESS_NAME "Dechetterie-Interface"  
 
@@ -28,6 +29,7 @@ using namespace System::Diagnostics;
 
 ref class Entree;
 ref class Sortie;
+ref class Interface;
 
 ref class Dechetterie
 {
@@ -37,6 +39,9 @@ private:
 	DataConfigServeur^ _config;
 	Sortie^ _sortie;
 	Entree^ _entree;
+
+	Interface^ servInter;
+
 	static List<Client^>^ _listClient = gcnew List<Client^>;
 
 	NamedPipeServerStream^ _pipeServerState;

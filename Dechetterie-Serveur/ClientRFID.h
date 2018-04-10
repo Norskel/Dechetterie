@@ -49,7 +49,10 @@ protected:
 							if (pm->type == protocole->GetTypeProtocoleByID("RfDAcces"))
 							{
 								_RFID = pm->getData1String();
+								accesDemandThread = gcnew Thread(gcnew ParameterizedThreadStart(this, &ClientRFID::AccesDemandEvent));
+								accesDemandThread->Name = "Thread Acces Demand";
 								accesDemandThread->Start(_RFID);
+								
 								Logger::PrintLog("Sortie de l'event");
 							}
 							else
@@ -143,13 +146,17 @@ protected:
 	void AccesDemandEvent(Object^ o)
 	{
 		AccesDemand((String^)o);
+		Console::WriteLine("Sortie de l'event acces");
+		accesDemandThread->Abort();
+		//accesDemandThread->Join();
+		Console::WriteLine("event acces" + accesDemandThread->IsAlive);
+		
 	}
 public:
 	event AccesDemandDelegate^ AccesDemand;
 	ClientRFID(id_groupe groupe, IPAddress^ip) : Client(groupe, id_client::ClientRFID, ip)
 	{
-		accesDemandThread = gcnew Thread(gcnew ParameterizedThreadStart(this,&ClientRFID::AccesDemandEvent));
-		accesDemandThread->Name = "Thread Acces Demand";
+
 		setDechetDelegate += gcnew SetIntDelegate(this, &ClientRFID::setDechet);
 
 	}

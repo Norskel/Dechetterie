@@ -82,3 +82,13 @@ Boolean Groupe::TestRfidID(String ^ rfid)
 	}
 
 }
+
+String ^ Groupe::GetStateAllClient()
+{
+	String^ r = "";
+	if (_listClient->ClientBalance->getState()) { r += 1; } else { r += 0; }
+	if (_listClient->ClientBarriere->getState()) { r += 1; } else { r += 0; }
+	if (_listClient->ClientRFID->getState()) { r += 1; } else { r += 0; }
+	return r;
+
+}

@@ -4977,3 +4977,399 @@
 09-04-2018 14:33:29[ DEBUG ] Boucle 
 09-04-2018 14:33:29[ nonDef ] [ RFID ] Type de dechet selectionner : 1
 09-04-2018 14:33:29[ nonDef ] [ RFID ] Poids du vehicule : 2500
+09-04-2018 18:21:28[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+09-04-2018 18:21:29[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+09-04-2018 18:21:29[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+09-04-2018 18:21:29[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+09-04-2018 18:21:29[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+09-04-2018 18:21:29[ INFO ][ UTILISATEUR ] Nouvelle utilisateur dans la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+09-04-2018 18:21:39[ INFO ] [ Utilisateur ] L'utilisateur quitte la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+09-04-2018 18:22:03[ SERVEUR ][ ENTREE ] ClientRFID viens de ce connect?e
+09-04-2018 18:22:03[ DEBUG ] Boucle 
+09-04-2018 18:22:23[ ENTREE ] [ RFID ] Demande d'acc?s avec l'id RFID 02006D7223
+09-04-2018 18:22:23[ INFO ] Sortie de l'event
+09-04-2018 18:22:23[ ENTREE ] [ RFID ] Acc?s autoris?
+09-04-2018 18:22:23[ DEBUG ] Boucle 
+09-04-2018 18:22:24[ DEBUG ] dechet :1
+09-04-2018 18:22:24[ DEBUG ] Boucle 
+09-04-2018 18:22:24[ ENTREE ] [ RFID ] Type de dechet selectionner : 1
+09-04-2018 18:22:24[ ENTREE ] [ RFID ] Poids du vehicule : 2500
+09-04-2018 18:22:25[ DEBUG ] Boucle 
+09-04-2018 18:22:25[ DEBUG ] Boucle 
+09-04-2018 18:22:25[ INFO ][ UTILISATEUR ] Nouvelle utilisateur dans la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+09-04-2018 18:22:25[ ERROR ][ CLIENT ][ ENTREE ] [ Send ] System.NullReferenceException: La r?f?rence d'objet n'est pas d?finie ? une instance d'un objet.
+   ? System.Net.Sockets.Socket.get_Connected()
+   ? Client.Send(Byte[] data) dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 121
+09-04-2018 18:22:45[ ERROR ][ CLIENT ][ ENTREE ] [ Send ] System.NullReferenceException: La r?f?rence d'objet n'est pas d?finie ? une instance d'un objet.
+   ? System.Net.Sockets.Socket.get_Connected()
+   ? Client.Send(Byte[] data) dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 121
+09-04-2018 18:22:45[ ENTREE ] Fin de procedure !
+09-04-2018 18:31:35[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+09-04-2018 18:31:36[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+09-04-2018 18:31:36[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+09-04-2018 18:31:36[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+09-04-2018 18:31:36[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+09-04-2018 18:31:36[ INFO ][ UTILISATEUR ] Nouvelle utilisateur dans la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+09-04-2018 18:31:46[ INFO ] [ Utilisateur ] L'utilisateur quitte la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+09-04-2018 18:31:55[ SERVEUR ][ ENTREE ] ClientRFID viens de ce connect?e
+09-04-2018 18:31:55[ DEBUG ] Boucle 
+09-04-2018 18:31:58[ SERVEUR ][ SORTIE ] ClientRFID viens de ce connect?e
+09-04-2018 18:31:58[ DEBUG ] Boucle 
+09-04-2018 18:32:00[ ENTREE ] [ RFID ] Demande d'acc?s avec l'id RFID 02006D7223
+09-04-2018 18:32:00[ INFO ] Sortie de l'event
+09-04-2018 18:32:00[ ENTREE ] [ RFID ] Acc?s autoris?
+09-04-2018 18:32:00[ DEBUG ] Boucle 
+09-04-2018 18:32:02[ DEBUG ] dechet :1
+09-04-2018 18:32:02[ ENTREE ] [ RFID ] Type de dechet selectionner : 1
+09-04-2018 18:32:02[ ENTREE ] [ RFID ] Poids du vehicule : 2500
+09-04-2018 18:32:02[ DEBUG ] Boucle 
+09-04-2018 18:32:03[ DEBUG ] Boucle 
+09-04-2018 18:32:03[ DEBUG ] Boucle 
+09-04-2018 18:32:03[ INFO ][ UTILISATEUR ] Nouvelle utilisateur dans la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+09-04-2018 18:32:03[ ERROR ][ CLIENT ][ ENTREE ] [ Send ] System.NullReferenceException: La r?f?rence d'objet n'est pas d?finie ? une instance d'un objet.
+   ? System.Net.Sockets.Socket.get_Connected()
+   ? Client.Send(Byte[] data) dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 121
+09-04-2018 18:32:24[ ERROR ][ CLIENT ][ ENTREE ] [ Send ] System.NullReferenceException: La r?f?rence d'objet n'est pas d?finie ? une instance d'un objet.
+   ? System.Net.Sockets.Socket.get_Connected()
+   ? Client.Send(Byte[] data) dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 121
+09-04-2018 18:32:24[ ENTREE ] Fin de procedure !
+09-04-2018 18:32:27[ INFO ] Sortie de l'event
+09-04-2018 18:32:27[ SORTIE ] [ RFID ] Demande d'acc?s avec l'id RFID 02006D7223
+09-04-2018 18:32:28[ SORTIE ] [ RFID ] Acc?s autoris?
+09-04-2018 18:32:28[ SORTIE ] [ RFID ] Poids du vehicule : 2500
+09-04-2018 18:32:28[ INFO ] [ Utilisateur ] L'utilisateur quitte la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+09-04-2018 18:32:28[ DEBUG ] Boucle 
+09-04-2018 18:32:28[ ERROR ][ CLIENT ][ SORTIE ] [ Send ] System.NullReferenceException: La r?f?rence d'objet n'est pas d?finie ? une instance d'un objet.
+   ? System.Net.Sockets.Socket.get_Connected()
+   ? Client.Send(Byte[] data) dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 121
+09-04-2018 18:32:48[ ERROR ][ CLIENT ][ SORTIE ] [ Send ] System.NullReferenceException: La r?f?rence d'objet n'est pas d?finie ? une instance d'un objet.
+   ? System.Net.Sockets.Socket.get_Connected()
+   ? Client.Send(Byte[] data) dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 121
+09-04-2018 18:32:48[ SORTIE ] Fin de procedure !
+09-04-2018 21:56:09[ DEBUG ] Boucle 
+09-04-2018 22:10:42[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+09-04-2018 22:10:42[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+09-04-2018 22:10:42[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+09-04-2018 22:10:42[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+09-04-2018 22:10:42[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+09-04-2018 22:10:43[ INFO ][ UTILISATEUR ] Nouvelle utilisateur dans la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+09-04-2018 22:10:53[ INFO ] [ Utilisateur ] L'utilisateur quitte la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+09-04-2018 22:10:56[ SERVEUR ][ ENTREE ] ClientRFID viens de ce connect?e
+09-04-2018 22:10:56[ DEBUG ] Boucle 
+09-04-2018 22:10:58[ ENTREE ] [ RFID ] Demande d'acc?s avec l'id RFID 02006D7223
+09-04-2018 22:10:58[ INFO ] Sortie de l'event
+09-04-2018 22:10:58[ ENTREE ] [ RFID ] Acc?s autoris?
+09-04-2018 22:10:59[ DEBUG ] Boucle 
+09-04-2018 22:11:00[ DEBUG ] dechet :1
+09-04-2018 22:11:00[ DEBUG ] Boucle 
+09-04-2018 22:11:00[ ENTREE ] [ RFID ] Type de dechet selectionner : 1
+09-04-2018 22:11:00[ ENTREE ] [ RFID ] Poids du vehicule : 2500
+09-04-2018 22:11:01[ DEBUG ] Boucle 
+09-04-2018 22:11:01[ DEBUG ] Boucle 
+09-04-2018 22:11:01[ INFO ][ UTILISATEUR ] Nouvelle utilisateur dans la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+09-04-2018 22:11:01[ ERROR ][ CLIENT ][ ENTREE ] [ Send ] System.NullReferenceException: La r?f?rence d'objet n'est pas d?finie ? une instance d'un objet.
+   ? System.Net.Sockets.Socket.get_Connected()
+   ? Client.Send(Byte[] data) dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 121
+09-04-2018 22:11:13[ DEBUG ] Boucle 
+09-04-2018 22:13:03[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+09-04-2018 22:13:04[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+09-04-2018 22:13:04[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+09-04-2018 22:13:04[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+09-04-2018 22:13:04[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+09-04-2018 22:13:04[ INFO ][ UTILISATEUR ] Nouvelle utilisateur dans la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+09-04-2018 22:13:15[ INFO ] [ Utilisateur ] L'utilisateur quitte la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+09-04-2018 22:13:19[ SERVEUR ][ ENTREE ] ClientRFID viens de ce connect?e
+09-04-2018 22:13:19[ DEBUG ] Boucle 
+09-04-2018 22:13:21[ ENTREE ] [ RFID ] Demande d'acc?s avec l'id RFID 02006D7223
+09-04-2018 22:13:21[ INFO ] Sortie de l'event
+09-04-2018 22:13:21[ ENTREE ] [ RFID ] Acc?s autoris?
+09-04-2018 22:13:21[ DEBUG ] Boucle 
+09-04-2018 22:13:23[ DEBUG ] dechet :1
+09-04-2018 22:13:23[ DEBUG ] Boucle 
+09-04-2018 22:13:23[ ENTREE ] [ RFID ] Type de dechet selectionner : 1
+09-04-2018 22:13:23[ ENTREE ] [ RFID ] Poids du vehicule : 2500
+09-04-2018 22:13:24[ DEBUG ] Boucle 
+09-04-2018 22:13:24[ DEBUG ] Boucle 
+09-04-2018 22:13:24[ INFO ][ UTILISATEUR ] Nouvelle utilisateur dans la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+09-04-2018 22:13:24[ ERROR ][ CLIENT ][ ENTREE ] [ Send ] System.NullReferenceException: La r?f?rence d'objet n'est pas d?finie ? une instance d'un objet.
+   ? System.Net.Sockets.Socket.get_Connected()
+   ? Client.Send(Byte[] data) dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 121
+09-04-2018 22:13:44[ ERROR ][ CLIENT ][ ENTREE ] [ Send ] System.NullReferenceException: La r?f?rence d'objet n'est pas d?finie ? une instance d'un objet.
+   ? System.Net.Sockets.Socket.get_Connected()
+   ? Client.Send(Byte[] data) dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 121
+09-04-2018 22:13:44[ ENTREE ] Fin de procedure !
+09-04-2018 22:13:51[ DEBUG ] Boucle 
+09-04-2018 22:17:25[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+09-04-2018 22:17:26[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+09-04-2018 22:17:26[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+09-04-2018 22:17:26[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+09-04-2018 22:17:26[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+09-04-2018 22:17:26[ INFO ][ UTILISATEUR ] Nouvelle utilisateur dans la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+09-04-2018 22:17:27[ SERVEUR ][ ENTREE ] ClientRFID viens de ce connect?e
+09-04-2018 22:17:27[ DEBUG ] Boucle 
+09-04-2018 22:17:28[ ENTREE ] [ RFID ] Demande d'acc?s avec l'id RFID 02006D7223
+09-04-2018 22:17:28[ INFO ] Sortie de l'event
+09-04-2018 22:17:28[ ENTREE ] [ RFID ] Acc?s autoris?
+09-04-2018 22:17:28[ DEBUG ] Boucle 
+09-04-2018 22:17:30[ DEBUG ] dechet :1
+09-04-2018 22:17:30[ DEBUG ] Boucle 
+09-04-2018 22:17:30[ ENTREE ] [ RFID ] Type de dechet selectionner : 1
+09-04-2018 22:17:30[ ENTREE ] [ RFID ] Poids du vehicule : 2500
+09-04-2018 22:17:31[ DEBUG ] Boucle 
+09-04-2018 22:17:31[ DEBUG ] Boucle 
+09-04-2018 22:17:31[ INFO ][ UTILISATEUR ] Nouvelle utilisateur dans la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+09-04-2018 22:17:32[ ERROR ][ CLIENT ][ ENTREE ] [ Send ] System.NullReferenceException: La r?f?rence d'objet n'est pas d?finie ? une instance d'un objet.
+   ? System.Net.Sockets.Socket.get_Connected()
+   ? Client.Send(Byte[] data) dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 121
+09-04-2018 22:17:36[ INFO ] [ Utilisateur ] L'utilisateur quitte la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+09-04-2018 22:17:52[ ERROR ][ CLIENT ][ ENTREE ] [ Send ] System.NullReferenceException: La r?f?rence d'objet n'est pas d?finie ? une instance d'un objet.
+   ? System.Net.Sockets.Socket.get_Connected()
+   ? Client.Send(Byte[] data) dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 121
+09-04-2018 22:17:52[ ENTREE ] Fin de procedure !
+09-04-2018 22:18:51[ DEBUG ] Boucle 
+09-04-2018 22:23:02[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+09-04-2018 22:23:03[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+09-04-2018 22:23:03[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+09-04-2018 22:23:03[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+09-04-2018 22:23:03[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+09-04-2018 22:23:03[ INFO ][ UTILISATEUR ] Nouvelle utilisateur dans la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+09-04-2018 22:23:13[ SERVEUR ][ ENTREE ] ClientRFID viens de ce connect?e
+09-04-2018 22:23:13[ DEBUG ] Boucle 
+09-04-2018 22:23:13[ INFO ] [ Utilisateur ] L'utilisateur quitte la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+09-04-2018 22:23:14[ ENTREE ] [ RFID ] Demande d'acc?s avec l'id RFID 02006D7223
+09-04-2018 22:23:14[ INFO ] Sortie de l'event
+09-04-2018 22:23:14[ ENTREE ] [ RFID ] Acc?s autoris?
+09-04-2018 22:23:14[ DEBUG ] Boucle 
+09-04-2018 22:23:15[ DEBUG ] dechet :1
+09-04-2018 22:23:15[ DEBUG ] Boucle 
+09-04-2018 22:23:15[ ENTREE ] [ RFID ] Type de dechet selectionner : 1
+09-04-2018 22:23:15[ ENTREE ] [ RFID ] Poids du vehicule : 2500
+09-04-2018 22:23:16[ DEBUG ] Boucle 
+09-04-2018 22:23:16[ DEBUG ] Boucle 
+09-04-2018 22:23:16[ INFO ][ UTILISATEUR ] Nouvelle utilisateur dans la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+09-04-2018 22:23:16[ ENTREE ] Fin de procedure !
+09-04-2018 22:23:28[ SERVEUR ][ ENTREE ] ClientRFID viens de ce connect?e
+09-04-2018 22:26:02[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+09-04-2018 22:26:03[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+09-04-2018 22:26:03[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+09-04-2018 22:26:03[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+09-04-2018 22:26:03[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+09-04-2018 22:26:03[ INFO ][ UTILISATEUR ] Nouvelle utilisateur dans la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+09-04-2018 22:26:08[ SERVEUR ][ ENTREE ] ClientRFID viens de ce connect?e
+09-04-2018 22:26:08[ DEBUG ] Boucle 
+09-04-2018 22:26:09[ INFO ] Sortie de l'event
+09-04-2018 22:26:09[ ENTREE ] [ RFID ] Demande d'acc?s avec l'id RFID 02006D7223
+09-04-2018 22:26:09[ ENTREE ] [ RFID ] Acc?s autoris?
+09-04-2018 22:26:09[ DEBUG ] Boucle 
+09-04-2018 22:26:10[ DEBUG ] dechet :1
+09-04-2018 22:26:10[ ENTREE ] [ RFID ] Type de dechet selectionner : 1
+09-04-2018 22:26:10[ ENTREE ] [ RFID ] Poids du vehicule : 2500
+09-04-2018 22:26:10[ DEBUG ] Boucle 
+09-04-2018 22:26:11[ DEBUG ] Boucle 
+09-04-2018 22:26:11[ DEBUG ] Boucle 
+09-04-2018 22:26:11[ INFO ][ UTILISATEUR ] Nouvelle utilisateur dans la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+09-04-2018 22:26:11[ ENTREE ] Fin de procedure !
+09-04-2018 22:26:13[ INFO ] [ Utilisateur ] L'utilisateur quitte la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+09-04-2018 22:26:14[ DEBUG ] Boucle 
+09-04-2018 22:29:58[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+09-04-2018 22:29:59[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+09-04-2018 22:29:59[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+09-04-2018 22:29:59[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+09-04-2018 22:30:36[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+09-04-2018 22:30:36[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+09-04-2018 22:30:37[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+09-04-2018 22:30:37[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+09-04-2018 22:30:37[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+09-04-2018 22:30:37[ INFO ][ UTILISATEUR ] Nouvelle utilisateur dans la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+09-04-2018 22:30:58[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+09-04-2018 22:30:59[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+09-04-2018 22:30:59[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+09-04-2018 22:30:59[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+09-04-2018 22:30:59[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+09-04-2018 22:30:59[ INFO ][ UTILISATEUR ] Nouvelle utilisateur dans la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+09-04-2018 22:31:09[ SERVEUR ][ ENTREE ] ClientRFID viens de ce connect?e
+09-04-2018 22:31:09[ DEBUG ] Boucle 
+09-04-2018 22:31:09[ INFO ] [ Utilisateur ] L'utilisateur quitte la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+09-04-2018 22:31:10[ ENTREE ] [ RFID ] Demande d'acc?s avec l'id RFID 02006D7223
+09-04-2018 22:31:10[ INFO ] Sortie de l'event
+09-04-2018 22:31:10[ ENTREE ] [ RFID ] Acc?s autoris?
+09-04-2018 22:31:10[ DEBUG ] Boucle 
+09-04-2018 22:31:11[ DEBUG ] dechet :1
+09-04-2018 22:31:11[ ENTREE ] [ RFID ] Type de dechet selectionner : 1
+09-04-2018 22:31:11[ ENTREE ] [ RFID ] Poids du vehicule : 2500
+09-04-2018 22:31:11[ DEBUG ] Boucle 
+09-04-2018 22:31:12[ DEBUG ] Boucle 
+09-04-2018 22:31:12[ DEBUG ] Boucle 
+09-04-2018 22:31:12[ INFO ][ UTILISATEUR ] Nouvelle utilisateur dans la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+09-04-2018 22:31:12[ ENTREE ] Fin de procedure !
+09-04-2018 22:31:21[ DEBUG ] Boucle 
+09-04-2018 22:33:07[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+09-04-2018 22:33:08[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+09-04-2018 22:33:08[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+09-04-2018 22:33:09[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+09-04-2018 22:33:09[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+09-04-2018 22:33:09[ INFO ][ UTILISATEUR ] Nouvelle utilisateur dans la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+09-04-2018 22:33:17[ SERVEUR ][ ENTREE ] ClientRFID viens de ce connect?e
+09-04-2018 22:33:17[ DEBUG ] Boucle 
+09-04-2018 22:33:18[ ENTREE ] [ RFID ] Demande d'acc?s avec l'id RFID 02006D7223
+09-04-2018 22:33:18[ INFO ] Sortie de l'event
+09-04-2018 22:33:18[ ENTREE ] [ RFID ] Acc?s autoris?
+09-04-2018 22:33:18[ DEBUG ] Boucle 
+09-04-2018 22:33:19[ INFO ] [ Utilisateur ] L'utilisateur quitte la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+09-04-2018 22:33:19[ DEBUG ] dechet :1
+09-04-2018 22:33:19[ DEBUG ] Boucle 
+09-04-2018 22:33:19[ ENTREE ] [ RFID ] Type de dechet selectionner : 1
+09-04-2018 22:33:19[ ENTREE ] [ RFID ] Poids du vehicule : 2500
+09-04-2018 22:33:20[ DEBUG ] Boucle 
+09-04-2018 22:33:20[ DEBUG ] Boucle 
+09-04-2018 22:33:20[ INFO ][ UTILISATEUR ] Nouvelle utilisateur dans la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+09-04-2018 22:33:20[ ENTREE ] Fin de procedure !
+09-04-2018 22:33:25[ ENTREE ] [ RFID ] Demande d'acc?s avec l'id RFID 02006D7223
+09-04-2018 22:33:25[ INFO ] Sortie de l'event
+09-04-2018 22:33:25[ ENTREE ] [ RFID ] Acc?s autoris?
+09-04-2018 22:33:25[ DEBUG ] Boucle 
+09-04-2018 22:33:26[ DEBUG ] dechet :1
+09-04-2018 22:33:26[ DEBUG ] Boucle 
+09-04-2018 22:33:27[ ENTREE ] [ RFID ] Type de dechet selectionner : 1
+09-04-2018 22:33:27[ ENTREE ] [ RFID ] Poids du vehicule : 2500
+09-04-2018 22:33:27[ DEBUG ] Boucle 
+09-04-2018 22:33:27[ DEBUG ] Boucle 
+09-04-2018 22:33:28[ INFO ][ UTILISATEUR ] Nouvelle utilisateur dans la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+09-04-2018 22:33:28[ ENTREE ] Fin de procedure !
+09-04-2018 22:33:29[ ENTREE ] [ RFID ] Demande d'acc?s avec l'id RFID 02006D7223
+09-04-2018 22:33:29[ INFO ] Sortie de l'event
+09-04-2018 22:33:29[ ENTREE ] [ RFID ] Acc?s autoris?
+09-04-2018 22:33:29[ DEBUG ] Boucle 
+09-04-2018 22:33:30[ DEBUG ] dechet :2
+09-04-2018 22:33:30[ ENTREE ] [ RFID ] Type de dechet selectionner : 2
+09-04-2018 22:33:30[ DEBUG ] Boucle 
+09-04-2018 22:33:30[ ENTREE ] [ RFID ] Poids du vehicule : 2500
+09-04-2018 22:33:31[ DEBUG ] Boucle 
+09-04-2018 22:33:31[ DEBUG ] Boucle 
+09-04-2018 22:33:31[ INFO ][ UTILISATEUR ] Nouvelle utilisateur dans la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+09-04-2018 22:33:31[ ENTREE ] Fin de procedure !
+09-04-2018 22:33:33[ INFO ] Sortie de l'event
+09-04-2018 22:33:33[ ENTREE ] [ RFID ] Demande d'acc?s avec l'id RFID 02006D7223
+09-04-2018 22:33:33[ ENTREE ] [ RFID ] Acc?s autoris?
+09-04-2018 22:33:33[ DEBUG ] Boucle 
+09-04-2018 22:33:34[ DEBUG ] dechet :3
+09-04-2018 22:33:34[ DEBUG ] Boucle 
+09-04-2018 22:33:34[ ENTREE ] [ RFID ] Type de dechet selectionner : 3
+09-04-2018 22:33:34[ ENTREE ] [ RFID ] Poids du vehicule : 2500
+09-04-2018 22:33:35[ DEBUG ] Boucle 
+09-04-2018 22:33:35[ DEBUG ] Boucle 
+09-04-2018 22:33:36[ ERROR ][ UTILISATEUR ][ addUtilisateur ] MySql.Data.MySqlClient.MySqlException (0x80004005): Cannot add or update a child row: a foreign key constraint fails (`Dechetterie`.`Entree`, CONSTRAINT `fk_Entree_TypeDechet1` FOREIGN KEY (`TypeDechet_ID`) REFERENCES `TypeDechet` (`ID`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+   ? MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   ? MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   ? MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   ? MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   ? MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   ? MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   ? MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   ? DataBddProxy.addEntree(DataEntree e) dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\databddproxy.cpp:ligne 239
+   ? Dechetterie.addUtilisateur(String id_rfid, Int32 tDechet, Int32 poids, Byte[] photo) dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\dechetterie.cpp:ligne 263
+09-04-2018 22:33:36[ ENTREE ] Fin de procedure !
+09-04-2018 22:33:39[ INFO ] Sortie de l'event
+09-04-2018 22:33:39[ ENTREE ] [ RFID ] Demande d'acc?s avec l'id RFID 02006D7223
+09-04-2018 22:33:39[ ENTREE ] [ RFID ] Acc?s autoris?
+09-04-2018 22:33:40[ DEBUG ] Boucle 
+09-04-2018 22:33:40[ DEBUG ] dechet :1
+09-04-2018 22:33:40[ DEBUG ] Boucle 
+09-04-2018 22:33:41[ ENTREE ] [ RFID ] Type de dechet selectionner : 1
+09-04-2018 22:33:41[ ENTREE ] [ RFID ] Poids du vehicule : 2500
+09-04-2018 22:33:41[ DEBUG ] Boucle 
+09-04-2018 22:33:41[ DEBUG ] Boucle 
+09-04-2018 22:33:42[ INFO ][ UTILISATEUR ] Nouvelle utilisateur dans la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+09-04-2018 22:33:42[ ENTREE ] Fin de procedure !
+09-04-2018 22:34:47[ SERVEUR ][ ENTREE ] ClientRFID viens de ce connect?e
+09-04-2018 22:35:11[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+09-04-2018 22:35:12[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+09-04-2018 22:35:12[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+09-04-2018 22:35:12[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+09-04-2018 22:35:12[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+09-04-2018 22:35:12[ INFO ][ UTILISATEUR ] Nouvelle utilisateur dans la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+09-04-2018 22:35:22[ INFO ] [ Utilisateur ] L'utilisateur quitte la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+09-04-2018 22:35:44[ SERVEUR ][ ENTREE ] ClientRFID viens de ce connect?e
+09-04-2018 22:35:44[ DEBUG ] Boucle 
+09-04-2018 22:35:55[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+09-04-2018 22:35:56[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+09-04-2018 22:35:56[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+09-04-2018 22:35:56[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+09-04-2018 22:35:56[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+09-04-2018 22:35:57[ INFO ][ UTILISATEUR ] Nouvelle utilisateur dans la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+09-04-2018 22:36:07[ INFO ] [ Utilisateur ] L'utilisateur quitte la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+09-04-2018 22:36:08[ SERVEUR ][ ENTREE ] ClientRFID viens de ce connect?e
+09-04-2018 22:36:08[ DEBUG ] Boucle 
+09-04-2018 22:36:46[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+09-04-2018 22:36:46[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+09-04-2018 22:36:46[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+09-04-2018 22:36:47[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+09-04-2018 22:36:47[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+09-04-2018 22:36:47[ INFO ][ UTILISATEUR ] Nouvelle utilisateur dans la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+09-04-2018 22:36:57[ INFO ] [ Utilisateur ] L'utilisateur quitte la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+09-04-2018 22:37:14[ SERVEUR ][ ENTREE ] ClientRFID viens de ce connect?e
+09-04-2018 22:37:14[ DEBUG ] Boucle 
+09-04-2018 22:37:46[ ENTREE ] [ RFID ] Demande d'acc?s avec l'id RFID 02006D7223
+09-04-2018 22:37:46[ ENTREE ] [ RFID ] Acc?s autoris?
+09-04-2018 22:37:46[ INFO ] Sortie de l'event
+09-04-2018 22:37:46[ DEBUG ] Boucle 
+09-04-2018 22:37:49[ DEBUG ] dechet :1
+09-04-2018 22:37:49[ DEBUG ] Boucle 
+09-04-2018 22:37:49[ ENTREE ] [ RFID ] Type de dechet selectionner : 1
+09-04-2018 22:37:49[ ENTREE ] [ RFID ] Poids du vehicule : 2500
+09-04-2018 22:37:50[ DEBUG ] Boucle 
+09-04-2018 22:37:50[ DEBUG ] Boucle 
+09-04-2018 22:37:50[ INFO ][ UTILISATEUR ] Nouvelle utilisateur dans la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+09-04-2018 22:37:50[ ENTREE ] Fin de procedure !
+09-04-2018 22:38:09[ INFO ] Sortie de l'event
+09-04-2018 22:38:09[ ENTREE ] [ RFID ] Demande d'acc?s avec l'id RFID 02006D7223
+09-04-2018 22:38:09[ ENTREE ] [ RFID ] Acc?s autoris?
+09-04-2018 22:38:09[ DEBUG ] Boucle 
+09-04-2018 22:38:34[ DEBUG ] dechet :1
+09-04-2018 22:38:34[ DEBUG ] Boucle 
+09-04-2018 22:38:35[ ENTREE ] [ RFID ] Type de dechet selectionner : 1
+09-04-2018 22:38:35[ ENTREE ] [ RFID ] Poids du vehicule : 2500
+09-04-2018 22:38:35[ DEBUG ] Boucle 
+09-04-2018 22:38:35[ DEBUG ] Boucle 
+09-04-2018 22:38:36[ INFO ][ UTILISATEUR ] Nouvelle utilisateur dans la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+09-04-2018 22:38:36[ ENTREE ] Fin de procedure !
+09-04-2018 23:16:46[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+09-04-2018 23:16:47[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+09-04-2018 23:16:47[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+09-04-2018 23:16:47[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+09-04-2018 23:16:47[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+09-04-2018 23:16:47[ INFO ][ UTILISATEUR ] Nouvelle utilisateur dans la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+09-04-2018 23:16:57[ INFO ] [ Utilisateur ] L'utilisateur quitte la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+09-04-2018 23:17:00[ SERVEUR ][ ENTREE ] ClientRFID viens de ce connect?e
+09-04-2018 23:17:00[ DEBUG ] Boucle 
+09-04-2018 23:17:03[ INFO ] Sortie de l'event
+09-04-2018 23:17:03[ ENTREE ] [ RFID ] Demande d'acc?s avec l'id RFID 02006D7223
+09-04-2018 23:17:03[ ENTREE ] [ RFID ] Acc?s autoris?
+09-04-2018 23:17:03[ DEBUG ] Boucle 
+09-04-2018 23:17:14[ DEBUG ] dechet :1
+09-04-2018 23:17:14[ ENTREE ] [ RFID ] Type de dechet selectionner : 1
+09-04-2018 23:17:14[ ENTREE ] [ RFID ] Poids du vehicule : 2500
+09-04-2018 23:17:14[ DEBUG ] Boucle 
+09-04-2018 23:17:14[ DEBUG ] Boucle 
+09-04-2018 23:17:15[ DEBUG ] Boucle 
+09-04-2018 23:17:15[ INFO ][ UTILISATEUR ] Nouvelle utilisateur dans la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+09-04-2018 23:17:15[ ENTREE ] Fin de procedure !
+09-04-2018 23:20:43[ ENTREE ] [ RFID ] Demande d'acc?s avec l'id RFID 02006D7223
+09-04-2018 23:20:43[ ENTREE ] [ RFID ] Acc?s autoris?
+09-04-2018 23:20:43[ INFO ] Sortie de l'event
+09-04-2018 23:20:43[ DEBUG ] Boucle 
+09-04-2018 23:20:44[ DEBUG ] dechet :1
+09-04-2018 23:20:44[ DEBUG ] Boucle 
+09-04-2018 23:20:44[ ENTREE ] [ RFID ] Type de dechet selectionner : 1
+09-04-2018 23:20:44[ ENTREE ] [ RFID ] Poids du vehicule : 2500
+09-04-2018 23:20:45[ DEBUG ] Boucle 
+09-04-2018 23:20:45[ DEBUG ] Boucle 
+09-04-2018 23:20:45[ INFO ][ UTILISATEUR ] Nouvelle utilisateur dans la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+09-04-2018 23:20:45[ ENTREE ] Fin de procedure !
+10-04-2018 03:01:19[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+10-04-2018 03:01:19[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+10-04-2018 03:01:20[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+10-04-2018 03:01:20[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+10-04-2018 03:01:20[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+10-04-2018 03:01:20[ INFO ][ UTILISATEUR ] Nouvelle utilisateur dans la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+10-04-2018 03:01:30[ INFO ] [ Utilisateur ] L'utilisateur quitte la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223

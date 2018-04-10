@@ -21,6 +21,7 @@ public:
 	int GetPositionBarriere();
 	Boolean AllClientConnected();
 	Boolean TestRfidID(String^ rfid);
+	String^ GetStateAllClient();
 
 };
 
