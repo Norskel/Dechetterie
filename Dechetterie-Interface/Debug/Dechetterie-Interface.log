@@ -1,2 +1,12 @@
-﻿  Dechetterie-Interface.vcxproj -> C:\Users\Martin KLEIN-NORTH\Source\Repos\Dechetterie\Debug\Dechetterie-Interface.exe
-  Dechetterie-Interface.vcxproj -> C:\Users\Martin KLEIN-NORTH\Source\Repos\Dechetterie\Debug\Dechetterie-Interface.pdb (Partial PDB)
+﻿  Dechetterie-Interface.cpp
+c:\users\a125\source\repos\dechetterie\dechetterie-interface\ConfigForm.h(872): warning C4566: le caractère représenté par le nom de caractère universel '\uFFFD' ne peut pas être représenté dans la page de codes actuelle (1252)
+c:\users\a125\source\repos\dechetterie\dechetterie-interface\ConfigForm.h(964): warning C4566: le caractère représenté par le nom de caractère universel '\uFFFD' ne peut pas être représenté dans la page de codes actuelle (1252)
+c:\users\a125\source\repos\dechetterie\dechetterie-interface\MainForm.h(321): warning C4566: le caractère représenté par le nom de caractère universel '\uFFFD' ne peut pas être représenté dans la page de codes actuelle (1252)
+  MainForm.cpp
+c:\users\a125\source\repos\dechetterie\dechetterie-interface\ConfigForm.h(872): warning C4566: le caractère représenté par le nom de caractère universel '\uFFFD' ne peut pas être représenté dans la page de codes actuelle (1252)
+c:\users\a125\source\repos\dechetterie\dechetterie-interface\ConfigForm.h(964): warning C4566: le caractère représenté par le nom de caractère universel '\uFFFD' ne peut pas être représenté dans la page de codes actuelle (1252)
+c:\users\a125\source\repos\dechetterie\dechetterie-interface\MainForm.h(321): warning C4566: le caractère représenté par le nom de caractère universel '\uFFFD' ne peut pas être représenté dans la page de codes actuelle (1252)
+  Génération de code en cours...
+  AssemblyInfo.obj : /DEBUG:FASTLINK n'est pas pris en charge en présence de code managé ; redémarrage de l'édition des liens avec /DEBUG:FULL
+  Dechetterie-Interface.vcxproj -> C:\Users\A125\Source\Repos\Dechetterie\Debug\Dechetterie-Interface.exe
+  Dechetterie-Interface.vcxproj -> C:\Users\A125\Source\Repos\Dechetterie\Debug\Dechetterie-Interface.pdb (Partial PDB)

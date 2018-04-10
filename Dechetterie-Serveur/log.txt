@@ -5373,3 +5373,1828 @@
 10-04-2018 03:01:20[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
 10-04-2018 03:01:20[ INFO ][ UTILISATEUR ] Nouvelle utilisateur dans la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
 10-04-2018 03:01:30[ INFO ] [ Utilisateur ] L'utilisateur quitte la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+10-04-2018 08:40:35[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+10-04-2018 08:40:57[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+10-04-2018 08:40:57[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+10-04-2018 08:40:57[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+10-04-2018 08:40:57[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+10-04-2018 08:40:57[ INTERFACE ]  Attente de l'interface
+10-04-2018 08:41:18[ ERROR ][ UTILISATEUR ] Utilisateur avec id RFID 02006D7223 Inconnu 
+10-04-2018 08:41:49[ DEBUG ] System.Exception: ID_RFID Introuvable
+   ? DataBddProxy.getUserByIdRFID(String id_Rfid) dans c:\users\a125\source\repos\dechetterie\dechetterie-serveur\databddproxy.cpp:ligne 172
+   ? Dechetterie.deleteUtilisateur(String id_rfid) dans c:\users\a125\source\repos\dechetterie\dechetterie-serveur\dechetterie.cpp:ligne 118
+10-04-2018 08:42:36[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+10-04-2018 08:42:37[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+10-04-2018 08:42:37[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+10-04-2018 08:42:37[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+10-04-2018 08:42:37[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+10-04-2018 08:42:37[ INTERFACE ]  Attente de l'interface
+10-04-2018 08:42:37[ INFO ][ UTILISATEUR ] Nouvelle utilisateur dans la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+10-04-2018 08:42:47[ INFO ] [ Utilisateur ] L'utilisateur quitte la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+10-04-2018 08:43:35[ SERVEUR ][ ENTREE ] ClientBarri?re viens de ce connect?e
+10-04-2018 08:46:10[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+10-04-2018 08:46:11[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+10-04-2018 08:46:11[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+10-04-2018 08:46:11[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+10-04-2018 08:46:11[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+10-04-2018 08:46:11[ INTERFACE ]  Attente de l'interface
+10-04-2018 08:46:11[ INFO ][ UTILISATEUR ] Nouvelle utilisateur dans la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+10-04-2018 08:46:16[ SERVEUR ][ ENTREE ] ClientBarri?re viens de ce connect?e
+10-04-2018 08:46:21[ INFO ] [ Utilisateur ] L'utilisateur quitte la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+10-04-2018 08:46:38[ SERVEUR ][ ENTREE ] ClientRFID viens de ce connect?e
+10-04-2018 08:46:38[ DEBUG ] Boucle 
+10-04-2018 08:46:51[ ENTREE ] [ RFID ] Demande d'acc?s avec l'id RFID 02006D7223
+10-04-2018 08:46:51[ ENTREE ] [ RFID ] Acc?s autoris?
+10-04-2018 08:46:51[ INFO ] Sortie de l'event
+10-04-2018 08:46:51[ DEBUG ] Boucle 
+10-04-2018 08:46:54[ DEBUG ] dechet :1
+10-04-2018 08:46:54[ DEBUG ] Boucle 
+10-04-2018 08:46:54[ ENTREE ] [ RFID ] Type de dechet selectionner : 1
+10-04-2018 08:46:54[ ENTREE ] [ RFID ] Poids du vehicule : 2500
+10-04-2018 08:47:16[ PING ] Demande de ping de 192.168.137.10( ENTREE ClientBarri?re )
+10-04-2018 08:47:21[ DEBUG ] Boucle 
+10-04-2018 08:47:21[ DEBUG ] Boucle 
+10-04-2018 08:47:21[ INFO ][ UTILISATEUR ] Nouvelle utilisateur dans la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+10-04-2018 08:47:21[ ENTREE ] Fin de procedure !
+10-04-2018 08:47:53[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+10-04-2018 08:47:54[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+10-04-2018 08:47:54[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+10-04-2018 08:47:54[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+10-04-2018 08:47:54[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+10-04-2018 08:47:54[ INTERFACE ]  Attente de l'interface
+10-04-2018 08:47:54[ INFO ][ UTILISATEUR ] Nouvelle utilisateur dans la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+10-04-2018 08:47:58[ SERVEUR ][ ENTREE ] ClientRFID viens de ce connect?e
+10-04-2018 08:47:58[ DEBUG ] Boucle 
+10-04-2018 08:48:04[ INFO ] [ Utilisateur ] L'utilisateur quitte la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+10-04-2018 08:49:09[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+10-04-2018 08:49:10[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+10-04-2018 08:49:10[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+10-04-2018 08:49:10[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+10-04-2018 08:49:10[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+10-04-2018 08:49:10[ INTERFACE ]  Attente de l'interface
+10-04-2018 08:49:10[ INFO ][ UTILISATEUR ] Nouvelle utilisateur dans la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+10-04-2018 08:49:19[ SERVEUR ][ ENTREE ] ClientRFID viens de ce connect?e
+10-04-2018 08:49:19[ DEBUG ] Boucle 
+10-04-2018 08:49:20[ INFO ] [ Utilisateur ] L'utilisateur quitte la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+10-04-2018 08:49:28[ SERVEUR ][ ENTREE ] ClientBarri?re viens de ce connect?e
+10-04-2018 08:49:42[ ENTREE ] [ RFID ] Demande d'acc?s avec l'id RFID 02006D7223
+10-04-2018 08:49:42[ ENTREE ] [ RFID ] Acc?s autoris?
+10-04-2018 08:49:42[ INFO ] Sortie de l'event
+10-04-2018 08:49:42[ DEBUG ] Boucle 
+10-04-2018 08:49:46[ DEBUG ] dechet :1
+10-04-2018 08:49:46[ DEBUG ] Boucle 
+10-04-2018 08:49:46[ ENTREE ] [ RFID ] Type de dechet selectionner : 1
+10-04-2018 08:49:46[ ENTREE ] [ RFID ] Poids du vehicule : 2500
+10-04-2018 08:50:13[ DEBUG ] Boucle 
+10-04-2018 08:50:13[ DEBUG ] Boucle 
+10-04-2018 08:50:13[ INFO ][ UTILISATEUR ] Nouvelle utilisateur dans la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+10-04-2018 08:50:33[ ENTREE ] Fin de procedure !
+10-04-2018 08:50:40[ PING ] Demande de ping de 192.168.137.10( ENTREE ClientBarri?re )
+10-04-2018 08:50:55[ DEBUG ] Boucle 
+10-04-2018 08:50:55[ CLIENT ][ ENTREE ] ClientRFID viens de ce d?connect?e
+10-04-2018 08:50:55[ DEBUG ] Boucle 
+10-04-2018 08:50:55[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:50:55[ DEBUG ] Boucle 
+10-04-2018 08:50:55[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:50:56[ DEBUG ] Boucle 
+10-04-2018 08:50:56[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:50:56[ DEBUG ] Boucle 
+10-04-2018 08:50:56[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:50:56[ DEBUG ] Boucle 
+10-04-2018 08:50:56[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:50:56[ DEBUG ] Boucle 
+10-04-2018 08:50:56[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:50:56[ DEBUG ] Boucle 
+10-04-2018 08:50:56[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:50:56[ DEBUG ] Boucle 
+10-04-2018 08:50:56[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:50:57[ DEBUG ] Boucle 
+10-04-2018 08:50:57[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:50:57[ DEBUG ] Boucle 
+10-04-2018 08:50:57[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:50:57[ DEBUG ] Boucle 
+10-04-2018 08:50:57[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:50:57[ DEBUG ] Boucle 
+10-04-2018 08:50:57[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:50:57[ DEBUG ] Boucle 
+10-04-2018 08:50:57[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:50:57[ DEBUG ] Boucle 
+10-04-2018 08:50:57[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:50:58[ DEBUG ] Boucle 
+10-04-2018 08:50:58[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:50:58[ DEBUG ] Boucle 
+10-04-2018 08:50:58[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:50:58[ DEBUG ] Boucle 
+10-04-2018 08:50:58[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:50:58[ DEBUG ] Boucle 
+10-04-2018 08:50:58[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:50:58[ DEBUG ] Boucle 
+10-04-2018 08:50:58[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:50:58[ DEBUG ] Boucle 
+10-04-2018 08:50:59[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:50:59[ DEBUG ] Boucle 
+10-04-2018 08:50:59[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:50:59[ DEBUG ] Boucle 
+10-04-2018 08:50:59[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:50:59[ DEBUG ] Boucle 
+10-04-2018 08:50:59[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:50:59[ DEBUG ] Boucle 
+10-04-2018 08:50:59[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:50:59[ DEBUG ] Boucle 
+10-04-2018 08:50:59[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:50:59[ DEBUG ] Boucle 
+10-04-2018 08:51:00[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:00[ DEBUG ] Boucle 
+10-04-2018 08:51:00[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:00[ DEBUG ] Boucle 
+10-04-2018 08:51:00[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:00[ DEBUG ] Boucle 
+10-04-2018 08:51:00[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:00[ DEBUG ] Boucle 
+10-04-2018 08:51:00[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:00[ DEBUG ] Boucle 
+10-04-2018 08:51:00[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:01[ DEBUG ] Boucle 
+10-04-2018 08:51:01[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:01[ DEBUG ] Boucle 
+10-04-2018 08:51:01[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:01[ DEBUG ] Boucle 
+10-04-2018 08:51:01[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:01[ DEBUG ] Boucle 
+10-04-2018 08:51:01[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:01[ DEBUG ] Boucle 
+10-04-2018 08:51:01[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:01[ DEBUG ] Boucle 
+10-04-2018 08:51:01[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:02[ DEBUG ] Boucle 
+10-04-2018 08:51:02[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:02[ DEBUG ] Boucle 
+10-04-2018 08:51:02[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:02[ DEBUG ] Boucle 
+10-04-2018 08:51:02[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:02[ DEBUG ] Boucle 
+10-04-2018 08:51:02[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:02[ DEBUG ] Boucle 
+10-04-2018 08:51:02[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:02[ DEBUG ] Boucle 
+10-04-2018 08:51:02[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:03[ DEBUG ] Boucle 
+10-04-2018 08:51:03[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:03[ DEBUG ] Boucle 
+10-04-2018 08:51:03[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:03[ DEBUG ] Boucle 
+10-04-2018 08:51:03[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:03[ DEBUG ] Boucle 
+10-04-2018 08:51:03[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:03[ DEBUG ] Boucle 
+10-04-2018 08:51:03[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:03[ DEBUG ] Boucle 
+10-04-2018 08:51:04[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:04[ DEBUG ] Boucle 
+10-04-2018 08:51:04[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:04[ DEBUG ] Boucle 
+10-04-2018 08:51:04[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:04[ DEBUG ] Boucle 
+10-04-2018 08:51:04[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:04[ DEBUG ] Boucle 
+10-04-2018 08:51:04[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:04[ DEBUG ] Boucle 
+10-04-2018 08:51:04[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:04[ DEBUG ] Boucle 
+10-04-2018 08:51:05[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:05[ DEBUG ] Boucle 
+10-04-2018 08:51:05[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:05[ DEBUG ] Boucle 
+10-04-2018 08:51:05[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:05[ DEBUG ] Boucle 
+10-04-2018 08:51:05[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:05[ DEBUG ] Boucle 
+10-04-2018 08:51:05[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:05[ DEBUG ] Boucle 
+10-04-2018 08:51:05[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:06[ DEBUG ] Boucle 
+10-04-2018 08:51:06[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:06[ DEBUG ] Boucle 
+10-04-2018 08:51:06[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:06[ DEBUG ] Boucle 
+10-04-2018 08:51:06[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:06[ DEBUG ] Boucle 
+10-04-2018 08:51:06[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:06[ DEBUG ] Boucle 
+10-04-2018 08:51:06[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:06[ DEBUG ] Boucle 
+10-04-2018 08:51:06[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:07[ DEBUG ] Boucle 
+10-04-2018 08:51:07[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:07[ DEBUG ] Boucle 
+10-04-2018 08:51:07[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:07[ DEBUG ] Boucle 
+10-04-2018 08:51:07[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:07[ DEBUG ] Boucle 
+10-04-2018 08:51:07[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:07[ DEBUG ] Boucle 
+10-04-2018 08:51:07[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:07[ DEBUG ] Boucle 
+10-04-2018 08:51:07[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:08[ DEBUG ] Boucle 
+10-04-2018 08:51:08[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:08[ DEBUG ] Boucle 
+10-04-2018 08:51:08[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:08[ DEBUG ] Boucle 
+10-04-2018 08:51:08[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:08[ DEBUG ] Boucle 
+10-04-2018 08:51:08[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:08[ DEBUG ] Boucle 
+10-04-2018 08:51:08[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:08[ DEBUG ] Boucle 
+10-04-2018 08:51:09[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:09[ DEBUG ] Boucle 
+10-04-2018 08:51:09[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:09[ DEBUG ] Boucle 
+10-04-2018 08:51:09[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:09[ DEBUG ] Boucle 
+10-04-2018 08:51:09[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:09[ DEBUG ] Boucle 
+10-04-2018 08:51:09[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:09[ DEBUG ] Boucle 
+10-04-2018 08:51:09[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:09[ DEBUG ] Boucle 
+10-04-2018 08:51:10[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:10[ DEBUG ] Boucle 
+10-04-2018 08:51:10[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:10[ DEBUG ] Boucle 
+10-04-2018 08:51:10[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:10[ DEBUG ] Boucle 
+10-04-2018 08:51:10[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:10[ DEBUG ] Boucle 
+10-04-2018 08:51:10[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:10[ DEBUG ] Boucle 
+10-04-2018 08:51:10[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:11[ DEBUG ] Boucle 
+10-04-2018 08:51:11[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:11[ DEBUG ] Boucle 
+10-04-2018 08:51:11[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:11[ DEBUG ] Boucle 
+10-04-2018 08:51:11[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:11[ DEBUG ] Boucle 
+10-04-2018 08:51:11[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:11[ DEBUG ] Boucle 
+10-04-2018 08:51:11[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:11[ DEBUG ] Boucle 
+10-04-2018 08:51:11[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:12[ DEBUG ] Boucle 
+10-04-2018 08:51:12[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:12[ DEBUG ] Boucle 
+10-04-2018 08:51:12[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:12[ DEBUG ] Boucle 
+10-04-2018 08:51:12[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:12[ DEBUG ] Boucle 
+10-04-2018 08:51:12[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:12[ DEBUG ] Boucle 
+10-04-2018 08:51:12[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:12[ DEBUG ] Boucle 
+10-04-2018 08:51:12[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:13[ DEBUG ] Boucle 
+10-04-2018 08:51:13[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:13[ DEBUG ] Boucle 
+10-04-2018 08:51:13[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:13[ DEBUG ] Boucle 
+10-04-2018 08:51:13[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:13[ DEBUG ] Boucle 
+10-04-2018 08:51:13[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:13[ DEBUG ] Boucle 
+10-04-2018 08:51:13[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:13[ DEBUG ] Boucle 
+10-04-2018 08:51:14[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:14[ DEBUG ] Boucle 
+10-04-2018 08:51:14[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:14[ DEBUG ] Boucle 
+10-04-2018 08:51:14[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:14[ DEBUG ] Boucle 
+10-04-2018 08:51:14[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:14[ DEBUG ] Boucle 
+10-04-2018 08:51:14[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:14[ DEBUG ] Boucle 
+10-04-2018 08:51:14[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:14[ DEBUG ] Boucle 
+10-04-2018 08:51:15[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:15[ DEBUG ] Boucle 
+10-04-2018 08:51:15[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:15[ DEBUG ] Boucle 
+10-04-2018 08:51:15[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:15[ DEBUG ] Boucle 
+10-04-2018 08:51:15[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:15[ DEBUG ] Boucle 
+10-04-2018 08:51:15[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:15[ DEBUG ] Boucle 
+10-04-2018 08:51:15[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:15[ DEBUG ] Boucle 
+10-04-2018 08:51:16[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:16[ DEBUG ] Boucle 
+10-04-2018 08:51:16[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:16[ DEBUG ] Boucle 
+10-04-2018 08:51:16[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:16[ DEBUG ] Boucle 
+10-04-2018 08:51:16[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:16[ DEBUG ] Boucle 
+10-04-2018 08:51:16[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:16[ DEBUG ] Boucle 
+10-04-2018 08:51:16[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:17[ DEBUG ] Boucle 
+10-04-2018 08:51:17[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:17[ DEBUG ] Boucle 
+10-04-2018 08:51:17[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:17[ DEBUG ] Boucle 
+10-04-2018 08:51:17[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:17[ DEBUG ] Boucle 
+10-04-2018 08:51:17[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:17[ DEBUG ] Boucle 
+10-04-2018 08:51:17[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:17[ DEBUG ] Boucle 
+10-04-2018 08:51:17[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:18[ DEBUG ] Boucle 
+10-04-2018 08:51:18[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:18[ DEBUG ] Boucle 
+10-04-2018 08:51:18[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:18[ DEBUG ] Boucle 
+10-04-2018 08:51:18[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:18[ DEBUG ] Boucle 
+10-04-2018 08:51:18[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:18[ DEBUG ] Boucle 
+10-04-2018 08:51:18[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:18[ DEBUG ] Boucle 
+10-04-2018 08:51:19[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:19[ DEBUG ] Boucle 
+10-04-2018 08:51:19[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:19[ DEBUG ] Boucle 
+10-04-2018 08:51:19[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:19[ DEBUG ] Boucle 
+10-04-2018 08:51:19[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:19[ DEBUG ] Boucle 
+10-04-2018 08:51:19[ SERVEUR ][ ENTREE ] Un Client avec l'ip 192.168.137.30 a essay? de ce connect?e
+10-04-2018 08:51:19[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:19[ DEBUG ] Boucle 
+10-04-2018 08:51:19[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:19[ DEBUG ] Boucle 
+10-04-2018 08:51:20[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:20[ DEBUG ] Boucle 
+10-04-2018 08:51:20[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:20[ DEBUG ] Boucle 
+10-04-2018 08:51:20[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:20[ DEBUG ] Boucle 
+10-04-2018 08:51:20[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:20[ DEBUG ] Boucle 
+10-04-2018 08:51:20[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:20[ DEBUG ] Boucle 
+10-04-2018 08:51:20[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:21[ DEBUG ] Boucle 
+10-04-2018 08:51:21[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:21[ DEBUG ] Boucle 
+10-04-2018 08:51:21[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:21[ DEBUG ] Boucle 
+10-04-2018 08:51:21[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:21[ DEBUG ] Boucle 
+10-04-2018 08:51:21[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:21[ DEBUG ] Boucle 
+10-04-2018 08:51:21[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:21[ DEBUG ] Boucle 
+10-04-2018 08:51:21[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:22[ DEBUG ] Boucle 
+10-04-2018 08:51:22[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:22[ DEBUG ] Boucle 
+10-04-2018 08:51:22[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:22[ DEBUG ] Boucle 
+10-04-2018 08:51:22[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:22[ DEBUG ] Boucle 
+10-04-2018 08:51:22[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:22[ DEBUG ] Boucle 
+10-04-2018 08:51:22[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:22[ DEBUG ] Boucle 
+10-04-2018 08:51:22[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:23[ DEBUG ] Boucle 
+10-04-2018 08:51:23[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:23[ DEBUG ] Boucle 
+10-04-2018 08:51:23[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:23[ DEBUG ] Boucle 
+10-04-2018 08:51:23[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:23[ DEBUG ] Boucle 
+10-04-2018 08:51:23[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:23[ DEBUG ] Boucle 
+10-04-2018 08:51:23[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:23[ DEBUG ] Boucle 
+10-04-2018 08:51:23[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:24[ DEBUG ] Boucle 
+10-04-2018 08:51:24[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:24[ DEBUG ] Boucle 
+10-04-2018 08:51:24[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:24[ DEBUG ] Boucle 
+10-04-2018 08:51:24[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:24[ DEBUG ] Boucle 
+10-04-2018 08:51:24[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:24[ DEBUG ] Boucle 
+10-04-2018 08:51:24[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:24[ DEBUG ] Boucle 
+10-04-2018 08:51:25[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:25[ DEBUG ] Boucle 
+10-04-2018 08:51:25[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:25[ DEBUG ] Boucle 
+10-04-2018 08:51:25[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:25[ DEBUG ] Boucle 
+10-04-2018 08:51:25[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:25[ DEBUG ] Boucle 
+10-04-2018 08:51:25[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:25[ DEBUG ] Boucle 
+10-04-2018 08:51:25[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:25[ DEBUG ] Boucle 
+10-04-2018 08:51:26[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:26[ DEBUG ] Boucle 
+10-04-2018 08:51:26[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:26[ DEBUG ] Boucle 
+10-04-2018 08:51:26[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:26[ DEBUG ] Boucle 
+10-04-2018 08:51:26[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:26[ DEBUG ] Boucle 
+10-04-2018 08:51:26[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:26[ DEBUG ] Boucle 
+10-04-2018 08:51:26[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:27[ DEBUG ] Boucle 
+10-04-2018 08:51:27[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:27[ DEBUG ] Boucle 
+10-04-2018 08:51:27[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:27[ DEBUG ] Boucle 
+10-04-2018 08:51:27[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:27[ DEBUG ] Boucle 
+10-04-2018 08:51:27[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:27[ DEBUG ] Boucle 
+10-04-2018 08:51:27[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:27[ DEBUG ] Boucle 
+10-04-2018 08:51:27[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:28[ DEBUG ] Boucle 
+10-04-2018 08:51:28[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:28[ DEBUG ] Boucle 
+10-04-2018 08:51:28[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:28[ DEBUG ] Boucle 
+10-04-2018 08:51:28[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:28[ DEBUG ] Boucle 
+10-04-2018 08:51:28[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:28[ DEBUG ] Boucle 
+10-04-2018 08:51:28[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:28[ DEBUG ] Boucle 
+10-04-2018 08:51:28[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:29[ DEBUG ] Boucle 
+10-04-2018 08:51:29[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:29[ DEBUG ] Boucle 
+10-04-2018 08:51:29[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:29[ DEBUG ] Boucle 
+10-04-2018 08:51:29[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:29[ DEBUG ] Boucle 
+10-04-2018 08:51:29[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:29[ DEBUG ] Boucle 
+10-04-2018 08:51:29[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:29[ DEBUG ] Boucle 
+10-04-2018 08:51:30[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:30[ DEBUG ] Boucle 
+10-04-2018 08:51:30[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:30[ DEBUG ] Boucle 
+10-04-2018 08:51:30[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:30[ DEBUG ] Boucle 
+10-04-2018 08:51:30[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:30[ DEBUG ] Boucle 
+10-04-2018 08:51:30[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:30[ DEBUG ] Boucle 
+10-04-2018 08:51:30[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:30[ DEBUG ] Boucle 
+10-04-2018 08:51:31[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:31[ DEBUG ] Boucle 
+10-04-2018 08:51:31[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:31[ DEBUG ] Boucle 
+10-04-2018 08:51:31[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:31[ DEBUG ] Boucle 
+10-04-2018 08:51:31[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:31[ DEBUG ] Boucle 
+10-04-2018 08:51:31[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:31[ DEBUG ] Boucle 
+10-04-2018 08:51:31[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:32[ DEBUG ] Boucle 
+10-04-2018 08:51:32[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:32[ DEBUG ] Boucle 
+10-04-2018 08:51:32[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:32[ DEBUG ] Boucle 
+10-04-2018 08:51:32[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:32[ DEBUG ] Boucle 
+10-04-2018 08:51:32[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:32[ DEBUG ] Boucle 
+10-04-2018 08:51:32[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:32[ DEBUG ] Boucle 
+10-04-2018 08:51:32[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:33[ DEBUG ] Boucle 
+10-04-2018 08:51:33[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:33[ DEBUG ] Boucle 
+10-04-2018 08:51:33[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:33[ DEBUG ] Boucle 
+10-04-2018 08:51:33[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:33[ DEBUG ] Boucle 
+10-04-2018 08:51:33[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:33[ DEBUG ] Boucle 
+10-04-2018 08:51:33[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:33[ DEBUG ] Boucle 
+10-04-2018 08:51:33[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:34[ DEBUG ] Boucle 
+10-04-2018 08:51:34[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:34[ DEBUG ] Boucle 
+10-04-2018 08:51:34[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:34[ DEBUG ] Boucle 
+10-04-2018 08:51:34[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:34[ DEBUG ] Boucle 
+10-04-2018 08:51:34[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:34[ DEBUG ] Boucle 
+10-04-2018 08:51:34[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:34[ DEBUG ] Boucle 
+10-04-2018 08:51:35[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:35[ DEBUG ] Boucle 
+10-04-2018 08:51:35[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:35[ DEBUG ] Boucle 
+10-04-2018 08:51:35[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:35[ DEBUG ] Boucle 
+10-04-2018 08:51:35[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:35[ DEBUG ] Boucle 
+10-04-2018 08:51:35[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:35[ DEBUG ] Boucle 
+10-04-2018 08:51:35[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:35[ DEBUG ] Boucle 
+10-04-2018 08:51:36[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:36[ DEBUG ] Boucle 
+10-04-2018 08:51:36[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:36[ DEBUG ] Boucle 
+10-04-2018 08:51:36[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:36[ DEBUG ] Boucle 
+10-04-2018 08:51:36[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:36[ DEBUG ] Boucle 
+10-04-2018 08:51:36[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:36[ DEBUG ] Boucle 
+10-04-2018 08:51:36[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:37[ DEBUG ] Boucle 
+10-04-2018 08:51:37[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:37[ DEBUG ] Boucle 
+10-04-2018 08:51:37[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:37[ DEBUG ] Boucle 
+10-04-2018 08:51:37[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:37[ DEBUG ] Boucle 
+10-04-2018 08:51:37[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:37[ DEBUG ] Boucle 
+10-04-2018 08:51:37[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:37[ DEBUG ] Boucle 
+10-04-2018 08:51:37[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:38[ DEBUG ] Boucle 
+10-04-2018 08:51:38[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:38[ DEBUG ] Boucle 
+10-04-2018 08:51:38[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:38[ DEBUG ] Boucle 
+10-04-2018 08:51:38[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:38[ DEBUG ] Boucle 
+10-04-2018 08:51:38[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:38[ DEBUG ] Boucle 
+10-04-2018 08:51:38[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:38[ DEBUG ] Boucle 
+10-04-2018 08:51:38[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:39[ DEBUG ] Boucle 
+10-04-2018 08:51:39[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:39[ DEBUG ] Boucle 
+10-04-2018 08:51:39[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:39[ DEBUG ] Boucle 
+10-04-2018 08:51:39[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:39[ DEBUG ] Boucle 
+10-04-2018 08:51:39[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:39[ DEBUG ] Boucle 
+10-04-2018 08:51:39[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:39[ DEBUG ] Boucle 
+10-04-2018 08:51:39[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:40[ DEBUG ] Boucle 
+10-04-2018 08:51:40[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:40[ DEBUG ] Boucle 
+10-04-2018 08:51:40[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:40[ DEBUG ] Boucle 
+10-04-2018 08:51:40[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:40[ DEBUG ] Boucle 
+10-04-2018 08:51:40[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:40[ DEBUG ] Boucle 
+10-04-2018 08:51:40[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:40[ DEBUG ] Boucle 
+10-04-2018 08:51:41[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:41[ DEBUG ] Boucle 
+10-04-2018 08:51:41[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:41[ DEBUG ] Boucle 
+10-04-2018 08:51:41[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:41[ DEBUG ] Boucle 
+10-04-2018 08:51:41[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:41[ DEBUG ] Boucle 
+10-04-2018 08:51:41[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:41[ DEBUG ] Boucle 
+10-04-2018 08:51:41[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:42[ DEBUG ] Boucle 
+10-04-2018 08:51:42[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:42[ DEBUG ] Boucle 
+10-04-2018 08:51:42[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:42[ DEBUG ] Boucle 
+10-04-2018 08:51:42[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:42[ DEBUG ] Boucle 
+10-04-2018 08:51:42[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:42[ DEBUG ] Boucle 
+10-04-2018 08:51:42[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:42[ DEBUG ] Boucle 
+10-04-2018 08:51:42[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:43[ DEBUG ] Boucle 
+10-04-2018 08:51:43[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:43[ DEBUG ] Boucle 
+10-04-2018 08:51:43[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:43[ DEBUG ] Boucle 
+10-04-2018 08:51:43[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:43[ DEBUG ] Boucle 
+10-04-2018 08:51:43[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:43[ DEBUG ] Boucle 
+10-04-2018 08:51:43[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:43[ DEBUG ] Boucle 
+10-04-2018 08:51:43[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:44[ DEBUG ] Boucle 
+10-04-2018 08:51:44[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:44[ DEBUG ] Boucle 
+10-04-2018 08:51:44[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:44[ DEBUG ] Boucle 
+10-04-2018 08:51:44[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:44[ DEBUG ] Boucle 
+10-04-2018 08:51:44[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:44[ PING ] Demande de ping de 192.168.137.10( ENTREE ClientBarri?re )
+10-04-2018 08:51:44[ DEBUG ] Boucle 
+10-04-2018 08:51:44[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:44[ DEBUG ] Boucle 
+10-04-2018 08:51:45[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:45[ DEBUG ] Boucle 
+10-04-2018 08:51:45[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:45[ DEBUG ] Boucle 
+10-04-2018 08:51:45[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:45[ DEBUG ] Boucle 
+10-04-2018 08:51:45[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:45[ DEBUG ] Boucle 
+10-04-2018 08:51:45[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:45[ DEBUG ] Boucle 
+10-04-2018 08:51:45[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:45[ DEBUG ] Boucle 
+10-04-2018 08:51:46[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:46[ DEBUG ] Boucle 
+10-04-2018 08:51:46[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:46[ DEBUG ] Boucle 
+10-04-2018 08:51:46[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:46[ DEBUG ] Boucle 
+10-04-2018 08:51:46[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:46[ DEBUG ] Boucle 
+10-04-2018 08:51:46[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:46[ DEBUG ] Boucle 
+10-04-2018 08:51:46[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:47[ DEBUG ] Boucle 
+10-04-2018 08:51:47[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:47[ DEBUG ] Boucle 
+10-04-2018 08:51:47[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:47[ DEBUG ] Boucle 
+10-04-2018 08:51:47[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:47[ DEBUG ] Boucle 
+10-04-2018 08:51:47[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:47[ DEBUG ] Boucle 
+10-04-2018 08:51:47[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:47[ DEBUG ] Boucle 
+10-04-2018 08:51:47[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:48[ DEBUG ] Boucle 
+10-04-2018 08:51:48[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:48[ DEBUG ] Boucle 
+10-04-2018 08:51:48[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:48[ DEBUG ] Boucle 
+10-04-2018 08:51:48[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:48[ DEBUG ] Boucle 
+10-04-2018 08:51:48[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:48[ DEBUG ] Boucle 
+10-04-2018 08:51:48[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:48[ DEBUG ] Boucle 
+10-04-2018 08:51:48[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:49[ DEBUG ] Boucle 
+10-04-2018 08:51:49[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:49[ DEBUG ] Boucle 
+10-04-2018 08:51:49[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:49[ DEBUG ] Boucle 
+10-04-2018 08:51:49[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:49[ DEBUG ] Boucle 
+10-04-2018 08:51:49[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:49[ DEBUG ] Boucle 
+10-04-2018 08:51:49[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:49[ DEBUG ] Boucle 
+10-04-2018 08:51:50[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:50[ DEBUG ] Boucle 
+10-04-2018 08:51:50[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:50[ DEBUG ] Boucle 
+10-04-2018 08:51:50[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:50[ DEBUG ] Boucle 
+10-04-2018 08:51:50[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:50[ DEBUG ] Boucle 
+10-04-2018 08:51:50[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:50[ DEBUG ] Boucle 
+10-04-2018 08:51:50[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:50[ DEBUG ] Boucle 
+10-04-2018 08:51:51[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:51[ DEBUG ] Boucle 
+10-04-2018 08:51:51[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:51[ DEBUG ] Boucle 
+10-04-2018 08:51:51[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:51[ DEBUG ] Boucle 
+10-04-2018 08:51:51[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:51[ DEBUG ] Boucle 
+10-04-2018 08:51:51[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:51[ DEBUG ] Boucle 
+10-04-2018 08:51:51[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:52[ DEBUG ] Boucle 
+10-04-2018 08:51:52[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:52[ DEBUG ] Boucle 
+10-04-2018 08:51:52[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:52[ DEBUG ] Boucle 
+10-04-2018 08:51:52[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:52[ DEBUG ] Boucle 
+10-04-2018 08:51:52[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:52[ DEBUG ] Boucle 
+10-04-2018 08:51:52[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:52[ DEBUG ] Boucle 
+10-04-2018 08:51:52[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:53[ DEBUG ] Boucle 
+10-04-2018 08:51:53[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:53[ DEBUG ] Boucle 
+10-04-2018 08:51:53[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:53[ DEBUG ] Boucle 
+10-04-2018 08:51:53[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:53[ DEBUG ] Boucle 
+10-04-2018 08:51:53[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:53[ DEBUG ] Boucle 
+10-04-2018 08:51:53[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:53[ DEBUG ] Boucle 
+10-04-2018 08:51:53[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:54[ DEBUG ] Boucle 
+10-04-2018 08:51:54[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:54[ DEBUG ] Boucle 
+10-04-2018 08:51:54[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:54[ DEBUG ] Boucle 
+10-04-2018 08:51:54[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:54[ DEBUG ] Boucle 
+10-04-2018 08:51:54[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:54[ DEBUG ] Boucle 
+10-04-2018 08:51:54[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:54[ DEBUG ] Boucle 
+10-04-2018 08:51:54[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:55[ DEBUG ] Boucle 
+10-04-2018 08:51:55[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:55[ DEBUG ] Boucle 
+10-04-2018 08:51:55[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:55[ DEBUG ] Boucle 
+10-04-2018 08:51:55[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:55[ DEBUG ] Boucle 
+10-04-2018 08:51:55[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:55[ DEBUG ] Boucle 
+10-04-2018 08:51:55[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:55[ DEBUG ] Boucle 
+10-04-2018 08:51:56[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:56[ DEBUG ] Boucle 
+10-04-2018 08:51:56[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:56[ DEBUG ] Boucle 
+10-04-2018 08:51:56[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:56[ DEBUG ] Boucle 
+10-04-2018 08:51:56[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:56[ DEBUG ] Boucle 
+10-04-2018 08:51:56[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:56[ DEBUG ] Boucle 
+10-04-2018 08:51:56[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:56[ DEBUG ] Boucle 
+10-04-2018 08:51:57[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:57[ DEBUG ] Boucle 
+10-04-2018 08:51:57[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:57[ DEBUG ] Boucle 
+10-04-2018 08:51:57[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:57[ DEBUG ] Boucle 
+10-04-2018 08:51:57[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:57[ DEBUG ] Boucle 
+10-04-2018 08:51:57[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:57[ DEBUG ] Boucle 
+10-04-2018 08:51:57[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:58[ DEBUG ] Boucle 
+10-04-2018 08:51:58[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:58[ DEBUG ] Boucle 
+10-04-2018 08:51:58[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:58[ DEBUG ] Boucle 
+10-04-2018 08:51:58[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:58[ DEBUG ] Boucle 
+10-04-2018 08:51:58[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:58[ DEBUG ] Boucle 
+10-04-2018 08:51:58[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:58[ DEBUG ] Boucle 
+10-04-2018 08:51:58[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:59[ DEBUG ] Boucle 
+10-04-2018 08:51:59[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:59[ DEBUG ] Boucle 
+10-04-2018 08:51:59[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:59[ DEBUG ] Boucle 
+10-04-2018 08:51:59[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:59[ DEBUG ] Boucle 
+10-04-2018 08:51:59[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:59[ DEBUG ] Boucle 
+10-04-2018 08:51:59[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:51:59[ DEBUG ] Boucle 
+10-04-2018 08:51:59[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:52:00[ DEBUG ] Boucle 
+10-04-2018 08:52:00[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:52:00[ DEBUG ] Boucle 
+10-04-2018 08:52:00[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:52:00[ DEBUG ] Boucle 
+10-04-2018 08:52:00[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:52:00[ DEBUG ] Boucle 
+10-04-2018 08:52:00[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:52:00[ DEBUG ] Boucle 
+10-04-2018 08:52:00[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:52:00[ DEBUG ] Boucle 
+10-04-2018 08:52:01[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:52:01[ DEBUG ] Boucle 
+10-04-2018 08:52:01[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:52:01[ DEBUG ] Boucle 
+10-04-2018 08:52:01[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:52:01[ DEBUG ] Boucle 
+10-04-2018 08:52:01[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:52:01[ DEBUG ] Boucle 
+10-04-2018 08:52:01[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:52:01[ DEBUG ] Boucle 
+10-04-2018 08:52:01[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:52:01[ DEBUG ] Boucle 
+10-04-2018 08:52:02[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:52:02[ DEBUG ] Boucle 
+10-04-2018 08:52:02[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:52:02[ DEBUG ] Boucle 
+10-04-2018 08:52:02[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:52:02[ DEBUG ] Boucle 
+10-04-2018 08:52:02[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:52:02[ DEBUG ] Boucle 
+10-04-2018 08:52:02[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:52:02[ DEBUG ] Boucle 
+10-04-2018 08:52:02[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:52:03[ DEBUG ] Boucle 
+10-04-2018 08:52:03[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:52:03[ DEBUG ] Boucle 
+10-04-2018 08:52:03[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:52:03[ DEBUG ] Boucle 
+10-04-2018 08:52:03[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:52:03[ DEBUG ] Boucle 
+10-04-2018 08:52:03[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:52:03[ DEBUG ] Boucle 
+10-04-2018 08:52:03[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:52:03[ DEBUG ] Boucle 
+10-04-2018 08:52:03[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:52:04[ DEBUG ] Boucle 
+10-04-2018 08:52:04[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:52:04[ DEBUG ] Boucle 
+10-04-2018 08:52:04[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:52:04[ DEBUG ] Boucle 
+10-04-2018 08:52:04[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:52:04[ DEBUG ] Boucle 
+10-04-2018 08:52:04[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:52:04[ DEBUG ] Boucle 
+10-04-2018 08:52:04[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:52:04[ DEBUG ] Boucle 
+10-04-2018 08:52:04[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:52:05[ DEBUG ] Boucle 
+10-04-2018 08:52:05[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:52:05[ DEBUG ] Boucle 
+10-04-2018 08:52:05[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:52:05[ DEBUG ] Boucle 
+10-04-2018 08:52:05[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:52:05[ DEBUG ] Boucle 
+10-04-2018 08:52:05[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:52:05[ DEBUG ] Boucle 
+10-04-2018 08:52:05[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:52:05[ DEBUG ] Boucle 
+10-04-2018 08:52:06[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:52:06[ DEBUG ] Boucle 
+10-04-2018 08:52:06[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:52:06[ DEBUG ] Boucle 
+10-04-2018 08:52:06[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:52:06[ DEBUG ] Boucle 
+10-04-2018 08:52:06[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:52:06[ DEBUG ] Boucle 
+10-04-2018 08:52:06[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:52:06[ DEBUG ] Boucle 
+10-04-2018 08:52:06[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:52:06[ DEBUG ] Boucle 
+10-04-2018 08:52:07[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:52:07[ DEBUG ] Boucle 
+10-04-2018 08:52:07[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:52:07[ DEBUG ] Boucle 
+10-04-2018 08:52:07[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:52:07[ DEBUG ] Boucle 
+10-04-2018 08:52:07[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:52:07[ DEBUG ] Boucle 
+10-04-2018 08:52:07[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:52:07[ DEBUG ] Boucle 
+10-04-2018 08:52:07[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:52:07[ DEBUG ] Boucle 
+10-04-2018 08:52:07[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:52:08[ DEBUG ] Boucle 
+10-04-2018 08:52:08[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:52:08[ DEBUG ] Boucle 
+10-04-2018 08:52:08[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:52:08[ DEBUG ] Boucle 
+10-04-2018 08:52:08[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:52:08[ DEBUG ] Boucle 
+10-04-2018 08:52:08[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:52:08[ DEBUG ] Boucle 
+10-04-2018 08:52:08[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:52:08[ DEBUG ] Boucle 
+10-04-2018 08:52:08[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:52:09[ DEBUG ] Boucle 
+10-04-2018 08:52:09[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:52:09[ DEBUG ] Boucle 
+10-04-2018 08:52:09[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:52:09[ DEBUG ] Boucle 
+10-04-2018 08:52:09[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:52:09[ DEBUG ] Boucle 
+10-04-2018 08:52:09[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:52:09[ DEBUG ] Boucle 
+10-04-2018 08:52:09[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:52:09[ DEBUG ] Boucle 
+10-04-2018 08:52:09[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:52:10[ DEBUG ] Boucle 
+10-04-2018 08:52:10[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:52:10[ DEBUG ] Boucle 
+10-04-2018 08:52:10[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:52:10[ DEBUG ] Boucle 
+10-04-2018 08:52:10[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:52:10[ DEBUG ] Boucle 
+10-04-2018 08:52:10[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:52:10[ DEBUG ] Boucle 
+10-04-2018 08:52:10[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:52:10[ DEBUG ] Boucle 
+10-04-2018 08:52:11[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:52:11[ DEBUG ] Boucle 
+10-04-2018 08:52:11[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:52:11[ DEBUG ] Boucle 
+10-04-2018 08:52:11[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:52:11[ DEBUG ] Boucle 
+10-04-2018 08:52:11[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:52:11[ DEBUG ] Boucle 
+10-04-2018 08:52:11[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:52:11[ DEBUG ] Boucle 
+10-04-2018 08:52:11[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:52:12[ DEBUG ] Boucle 
+10-04-2018 08:52:12[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:52:12[ DEBUG ] Boucle 
+10-04-2018 08:52:12[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:52:12[ DEBUG ] Boucle 
+10-04-2018 08:52:12[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:52:12[ DEBUG ] Boucle 
+10-04-2018 08:52:12[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:52:12[ DEBUG ] Boucle 
+10-04-2018 08:52:12[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:52:12[ DEBUG ] Boucle 
+10-04-2018 08:52:12[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:52:13[ DEBUG ] Boucle 
+10-04-2018 08:52:13[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:52:13[ DEBUG ] Boucle 
+10-04-2018 08:52:13[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:52:13[ DEBUG ] Boucle 
+10-04-2018 08:52:13[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:52:13[ DEBUG ] Boucle 
+10-04-2018 08:52:13[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:52:13[ DEBUG ] Boucle 
+10-04-2018 08:52:13[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:52:13[ DEBUG ] Boucle 
+10-04-2018 08:52:13[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:52:13[ DEBUG ] Boucle 
+10-04-2018 08:52:13[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:52:14[ DEBUG ] Boucle 
+10-04-2018 08:52:14[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:52:14[ DEBUG ] Boucle 
+10-04-2018 08:52:14[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 08:52:14[ SERVEUR ][ ENTREE ] ClientRFID viens de ce connect?e
+10-04-2018 08:52:14[ DEBUG ] Boucle 
+10-04-2018 08:52:19[ INFO ] Sortie de l'event
+10-04-2018 08:52:19[ ENTREE ] [ RFID ] Demande d'acc?s avec l'id RFID 02006D7223
+10-04-2018 08:52:20[ ENTREE ] [ RFID ] Acc?s autoris?
+10-04-2018 08:52:20[ DEBUG ] Boucle 
+10-04-2018 08:52:22[ DEBUG ] dechet :1
+10-04-2018 08:52:22[ DEBUG ] Boucle 
+10-04-2018 08:52:23[ ENTREE ] [ RFID ] Type de dechet selectionner : 1
+10-04-2018 08:52:23[ ENTREE ] [ RFID ] Poids du vehicule : 2500
+10-04-2018 08:52:24[ DEBUG ] Boucle 
+10-04-2018 08:52:24[ DEBUG ] Boucle 
+10-04-2018 08:52:25[ INFO ][ UTILISATEUR ] Nouvelle utilisateur dans la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+10-04-2018 08:52:44[ SERVEUR ][ ENTREE ] Un Client avec l'ip 192.168.137.30 a essay? de ce connect?e
+10-04-2018 08:52:45[ ENTREE ] Fin de procedure !
+10-04-2018 08:52:52[ PING ] Demande de ping de 192.168.137.10( ENTREE ClientBarri?re )
+10-04-2018 08:53:53[ SERVEUR ][ ENTREE ] Un Client avec l'ip 192.168.137.30 a essay? de ce connect?e
+10-04-2018 08:53:56[ PING ] Demande de ping de 192.168.137.10( ENTREE ClientBarri?re )
+10-04-2018 08:55:00[ PING ] Demande de ping de 192.168.137.10( ENTREE ClientBarri?re )
+10-04-2018 08:55:16[ ENTREE ] [ RFID ] Demande d'acc?s avec l'id RFID 02006D7223
+10-04-2018 08:55:16[ ENTREE ] [ RFID ] Acc?s autoris?
+10-04-2018 08:55:16[ INFO ] Sortie de l'event
+10-04-2018 08:55:16[ DEBUG ] Boucle 
+10-04-2018 08:55:20[ DEBUG ] dechet :1
+10-04-2018 08:55:20[ DEBUG ] Boucle 
+10-04-2018 08:55:20[ ENTREE ] [ RFID ] Type de dechet selectionner : 1
+10-04-2018 08:55:20[ ENTREE ] [ RFID ] Poids du vehicule : 2500
+10-04-2018 08:55:23[ DEBUG ] Boucle 
+10-04-2018 08:55:23[ DEBUG ] Boucle 
+10-04-2018 08:55:23[ INFO ][ UTILISATEUR ] Nouvelle utilisateur dans la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+10-04-2018 08:55:30[ SERVEUR ][ ENTREE ] Un Client avec l'ip 192.168.137.30 a essay? de ce connect?e
+10-04-2018 08:55:43[ ENTREE ] Fin de procedure !
+10-04-2018 08:56:08[ PING ] Demande de ping de 192.168.137.10( ENTREE ClientBarri?re )
+10-04-2018 08:56:48[ SERVEUR ][ ENTREE ] Un Client avec l'ip 192.168.137.30 a essay? de ce connect?e
+10-04-2018 08:57:12[ PING ] Demande de ping de 192.168.137.10( ENTREE ClientBarri?re )
+10-04-2018 08:57:45[ SERVEUR ][ ENTREE ] Un Client avec l'ip 192.168.137.30 a essay? de ce connect?e
+10-04-2018 08:58:16[ PING ] Demande de ping de 192.168.137.10( ENTREE ClientBarri?re )
+10-04-2018 08:59:21[ PING ] Demande de ping de 192.168.137.10( ENTREE ClientBarri?re )
+10-04-2018 09:00:25[ PING ] Demande de ping de 192.168.137.10( ENTREE ClientBarri?re )
+10-04-2018 09:01:29[ PING ] Demande de ping de 192.168.137.10( ENTREE ClientBarri?re )
+10-04-2018 09:02:33[ PING ] Demande de ping de 192.168.137.10( ENTREE ClientBarri?re )
+10-04-2018 09:03:37[ PING ] Demande de ping de 192.168.137.10( ENTREE ClientBarri?re )
+10-04-2018 09:04:41[ PING ] Demande de ping de 192.168.137.10( ENTREE ClientBarri?re )
+10-04-2018 09:04:51[ SERVEUR ][ ENTREE ] Un Client avec l'ip 192.168.137.30 a essay? de ce connect?e
+10-04-2018 09:05:45[ PING ] Demande de ping de 192.168.137.10( ENTREE ClientBarri?re )
+10-04-2018 09:06:04[ SERVEUR ][ ENTREE ] Un Client avec l'ip 192.168.137.30 a essay? de ce connect?e
+10-04-2018 09:06:45[ SERVEUR ][ ENTREE ] Un Client avec l'ip 192.168.137.30 a essay? de ce connect?e
+10-04-2018 09:06:49[ PING ] Demande de ping de 192.168.137.10( ENTREE ClientBarri?re )
+10-04-2018 09:07:53[ PING ] Demande de ping de 192.168.137.10( ENTREE ClientBarri?re )
+10-04-2018 09:08:57[ PING ] Demande de ping de 192.168.137.10( ENTREE ClientBarri?re )
+10-04-2018 09:10:01[ PING ] Demande de ping de 192.168.137.10( ENTREE ClientBarri?re )
+10-04-2018 09:11:05[ PING ] Demande de ping de 192.168.137.10( ENTREE ClientBarri?re )
+10-04-2018 09:12:09[ PING ] Demande de ping de 192.168.137.10( ENTREE ClientBarri?re )
+10-04-2018 09:13:13[ PING ] Demande de ping de 192.168.137.10( ENTREE ClientBarri?re )
+10-04-2018 09:14:17[ PING ] Demande de ping de 192.168.137.10( ENTREE ClientBarri?re )
+10-04-2018 09:15:05[ ENTREE ] [ RFID ] Demande d'acc?s avec l'id RFID 02006D7223
+10-04-2018 09:15:05[ INFO ] Sortie de l'event
+10-04-2018 09:15:21[ PING ] Demande de ping de 192.168.137.10( ENTREE ClientBarri?re )
+10-04-2018 09:15:44[ SERVEUR ][ ENTREE ] ClientRFID viens de ce connect?e
+10-04-2018 09:15:57[ ENTREE ] [ RFID ] Acc?s autoris?
+10-04-2018 09:15:57[ DEBUG ] Boucle 
+10-04-2018 09:16:04[ INFO ] Sortie de l'event
+10-04-2018 09:16:04[ ENTREE ] [ RFID ] Demande d'acc?s avec l'id RFID 02006D7223
+10-04-2018 09:16:12[ ERROR ][ ENTREE ]  Pas de type de dechet
+10-04-2018 09:16:25[ PING ] Demande de ping de 192.168.137.10( ENTREE ClientBarri?re )
+10-04-2018 09:49:46[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+10-04-2018 09:49:46[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+10-04-2018 09:49:46[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+10-04-2018 09:49:46[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+10-04-2018 09:49:46[ SERVEUR ][ ENTREE ] ClientBarri?re viens de ce connect?e
+10-04-2018 09:49:46[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+10-04-2018 09:49:46[ INTERFACE ]  Attente de l'interface
+10-04-2018 09:49:46[ INFO ][ UTILISATEUR ] Nouvelle utilisateur dans la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+10-04-2018 09:49:56[ INFO ] [ Utilisateur ] L'utilisateur quitte la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+10-04-2018 09:50:18[ SERVEUR ][ ENTREE ] ClientRFID viens de ce connect?e
+10-04-2018 09:50:19[ DEBUG ] Boucle 
+10-04-2018 09:50:27[ ENTREE ] [ RFID ] Demande d'acc?s avec l'id RFID 02006D7223
+10-04-2018 09:50:27[ ENTREE ] [ RFID ] Acc?s autoris?
+10-04-2018 09:50:27[ INFO ] Sortie de l'event
+10-04-2018 09:50:27[ DEBUG ] Boucle 
+10-04-2018 09:50:29[ DEBUG ] dechet :1
+10-04-2018 09:50:29[ DEBUG ] Boucle 
+10-04-2018 09:50:29[ ENTREE ] [ RFID ] Type de dechet selectionner : 1
+10-04-2018 09:50:29[ ENTREE ] [ RFID ] Poids du vehicule : 2500
+10-04-2018 09:50:31[ DEBUG ] Boucle 
+10-04-2018 09:50:31[ DEBUG ] Boucle 
+10-04-2018 09:50:31[ INFO ][ UTILISATEUR ] Nouvelle utilisateur dans la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+10-04-2018 09:50:51[ ENTREE ] Fin de procedure !
+10-04-2018 09:51:33[ PING ] Demande de ping de 192.168.137.10( ENTREE ClientBarri?re )
+10-04-2018 09:52:37[ PING ] Demande de ping de 192.168.137.10( ENTREE ClientBarri?re )
+10-04-2018 09:53:41[ PING ] Demande de ping de 192.168.137.10( ENTREE ClientBarri?re )
+10-04-2018 09:54:45[ PING ] Demande de ping de 192.168.137.10( ENTREE ClientBarri?re )
+10-04-2018 09:55:49[ PING ] Demande de ping de 192.168.137.10( ENTREE ClientBarri?re )
+10-04-2018 09:56:53[ PING ] Demande de ping de 192.168.137.10( ENTREE ClientBarri?re )
+10-04-2018 09:57:57[ PING ] Demande de ping de 192.168.137.10( ENTREE ClientBarri?re )
+10-04-2018 09:58:20[ SERVEUR ][ ENTREE ] Un Client avec l'ip 192.168.137.30 a essay? de ce connect?e
+10-04-2018 09:59:01[ PING ] Demande de ping de 192.168.137.10( ENTREE ClientBarri?re )
+10-04-2018 10:00:05[ SERVEUR ][ ENTREE ] Un Client avec l'ip 192.168.137.30 a essay? de ce connect?e
+10-04-2018 10:00:05[ PING ] Demande de ping de 192.168.137.10( ENTREE ClientBarri?re )
+10-04-2018 10:01:09[ PING ] Demande de ping de 192.168.137.10( ENTREE ClientBarri?re )
+10-04-2018 10:01:11[ INFO ] Sortie de l'event
+10-04-2018 10:01:11[ ENTREE ] [ RFID ] Demande d'acc?s avec l'id RFID 02006D7223
+10-04-2018 10:01:11[ ENTREE ] [ RFID ] Acc?s autoris?
+10-04-2018 10:01:11[ DEBUG ] Boucle 
+10-04-2018 10:01:18[ DEBUG ] dechet :1
+10-04-2018 10:01:18[ DEBUG ] Boucle 
+10-04-2018 10:01:18[ ENTREE ] [ RFID ] Type de dechet selectionner : 1
+10-04-2018 10:01:18[ ENTREE ] [ RFID ] Poids du vehicule : 2500
+10-04-2018 10:01:20[ INFO ][ UTILISATEUR ] Nouvelle utilisateur dans la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+10-04-2018 10:01:20[ DEBUG ] Boucle 
+10-04-2018 10:01:20[ DEBUG ] Boucle 
+10-04-2018 10:01:40[ ENTREE ] Fin de procedure !
+10-04-2018 10:01:58[ DEBUG ] Boucle 
+10-04-2018 10:01:58[ CLIENT ][ ENTREE ] ClientRFID viens de ce d?connect?e
+10-04-2018 10:01:58[ DEBUG ] Boucle 
+10-04-2018 10:01:59[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 10:01:59[ DEBUG ] Boucle 
+10-04-2018 10:01:59[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 10:01:59[ DEBUG ] Boucle 
+10-04-2018 10:01:59[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 10:01:59[ DEBUG ] Boucle 
+10-04-2018 10:01:59[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 10:01:59[ DEBUG ] Boucle 
+10-04-2018 10:01:59[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 10:01:59[ DEBUG ] Boucle 
+10-04-2018 10:01:59[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 10:01:59[ DEBUG ] Boucle 
+10-04-2018 10:02:00[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 10:02:00[ DEBUG ] Boucle 
+10-04-2018 10:02:00[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:07:49[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+10-04-2018 13:08:10[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+10-04-2018 13:08:10[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+10-04-2018 13:08:10[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+10-04-2018 13:08:10[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+10-04-2018 13:08:11[ INTERFACE ]  Attente de l'interface
+10-04-2018 13:10:07[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+10-04-2018 13:10:39[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+10-04-2018 13:11:00[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+10-04-2018 13:11:00[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+10-04-2018 13:11:00[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+10-04-2018 13:11:00[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+10-04-2018 13:11:00[ INTERFACE ]  Attente de l'interface
+10-04-2018 13:11:21[ ERROR ][ UTILISATEUR ] Utilisateur avec id RFID 02006D7223 Inconnu 
+10-04-2018 13:50:37[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+10-04-2018 13:50:37[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+10-04-2018 13:50:38[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+10-04-2018 13:50:38[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+10-04-2018 13:50:38[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+10-04-2018 13:50:38[ INTERFACE ]  Attente de l'interface
+10-04-2018 13:50:38[ INFO ][ UTILISATEUR ] Nouvelle utilisateur dans la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+10-04-2018 13:50:44[ SERVEUR ][ ENTREE ] ClientBarri?re viens de ce connect?e
+10-04-2018 13:50:48[ INFO ] [ Utilisateur ] L'utilisateur quitte la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+10-04-2018 13:51:29[ SERVEUR ][ ENTREE ] ClientRFID viens de ce connect?e
+10-04-2018 13:51:29[ DEBUG ] Boucle 
+10-04-2018 13:51:40[ ENTREE ] [ RFID ] Demande d'acc?s avec l'id RFID 02006D7223
+10-04-2018 13:51:40[ ENTREE ] [ RFID ] Acc?s autoris?
+10-04-2018 13:51:40[ INFO ] Sortie de l'event
+10-04-2018 13:51:40[ DEBUG ] Boucle 
+10-04-2018 13:51:43[ DEBUG ] dechet :1
+10-04-2018 13:51:43[ DEBUG ] Boucle 
+10-04-2018 13:51:43[ ENTREE ] [ RFID ] Type de dechet selectionner : 1
+10-04-2018 13:51:43[ ENTREE ] [ RFID ] Poids du vehicule : 2500
+10-04-2018 13:51:51[ DEBUG ] Boucle 
+10-04-2018 13:51:51[ CLIENT ][ ENTREE ] ClientRFID viens de ce d?connect?e
+10-04-2018 13:51:51[ DEBUG ] Boucle 
+10-04-2018 13:51:51[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:51:51[ DEBUG ] Boucle 
+10-04-2018 13:51:51[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:51:52[ DEBUG ] Boucle 
+10-04-2018 13:51:52[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:51:52[ DEBUG ] Boucle 
+10-04-2018 13:51:52[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:51:52[ DEBUG ] Boucle 
+10-04-2018 13:51:52[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:51:52[ DEBUG ] Boucle 
+10-04-2018 13:51:52[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:51:52[ DEBUG ] Boucle 
+10-04-2018 13:51:52[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:51:52[ DEBUG ] Boucle 
+10-04-2018 13:51:52[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:51:53[ DEBUG ] Boucle 
+10-04-2018 13:51:53[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:51:53[ PING ] Demande de ping de 192.168.137.10( ENTREE ClientBarri?re )
+10-04-2018 13:51:53[ DEBUG ] Boucle 
+10-04-2018 13:51:53[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:51:53[ DEBUG ] Boucle 
+10-04-2018 13:51:53[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:51:53[ DEBUG ] Boucle 
+10-04-2018 13:51:53[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:51:53[ DEBUG ] Boucle 
+10-04-2018 13:51:53[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:51:53[ DEBUG ] Boucle 
+10-04-2018 13:51:53[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:51:53[ DEBUG ] Boucle 
+10-04-2018 13:51:54[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:51:54[ DEBUG ] Boucle 
+10-04-2018 13:51:54[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:51:54[ DEBUG ] Boucle 
+10-04-2018 13:51:54[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:51:54[ DEBUG ] Boucle 
+10-04-2018 13:51:54[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:51:54[ DEBUG ] Boucle 
+10-04-2018 13:51:54[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:51:54[ DEBUG ] Boucle 
+10-04-2018 13:51:54[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:51:54[ DEBUG ] Boucle 
+10-04-2018 13:51:55[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:51:55[ DEBUG ] Boucle 
+10-04-2018 13:51:55[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:51:55[ DEBUG ] Boucle 
+10-04-2018 13:51:55[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:51:55[ DEBUG ] Boucle 
+10-04-2018 13:51:55[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:51:55[ DEBUG ] Boucle 
+10-04-2018 13:51:55[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:51:55[ DEBUG ] Boucle 
+10-04-2018 13:51:55[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:51:55[ DEBUG ] Boucle 
+10-04-2018 13:51:56[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:51:56[ DEBUG ] Boucle 
+10-04-2018 13:51:56[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:51:56[ DEBUG ] Boucle 
+10-04-2018 13:51:56[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:51:56[ DEBUG ] Boucle 
+10-04-2018 13:51:56[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:51:56[ DEBUG ] Boucle 
+10-04-2018 13:51:56[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:51:56[ DEBUG ] Boucle 
+10-04-2018 13:51:56[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:51:57[ DEBUG ] Boucle 
+10-04-2018 13:51:57[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:51:57[ DEBUG ] Boucle 
+10-04-2018 13:51:57[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:51:57[ DEBUG ] Boucle 
+10-04-2018 13:51:57[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:51:57[ DEBUG ] Boucle 
+10-04-2018 13:51:57[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:51:57[ DEBUG ] Boucle 
+10-04-2018 13:51:57[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:51:57[ DEBUG ] Boucle 
+10-04-2018 13:51:57[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:51:58[ DEBUG ] Boucle 
+10-04-2018 13:51:58[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:51:58[ DEBUG ] Boucle 
+10-04-2018 13:51:58[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:51:58[ DEBUG ] Boucle 
+10-04-2018 13:51:58[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:51:58[ DEBUG ] Boucle 
+10-04-2018 13:51:58[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:51:58[ DEBUG ] Boucle 
+10-04-2018 13:51:58[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:51:58[ DEBUG ] Boucle 
+10-04-2018 13:51:58[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:51:59[ DEBUG ] Boucle 
+10-04-2018 13:51:59[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:51:59[ DEBUG ] Boucle 
+10-04-2018 13:51:59[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:51:59[ DEBUG ] Boucle 
+10-04-2018 13:51:59[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:51:59[ DEBUG ] Boucle 
+10-04-2018 13:51:59[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:51:59[ DEBUG ] Boucle 
+10-04-2018 13:51:59[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:51:59[ DEBUG ] Boucle 
+10-04-2018 13:52:00[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:00[ DEBUG ] Boucle 
+10-04-2018 13:52:00[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:00[ DEBUG ] Boucle 
+10-04-2018 13:52:00[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:00[ DEBUG ] Boucle 
+10-04-2018 13:52:00[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:00[ DEBUG ] Boucle 
+10-04-2018 13:52:00[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:00[ DEBUG ] Boucle 
+10-04-2018 13:52:00[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:01[ DEBUG ] Boucle 
+10-04-2018 13:52:01[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:01[ DEBUG ] Boucle 
+10-04-2018 13:52:01[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:01[ DEBUG ] Boucle 
+10-04-2018 13:52:01[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:01[ DEBUG ] Boucle 
+10-04-2018 13:52:01[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:01[ DEBUG ] Boucle 
+10-04-2018 13:52:01[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:01[ DEBUG ] Boucle 
+10-04-2018 13:52:01[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:01[ DEBUG ] Boucle 
+10-04-2018 13:52:02[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:02[ DEBUG ] Boucle 
+10-04-2018 13:52:02[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:02[ DEBUG ] Boucle 
+10-04-2018 13:52:02[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:02[ DEBUG ] Boucle 
+10-04-2018 13:52:02[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:02[ DEBUG ] Boucle 
+10-04-2018 13:52:02[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:02[ DEBUG ] Boucle 
+10-04-2018 13:52:02[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:02[ DEBUG ] Boucle 
+10-04-2018 13:52:03[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:03[ DEBUG ] Boucle 
+10-04-2018 13:52:03[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:03[ DEBUG ] Boucle 
+10-04-2018 13:52:03[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:03[ DEBUG ] Boucle 
+10-04-2018 13:52:03[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:03[ DEBUG ] Boucle 
+10-04-2018 13:52:03[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:03[ DEBUG ] Boucle 
+10-04-2018 13:52:03[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:03[ DEBUG ] Boucle 
+10-04-2018 13:52:04[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:04[ DEBUG ] Boucle 
+10-04-2018 13:52:04[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:04[ DEBUG ] Boucle 
+10-04-2018 13:52:04[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:04[ DEBUG ] Boucle 
+10-04-2018 13:52:04[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:04[ DEBUG ] Boucle 
+10-04-2018 13:52:04[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:04[ DEBUG ] Boucle 
+10-04-2018 13:52:04[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:04[ DEBUG ] Boucle 
+10-04-2018 13:52:05[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:05[ DEBUG ] Boucle 
+10-04-2018 13:52:05[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:05[ DEBUG ] Boucle 
+10-04-2018 13:52:05[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:05[ DEBUG ] Boucle 
+10-04-2018 13:52:05[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:05[ DEBUG ] Boucle 
+10-04-2018 13:52:05[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:05[ DEBUG ] Boucle 
+10-04-2018 13:52:05[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:05[ DEBUG ] Boucle 
+10-04-2018 13:52:05[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:06[ DEBUG ] Boucle 
+10-04-2018 13:52:06[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:06[ DEBUG ] Boucle 
+10-04-2018 13:52:06[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:06[ DEBUG ] Boucle 
+10-04-2018 13:52:06[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:06[ DEBUG ] Boucle 
+10-04-2018 13:52:06[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:06[ DEBUG ] Boucle 
+10-04-2018 13:52:06[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:06[ DEBUG ] Boucle 
+10-04-2018 13:52:06[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:07[ DEBUG ] Boucle 
+10-04-2018 13:52:07[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:07[ DEBUG ] Boucle 
+10-04-2018 13:52:07[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:07[ DEBUG ] Boucle 
+10-04-2018 13:52:07[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:07[ DEBUG ] Boucle 
+10-04-2018 13:52:07[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:07[ DEBUG ] Boucle 
+10-04-2018 13:52:07[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:07[ DEBUG ] Boucle 
+10-04-2018 13:52:07[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:08[ DEBUG ] Boucle 
+10-04-2018 13:52:08[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:08[ DEBUG ] Boucle 
+10-04-2018 13:52:08[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:08[ DEBUG ] Boucle 
+10-04-2018 13:52:08[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:08[ DEBUG ] Boucle 
+10-04-2018 13:52:08[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:08[ DEBUG ] Boucle 
+10-04-2018 13:52:08[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:08[ DEBUG ] Boucle 
+10-04-2018 13:52:08[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:09[ DEBUG ] Boucle 
+10-04-2018 13:52:09[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:09[ DEBUG ] Boucle 
+10-04-2018 13:52:09[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:09[ DEBUG ] Boucle 
+10-04-2018 13:52:09[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:09[ DEBUG ] Boucle 
+10-04-2018 13:52:09[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:09[ DEBUG ] Boucle 
+10-04-2018 13:52:09[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:09[ DEBUG ] Boucle 
+10-04-2018 13:52:09[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:10[ DEBUG ] Boucle 
+10-04-2018 13:52:10[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:10[ DEBUG ] Boucle 
+10-04-2018 13:52:10[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:10[ DEBUG ] Boucle 
+10-04-2018 13:52:10[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:10[ DEBUG ] Boucle 
+10-04-2018 13:52:10[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:10[ DEBUG ] Boucle 
+10-04-2018 13:52:10[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:10[ DEBUG ] Boucle 
+10-04-2018 13:52:10[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:11[ DEBUG ] Boucle 
+10-04-2018 13:52:11[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:11[ DEBUG ] Boucle 
+10-04-2018 13:52:11[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:11[ DEBUG ] Boucle 
+10-04-2018 13:52:11[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:11[ DEBUG ] Boucle 
+10-04-2018 13:52:11[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:11[ DEBUG ] Boucle 
+10-04-2018 13:52:11[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:11[ DEBUG ] Boucle 
+10-04-2018 13:52:11[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:12[ DEBUG ] Boucle 
+10-04-2018 13:52:12[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:12[ DEBUG ] Boucle 
+10-04-2018 13:52:12[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:12[ DEBUG ] Boucle 
+10-04-2018 13:52:12[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:12[ DEBUG ] Boucle 
+10-04-2018 13:52:12[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:12[ DEBUG ] Boucle 
+10-04-2018 13:52:12[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:12[ DEBUG ] Boucle 
+10-04-2018 13:52:12[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:13[ DEBUG ] Boucle 
+10-04-2018 13:52:13[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:13[ DEBUG ] Boucle 
+10-04-2018 13:52:13[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:13[ DEBUG ] Boucle 
+10-04-2018 13:52:13[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:13[ DEBUG ] Boucle 
+10-04-2018 13:52:13[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:13[ DEBUG ] Boucle 
+10-04-2018 13:52:13[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:13[ DEBUG ] Boucle 
+10-04-2018 13:52:13[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:14[ DEBUG ] Boucle 
+10-04-2018 13:52:14[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:14[ DEBUG ] Boucle 
+10-04-2018 13:52:14[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:14[ DEBUG ] Boucle 
+10-04-2018 13:52:14[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:14[ DEBUG ] Boucle 
+10-04-2018 13:52:14[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:14[ DEBUG ] Boucle 
+10-04-2018 13:52:14[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:14[ DEBUG ] Boucle 
+10-04-2018 13:52:14[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:15[ ERROR ][ ENTREE ]  Pas de photo
+10-04-2018 13:52:15[ DEBUG ] Boucle 
+10-04-2018 13:52:15[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:15[ ENTREE ] Fin de procedure !
+10-04-2018 13:52:15[ DEBUG ] Boucle 
+10-04-2018 13:52:15[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:15[ DEBUG ] Boucle 
+10-04-2018 13:52:15[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:15[ DEBUG ] Boucle 
+10-04-2018 13:52:15[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:15[ DEBUG ] Boucle 
+10-04-2018 13:52:15[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:15[ DEBUG ] Boucle 
+10-04-2018 13:52:16[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:16[ DEBUG ] Boucle 
+10-04-2018 13:52:16[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:16[ DEBUG ] Boucle 
+10-04-2018 13:52:16[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:16[ DEBUG ] Boucle 
+10-04-2018 13:52:16[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:16[ DEBUG ] Boucle 
+10-04-2018 13:52:16[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:16[ DEBUG ] Boucle 
+10-04-2018 13:52:16[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:16[ DEBUG ] Boucle 
+10-04-2018 13:52:16[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:17[ DEBUG ] Boucle 
+10-04-2018 13:52:17[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:17[ DEBUG ] Boucle 
+10-04-2018 13:52:17[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:17[ DEBUG ] Boucle 
+10-04-2018 13:52:17[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:17[ DEBUG ] Boucle 
+10-04-2018 13:52:17[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:17[ DEBUG ] Boucle 
+10-04-2018 13:52:17[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:17[ DEBUG ] Boucle 
+10-04-2018 13:52:17[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:18[ DEBUG ] Boucle 
+10-04-2018 13:52:18[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:18[ DEBUG ] Boucle 
+10-04-2018 13:52:18[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:18[ DEBUG ] Boucle 
+10-04-2018 13:52:18[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:18[ DEBUG ] Boucle 
+10-04-2018 13:52:18[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:18[ DEBUG ] Boucle 
+10-04-2018 13:52:18[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:18[ DEBUG ] Boucle 
+10-04-2018 13:52:18[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:19[ DEBUG ] Boucle 
+10-04-2018 13:52:19[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:19[ DEBUG ] Boucle 
+10-04-2018 13:52:19[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:19[ DEBUG ] Boucle 
+10-04-2018 13:52:19[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:19[ DEBUG ] Boucle 
+10-04-2018 13:52:19[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:19[ DEBUG ] Boucle 
+10-04-2018 13:52:19[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:19[ DEBUG ] Boucle 
+10-04-2018 13:52:19[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:20[ DEBUG ] Boucle 
+10-04-2018 13:52:20[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:20[ DEBUG ] Boucle 
+10-04-2018 13:52:20[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:20[ DEBUG ] Boucle 
+10-04-2018 13:52:20[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:20[ DEBUG ] Boucle 
+10-04-2018 13:52:20[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:20[ DEBUG ] Boucle 
+10-04-2018 13:52:20[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:20[ DEBUG ] Boucle 
+10-04-2018 13:52:20[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:21[ DEBUG ] Boucle 
+10-04-2018 13:52:21[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:21[ DEBUG ] Boucle 
+10-04-2018 13:52:21[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:21[ DEBUG ] Boucle 
+10-04-2018 13:52:21[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:21[ DEBUG ] Boucle 
+10-04-2018 13:52:21[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:21[ DEBUG ] Boucle 
+10-04-2018 13:52:21[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:21[ DEBUG ] Boucle 
+10-04-2018 13:52:21[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:22[ DEBUG ] Boucle 
+10-04-2018 13:52:22[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:22[ DEBUG ] Boucle 
+10-04-2018 13:52:22[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:22[ DEBUG ] Boucle 
+10-04-2018 13:52:22[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:22[ DEBUG ] Boucle 
+10-04-2018 13:52:22[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:22[ DEBUG ] Boucle 
+10-04-2018 13:52:22[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:22[ DEBUG ] Boucle 
+10-04-2018 13:52:22[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:23[ DEBUG ] Boucle 
+10-04-2018 13:52:23[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:23[ DEBUG ] Boucle 
+10-04-2018 13:52:23[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:23[ DEBUG ] Boucle 
+10-04-2018 13:52:23[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:23[ DEBUG ] Boucle 
+10-04-2018 13:52:23[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:23[ DEBUG ] Boucle 
+10-04-2018 13:52:23[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:23[ DEBUG ] Boucle 
+10-04-2018 13:52:23[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:24[ DEBUG ] Boucle 
+10-04-2018 13:52:24[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:24[ DEBUG ] Boucle 
+10-04-2018 13:52:24[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:24[ DEBUG ] Boucle 
+10-04-2018 13:52:24[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:24[ DEBUG ] Boucle 
+10-04-2018 13:52:24[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:24[ DEBUG ] Boucle 
+10-04-2018 13:52:24[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:24[ DEBUG ] Boucle 
+10-04-2018 13:52:24[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:25[ DEBUG ] Boucle 
+10-04-2018 13:52:25[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:25[ DEBUG ] Boucle 
+10-04-2018 13:52:25[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:25[ DEBUG ] Boucle 
+10-04-2018 13:52:25[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:25[ DEBUG ] Boucle 
+10-04-2018 13:52:25[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:25[ DEBUG ] Boucle 
+10-04-2018 13:52:25[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:25[ DEBUG ] Boucle 
+10-04-2018 13:52:26[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:26[ DEBUG ] Boucle 
+10-04-2018 13:52:26[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:26[ DEBUG ] Boucle 
+10-04-2018 13:52:26[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:26[ DEBUG ] Boucle 
+10-04-2018 13:52:26[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:26[ DEBUG ] Boucle 
+10-04-2018 13:52:26[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:26[ DEBUG ] Boucle 
+10-04-2018 13:52:26[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:26[ DEBUG ] Boucle 
+10-04-2018 13:52:27[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:27[ DEBUG ] Boucle 
+10-04-2018 13:52:27[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:27[ DEBUG ] Boucle 
+10-04-2018 13:52:27[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:27[ DEBUG ] Boucle 
+10-04-2018 13:52:27[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:27[ DEBUG ] Boucle 
+10-04-2018 13:52:27[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:27[ DEBUG ] Boucle 
+10-04-2018 13:52:27[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:28[ DEBUG ] Boucle 
+10-04-2018 13:52:28[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:28[ DEBUG ] Boucle 
+10-04-2018 13:52:28[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:28[ DEBUG ] Boucle 
+10-04-2018 13:52:28[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:28[ DEBUG ] Boucle 
+10-04-2018 13:52:28[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:28[ DEBUG ] Boucle 
+10-04-2018 13:52:28[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+10-04-2018 13:52:28[ SERVEUR ][ ENTREE ] ClientRFID viens de ce connect?e
+10-04-2018 13:52:28[ DEBUG ] Boucle 
+10-04-2018 13:52:31[ INFO ] Sortie de l'event
+10-04-2018 13:52:31[ ENTREE ] [ RFID ] Demande d'acc?s avec l'id RFID 02006D7223
+10-04-2018 13:52:31[ ENTREE ] [ RFID ] Acc?s autoris?
+10-04-2018 13:52:31[ DEBUG ] Boucle 
+10-04-2018 13:52:33[ DEBUG ] dechet :1
+10-04-2018 13:52:33[ ENTREE ] [ RFID ] Type de dechet selectionner : 1
+10-04-2018 13:52:33[ DEBUG ] Boucle 
+10-04-2018 13:52:33[ ENTREE ] [ RFID ] Poids du vehicule : 2500
+10-04-2018 13:52:35[ DEBUG ] Boucle 
+10-04-2018 13:52:35[ DEBUG ] Boucle 
+10-04-2018 13:52:35[ INFO ][ UTILISATEUR ] Nouvelle utilisateur dans la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+10-04-2018 13:52:55[ ENTREE ] Fin de procedure !
+10-04-2018 13:53:01[ PING ] Demande de ping de 192.168.137.10( ENTREE ClientBarri?re )
+10-04-2018 13:53:40[ INFO ] Sortie de l'event
+10-04-2018 13:53:40[ ENTREE ] [ RFID ] Demande d'acc?s avec l'id RFID 02006D7223
+10-04-2018 13:53:40[ ENTREE ] [ RFID ] Acc?s autoris?
+10-04-2018 13:53:40[ DEBUG ] Boucle 
+10-04-2018 13:53:41[ DEBUG ] dechet :1
+10-04-2018 13:53:41[ DEBUG ] Boucle 
+10-04-2018 13:53:41[ ENTREE ] [ RFID ] Type de dechet selectionner : 1
+10-04-2018 13:53:41[ ENTREE ] [ RFID ] Poids du vehicule : 2500
+10-04-2018 13:53:43[ DEBUG ] Boucle 
+10-04-2018 13:53:43[ DEBUG ] Boucle 
+10-04-2018 13:53:43[ INFO ][ UTILISATEUR ] Nouvelle utilisateur dans la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+10-04-2018 13:54:03[ ENTREE ] Fin de procedure !
+10-04-2018 13:54:08[ PING ] Demande de ping de 192.168.137.10( ENTREE ClientBarri?re )
+10-04-2018 13:55:12[ PING ] Demande de ping de 192.168.137.10( ENTREE ClientBarri?re )
+10-04-2018 13:56:16[ PING ] Demande de ping de 192.168.137.10( ENTREE ClientBarri?re )
+10-04-2018 13:57:20[ PING ] Demande de ping de 192.168.137.10( ENTREE ClientBarri?re )
+10-04-2018 13:58:09[ SERVEUR ][ ENTREE ] ClientBarri?re viens de ce connect?e
+10-04-2018 14:02:01[ ENTREE ] [ RFID ] Demande d'acc?s avec l'id RFID 02006D7223
+10-04-2018 14:02:01[ INFO ] Sortie de l'event
+10-04-2018 14:02:01[ ENTREE ] [ RFID ] Acc?s autoris?
+10-04-2018 14:02:01[ DEBUG ] Boucle 
+10-04-2018 14:02:04[ DEBUG ] dechet :1
+10-04-2018 14:02:04[ DEBUG ] Boucle 
+10-04-2018 14:02:04[ ENTREE ] [ RFID ] Type de dechet selectionner : 1
+10-04-2018 14:02:04[ ENTREE ] [ RFID ] Poids du vehicule : 2500
+10-04-2018 14:02:06[ DEBUG ] Boucle 
+10-04-2018 14:02:06[ DEBUG ] Boucle 
+10-04-2018 14:02:06[ INFO ][ UTILISATEUR ] Nouvelle utilisateur dans la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+10-04-2018 14:02:26[ ENTREE ] Fin de procedure !
+10-04-2018 14:03:36[ ENTREE ] [ RFID ] Demande d'acc?s avec l'id RFID 02006D7223
+10-04-2018 14:03:36[ ENTREE ] [ RFID ] Acc?s autoris?
+10-04-2018 14:03:36[ INFO ] Sortie de l'event
+10-04-2018 14:03:36[ DEBUG ] Boucle 
+10-04-2018 14:03:37[ DEBUG ] dechet :1
+10-04-2018 14:03:38[ DEBUG ] Boucle 
+10-04-2018 14:03:38[ ENTREE ] [ RFID ] Type de dechet selectionner : 1
+10-04-2018 14:03:38[ ENTREE ] [ RFID ] Poids du vehicule : 2500
+10-04-2018 14:03:40[ DEBUG ] Boucle 
+10-04-2018 14:03:40[ DEBUG ] Boucle 
+10-04-2018 14:03:40[ INFO ][ UTILISATEUR ] Nouvelle utilisateur dans la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+10-04-2018 14:04:00[ ENTREE ] Fin de procedure !
+10-04-2018 14:05:01[ SERVEUR ][ ENTREE ] Un Client avec l'ip 192.168.137.30 a essay? de ce connect?e
+10-04-2018 14:07:57[ SERVEUR ][ ENTREE ] Un Client avec l'ip 192.168.137.30 a essay? de ce connect?e
+10-04-2018 14:08:39[ SERVEUR ][ ENTREE ] Un Client avec l'ip 192.168.137.30 a essay? de ce connect?e
+10-04-2018 14:43:29[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+10-04-2018 14:43:30[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+10-04-2018 14:43:30[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+10-04-2018 14:43:30[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+10-04-2018 14:43:30[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+10-04-2018 14:43:30[ INTERFACE ]  Attente de l'interface
+10-04-2018 14:43:30[ INFO ][ UTILISATEUR ] Nouvelle utilisateur dans la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+10-04-2018 14:43:34[ SERVEUR ][ ENTREE ] ClientBarri?re viens de ce connect?e
+10-04-2018 14:43:40[ INFO ] [ Utilisateur ] L'utilisateur quitte la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+10-04-2018 14:45:09[ SERVEUR ][ ENTREE ] ClientBarri?re viens de ce connect?e
+10-04-2018 14:47:04[ SERVEUR ][ ENTREE ] ClientRFID viens de ce connect?e
+10-04-2018 14:47:04[ DEBUG ] Boucle 
+10-04-2018 14:47:12[ ENTREE ] [ RFID ] Demande d'acc?s avec l'id RFID 02006D7223
+10-04-2018 14:47:12[ ENTREE ] [ RFID ] Acc?s autoris?
+10-04-2018 14:47:12[ INFO ] Sortie de l'event
+10-04-2018 14:47:12[ DEBUG ] Boucle 
+10-04-2018 14:47:14[ DEBUG ] dechet :1
+10-04-2018 14:47:14[ DEBUG ] Boucle 
+10-04-2018 14:47:14[ ENTREE ] [ RFID ] Type de dechet selectionner : 1
+10-04-2018 14:47:14[ ENTREE ] [ RFID ] Poids du vehicule : 2500
+10-04-2018 14:47:16[ DEBUG ] Boucle 
+10-04-2018 14:47:16[ DEBUG ] Boucle 
+10-04-2018 14:47:16[ INFO ][ UTILISATEUR ] Nouvelle utilisateur dans la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+10-04-2018 14:47:36[ ENTREE ] Fin de procedure !
+10-04-2018 16:39:20[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+10-04-2018 16:39:20[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+10-04-2018 16:39:20[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+10-04-2018 16:39:20[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+10-04-2018 16:39:21[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+10-04-2018 16:39:21[ INTERFACE ]  Attente de l'interface
+10-04-2018 16:39:21[ INFO ][ UTILISATEUR ] Nouvelle utilisateur dans la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+10-04-2018 16:39:31[ INFO ] [ Utilisateur ] L'utilisateur quitte la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+10-04-2018 16:39:42[ SERVEUR ][ ENTREE ] ClientRFID viens de ce connect?e
+10-04-2018 16:39:42[ DEBUG ] Boucle 
+10-04-2018 16:41:10[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+10-04-2018 16:41:11[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+10-04-2018 16:41:11[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+10-04-2018 16:41:11[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+10-04-2018 16:41:11[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+10-04-2018 16:41:11[ INTERFACE ]  Attente de l'interface
+10-04-2018 16:41:11[ INFO ][ UTILISATEUR ] Nouvelle utilisateur dans la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+10-04-2018 16:41:16[ SERVEUR ][ ENTREE ] ClientRFID viens de ce connect?e
+10-04-2018 16:41:16[ DEBUG ] Boucle 
+10-04-2018 16:41:21[ INFO ] [ Utilisateur ] L'utilisateur quitte la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+10-04-2018 16:42:37[ SERVEUR ][ ENTREE ] ClientBarri?re viens de ce connect?e
+10-04-2018 16:43:46[ PING ] Demande de ping de 192.168.137.10( ENTREE ClientBarri?re )
+10-04-2018 16:44:32[ ENTREE ] [ RFID ] Demande d'acc?s avec l'id RFID 02006D7223
+10-04-2018 16:44:32[ ENTREE ] [ RFID ] Acc?s autoris?
+10-04-2018 16:44:32[ INFO ] Sortie de l'event
+10-04-2018 16:44:32[ DEBUG ] Boucle 
+10-04-2018 16:44:34[ DEBUG ] dechet :2
+10-04-2018 16:44:34[ ENTREE ] [ RFID ] Type de dechet selectionner : 2
+10-04-2018 16:44:34[ ENTREE ] [ RFID ] Poids du vehicule : 2500
+10-04-2018 16:44:34[ DEBUG ] Boucle 
+10-04-2018 16:44:36[ INFO ][ UTILISATEUR ] Nouvelle utilisateur dans la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+10-04-2018 16:44:36[ DEBUG ] Boucle 
+10-04-2018 16:44:37[ DEBUG ] Boucle 
+10-04-2018 16:44:51[ PING ] Demande de ping de 192.168.137.10( ENTREE ClientBarri?re )
+10-04-2018 16:44:57[ ENTREE ] Fin de procedure !
+10-04-2018 16:45:25[ SERVEUR ][ ENTREE ] Un Client avec l'ip 192.168.137.30 a essay? de ce connect?e
+10-04-2018 16:45:56[ PING ] Demande de ping de 192.168.137.10( ENTREE ClientBarri?re )
+10-04-2018 16:46:20[ SERVEUR ][ ENTREE ] Un Client avec l'ip 192.168.137.30 a essay? de ce connect?e
+10-04-2018 16:46:59[ PING ] Demande de ping de 192.168.137.10( ENTREE ClientBarri?re )
+10-04-2018 16:48:02[ PING ] Demande de ping de 192.168.137.10( ENTREE ClientBarri?re )
+10-04-2018 16:49:05[ PING ] Demande de ping de 192.168.137.10( ENTREE ClientBarri?re )
+10-04-2018 16:50:08[ PING ] Demande de ping de 192.168.137.10( ENTREE ClientBarri?re )
+10-04-2018 16:51:11[ PING ] Demande de ping de 192.168.137.10( ENTREE ClientBarri?re )
+10-04-2018 16:52:14[ PING ] Demande de ping de 192.168.137.10( ENTREE ClientBarri?re )
+10-04-2018 16:52:41[ SERVEUR ][ ENTREE ] Un Client avec l'ip 192.168.137.30 a essay? de ce connect?e
+10-04-2018 16:53:17[ PING ] Demande de ping de 192.168.137.10( ENTREE ClientBarri?re )
+10-04-2018 16:53:37[ INFO ] Sortie de l'event
+10-04-2018 16:53:37[ ENTREE ] [ RFID ] Demande d'acc?s avec l'id RFID 02006D7223
+10-04-2018 16:53:37[ ENTREE ] [ RFID ] Acc?s autoris?
+10-04-2018 16:53:37[ DEBUG ] Boucle 
+10-04-2018 16:53:42[ DEBUG ] dechet :1
+10-04-2018 16:53:42[ DEBUG ] Boucle 
+10-04-2018 16:53:42[ ENTREE ] [ RFID ] Type de dechet selectionner : 1
+10-04-2018 16:53:42[ ENTREE ] [ RFID ] Poids du vehicule : 2500
+10-04-2018 16:53:44[ DEBUG ] Boucle 
+10-04-2018 16:53:44[ DEBUG ] Boucle 
+10-04-2018 16:53:45[ INFO ][ UTILISATEUR ] Nouvelle utilisateur dans la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+10-04-2018 16:54:05[ ENTREE ] Fin de procedure !
+10-04-2018 16:54:06[ SERVEUR ][ ENTREE ] Un Client avec l'ip 192.168.137.30 a essay? de ce connect?e
+10-04-2018 16:54:24[ PING ] Demande de ping de 192.168.137.10( ENTREE ClientBarri?re )
+10-04-2018 16:55:27[ PING ] Demande de ping de 192.168.137.10( ENTREE ClientBarri?re )
+10-04-2018 16:56:06[ SERVEUR ][ ENTREE ] Un Client avec l'ip 192.168.137.30 a essay? de ce connect?e
+10-04-2018 16:56:30[ PING ] Demande de ping de 192.168.137.10( ENTREE ClientBarri?re )
+10-04-2018 16:57:33[ PING ] Demande de ping de 192.168.137.10( ENTREE ClientBarri?re )
+10-04-2018 16:58:36[ PING ] Demande de ping de 192.168.137.10( ENTREE ClientBarri?re )
+10-04-2018 17:02:19[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+10-04-2018 17:02:19[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+10-04-2018 17:02:19[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+10-04-2018 17:02:19[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+10-04-2018 17:02:19[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+10-04-2018 17:02:20[ INTERFACE ]  Attente de l'interface
+10-04-2018 17:02:20[ INFO ][ UTILISATEUR ] Nouvelle utilisateur dans la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+10-04-2018 18:05:39[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+10-04-2018 18:07:39[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+10-04-2018 18:07:39[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+10-04-2018 18:07:39[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+10-04-2018 18:07:39[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+10-04-2018 18:07:39[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+10-04-2018 18:07:39[ INTERFACE ]  Attente de l'interface
+10-04-2018 18:07:39[ ERROR ][ UTILISATEUR ] Utilisateur avec id RFID 02006D7223 Inconnu 
+10-04-2018 18:07:49[ DEBUG ] System.Exception: ID_RFID Introuvable
+   ? DataBddProxy.getUserByIdRFID(String id_Rfid) dans c:\users\a125\source\repos\dechetterie\dechetterie-serveur\databddproxy.cpp:ligne 172
+   ? Dechetterie.deleteUtilisateur(String id_rfid) dans c:\users\a125\source\repos\dechetterie\dechetterie-serveur\dechetterie.cpp:ligne 118
+10-04-2018 18:09:01[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+10-04-2018 18:09:02[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+10-04-2018 18:09:02[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+10-04-2018 18:09:02[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+10-04-2018 18:09:02[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+10-04-2018 18:09:02[ INTERFACE ]  Attente de l'interface
+10-04-2018 18:09:02[ ERROR ][ UTILISATEUR ] Utilisateur avec id RFID 02006D7223 Inconnu 
+10-04-2018 18:09:12[ DEBUG ] System.Exception: ID_RFID Introuvable
+   ? DataBddProxy.getUserByIdRFID(String id_Rfid) dans c:\users\a125\source\repos\dechetterie\dechetterie-serveur\databddproxy.cpp:ligne 172
+   ? Dechetterie.deleteUtilisateur(String id_rfid) dans c:\users\a125\source\repos\dechetterie\dechetterie-serveur\dechetterie.cpp:ligne 118
+10-04-2018 18:12:48[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+10-04-2018 18:12:48[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+10-04-2018 18:12:48[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+10-04-2018 18:12:48[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+10-04-2018 18:12:48[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+10-04-2018 18:12:48[ INTERFACE ]  Attente de l'interface
+10-04-2018 18:12:48[ ERROR ][ UTILISATEUR ] Utilisateur avec id RFID 02006D7223 Inconnu 
+10-04-2018 18:12:58[ DEBUG ] System.Exception: ID_RFID Introuvable
+   ? DataBddProxy.getUserByIdRFID(String id_Rfid) dans c:\users\a125\source\repos\dechetterie\dechetterie-serveur\databddproxy.cpp:ligne 172
+   ? Dechetterie.deleteUtilisateur(String id_rfid) dans c:\users\a125\source\repos\dechetterie\dechetterie-serveur\dechetterie.cpp:ligne 118
+10-04-2018 18:13:59[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+10-04-2018 18:13:59[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+10-04-2018 18:13:59[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+10-04-2018 18:13:59[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+10-04-2018 18:13:59[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+10-04-2018 18:13:59[ INTERFACE ]  Attente de l'interface
+10-04-2018 18:13:59[ ERROR ][ UTILISATEUR ] Utilisateur avec id RFID 02006D7223 Inconnu 
+10-04-2018 18:14:09[ DEBUG ] System.Exception: ID_RFID Introuvable
+   ? DataBddProxy.getUserByIdRFID(String id_Rfid) dans c:\users\a125\source\repos\dechetterie\dechetterie-serveur\databddproxy.cpp:ligne 172
+   ? Dechetterie.deleteUtilisateur(String id_rfid) dans c:\users\a125\source\repos\dechetterie\dechetterie-serveur\dechetterie.cpp:ligne 118
+10-04-2018 18:17:15[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+10-04-2018 18:17:15[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+10-04-2018 18:17:15[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+10-04-2018 18:17:15[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+10-04-2018 18:17:15[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+10-04-2018 18:17:15[ INTERFACE ]  Attente de l'interface
+10-04-2018 18:17:15[ ERROR ][ UTILISATEUR ] Utilisateur avec id RFID 02006D7223 Inconnu 
+10-04-2018 18:17:50[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+10-04-2018 18:17:50[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+10-04-2018 18:17:50[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+10-04-2018 18:17:50[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+10-04-2018 18:17:50[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+10-04-2018 18:17:50[ INTERFACE ]  Attente de l'interface
+10-04-2018 18:17:51[ ERROR ][ UTILISATEUR ] Utilisateur avec id RFID 02006D7223 Inconnu 
+10-04-2018 18:18:01[ DEBUG ] System.Exception: ID_RFID Introuvable
+   ? DataBddProxy.getUserByIdRFID(String id_Rfid) dans c:\users\a125\source\repos\dechetterie\dechetterie-serveur\databddproxy.cpp:ligne 172
+   ? Dechetterie.deleteUtilisateur(String id_rfid) dans c:\users\a125\source\repos\dechetterie\dechetterie-serveur\dechetterie.cpp:ligne 118
+10-04-2018 20:11:36[ INFO ] [ Configuration ] Fichier de configuration bien charg?e

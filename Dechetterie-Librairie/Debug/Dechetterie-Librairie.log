@@ -1,9 +1,2 @@
-﻿  AssemblyInfo.cpp
-  ControlEtat.cpp
-  ControlIPBox.cpp
-  ControlUtilisateur.cpp
-  Dechetterie-Librairie.cpp
-  Génération de code en cours...
-  AssemblyInfo.obj : /DEBUG:FASTLINK n'est pas pris en charge en présence de code managé ; redémarrage de l'édition des liens avec /DEBUG:FULL
-  Dechetterie-Librairie.vcxproj -> C:\Users\A125\Source\Repos\Dechetterie\Debug\Dechetterie-Librairie.dll
+﻿  Dechetterie-Librairie.vcxproj -> C:\Users\A125\Source\Repos\Dechetterie\Debug\Dechetterie-Librairie.dll
   Dechetterie-Librairie.vcxproj -> C:\Users\A125\Source\Repos\Dechetterie\Debug\Dechetterie-Librairie.pdb (Partial PDB)

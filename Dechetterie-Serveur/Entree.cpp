@@ -30,9 +30,9 @@ void Entree::AccesDemandEvent(String ^ rfid)
 
 			Dechetterie::addUtilisateur(rfid, dechet_type, poids, photo);
 
-			//_listClient->ClientBarriere->OuvrirBarriere();
-			//Thread::Sleep(TEMPO_BARRIERE);
-			//_listClient->ClientBarriere->FermerBarriere();
+			_listClient->ClientBarriere->OuvrirBarriere();
+			Thread::Sleep(TEMPO_BARRIERE);
+			_listClient->ClientBarriere->FermerBarriere();
 		}
 		catch (Exception^ e)
 		{

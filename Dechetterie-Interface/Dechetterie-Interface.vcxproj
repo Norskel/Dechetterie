@@ -150,6 +150,10 @@
     <ClInclude Include="MainForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="PipeServeur.h" />
+    <ClInclude Include="Protocole\Protocole.h" />
+    <ClInclude Include="Protocole\StructProtocolMsg.h" />
+    <ClInclude Include="Protocole\StructTypeMessage.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="stdafx.h" />
   </ItemGroup>
@@ -161,6 +165,7 @@
     <ClCompile Include="ConfigForm.cpp" />
     <ClCompile Include="Dechetterie-Interface.cpp" />
     <ClCompile Include="MainForm.cpp" />
+    <ClCompile Include="PipeServeur.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
@@ -172,6 +177,9 @@
     <Image Include="app.ico" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="ConfigForm.resx">
+      <DependentUpon>ConfigForm.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.h</DependentUpon>
     </EmbeddedResource>

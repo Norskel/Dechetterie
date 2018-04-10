@@ -1,3 +1,4 @@
+  DechetterieInterface.ConfigForm.resources - Embedded, ContainedInManifestFile, 
   DechetterieInterface.MainForm.resources - Embedded, ContainedInManifestFile, 
 ImageRuntimeVersion: v4.0.30319
 Assembly Dechetterie-Interface, Version=1.0.*, Culture=Langue indifférente (Pays indifférent): 
@@ -17,6 +18,8 @@ Assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f
 Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
 	hash=None, flags=None
 Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly Dechetterie-Librairie, Version=1.0.*, Culture=Langue indifférente (Pays indifférent): 
 	hash=None, flags=None
 Class DataGroupe: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
@@ -62,3 +65,10 @@ Class Utilisateur: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
 Class MainForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Struct id_groupe: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    id_groupe TOUS = 0 : Public, Static, Literal, HasDefault
+    id_groupe ENTREE = 1 : Public, Static, Literal, HasDefault
+    id_groupe SORTIE = 2 : Public, Static, Literal, HasDefault

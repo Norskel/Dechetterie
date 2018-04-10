@@ -1,4 +1,4 @@
-#pragma once
+ï»¿#pragma once
 
 #define FILE_CONFIG "ConfigServeur.xml"
 #define FILE_NAME_USER "user.xml"
@@ -22,10 +22,10 @@ using namespace System::Threading;
 using namespace System::IO::Pipes;
 using namespace System::Xml::Serialization;
 
-delegate void DelegateUser(List<Utilisateur^>^ list, int X, int Y, int h, int w);
+delegate void DelegateUser(List<Utilisateur^>^ list, int h, int w);
 
 /// <summary>
-/// Description résumée de MainForm
+/// Description rï¿½sumï¿½e de MainForm
 /// </summary>
 public ref class MainForm : public System::Windows::Forms::Form
 {
@@ -33,31 +33,35 @@ public:
 	MainForm(void)
 	{
 
+		Screen^ s = Screen::PrimaryScreen;
 		InitializeComponent();
+		this->Width = s->WorkingArea.Width;
+		this->Height = s->WorkingArea.Height;
+	
 
 		_thWaitServerMsg = gcnew Thread(gcnew ThreadStart(this, &MainForm::fctWaitClientListFromServer));
 		_thWaitServerMsg->Name = "ThreadWaitMsgUserFromSrv";
-		_thWaitServerMsg->Start();
+		//_thWaitServerMsg->Start();
 
 
 		//
 		//TODO: ajoutez ici le code du constructeur
 		//
 
+		
+		Bitmap^ i = gcnew Bitmap("test.jpeg");
+		ImageConverter^ converter = gcnew ImageConverter();
 
-		//Bitmap^ i = gcnew Bitmap("test.jpeg");
-		//ImageConverter^ converter = gcnew ImageConverter();
+		array<Byte>^ rt = (array<Byte>^)converter->ConvertTo(i, array<Byte>::typeid);
 
-		//array<Byte>^ rt = (array<Byte>^)converter->ConvertTo(i, array<Byte>::typeid);
-
-		//_listUser->Add(gcnew Utilisateur("KLEIN-NORTH", "Martin", 2, "5sfd5d", 54, rt));
+		list->Add(gcnew Utilisateur("KLEIN-NORTH", "Martin", 2, "5sfd5d", 54, rt));
 		//_listUser->Add(gcnew Utilisateur("KLEIN-NORTH", "Martin", 2, "5sfd5d", 54, rt));
 		//_listUser->Add(gcnew Utilisateur("KLEIN-NORTH", "Martin", 2, "5sfd5d", 54, rt));
 		//_listUser->Add(gcnew Utilisateur("KLEIN-NORTH", "Martin", 2, "5sfd5d", 54, rt));
 		//_listUser->Add(gcnew Utilisateur("KLEIN-NORTH", "Martin", 2, "5sfd5d", 54, rt));
 		//_listUser->Add(gcnew Utilisateur("KLEIN-NORTH", "Martin", 2, "5sfd5d", 54, rt));
 
-		////AfficherControlUser(_listUser, 50, 50,488,648);
+		AfficherControlUser(list, 200, 300);
 		//AfficherControlUser(_listUser, 150, 50, 300, 400);
 		this->timerUpdate->Enabled = true;
 
@@ -81,8 +85,9 @@ public:
 	}
 
 protected:
+	List<Utilisateur^>^ list = gcnew List<Utilisateur^>();
 	/// <summary>
-	/// Nettoyage des ressources utilisées.
+	/// Nettoyage des ressources utilisï¿½es.
 	/// </summary>
 	~MainForm()
 	{
@@ -103,15 +108,19 @@ private: System::ComponentModel::IContainer^  components;
 
 private:
 	/// <summary>
-	/// Variable nécessaire au concepteur.
+	/// Variable nï¿½cessaire au concepteur.
 	/// </summary>
 
 
-private: System::Windows::Forms::Button^  button1;
+
 private: ControlInterface::ControlEtat^  controlEtat1;
 private: System::Windows::Forms::Timer^  timerUpdate;
 private: System::Windows::Forms::MenuStrip^  menuStrip1;
 private: System::Windows::Forms::ToolStripMenuItem^  optionToolStripMenuItem;
+private: System::Windows::Forms::FlowLayoutPanel^  PhotoClientLayout;
+private: System::Windows::Forms::Button^  button1;
+
+
 
 private: System::Windows::Forms::ToolStripMenuItem^  optionToolStripMenuItem1;
 
@@ -121,29 +130,21 @@ private: System::Windows::Forms::ToolStripMenuItem^  optionToolStripMenuItem1;
 
 #pragma region Windows Form Designer generated code
 		 /// <summary>
-		 /// Méthode requise pour la prise en charge du concepteur - ne modifiez pas
-		 /// le contenu de cette méthode avec l'éditeur de code.
+		 /// Mï¿½thode requise pour la prise en charge du concepteur - ne modifiez pas
+		 /// le contenu de cette mï¿½thode avec l'ï¿½diteur de code.
 		 /// </summary>
 		 void InitializeComponent(void)
 		 {
 			 this->components = (gcnew System::ComponentModel::Container());
-			 this->button1 = (gcnew System::Windows::Forms::Button());
 			 this->controlEtat1 = (gcnew ControlInterface::ControlEtat());
 			 this->timerUpdate = (gcnew System::Windows::Forms::Timer(this->components));
 			 this->menuStrip1 = (gcnew System::Windows::Forms::MenuStrip());
 			 this->optionToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			 this->optionToolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			 this->PhotoClientLayout = (gcnew System::Windows::Forms::FlowLayoutPanel());
+			 this->button1 = (gcnew System::Windows::Forms::Button());
 			 this->menuStrip1->SuspendLayout();
 			 this->SuspendLayout();
-			 // 
-			 // button1
-			 // 
-			 this->button1->Location = System::Drawing::Point(22, 27);
-			 this->button1->Name = L"button1";
-			 this->button1->Size = System::Drawing::Size(75, 23);
-			 this->button1->TabIndex = 0;
-			 this->button1->Text = L"button1";
-			 this->button1->UseVisualStyleBackColor = true;
 			 // 
 			 // controlEtat1
 			 // 
@@ -151,7 +152,7 @@ private: System::Windows::Forms::ToolStripMenuItem^  optionToolStripMenuItem1;
 			 this->controlEtat1->colorFalse = System::Drawing::Color::Red;
 			 this->controlEtat1->colorTexte = System::Drawing::Color::White;
 			 this->controlEtat1->colorTrue = System::Drawing::Color::Lime;
-			 this->controlEtat1->Location = System::Drawing::Point(22, 60);
+			 this->controlEtat1->Location = System::Drawing::Point(25, 66);
 			 this->controlEtat1->Name = L"controlEtat1";
 			 this->controlEtat1->Size = System::Drawing::Size(75, 51);
 			 this->controlEtat1->state = false;
@@ -167,10 +168,11 @@ private: System::Windows::Forms::ToolStripMenuItem^  optionToolStripMenuItem1;
 			 // 
 			 // menuStrip1
 			 // 
+			 this->menuStrip1->BackColor = System::Drawing::SystemColors::ControlDarkDark;
 			 this->menuStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(1) { this->optionToolStripMenuItem });
 			 this->menuStrip1->Location = System::Drawing::Point(0, 0);
 			 this->menuStrip1->Name = L"menuStrip1";
-			 this->menuStrip1->Size = System::Drawing::Size(1904, 24);
+			 this->menuStrip1->Size = System::Drawing::Size(1362, 24);
 			 this->menuStrip1->TabIndex = 2;
 			 this->menuStrip1->Text = L"menuStrip1";
 			 // 
@@ -188,13 +190,30 @@ private: System::Windows::Forms::ToolStripMenuItem^  optionToolStripMenuItem1;
 			 this->optionToolStripMenuItem1->Text = L"Option";
 			 this->optionToolStripMenuItem1->Click += gcnew System::EventHandler(this, &MainForm::optionToolStripMenuItem1_Click);
 			 // 
+			 // PhotoClientLayout
+			 // 
+			 this->PhotoClientLayout->Location = System::Drawing::Point(168, 27);
+			 this->PhotoClientLayout->Name = L"PhotoClientLayout";
+			 this->PhotoClientLayout->Size = System::Drawing::Size(1194, 716);
+			 this->PhotoClientLayout->TabIndex = 3;
+			 // 
+			 // button1
+			 // 
+			 this->button1->Location = System::Drawing::Point(25, 28);
+			 this->button1->Name = L"button1";
+			 this->button1->Size = System::Drawing::Size(75, 23);
+			 this->button1->TabIndex = 4;
+			 this->button1->Text = L"button1";
+			 this->button1->UseVisualStyleBackColor = true;
+			 this->button1->Click += gcnew System::EventHandler(this, &MainForm::button1_Click);
+			 // 
 			 // MainForm
 			 // 
-			 this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
-			 this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			 this->ClientSize = System::Drawing::Size(1904, 1041);
-			 this->Controls->Add(this->controlEtat1);
+			 this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::None;
+			 this->ClientSize = System::Drawing::Size(1362, 741);
 			 this->Controls->Add(this->button1);
+			 this->Controls->Add(this->controlEtat1);
+			 this->Controls->Add(this->PhotoClientLayout);
 			 this->Controls->Add(this->menuStrip1);
 			 this->MainMenuStrip = this->menuStrip1;
 			 this->Name = L"MainForm";
@@ -213,7 +232,7 @@ private: System::Windows::Forms::ToolStripMenuItem^  optionToolStripMenuItem1;
 
 private: System::Void MainForm_Load(System::Object^  sender, System::EventArgs^  e) {
 }
-private: void AfficherControlUser(List<Utilisateur^>^ list, int X, int Y, int h, int w)
+private: void AfficherControlUser(List<Utilisateur^>^ list, int h, int w)
 {
 	if (list->Count != nbUser)
 	{
@@ -226,23 +245,15 @@ private: void AfficherControlUser(List<Utilisateur^>^ list, int X, int Y, int h,
 
 		ImageConverter^ converter = gcnew ImageConverter();
 
-		int x = X;
-		int y = Y;
-
 		for (int i = 0; i < list->Count; i++)
 		{
-			if (i == 4)
-			{
-				y += (h + 20);
-				x = X;
-			}
 
 			_listControlUser->Add(gcnew ControlInterface::ControlUtilisateur());
 
 			Image^ image = (Image^)converter->ConvertFrom(list[i]->getPhoto());
 
 			_listControlUser[_listControlUser->Count - 1]->BackColor = System::Drawing::SystemColors::ActiveBorder;
-			_listControlUser[_listControlUser->Count - 1]->Location = System::Drawing::Point(x, y);
+			//_listControlUser[_listControlUser->Count - 1]->Location = System::Drawing::Point(x, y);
 			_listControlUser[_listControlUser->Count - 1]->Name = L"controlUtilisateur" + i;
 			_listControlUser[_listControlUser->Count - 1]->nom = list[i]->getNom();
 			_listControlUser[_listControlUser->Count - 1]->photo = gcnew Bitmap(image);
@@ -250,10 +261,9 @@ private: void AfficherControlUser(List<Utilisateur^>^ list, int X, int Y, int h,
 			_listControlUser[_listControlUser->Count - 1]->Size = System::Drawing::Size(w, h);
 			_listControlUser[_listControlUser->Count - 1]->temp = list[i]->getArrivee();
 			_listControlUser[_listControlUser->Count - 1]->typeDechet = 0;
-			this->Controls->Add(_listControlUser[_listControlUser->Count - 1]);
+			this->PhotoClientLayout->Controls->Add(this->_listControlUser[_listControlUser->Count - 1]);
+			//this->Controls->Add(_listControlUser[_listControlUser->Count - 1]);
 
-
-			x += (w + 20);
 		}
 		this->Refresh();
 	}
@@ -308,7 +318,7 @@ private: void fctWaitClientListFromServer()
 				}
 				catch (...)
 				{
-					Console::WriteLine("[ Configuration ] Erreur à l'ouverture de " + FILE_NAME_USER);
+					Console::WriteLine("[ Configuration ] Erreur ï¿½ l'ouverture de " + FILE_NAME_USER);
 					fileOpened = true;
 				}
 			} while (fileOpened);
@@ -395,5 +405,22 @@ private: System::Void optionToolStripMenuItem1_Click(System::Object^  sender, Sy
 
 
 	configForm->Show();
+}
+private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) {
+	
+
+	Bitmap^ i = gcnew Bitmap("test.jpeg");
+	ImageConverter^ converter = gcnew ImageConverter();
+
+	array<Byte>^ rt = (array<Byte>^)converter->ConvertTo(i, array<Byte>::typeid);
+
+	list->Add(gcnew Utilisateur("KLEIN-NORTH", "Martin", 2, "5sfd5d", 54, rt));
+	//_listUser->Add(gcnew Utilisateur("KLEIN-NORTH", "Martin", 2, "5sfd5d", 54, rt));
+	//_listUser->Add(gcnew Utilisateur("KLEIN-NORTH", "Martin", 2, "5sfd5d", 54, rt));
+	//_listUser->Add(gcnew Utilisateur("KLEIN-NORTH", "Martin", 2, "5sfd5d", 54, rt));
+	//_listUser->Add(gcnew Utilisateur("KLEIN-NORTH", "Martin", 2, "5sfd5d", 54, rt));
+	//_listUser->Add(gcnew Utilisateur("KLEIN-NORTH", "Martin", 2, "5sfd5d", 54, rt));
+
+	AfficherControlUser(list, 200, 300);
 }
 };

@@ -1,4 +1,4 @@
-#pragma once
+ï»¿#pragma once
 #include "StructDataConfigServeur.h"
 #define FILE_CONFIG "ConfigServeur.xml"
 #define SRV_PROCESS_NAME "Dechetterie-Serveur"
@@ -29,7 +29,7 @@ delegate void DelegateState(array<Byte>^ t);
 
 
 /// <summary>
-/// Description résumée de ConfigForm
+/// Description rï¿½sumï¿½e de ConfigForm
 /// </summary>
 public ref class ConfigForm : public System::Windows::Forms::Form
 {
@@ -54,7 +54,7 @@ public:
 
 protected:
 	/// <summary>
-	/// Nettoyage des ressources utilisées.
+	/// Nettoyage des ressources utilisï¿½es.
 	/// </summary>
 	~ConfigForm()
 	{
@@ -128,7 +128,7 @@ private: System::Windows::Forms::TextBox^  tbBddUsername;
 
 private:
 	/// <summary>
-	/// Variable nécessaire au concepteur.
+	/// Variable nï¿½cessaire au concepteur.
 	/// </summary>
 	Boolean _edit = false;
 	Thread^ _thWaitServerMsg;
@@ -146,8 +146,8 @@ private: System::ComponentModel::IContainer^  components;
 
 #pragma region Windows Form Designer generated code
 		 /// <summary>
-		 /// Méthode requise pour la prise en charge du concepteur - ne modifiez pas
-		 /// le contenu de cette méthode avec l'éditeur de code.
+		 /// Mï¿½thode requise pour la prise en charge du concepteur - ne modifiez pas
+		 /// le contenu de cette mï¿½thode avec l'ï¿½diteur de code.
 		 /// </summary>
 
 		 void InitializeComponent(void)
@@ -295,8 +295,8 @@ private: System::ComponentModel::IContainer^  components;
 			 this->CeBaS->state = false;
 			 this->CeBaS->TabIndex = 7;
 			 this->CeBaS->texteSize = 10;
-			 this->CeBaS->textFalse = L"Non connecté";
-			 this->CeBaS->textTrue = L"Connecté";
+			 this->CeBaS->textFalse = L"Non connectï¿½";
+			 this->CeBaS->textTrue = L"Connectï¿½";
 			 // 
 			 // pictureBox4
 			 // 
@@ -358,8 +358,8 @@ private: System::ComponentModel::IContainer^  components;
 			 this->CeRfS->state = false;
 			 this->CeRfS->TabIndex = 6;
 			 this->CeRfS->texteSize = 10;
-			 this->CeRfS->textFalse = L"Non connecté";
-			 this->CeRfS->textTrue = L"Connecté";
+			 this->CeRfS->textFalse = L"Non connectï¿½";
+			 this->CeRfS->textTrue = L"Connectï¿½";
 			 // 
 			 // pictureBox5
 			 // 
@@ -399,7 +399,7 @@ private: System::ComponentModel::IContainer^  components;
 			 this->gbBarriereS->Size = System::Drawing::Size(485, 161);
 			 this->gbBarriereS->TabIndex = 1;
 			 this->gbBarriereS->TabStop = false;
-			 this->gbBarriereS->Text = L"Barrière";
+			 this->gbBarriereS->Text = L"Barriï¿½re";
 			 // 
 			 // label5
 			 // 
@@ -430,8 +430,8 @@ private: System::ComponentModel::IContainer^  components;
 			 this->CeBrS->state = false;
 			 this->CeBrS->TabIndex = 5;
 			 this->CeBrS->texteSize = 10;
-			 this->CeBrS->textFalse = L"Non connecté";
-			 this->CeBrS->textTrue = L"Connecté";
+			 this->CeBrS->textFalse = L"Non connectï¿½";
+			 this->CeBrS->textTrue = L"Connectï¿½";
 			 // 
 			 // pictureBox6
 			 // 
@@ -457,7 +457,7 @@ private: System::ComponentModel::IContainer^  components;
 			 this->gbEntree->Size = System::Drawing::Size(514, 641);
 			 this->gbEntree->TabIndex = 4;
 			 this->gbEntree->TabStop = false;
-			 this->gbEntree->Text = L"Entrée";
+			 this->gbEntree->Text = L"Entrï¿½e";
 			 this->gbEntree->Enter += gcnew System::EventHandler(this, &ConfigForm::gbEntree_Enter);
 			 // 
 			 // label7
@@ -538,8 +538,8 @@ private: System::ComponentModel::IContainer^  components;
 			 this->CeBaE->state = false;
 			 this->CeBaE->TabIndex = 4;
 			 this->CeBaE->texteSize = 10;
-			 this->CeBaE->textFalse = L"Non connecté";
-			 this->CeBaE->textTrue = L"Connecté";
+			 this->CeBaE->textFalse = L"Non connectï¿½";
+			 this->CeBaE->textTrue = L"Connectï¿½";
 			 // 
 			 // pictureBox3
 			 // 
@@ -592,8 +592,8 @@ private: System::ComponentModel::IContainer^  components;
 			 this->CeRfE->state = false;
 			 this->CeRfE->TabIndex = 3;
 			 this->CeRfE->texteSize = 10;
-			 this->CeRfE->textFalse = L"Non connecté";
-			 this->CeRfE->textTrue = L"Connecté";
+			 this->CeRfE->textFalse = L"Non connectï¿½";
+			 this->CeRfE->textTrue = L"Connectï¿½";
 			 // 
 			 // pictureBox2
 			 // 
@@ -615,7 +615,7 @@ private: System::ComponentModel::IContainer^  components;
 			 this->gbBarriereE->Size = System::Drawing::Size(485, 161);
 			 this->gbBarriereE->TabIndex = 1;
 			 this->gbBarriereE->TabStop = false;
-			 this->gbBarriereE->Text = L"Barrière";
+			 this->gbBarriereE->Text = L"Barriï¿½re";
 			 // 
 			 // label2
 			 // 
@@ -646,8 +646,8 @@ private: System::ComponentModel::IContainer^  components;
 			 this->CeBrE->state = false;
 			 this->CeBrE->TabIndex = 2;
 			 this->CeBrE->texteSize = 10;
-			 this->CeBrE->textFalse = L"Non connecté";
-			 this->CeBrE->textTrue = L"Connecté";
+			 this->CeBrE->textFalse = L"Non connectï¿½";
+			 this->CeBrE->textTrue = L"Connectï¿½";
 			 // 
 			 // pictureBox1
 			 // 
@@ -695,7 +695,7 @@ private: System::ComponentModel::IContainer^  components;
 			 this->gbBdd->Size = System::Drawing::Size(1034, 91);
 			 this->gbBdd->TabIndex = 8;
 			 this->gbBdd->TabStop = false;
-			 this->gbBdd->Text = L"Base de donnée";
+			 this->gbBdd->Text = L"Base de donnï¿½e";
 			 // 
 			 // label14
 			 // 
@@ -737,7 +737,7 @@ private: System::ComponentModel::IContainer^  components;
 			 this->label12->Name = L"label12";
 			 this->label12->Size = System::Drawing::Size(135, 13);
 			 this->label12->TabIndex = 16;
-			 this->label12->Text = L"Nom de la base de donnée";
+			 this->label12->Text = L"Nom de la base de donnï¿½e";
 			 // 
 			 // tbBddName
 			 // 
@@ -869,7 +869,7 @@ private: System::Void btSav_Click(System::Object^  sender, System::EventArgs^  e
 		}
 		catch (...)
 		{
-			Console::WriteLine("[ Save Configuration ] Erreur à l'ouverture de " + FILE_CONFIG);
+			Console::WriteLine("[ Save Configuration ] Erreur ï¿½ l'ouverture de " + FILE_CONFIG);
 			fileOpened = true;
 		}
 	} while (fileOpened);
@@ -961,7 +961,7 @@ private: System::Void ConfigForm_Load(System::Object^  sender, System::EventArgs
 			}
 			catch (...)
 			{
-				Console::WriteLine("[ Configuration ] Erreur à l'ouverture de " + FILE_CONFIG);
+				Console::WriteLine("[ Configuration ] Erreur ï¿½ l'ouverture de " + FILE_CONFIG);
 				fileOpened = true;
 			}
 		} while (fileOpened);
