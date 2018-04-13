@@ -45,6 +45,9 @@
     <ClInclude Include="Protocole\StructTypeMessage.h">
       <Filter>Fichiers d%27en-tête\Protocole</Filter>
     </ClInclude>
+    <ClInclude Include="Logger.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="app.rc">
@@ -78,6 +81,9 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="MainForm.resx">
+      <Filter>Fichiers de ressources</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfigForm.resx">
       <Filter>Fichiers de ressources</Filter>
     </EmbeddedResource>
   </ItemGroup>

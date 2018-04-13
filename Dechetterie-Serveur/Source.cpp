@@ -33,6 +33,7 @@ int main(array<System::String ^> ^args)
 	//																		 //listClient->Add(gcnew Client(1, 2, IPAddress::Parse("192.168.245.130")));
 	//listClient->Add(gcnew Client(2, 2, IPAddress::Parse("192.168.0.5")));
 
+
 	////listClient->Add(gcnew Client(1, 3, IPAddress::Parse("192.168.245.130")));
 	//listClient->Add(gcnew Client(2, 3, IPAddress::Parse("127.0.0.1")));
 
@@ -44,7 +45,11 @@ int main(array<System::String ^> ^args)
 
 	array<Byte>^ rt = (array<Byte>^)converter->ConvertTo(i, array<Byte>::typeid);
 	Dechetterie::addUtilisateur("02006D7223", 1, 2500, rt);
-	Thread::Sleep(10000);
+	Thread::Sleep(30000);
+	Dechetterie::addUtilisateur("02006D7224", 1, 2500, rt);
+	Thread::Sleep(30000);
+	Dechetterie::addUtilisateur("02006D7225", 1, 2500, rt);
+	Thread::Sleep(30000);
 	Dechetterie::deleteUtilisateur("02006D7223");
 
 	return 0;

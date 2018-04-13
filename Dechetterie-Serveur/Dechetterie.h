@@ -40,7 +40,7 @@ private:
 	Sortie^ _sortie;
 	Entree^ _entree;
 
-	Interface^ servInter;
+	static Interface^ servInter;
 
 	static List<Client^>^ _listClient = gcnew List<Client^>;
 
@@ -49,6 +49,7 @@ private:
 
 	Thread^ _tServerStateMsg;
 	Thread^ _tServerUserMsg;
+	
 
 	//void fctServerStateMsg();
 	//void fctServerUserMsg();
@@ -68,6 +69,7 @@ public:
 	static void addUtilisateur(String ^ id_rfid, int tDechet, int poids, array<Byte>^ photo);
 	static void deleteUtilisateur(String ^ id_rfid);
 	static List<Utilisateur^>^ GetListUtilisateur();
+	static void updateUserFile();
 
 
 

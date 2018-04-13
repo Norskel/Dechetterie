@@ -1,6 +1,10 @@
 #pragma once
 #include "Protocole\Protocole.h"
-#define PIPE_NAME_SERV "PipeInterServ"
+#define PIPE_NAME_INTER_SERV_OUT "InterfaceServeur"
+#define PIPE_NAME_INTER_SERV_IN "ServeurInterface"
+#define TIMEOUT_GET_STATE 10
+#define TIMEOUT_GET_POS 30
+#include "Logger.h"
 
 using namespace System;
 using namespace System::Net;
@@ -13,20 +17,32 @@ using namespace System::Threading;
 using namespace System::Diagnostics;
 
 static public enum class id_groupe : int { TOUS, ENTREE, SORTIE };
+ref struct pos {
+	int posBarriereEntree = 0;
+	int posBarriereSortie = 0;
+};
 
 ref class PipeServeur
 {
 	PipeServeur();
 	static PipeServeur^ _pipeServeur = nullptr;
 	Boolean _isConnected = false;
-	NamedPipeClientStream^ _pipeClientInterface;
+	NamedPipeClientStream^ _pipeInClientInterface;
+	NamedPipeClientStream^ _pipeOutClientInterface;
 	Boolean Connect();
 	Protocole^ protocole;
+	void fctThread();
+	array<Byte>^ _state = nullptr;
+	Thread^ _thread;
+	void startReceive();
+	pos _positionBarriere;
+	void disconnect();
+
 public:
 	static PipeServeur^ GetPipeServeur();
-
+	event EventHandler<int>^ UpdateClientList;
 	array<Byte>^ getState();
-	array<Byte>^ getPositionBarriere(id_groupe id);
+	int getPositionBarriere(id_groupe id);
 	void ouvrirBarriere(id_groupe id);
 	void fermerBarriere(id_groupe id);
 

@@ -147,6 +147,7 @@
     <ClInclude Include="ConfigForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="Logger.h" />
     <ClInclude Include="MainForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>

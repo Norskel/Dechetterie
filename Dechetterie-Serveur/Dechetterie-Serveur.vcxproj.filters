@@ -139,9 +139,6 @@
     <ClCompile Include="DataBdd.cpp">
       <Filter>Fichiers sources\BDD</Filter>
     </ClCompile>
-    <ClCompile Include="Logger.cpp">
-      <Filter>Fichiers sources</Filter>
-    </ClCompile>
     <ClCompile Include="Groupe.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>

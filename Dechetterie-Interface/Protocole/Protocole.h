@@ -46,6 +46,7 @@ private:
 		_listTypeMsg->Add(gcnew TypeMessage("inDPos", 65, 5, "Demande de la position de la barrière", "Groupe", "int", 1));
 		_listTypeMsg->Add(gcnew TypeMessage("inRDPos", 66, 1, "Retour de la position de la barrière", "Groupe", "int", 1,"Pos","int",3));
 		_listTypeMsg->Add(gcnew TypeMessage("inStop", 67, 5, "Arret du Serveur"));
+		_listTypeMsg->Add(gcnew TypeMessage("inUpdateClient", 68, 1, "Mise a jour de la liste client"));
 
 
 	}
@@ -84,7 +85,14 @@ private:
 	array<Byte>^ addData(int lenght, int data)
 	{
 		array<Byte>^ retour = gcnew array<Byte>(lenght) {0};
-		cpyTableByteI(retour, retour->Length, encoder->GetBytes(Convert::ToString(data)));
+		if (lenght == 1)
+		{
+			retour = encoder->GetBytes(Convert::ToString(data));
+		}
+		else
+		{
+			cpyTableByteI(retour, retour->Length, encoder->GetBytes(Convert::ToString(data)));
+		}	
 		return retour;
 	}
 

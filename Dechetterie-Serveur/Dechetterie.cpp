@@ -12,6 +12,7 @@ Dechetterie::Dechetterie(String^ configFile)
 		_entree = gcnew Entree(IPAddress::Parse(_config->Entree->Interface), _config->Entree->portServeur, IPAddress::Parse(_config->Entree->IPBarriere), IPAddress::Parse(_config->Entree->IPBalance), IPAddress::Parse(_config->Entree->IPRFID));
 		_sortie = gcnew Sortie(IPAddress::Parse(_config->Sortie->Interface), _config->Sortie->portServeur, IPAddress::Parse(_config->Sortie->IPBarriere), IPAddress::Parse(_config->Sortie->IPBalance), IPAddress::Parse(_config->Sortie->IPRFID));
 		servInter = gcnew Interface(PIPE_NAME_INTER_SERV, _entree, _sortie);
+		//Console::WriteLine(_entree->GetStateAllClient());
 	}
 	else
 	{
@@ -46,16 +47,16 @@ Boolean Dechetterie::loadConfigFile(String ^ file)
 				Logger::PrintLog("[ Configuration ] Erreur à l'ouverture de " + file);
 				fileOpened = true;
 			}
-		} while (fileOpened);
+		} while (!fileOpened);
 		XmlSerializer^ serializer = gcnew XmlSerializer(DataConfigServeur::typeid);
 		_config = (DataConfigServeur^)serializer->Deserialize(fs);
 		fs->Close();
-		Logger::PrintLog(0,"[ Configuration ] Fichier de configuration bien chargée");
+		Logger::PrintLog(EnteteCode::INFO,"[ Configuration ] Fichier de configuration bien chargée");
 		return true;
 	}
 	else
 	{
-		Logger::PrintLog(1, "[ Configuration ] Fichier de configuration " + file + " est manquant. Démarer l'interface au moins une fois pour faire la configuration");
+		Logger::PrintLog(EnteteCode::ERROR, "[ Configuration ] Fichier de configuration " + file + " est manquant. Démarer l'interface au moins une fois pour faire la configuration");
 		return false;
 	}
 }
@@ -65,6 +66,43 @@ Boolean Dechetterie::loadConfigFile(String ^ file)
 List<Utilisateur^>^ Dechetterie::GetListUtilisateur()
 {
 	return _listUtilisateur;
+}
+void Dechetterie::updateUserFile()
+{
+	FileStream^ fs;
+
+	if (System::IO::File::Exists(FILE_NAME_USER))
+	{
+		bool fileOpened = false;
+		do
+		{
+			try
+			{
+				fileOpened = false;
+				System::IO::File::WriteAllText(FILE_NAME_USER, String::Empty);
+				fs = File::Open(FILE_NAME_USER, System::IO::FileMode::Open);
+			}
+			catch (...)
+			{
+				Console::WriteLine("[ Configuration ] Erreur à l'ouverture de " + FILE_NAME_USER);
+				fileOpened = true;
+			}
+		} while (fileOpened);
+		
+	}
+	else
+	{
+		fs = File::Create(FILE_NAME_USER);
+
+	}
+	if (Dechetterie::GetListUtilisateur()->Count > 0)
+	{
+		XmlSerializer^ serializer = gcnew XmlSerializer(List<Utilisateur^>::typeid);
+		serializer->Serialize(fs, Dechetterie::GetListUtilisateur());
+		Console::WriteLine("[ Send User Msg ] Envoie");
+	}
+	fs->Close();
+		Thread::Sleep(2000);
 }
 void Dechetterie::addUtilisateur(String ^ id_rfid, int tDechet, int poids, array<Byte>^ photo)
 {
@@ -83,7 +121,6 @@ void Dechetterie::addUtilisateur(String ^ id_rfid, int tDechet, int poids, array
 		bdd->addEntree(de); //on ajoute dans la BDD Entree l'entree
 
 		Logger::PrintLog(EnteteCode::INFO,EnteteCode::UTILISATEUR,"Nouvelle utilisateur dans la dechetterie : " + du->Nom +" "+ du->Prenom + " ID_RFID = " + id_rfid);
-
 	}
 	catch (Exception^e)
 	{
@@ -96,7 +133,16 @@ void Dechetterie::addUtilisateur(String ^ id_rfid, int tDechet, int poids, array
 			Logger::PrintLog(EnteteCode::ERROR, EnteteCode::UTILISATEUR,"addUtilisateur",e->ToString());
 		}
 	}
-	//
+	try
+	{
+		Dechetterie::updateUserFile();
+		Dechetterie::servInter->updateListClient();
+	}
+	catch (Exception^e)
+	{
+		Logger::PrintLog(EnteteCode::ERROR, EnteteCode::UTILISATEUR, "addUtilisateur", e->ToString());
+	}
+
 }
 void Dechetterie::deleteUtilisateur(String ^ id_rfid)
 {
@@ -106,7 +152,7 @@ void Dechetterie::deleteUtilisateur(String ^ id_rfid)
 	{
 		if (_listUtilisateur[i]->getRFIDID() == id_rfid)
 		{
-			Logger::PrintLog(0, "[ Utilisateur ] L'utilisateur quitte la dechetterie : " + _listUtilisateur[i]->getNom() + " " + _listUtilisateur[i]->getPrenom() + " ID_RFID = " + id_rfid);
+			Logger::PrintLog(EnteteCode::INFO, "[ Utilisateur ] L'utilisateur quitte la dechetterie : " + _listUtilisateur[i]->getNom() + " " + _listUtilisateur[i]->getPrenom() + " ID_RFID = " + id_rfid);
 			_listUtilisateur->RemoveAt(i);
 			Console::WriteLine(_listUtilisateur->Count);
 
@@ -118,11 +164,19 @@ void Dechetterie::deleteUtilisateur(String ^ id_rfid)
 		int iduser = bdd->getUserByIdRFID(id_rfid)->ID;
 		int idEntree = bdd->getEntreeByUserID(iduser)->ID;
 		bdd->deleteEntreeByID(idEntree);
+		
 	}
 	catch (Exception^ e)
 	{
-		Logger::PrintLog(2, e->ToString());
+		Logger::PrintLog(EnteteCode::ERROR, e->ToString());
 	}
-
-
+	try
+	{
+		Dechetterie::updateUserFile();
+		Dechetterie::servInter->updateListClient();
+	}
+	catch (Exception^e)
+	{
+		Logger::PrintLog(EnteteCode::ERROR, EnteteCode::UTILISATEUR, "addUtilisateur", e->ToString());
+	}
 }

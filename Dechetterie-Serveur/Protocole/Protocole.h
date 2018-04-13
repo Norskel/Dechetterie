@@ -46,6 +46,7 @@ private:
 		_listTypeMsg->Add(gcnew TypeMessage("inDPos", 65, 5, "Demande de la position de la barrière", "Groupe", "int", 1));
 		_listTypeMsg->Add(gcnew TypeMessage("inRDPos", 66, 1, "Retour de la position de la barrière", "Groupe", "int", 1,"Pos","int",3));
 		_listTypeMsg->Add(gcnew TypeMessage("inStop", 67, 5, "Arret du Serveur"));
+		_listTypeMsg->Add(gcnew TypeMessage("inUpdateClient", 68, 1, "Mise a jour de la liste client"));
 
 
 	}
@@ -254,6 +255,10 @@ public:
 		t[0] = groupe;
 		cpyTableByteI(t, 3, addData(3, pos));
 		return translate(GetTypeProtocoleByID("brRDPos"), t);
+	}
+	array<Byte>^ InterfaceUpdateListClient()
+	{
+		return translate(GetTypeProtocoleByID("inUpdateClient"), "");
 	}
 
 

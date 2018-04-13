@@ -106,9 +106,10 @@ public:
 			Logger::PrintLog(EnteteCode::CLIENT, _groupe.ToString(), _type.ToString() + " viens de ce déconnectée");
 			
 		}
-		catch (...)
+		catch (Exception^ e)
 		{
 			Logger::PrintLog(EnteteCode::ERROR, EnteteCode::CLIENT, " Problème lors de la deconnexion de " + _ip->ToString());
+			Logger::PrintLog(EnteteCode::DEBUG, EnteteCode::ERROR,e->ToString());
 		}
 		
 

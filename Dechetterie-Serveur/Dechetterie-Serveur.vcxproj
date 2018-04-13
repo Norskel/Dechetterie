@@ -180,7 +180,6 @@
     <ClCompile Include="Entree.cpp" />
     <ClCompile Include="Groupe.cpp" />
     <ClCompile Include="Interface.cpp" />
-    <ClCompile Include="Logger.cpp" />
     <ClCompile Include="Serveur.cpp" />
     <ClCompile Include="Sortie.cpp" />
     <ClCompile Include="Source.cpp" />

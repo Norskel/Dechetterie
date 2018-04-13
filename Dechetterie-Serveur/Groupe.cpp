@@ -31,7 +31,7 @@ void Groupe::OuvrirBarriere()
 {
 	if (_listClient->ClientBarriere->getState())
 	{
-		_listClient->ClientBarriere->FermerBarriere();
+		_listClient->ClientBarriere->OuvrirBarriere();
 	}
 
 }
@@ -40,7 +40,7 @@ void Groupe::FermerBarriere()
 {
 	if (_listClient->ClientBarriere->getState())
 	{
-		_listClient->ClientBarriere->OuvrirBarriere();
+		_listClient->ClientBarriere->FermerBarriere();
 	}
 }
 
@@ -86,8 +86,8 @@ Boolean Groupe::TestRfidID(String ^ rfid)
 String ^ Groupe::GetStateAllClient()
 {
 	String^ r = "";
-	if (_listClient->ClientBalance->getState()) { r += 1; } else { r += 0; }
 	if (_listClient->ClientBarriere->getState()) { r += 1; } else { r += 0; }
+	if (_listClient->ClientBalance->getState()) { r += 1; } else { r += 0; }
 	if (_listClient->ClientRFID->getState()) { r += 1; } else { r += 0; }
 	return r;
 

@@ -65,6 +65,20 @@ Class Utilisateur: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
 Class MainForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Struct EnteteCode: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    SByte value__ IsSignUnspecifiedByte : Public, SpecialName, RTSpecialName
+    EnteteCode INFO = 0 : Public, Static, Literal, HasDefault
+    EnteteCode ERROR = 1 : Public, Static, Literal, HasDefault
+    EnteteCode DEBUG = 2 : Public, Static, Literal, HasDefault
+    EnteteCode ENTREE = 3 : Public, Static, Literal, HasDefault
+    EnteteCode SORTIE = 4 : Public, Static, Literal, HasDefault
+    EnteteCode INTERFACE = 5 : Public, Static, Literal, HasDefault
+    EnteteCode SERVEUR = 6 : Public, Static, Literal, HasDefault
+    EnteteCode CLIENT = 7 : Public, Static, Literal, HasDefault
+    EnteteCode UTILISATEUR = 8 : Public, Static, Literal, HasDefault
+    EnteteCode CONFIG = 9 : Public, Static, Literal, HasDefault
 Struct id_groupe: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
   :System.Enum
   Fields:

@@ -1,0 +1,163 @@
+12-04-2018 14:38:52[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+12-04-2018 14:38:54[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+12-04-2018 14:38:54[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+12-04-2018 14:38:54[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+12-04-2018 14:38:54[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+12-04-2018 14:38:54[ INTERFACE ]  Attente de l'interface
+12-04-2018 14:38:54[ INTERFACE ]  Interface connecte 
+12-04-2018 14:38:54[ INTERFACE ]  Attente de l'interface
+12-04-2018 14:38:54[ INTERFACE ]  Interface connecte 
+12-04-2018 14:38:54[ DEBUG ] Attents reception
+12-04-2018 14:38:57[ DEBUG ] Type :61
+12-04-2018 14:38:57[ INTERFACE ]  Demande de l'etat des clients 
+12-04-2018 14:38:57[ DEBUG ] Attents reception
+12-04-2018 14:39:02[ DEBUG ] Type :61
+12-04-2018 14:39:02[ INTERFACE ]  Demande de l'etat des clients 
+12-04-2018 14:39:02[ SERVEUR ][ ENTREE ] Un Client avec l'ip 192.168.137.10 a essay? de ce connect?e
+12-04-2018 14:39:02[ DEBUG ] Attents reception
+12-04-2018 14:39:07[ DEBUG ] Type :61
+12-04-2018 14:39:07[ INTERFACE ]  Demande de l'etat des clients 
+12-04-2018 14:39:07[ DEBUG ] Attents reception
+12-04-2018 14:39:12[ DEBUG ] Type :61
+12-04-2018 14:39:12[ INTERFACE ]  Demande de l'etat des clients 
+12-04-2018 14:39:12[ DEBUG ] Attents reception
+12-04-2018 14:39:17[ SERVEUR ][ ENTREE ] Un Client avec l'ip 192.168.137.10 a essay? de ce connect?e
+12-04-2018 14:41:32[ SERVEUR ][ ENTREE ] Un Client avec l'ip 192.168.137.10 a essay? de ce connect?e
+12-04-2018 14:43:47[ SERVEUR ][ ENTREE ] Un Client avec l'ip 192.168.137.10 a essay? de ce connect?e
+12-04-2018 14:46:03[ SERVEUR ][ ENTREE ] Un Client avec l'ip 192.168.137.10 a essay? de ce connect?e
+12-04-2018 14:50:42[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+12-04-2018 14:50:43[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+12-04-2018 14:50:43[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+12-04-2018 14:50:43[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+12-04-2018 14:50:43[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+12-04-2018 14:50:43[ INTERFACE ]  Attente de l'interface
+12-04-2018 14:50:43[ INTERFACE ]  Interface connecte 
+12-04-2018 14:50:43[ INTERFACE ]  Attente de l'interface
+12-04-2018 14:50:44[ INTERFACE ]  Interface connecte 
+12-04-2018 14:50:44[ DEBUG ] Attents reception
+12-04-2018 14:50:45[ SERVEUR ][ ENTREE ] Un Client avec l'ip 192.168.137.10 a essay? de ce connect?e
+13-04-2018 14:13:19[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+13-04-2018 14:43:45[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+13-04-2018 14:43:46[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+13-04-2018 14:43:46[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+13-04-2018 14:43:46[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+13-04-2018 14:43:46[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+13-04-2018 14:43:46[ INTERFACE ]  Attente de l'interface
+13-04-2018 14:43:46[ INTERFACE ]  Interface connecte 
+13-04-2018 14:43:46[ INTERFACE ]  Attente de l'interface
+13-04-2018 14:43:46[ INTERFACE ]  Interface connecte 
+13-04-2018 14:43:46[ DEBUG ] Attents reception
+13-04-2018 14:43:46[ INFO ][ UTILISATEUR ] Nouvelle utilisateur dans la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+13-04-2018 14:43:50[ DEBUG ] Type :61
+13-04-2018 14:43:50[ INTERFACE ]  Demande de l'etat des clients 
+13-04-2018 14:43:50[ DEBUG ] Attents reception
+13-04-2018 14:43:55[ DEBUG ] Type :61
+13-04-2018 14:43:55[ INTERFACE ]  Demande de l'etat des clients 
+13-04-2018 14:43:55[ DEBUG ] Attents reception
+13-04-2018 14:45:35[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+13-04-2018 14:45:36[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+13-04-2018 14:45:36[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+13-04-2018 14:45:36[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+13-04-2018 14:45:36[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+13-04-2018 14:45:36[ INTERFACE ]  Attente de l'interface
+13-04-2018 14:45:36[ INTERFACE ]  Interface connecte 
+13-04-2018 14:45:36[ INTERFACE ]  Attente de l'interface
+13-04-2018 14:45:36[ INTERFACE ]  Interface connecte 
+13-04-2018 14:45:36[ DEBUG ] Attents reception
+13-04-2018 14:45:36[ INFO ][ UTILISATEUR ] Nouvelle utilisateur dans la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+13-04-2018 14:49:36[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+13-04-2018 14:49:36[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+13-04-2018 14:49:36[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+13-04-2018 14:49:36[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+13-04-2018 14:49:36[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+13-04-2018 14:49:37[ INTERFACE ]  Attente de l'interface
+13-04-2018 14:49:37[ INTERFACE ]  Interface connecte 
+13-04-2018 14:49:37[ INTERFACE ]  Attente de l'interface
+13-04-2018 14:49:37[ INTERFACE ]  Interface connecte 
+13-04-2018 14:49:37[ DEBUG ] Attents reception
+13-04-2018 14:49:37[ INFO ][ UTILISATEUR ] Nouvelle utilisateur dans la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+13-04-2018 15:02:57[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+13-04-2018 15:02:58[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+13-04-2018 15:02:59[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+13-04-2018 15:02:59[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+13-04-2018 15:02:59[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+13-04-2018 15:02:59[ INTERFACE ]  Attente de l'interface
+13-04-2018 15:02:59[ INTERFACE ]  Interface connecte 
+13-04-2018 15:02:59[ INTERFACE ]  Attente de l'interface
+13-04-2018 15:02:59[ INTERFACE ]  Interface connecte 
+13-04-2018 15:02:59[ DEBUG ] Attents reception
+13-04-2018 15:02:59[ INFO ][ UTILISATEUR ] Nouvelle utilisateur dans la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+13-04-2018 15:03:02[ DEBUG ] Type :61
+13-04-2018 15:03:02[ INTERFACE ]  Demande de l'etat des clients 
+13-04-2018 15:03:02[ DEBUG ] Attents reception
+13-04-2018 15:03:07[ DEBUG ] Type :61
+13-04-2018 15:03:07[ INTERFACE ]  Demande de l'etat des clients 
+13-04-2018 15:03:07[ DEBUG ] Attents reception
+13-04-2018 15:03:12[ DEBUG ] Type :61
+13-04-2018 15:03:12[ INTERFACE ]  Demande de l'etat des clients 
+13-04-2018 15:03:12[ DEBUG ] Attents reception
+13-04-2018 15:03:17[ DEBUG ] Type :61
+13-04-2018 15:03:17[ INTERFACE ]  Demande de l'etat des clients 
+13-04-2018 15:03:17[ DEBUG ] Attents reception
+13-04-2018 15:03:22[ DEBUG ] Type :61
+13-04-2018 15:03:22[ INTERFACE ]  Demande de l'etat des clients 
+13-04-2018 15:03:22[ DEBUG ] Attents reception
+13-04-2018 15:03:27[ DEBUG ] Type :61
+13-04-2018 15:03:27[ INTERFACE ]  Demande de l'etat des clients 
+13-04-2018 15:03:27[ DEBUG ] Attents reception
+13-04-2018 15:03:32[ DEBUG ] Type :61
+13-04-2018 15:03:32[ INTERFACE ]  Demande de l'etat des clients 
+13-04-2018 15:03:32[ DEBUG ] Attents reception
+13-04-2018 15:03:37[ DEBUG ] Type :61
+13-04-2018 15:03:37[ INTERFACE ]  Demande de l'etat des clients 
+13-04-2018 15:03:37[ DEBUG ] Attents reception
+13-04-2018 15:03:42[ DEBUG ] Type :61
+13-04-2018 15:03:42[ INTERFACE ]  Demande de l'etat des clients 
+13-04-2018 15:03:42[ DEBUG ] Attents reception
+13-04-2018 15:03:47[ DEBUG ] Type :61
+13-04-2018 15:03:47[ INTERFACE ]  Demande de l'etat des clients 
+13-04-2018 15:03:47[ DEBUG ] Attents reception
+13-04-2018 15:03:52[ DEBUG ] Type :61
+13-04-2018 15:03:52[ INTERFACE ]  Demande de l'etat des clients 
+13-04-2018 15:03:52[ DEBUG ] Attents reception
+13-04-2018 15:03:57[ DEBUG ] Type :61
+13-04-2018 15:03:57[ INTERFACE ]  Demande de l'etat des clients 
+13-04-2018 15:03:57[ DEBUG ] Attents reception
+13-04-2018 15:04:01[ INFO ][ UTILISATEUR ] Nouvelle utilisateur dans la dechetterie : NEFLAOUI Naim ID_RFID = 02006D7224
+13-04-2018 15:04:02[ DEBUG ] Type :61
+13-04-2018 15:04:02[ INTERFACE ]  Demande de l'etat des clients 
+13-04-2018 15:04:02[ DEBUG ] Attents reception
+13-04-2018 15:04:07[ DEBUG ] Type :61
+13-04-2018 15:04:07[ INTERFACE ]  Demande de l'etat des clients 
+13-04-2018 15:04:07[ DEBUG ] Attents reception
+13-04-2018 15:04:12[ DEBUG ] Type :61
+13-04-2018 15:04:12[ INTERFACE ]  Demande de l'etat des clients 
+13-04-2018 15:04:12[ DEBUG ] Attents reception
+13-04-2018 15:04:17[ DEBUG ] Type :61
+13-04-2018 15:04:17[ INTERFACE ]  Demande de l'etat des clients 
+13-04-2018 15:04:17[ DEBUG ] Attents reception
+13-04-2018 15:04:22[ DEBUG ] Type :61
+13-04-2018 15:04:22[ INTERFACE ]  Demande de l'etat des clients 
+13-04-2018 15:04:22[ DEBUG ] Attents reception
+13-04-2018 15:04:27[ DEBUG ] Type :61
+13-04-2018 15:04:27[ INTERFACE ]  Demande de l'etat des clients 
+13-04-2018 15:04:27[ DEBUG ] Attents reception
+13-04-2018 15:04:32[ DEBUG ] Type :61
+13-04-2018 15:04:32[ INTERFACE ]  Demande de l'etat des clients 
+13-04-2018 15:04:32[ DEBUG ] Attents reception
+13-04-2018 15:04:37[ DEBUG ] Type :61
+13-04-2018 15:04:37[ INTERFACE ]  Demande de l'etat des clients 
+13-04-2018 15:04:37[ DEBUG ] Attents reception
+13-04-2018 15:24:15[ INFO ] [ Configuration ] Erreur ? l'ouverture de ConfigServeur.xml
+13-04-2018 15:24:16[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+13-04-2018 15:24:16[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+13-04-2018 15:24:16[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+13-04-2018 15:24:16[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+13-04-2018 15:24:16[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+13-04-2018 15:24:16[ INTERFACE ]  Attente de l'interface
+13-04-2018 15:24:16[ INTERFACE ]  Interface connecte 
+13-04-2018 15:24:16[ INTERFACE ]  Attente de l'interface
+13-04-2018 15:24:16[ INTERFACE ]  Interface connecte 
+13-04-2018 15:24:16[ DEBUG ] Attents reception
+13-04-2018 15:24:17[ INFO ][ UTILISATEUR ] Nouvelle utilisateur dans la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+13-04-2018 15:31:59[ INFO ] [ Configuration ] Erreur ? l'ouverture de ConfigServeur.xml
