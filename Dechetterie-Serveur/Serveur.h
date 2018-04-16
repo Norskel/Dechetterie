@@ -12,6 +12,8 @@ using namespace System::Net;
 using namespace System::Net::Sockets;
 using namespace System::Collections::Generic;
 
+ref class Dechetterie;
+
 ref class Serveur
 {
 protected:

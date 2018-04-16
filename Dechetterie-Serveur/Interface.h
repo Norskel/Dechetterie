@@ -46,5 +46,6 @@ private:
 public:
 	Interface(String^ name_serveur, Entree^ %e, Sortie^ %s);
 	void updateListClient();
+	void OnUpdateClientState();
 };
 

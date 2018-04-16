@@ -26,6 +26,7 @@ using namespace System::Xml::Serialization;
 using namespace System::Threading;
 using namespace System::Diagnostics;
 
+delegate void EventUpdateClientStateDelegate();
 
 ref class Entree;
 ref class Sortie;
@@ -49,16 +50,13 @@ private:
 
 	Thread^ _tServerStateMsg;
 	Thread^ _tServerUserMsg;
-	
-
-	//void fctServerStateMsg();
-	//void fctServerUserMsg();
 
 public:
 
-	//void sendStateMsg();
-	//void sendUserMsg(FileStream^ fs);
+	static event EventUpdateClientStateDelegate^ EventUpdateClientState;
 	static Boolean Debug = false;
+	static void UpdateClientState();
+
 
 	Dechetterie(String^ configFile);
 	~Dechetterie();

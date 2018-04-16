@@ -161,3 +161,1666 @@
 13-04-2018 15:24:16[ DEBUG ] Attents reception
 13-04-2018 15:24:17[ INFO ][ UTILISATEUR ] Nouvelle utilisateur dans la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
 13-04-2018 15:31:59[ INFO ] [ Configuration ] Erreur ? l'ouverture de ConfigServeur.xml
+15-04-2018 17:50:02[ INFO ] [ Configuration ] Erreur ? l'ouverture de ConfigServeur.xml
+15-04-2018 17:50:03[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+15-04-2018 17:50:03[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+15-04-2018 17:50:03[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+15-04-2018 17:50:03[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+15-04-2018 17:50:03[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+15-04-2018 17:50:03[ INTERFACE ]  Attente de l'interface
+15-04-2018 17:50:03[ INTERFACE ]  Interface connecte 
+15-04-2018 17:50:03[ INTERFACE ]  Attente de l'interface
+15-04-2018 17:50:03[ INTERFACE ]  Interface connecte 
+15-04-2018 17:50:04[ DEBUG ] Attents reception
+15-04-2018 17:50:04[ INFO ][ UTILISATEUR ] Nouvelle utilisateur dans la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+15-04-2018 17:50:06[ INTERFACE ]  Attente de l'interface
+15-04-2018 17:50:36[ INFO ][ UTILISATEUR ] Nouvelle utilisateur dans la dechetterie : NEFLAOUI Naim ID_RFID = 02006D7224
+15-04-2018 17:53:29[ INFO ] [ Configuration ] Erreur ? l'ouverture de ConfigServeur.xml
+15-04-2018 17:53:30[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+15-04-2018 17:53:30[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+15-04-2018 17:53:30[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+15-04-2018 17:53:30[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+15-04-2018 17:53:30[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+15-04-2018 17:53:31[ INTERFACE ]  Attente de l'interface
+15-04-2018 17:53:31[ INTERFACE ]  Interface connecte 
+15-04-2018 17:53:31[ INTERFACE ]  Attente de l'interface
+15-04-2018 17:53:31[ INTERFACE ]  Interface connecte 
+15-04-2018 17:53:31[ DEBUG ] Attents reception
+15-04-2018 17:53:31[ INFO ][ UTILISATEUR ] Nouvelle utilisateur dans la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+15-04-2018 17:53:35[ DEBUG ] Type :61
+15-04-2018 17:53:35[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 17:53:35[ DEBUG ] Attents reception
+15-04-2018 17:53:40[ DEBUG ] Type :61
+15-04-2018 17:53:40[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 17:53:40[ DEBUG ] Attents reception
+15-04-2018 17:53:45[ DEBUG ] Type :61
+15-04-2018 17:53:45[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 17:53:45[ DEBUG ] Attents reception
+15-04-2018 17:53:50[ DEBUG ] Type :61
+15-04-2018 17:53:50[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 17:53:50[ DEBUG ] Attents reception
+15-04-2018 17:53:55[ DEBUG ] Type :61
+15-04-2018 17:53:55[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 17:53:55[ DEBUG ] Attents reception
+15-04-2018 17:54:00[ DEBUG ] Type :61
+15-04-2018 17:54:00[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 17:54:00[ DEBUG ] Attents reception
+15-04-2018 17:54:03[ INFO ][ UTILISATEUR ] Nouvelle utilisateur dans la dechetterie : NEFLAOUI Naim ID_RFID = 02006D7224
+15-04-2018 17:54:05[ DEBUG ] Type :61
+15-04-2018 17:54:05[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 17:54:05[ DEBUG ] Attents reception
+15-04-2018 17:54:10[ DEBUG ] Type :61
+15-04-2018 17:54:10[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 17:54:10[ DEBUG ] Attents reception
+15-04-2018 17:54:15[ DEBUG ] Type :61
+15-04-2018 17:54:15[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 17:54:15[ DEBUG ] Attents reception
+15-04-2018 17:54:20[ DEBUG ] Type :61
+15-04-2018 17:54:20[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 17:54:20[ DEBUG ] Attents reception
+15-04-2018 17:54:25[ DEBUG ] Type :61
+15-04-2018 17:54:25[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 17:54:25[ DEBUG ] Attents reception
+15-04-2018 17:54:30[ DEBUG ] Type :61
+15-04-2018 17:54:30[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 17:54:30[ DEBUG ] Attents reception
+15-04-2018 17:54:30[ SERVEUR ][ ENTREE ] ClientBarri?re viens de ce connect?e
+15-04-2018 17:54:35[ DEBUG ] Type :61
+15-04-2018 17:54:35[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 17:54:35[ DEBUG ] Attents reception
+15-04-2018 17:54:35[ INFO ][ UTILISATEUR ] Nouvelle utilisateur dans la dechetterie : RIEBEL Jordan ID_RFID = 02006D7225
+15-04-2018 17:54:40[ DEBUG ] Type :61
+15-04-2018 17:54:40[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 17:54:40[ DEBUG ] Attents reception
+15-04-2018 17:54:45[ DEBUG ] Type :61
+15-04-2018 17:54:45[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 17:54:45[ DEBUG ] Attents reception
+15-04-2018 17:54:50[ DEBUG ] Type :61
+15-04-2018 17:54:50[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 17:54:50[ DEBUG ] Attents reception
+15-04-2018 17:54:55[ DEBUG ] Type :61
+15-04-2018 17:54:55[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 17:54:55[ DEBUG ] Attents reception
+15-04-2018 17:55:00[ DEBUG ] Type :61
+15-04-2018 17:55:00[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 17:55:00[ DEBUG ] Attents reception
+15-04-2018 17:55:05[ DEBUG ] Type :61
+15-04-2018 17:55:05[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 17:55:05[ DEBUG ] Attents reception
+15-04-2018 17:55:07[ INFO ] [ Utilisateur ] L'utilisateur quitte la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+15-04-2018 17:55:10[ DEBUG ] Type :61
+15-04-2018 17:55:10[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 17:55:10[ DEBUG ] Attents reception
+15-04-2018 17:55:15[ DEBUG ] Type :61
+15-04-2018 17:55:15[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 17:55:15[ DEBUG ] Attents reception
+15-04-2018 17:55:20[ DEBUG ] Type :61
+15-04-2018 17:55:20[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 17:55:20[ DEBUG ] Attents reception
+15-04-2018 17:55:25[ DEBUG ] Type :61
+15-04-2018 17:55:25[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 17:55:25[ DEBUG ] Attents reception
+15-04-2018 17:55:30[ DEBUG ] Type :61
+15-04-2018 17:55:30[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 17:55:30[ DEBUG ] Attents reception
+15-04-2018 17:55:35[ DEBUG ] Type :61
+15-04-2018 17:55:35[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 17:55:35[ DEBUG ] Attents reception
+15-04-2018 17:55:40[ DEBUG ] Type :61
+15-04-2018 17:55:40[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 17:55:40[ DEBUG ] Attents reception
+15-04-2018 17:55:45[ DEBUG ] Type :61
+15-04-2018 17:55:45[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 17:55:45[ DEBUG ] Attents reception
+15-04-2018 17:55:50[ DEBUG ] Type :61
+15-04-2018 17:55:50[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 17:55:50[ DEBUG ] Attents reception
+15-04-2018 17:55:55[ DEBUG ] Type :61
+15-04-2018 17:55:55[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 17:55:55[ DEBUG ] Attents reception
+15-04-2018 17:56:44[ INFO ] [ Configuration ] Erreur ? l'ouverture de ConfigServeur.xml
+15-04-2018 17:56:45[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+15-04-2018 17:56:45[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+15-04-2018 17:56:45[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+15-04-2018 17:56:45[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+15-04-2018 17:56:45[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+15-04-2018 17:56:45[ INTERFACE ]  Attente de l'interface
+15-04-2018 17:56:45[ INTERFACE ]  Interface connecte 
+15-04-2018 17:56:45[ INTERFACE ]  Attente de l'interface
+15-04-2018 17:56:45[ INTERFACE ]  Interface connecte 
+15-04-2018 17:56:45[ INFO ][ UTILISATEUR ] Nouvelle utilisateur dans la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+15-04-2018 17:56:45[ DEBUG ] Attents reception
+15-04-2018 17:56:49[ DEBUG ] Type :61
+15-04-2018 17:56:49[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 17:56:50[ DEBUG ] Attents reception
+15-04-2018 17:56:54[ SERVEUR ][ ENTREE ] ClientBarri?re viens de ce connect?e
+15-04-2018 17:56:54[ DEBUG ] Type :61
+15-04-2018 17:56:54[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 17:56:55[ DEBUG ] Attents reception
+15-04-2018 17:56:59[ DEBUG ] Type :61
+15-04-2018 17:56:59[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 17:57:00[ DEBUG ] Attents reception
+15-04-2018 17:57:04[ DEBUG ] Type :61
+15-04-2018 17:57:04[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 17:57:05[ DEBUG ] Attents reception
+15-04-2018 17:57:09[ DEBUG ] Type :61
+15-04-2018 17:57:09[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 17:57:10[ DEBUG ] Attents reception
+15-04-2018 17:57:14[ DEBUG ] Type :61
+15-04-2018 17:57:14[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 17:57:15[ DEBUG ] Attents reception
+15-04-2018 17:57:18[ INFO ][ UTILISATEUR ] Nouvelle utilisateur dans la dechetterie : NEFLAOUI Naim ID_RFID = 02006D7224
+15-04-2018 17:57:19[ DEBUG ] Type :61
+15-04-2018 17:57:19[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 17:57:20[ DEBUG ] Attents reception
+15-04-2018 17:57:24[ DEBUG ] Type :61
+15-04-2018 17:57:24[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 17:57:25[ DEBUG ] Attents reception
+15-04-2018 17:57:29[ DEBUG ] Type :61
+15-04-2018 17:57:29[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 17:57:30[ DEBUG ] Attents reception
+15-04-2018 17:58:17[ INFO ] [ Configuration ] Erreur ? l'ouverture de ConfigServeur.xml
+15-04-2018 17:58:18[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+15-04-2018 17:58:18[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+15-04-2018 17:58:18[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+15-04-2018 17:58:18[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+15-04-2018 17:58:19[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+15-04-2018 17:58:19[ INTERFACE ]  Attente de l'interface
+15-04-2018 17:58:19[ INTERFACE ]  Interface connecte 
+15-04-2018 17:58:19[ INTERFACE ]  Attente de l'interface
+15-04-2018 17:58:19[ INTERFACE ]  Interface connecte 
+15-04-2018 17:58:19[ DEBUG ] Attents reception
+15-04-2018 17:58:19[ INFO ][ UTILISATEUR ] Nouvelle utilisateur dans la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+15-04-2018 17:58:21[ SERVEUR ][ ENTREE ] ClientBarri?re viens de ce connect?e
+15-04-2018 17:58:23[ DEBUG ] Type :61
+15-04-2018 17:58:23[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 17:58:23[ DEBUG ] Attents reception
+15-04-2018 17:58:28[ DEBUG ] Type :61
+15-04-2018 17:58:28[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 17:58:28[ DEBUG ] Attents reception
+15-04-2018 17:58:33[ DEBUG ] Type :61
+15-04-2018 17:58:33[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 17:58:33[ DEBUG ] Attents reception
+15-04-2018 17:58:38[ DEBUG ] Type :61
+15-04-2018 17:58:38[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 17:58:38[ DEBUG ] Attents reception
+15-04-2018 17:58:43[ DEBUG ] Type :61
+15-04-2018 17:58:43[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 17:58:43[ DEBUG ] Attents reception
+15-04-2018 17:58:48[ DEBUG ] Type :61
+15-04-2018 17:58:48[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 17:58:48[ DEBUG ] Attents reception
+15-04-2018 17:58:49[ CLIENT ][ ENTREE ] ClientBarri?re viens de ce d?connect?e
+15-04-2018 17:58:49[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+15-04-2018 17:58:49[ DEBUG ][ ERROR ] System.Net.Sockets.SocketException (0x80004005): Une requ?te d?envoi ou de r?ception de donn?es n?a pas ?t? autoris?e car le socket n?est pas connect? et (lors de l?envoi sur un socket datagramme en utilisant un appel sendto) aucune adresse n?a ?t? fournie
+   ? System.Net.Sockets.Socket.Disconnect(Boolean reuseSocket)
+   ? Client.Disconnect() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 106
+15-04-2018 17:58:49[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+15-04-2018 17:58:49[ DEBUG ][ ERROR ] System.Net.Sockets.SocketException (0x80004005): Une requ?te d?envoi ou de r?ception de donn?es n?a pas ?t? autoris?e car le socket n?est pas connect? et (lors de l?envoi sur un socket datagramme en utilisant un appel sendto) aucune adresse n?a ?t? fournie
+   ? System.Net.Sockets.Socket.Disconnect(Boolean reuseSocket)
+   ? Client.Disconnect() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 106
+15-04-2018 17:58:50[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+15-04-2018 17:58:50[ DEBUG ][ ERROR ] System.Net.Sockets.SocketException (0x80004005): Une requ?te d?envoi ou de r?ception de donn?es n?a pas ?t? autoris?e car le socket n?est pas connect? et (lors de l?envoi sur un socket datagramme en utilisant un appel sendto) aucune adresse n?a ?t? fournie
+   ? System.Net.Sockets.Socket.Disconnect(Boolean reuseSocket)
+   ? Client.Disconnect() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 106
+15-04-2018 17:58:50[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+15-04-2018 17:58:50[ DEBUG ][ ERROR ] System.Net.Sockets.SocketException (0x80004005): Une requ?te d?envoi ou de r?ception de donn?es n?a pas ?t? autoris?e car le socket n?est pas connect? et (lors de l?envoi sur un socket datagramme en utilisant un appel sendto) aucune adresse n?a ?t? fournie
+   ? System.Net.Sockets.Socket.Disconnect(Boolean reuseSocket)
+   ? Client.Disconnect() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 106
+15-04-2018 17:58:50[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+15-04-2018 17:58:50[ DEBUG ][ ERROR ] System.Net.Sockets.SocketException (0x80004005): Une requ?te d?envoi ou de r?ception de donn?es n?a pas ?t? autoris?e car le socket n?est pas connect? et (lors de l?envoi sur un socket datagramme en utilisant un appel sendto) aucune adresse n?a ?t? fournie
+   ? System.Net.Sockets.Socket.Disconnect(Boolean reuseSocket)
+   ? Client.Disconnect() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 106
+15-04-2018 18:00:14[ INFO ] [ Configuration ] Erreur ? l'ouverture de ConfigServeur.xml
+15-04-2018 18:00:16[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+15-04-2018 18:00:17[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+15-04-2018 18:00:18[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+15-04-2018 18:00:18[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+15-04-2018 18:00:18[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+15-04-2018 18:00:18[ INTERFACE ]  Attente de l'interface
+15-04-2018 18:00:18[ INTERFACE ]  Interface connecte 
+15-04-2018 18:00:18[ INTERFACE ]  Attente de l'interface
+15-04-2018 18:00:18[ INTERFACE ]  Interface connecte 
+15-04-2018 18:00:18[ INFO ][ UTILISATEUR ] Nouvelle utilisateur dans la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+15-04-2018 18:00:18[ DEBUG ] Attents reception
+15-04-2018 18:00:20[ DEBUG ] Type :61
+15-04-2018 18:00:20[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 18:00:21[ DEBUG ] Attents reception
+15-04-2018 18:00:22[ SERVEUR ][ ENTREE ] Un Client avec l'ip 127.0.0.1 a essay? de ce connect?e
+15-04-2018 18:00:25[ DEBUG ] Type :61
+15-04-2018 18:00:25[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 18:00:25[ DEBUG ] Attents reception
+15-04-2018 18:00:28[ SERVEUR ][ ENTREE ] Un Client avec l'ip 127.0.0.1 a essay? de ce connect?e
+15-04-2018 18:00:30[ DEBUG ] Type :61
+15-04-2018 18:00:30[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 18:00:30[ DEBUG ] Attents reception
+15-04-2018 18:00:31[ SERVEUR ][ ENTREE ] Un Client avec l'ip 127.0.0.1 a essay? de ce connect?e
+15-04-2018 18:00:35[ DEBUG ] Type :61
+15-04-2018 18:00:35[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 18:00:35[ DEBUG ] Attents reception
+15-04-2018 18:00:54[ INFO ] [ Configuration ] Erreur ? l'ouverture de ConfigServeur.xml
+15-04-2018 18:00:55[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+15-04-2018 18:00:56[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+15-04-2018 18:00:56[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+15-04-2018 18:00:56[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+15-04-2018 18:00:56[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+15-04-2018 18:00:56[ INTERFACE ]  Attente de l'interface
+15-04-2018 18:00:56[ INTERFACE ]  Interface connecte 
+15-04-2018 18:00:56[ INTERFACE ]  Attente de l'interface
+15-04-2018 18:00:56[ INTERFACE ]  Interface connecte 
+15-04-2018 18:00:56[ INFO ][ UTILISATEUR ] Nouvelle utilisateur dans la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+15-04-2018 18:00:56[ DEBUG ] Attents reception
+15-04-2018 18:01:15[ INFO ] [ Configuration ] Erreur ? l'ouverture de ConfigServeur.xml
+15-04-2018 18:01:16[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+15-04-2018 18:01:16[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+15-04-2018 18:01:16[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+15-04-2018 18:01:17[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+15-04-2018 18:01:17[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+15-04-2018 18:01:17[ INTERFACE ]  Attente de l'interface
+15-04-2018 18:01:17[ INTERFACE ]  Interface connecte 
+15-04-2018 18:01:17[ INTERFACE ]  Attente de l'interface
+15-04-2018 18:01:17[ INTERFACE ]  Interface connecte 
+15-04-2018 18:01:17[ DEBUG ] Attents reception
+15-04-2018 18:01:17[ INFO ][ UTILISATEUR ] Nouvelle utilisateur dans la dechetterie : KLEIN-NORTH Martin ID_RFID = 02006D7223
+15-04-2018 18:01:21[ DEBUG ] Type :61
+15-04-2018 18:01:21[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 18:01:21[ DEBUG ] Attents reception
+15-04-2018 18:01:25[ SERVEUR ][ ENTREE ] Un Client avec l'ip 127.0.0.1 a essay? de ce connect?e
+15-04-2018 18:01:26[ DEBUG ] Type :61
+15-04-2018 18:01:26[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 18:01:26[ DEBUG ] Attents reception
+15-04-2018 18:01:31[ DEBUG ] Type :61
+15-04-2018 18:01:31[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 18:01:31[ DEBUG ] Attents reception
+15-04-2018 18:03:02[ INFO ] [ Configuration ] Erreur ? l'ouverture de ConfigServeur.xml
+15-04-2018 18:03:03[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+15-04-2018 18:03:04[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+15-04-2018 18:03:04[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+15-04-2018 18:03:04[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+15-04-2018 18:03:04[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+15-04-2018 18:03:04[ INTERFACE ]  Attente de l'interface
+15-04-2018 18:03:04[ INTERFACE ]  Interface connecte 
+15-04-2018 18:03:04[ INTERFACE ]  Attente de l'interface
+15-04-2018 18:03:04[ INTERFACE ]  Interface connecte 
+15-04-2018 18:03:04[ DEBUG ] Attents reception
+15-04-2018 18:03:05[ ERROR ][ UTILISATEUR ] Utilisateur avec id RFID 02006D7223 Inconnu 
+15-04-2018 18:03:08[ DEBUG ] Type :61
+15-04-2018 18:03:08[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 18:03:13[ DEBUG ] Attents reception
+15-04-2018 18:03:13[ DEBUG ] Type :61
+15-04-2018 18:03:13[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 18:03:13[ DEBUG ] Attents reception
+15-04-2018 18:03:17[ DEBUG ] Type :61
+15-04-2018 18:03:17[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 18:03:18[ DEBUG ] Attents reception
+15-04-2018 18:03:22[ DEBUG ] Type :61
+15-04-2018 18:03:22[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 18:03:23[ DEBUG ] Attents reception
+15-04-2018 18:03:24[ SERVEUR ][ ENTREE ] ClientRFID viens de ce connect?e
+15-04-2018 18:03:24[ DEBUG ] Boucle 
+15-04-2018 18:03:29[ DEBUG ] Type :61
+15-04-2018 18:03:29[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 18:03:30[ DEBUG ] Attents reception
+15-04-2018 18:03:32[ DEBUG ] Type :61
+15-04-2018 18:03:32[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 18:03:33[ DEBUG ] Attents reception
+15-04-2018 18:03:37[ DEBUG ] Type :61
+15-04-2018 18:03:37[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 18:03:38[ DEBUG ] Attents reception
+15-04-2018 18:03:39[ ERROR ][ UTILISATEUR ] Utilisateur avec id RFID 02006D7224 Inconnu 
+15-04-2018 18:03:42[ ENTREE ] [ RFID ] Demande d'acc?s avec l'id RFID llllllllll
+15-04-2018 18:03:42[ INFO ] Sortie de l'event
+15-04-2018 18:03:42[ DEBUG ] Boucle 
+15-04-2018 18:03:42[ DEBUG ] Type :61
+15-04-2018 18:03:42[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 18:03:43[ DEBUG ] Attents reception
+15-04-2018 18:03:43[ ENTREE ] [ RFID ] Acc?s Refus?
+15-04-2018 18:03:43[ ENTREE ] Fin de procedure !
+15-04-2018 18:03:47[ DEBUG ] Type :61
+15-04-2018 18:03:47[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 18:03:48[ DEBUG ] Attents reception
+15-04-2018 18:03:49[ ENTREE ] [ RFID ] Demande d'acc?s avec l'id RFID llllllllll
+15-04-2018 18:03:49[ INFO ] Sortie de l'event
+15-04-2018 18:03:49[ DEBUG ] Boucle 
+15-04-2018 18:03:50[ ENTREE ] [ RFID ] Acc?s Refus?
+15-04-2018 18:03:50[ ENTREE ] Fin de procedure !
+15-04-2018 18:03:52[ DEBUG ] Type :61
+15-04-2018 18:03:52[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 18:03:53[ DEBUG ] Attents reception
+15-04-2018 18:03:55[ ENTREE ] [ RFID ] Demande d'acc?s avec l'id RFID llllllllll
+15-04-2018 18:03:55[ INFO ] Sortie de l'event
+15-04-2018 18:03:55[ DEBUG ] Boucle 
+15-04-2018 18:03:56[ ENTREE ] [ RFID ] Acc?s Refus?
+15-04-2018 18:03:56[ ENTREE ] Fin de procedure !
+15-04-2018 18:03:57[ DEBUG ] Type :61
+15-04-2018 18:03:57[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 18:03:58[ DEBUG ] Attents reception
+15-04-2018 18:04:00[ ENTREE ] [ RFID ] Demande d'acc?s avec l'id RFID llllllllll
+15-04-2018 18:04:00[ INFO ] Sortie de l'event
+15-04-2018 18:04:00[ DEBUG ] Boucle 
+15-04-2018 18:04:01[ ENTREE ] [ RFID ] Acc?s Refus?
+15-04-2018 18:04:01[ ENTREE ] Fin de procedure !
+15-04-2018 18:04:02[ DEBUG ] Type :61
+15-04-2018 18:04:02[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 18:04:03[ DEBUG ] Attents reception
+15-04-2018 18:04:05[ ENTREE ] [ RFID ] Demande d'acc?s avec l'id RFID llllllllll
+15-04-2018 18:04:05[ INFO ] Sortie de l'event
+15-04-2018 18:04:05[ DEBUG ] Boucle 
+15-04-2018 18:04:06[ ENTREE ] [ RFID ] Acc?s Refus?
+15-04-2018 18:04:06[ ENTREE ] Fin de procedure !
+15-04-2018 18:04:07[ DEBUG ] Type :61
+15-04-2018 18:04:07[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 18:04:08[ DEBUG ] Attents reception
+15-04-2018 18:04:10[ ENTREE ] [ RFID ] Demande d'acc?s avec l'id RFID llllllllll
+15-04-2018 18:04:10[ INFO ] Sortie de l'event
+15-04-2018 18:04:11[ DEBUG ] Boucle 
+15-04-2018 18:04:12[ ENTREE ] [ RFID ] Acc?s Refus?
+15-04-2018 18:04:12[ ENTREE ] Fin de procedure !
+15-04-2018 18:04:12[ ERROR ][ UTILISATEUR ] Utilisateur avec id RFID 02006D7225 Inconnu 
+15-04-2018 18:04:12[ DEBUG ] Type :61
+15-04-2018 18:04:12[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 18:04:13[ DEBUG ] Attents reception
+15-04-2018 18:04:17[ DEBUG ] Type :61
+15-04-2018 18:04:17[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 18:04:18[ DEBUG ] Attents reception
+15-04-2018 18:04:20[ DEBUG ] Boucle 
+15-04-2018 18:04:20[ CLIENT ][ ENTREE ] ClientRFID viens de ce d?connect?e
+15-04-2018 18:04:20[ DEBUG ] Boucle 
+15-04-2018 18:04:20[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+15-04-2018 18:04:20[ DEBUG ][ ERROR ] System.Net.Sockets.SocketException (0x80004005): Une requ?te d?envoi ou de r?ception de donn?es n?a pas ?t? autoris?e car le socket n?est pas connect? et (lors de l?envoi sur un socket datagramme en utilisant un appel sendto) aucune adresse n?a ?t? fournie
+   ? System.Net.Sockets.Socket.Disconnect(Boolean reuseSocket)
+   ? Client.Disconnect() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 106
+15-04-2018 18:04:20[ DEBUG ] Boucle 
+15-04-2018 18:04:20[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+15-04-2018 18:04:20[ DEBUG ][ ERROR ] System.Net.Sockets.SocketException (0x80004005): Une requ?te d?envoi ou de r?ception de donn?es n?a pas ?t? autoris?e car le socket n?est pas connect? et (lors de l?envoi sur un socket datagramme en utilisant un appel sendto) aucune adresse n?a ?t? fournie
+   ? System.Net.Sockets.Socket.Disconnect(Boolean reuseSocket)
+   ? Client.Disconnect() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 106
+15-04-2018 18:04:20[ DEBUG ] Boucle 
+15-04-2018 18:04:21[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+15-04-2018 18:04:21[ DEBUG ][ ERROR ] System.Net.Sockets.SocketException (0x80004005): Une requ?te d?envoi ou de r?ception de donn?es n?a pas ?t? autoris?e car le socket n?est pas connect? et (lors de l?envoi sur un socket datagramme en utilisant un appel sendto) aucune adresse n?a ?t? fournie
+   ? System.Net.Sockets.Socket.Disconnect(Boolean reuseSocket)
+   ? Client.Disconnect() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 106
+15-04-2018 18:04:21[ DEBUG ] Boucle 
+15-04-2018 18:04:21[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+15-04-2018 18:04:21[ DEBUG ][ ERROR ] System.Net.Sockets.SocketException (0x80004005): Une requ?te d?envoi ou de r?ception de donn?es n?a pas ?t? autoris?e car le socket n?est pas connect? et (lors de l?envoi sur un socket datagramme en utilisant un appel sendto) aucune adresse n?a ?t? fournie
+   ? System.Net.Sockets.Socket.Disconnect(Boolean reuseSocket)
+   ? Client.Disconnect() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 106
+15-04-2018 18:04:21[ DEBUG ] Boucle 
+15-04-2018 18:04:21[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+15-04-2018 18:04:21[ DEBUG ][ ERROR ] System.Net.Sockets.SocketException (0x80004005): Une requ?te d?envoi ou de r?ception de donn?es n?a pas ?t? autoris?e car le socket n?est pas connect? et (lors de l?envoi sur un socket datagramme en utilisant un appel sendto) aucune adresse n?a ?t? fournie
+   ? System.Net.Sockets.Socket.Disconnect(Boolean reuseSocket)
+   ? Client.Disconnect() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 106
+15-04-2018 18:04:21[ DEBUG ] Boucle 
+15-04-2018 18:04:21[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+15-04-2018 18:04:21[ DEBUG ][ ERROR ] System.Net.Sockets.SocketException (0x80004005): Une requ?te d?envoi ou de r?ception de donn?es n?a pas ?t? autoris?e car le socket n?est pas connect? et (lors de l?envoi sur un socket datagramme en utilisant un appel sendto) aucune adresse n?a ?t? fournie
+   ? System.Net.Sockets.Socket.Disconnect(Boolean reuseSocket)
+   ? Client.Disconnect() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 106
+15-04-2018 18:04:21[ DEBUG ] Boucle 
+15-04-2018 18:04:21[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+15-04-2018 18:04:21[ DEBUG ][ ERROR ] System.Net.Sockets.SocketException (0x80004005): Une requ?te d?envoi ou de r?ception de donn?es n?a pas ?t? autoris?e car le socket n?est pas connect? et (lors de l?envoi sur un socket datagramme en utilisant un appel sendto) aucune adresse n?a ?t? fournie
+   ? System.Net.Sockets.Socket.Disconnect(Boolean reuseSocket)
+   ? Client.Disconnect() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 106
+15-04-2018 18:04:22[ DEBUG ] Boucle 
+15-04-2018 18:04:22[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+15-04-2018 18:04:22[ DEBUG ][ ERROR ] System.Net.Sockets.SocketException (0x80004005): Une requ?te d?envoi ou de r?ception de donn?es n?a pas ?t? autoris?e car le socket n?est pas connect? et (lors de l?envoi sur un socket datagramme en utilisant un appel sendto) aucune adresse n?a ?t? fournie
+   ? System.Net.Sockets.Socket.Disconnect(Boolean reuseSocket)
+   ? Client.Disconnect() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 106
+15-04-2018 18:04:22[ DEBUG ] Boucle 
+15-04-2018 18:04:22[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+15-04-2018 18:04:22[ DEBUG ][ ERROR ] System.Net.Sockets.SocketException (0x80004005): Une requ?te d?envoi ou de r?ception de donn?es n?a pas ?t? autoris?e car le socket n?est pas connect? et (lors de l?envoi sur un socket datagramme en utilisant un appel sendto) aucune adresse n?a ?t? fournie
+   ? System.Net.Sockets.Socket.Disconnect(Boolean reuseSocket)
+   ? Client.Disconnect() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 106
+15-04-2018 18:04:22[ DEBUG ] Boucle 
+15-04-2018 18:04:22[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+15-04-2018 18:04:22[ DEBUG ][ ERROR ] System.Net.Sockets.SocketException (0x80004005): Une requ?te d?envoi ou de r?ception de donn?es n?a pas ?t? autoris?e car le socket n?est pas connect? et (lors de l?envoi sur un socket datagramme en utilisant un appel sendto) aucune adresse n?a ?t? fournie
+   ? System.Net.Sockets.Socket.Disconnect(Boolean reuseSocket)
+   ? Client.Disconnect() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 106
+15-04-2018 18:04:22[ DEBUG ] Boucle 
+15-04-2018 18:04:22[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+15-04-2018 18:04:22[ DEBUG ][ ERROR ] System.Net.Sockets.SocketException (0x80004005): Une requ?te d?envoi ou de r?ception de donn?es n?a pas ?t? autoris?e car le socket n?est pas connect? et (lors de l?envoi sur un socket datagramme en utilisant un appel sendto) aucune adresse n?a ?t? fournie
+   ? System.Net.Sockets.Socket.Disconnect(Boolean reuseSocket)
+   ? Client.Disconnect() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 106
+15-04-2018 18:04:22[ DEBUG ] Boucle 
+15-04-2018 18:04:22[ DEBUG ] Type :61
+15-04-2018 18:04:23[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 18:04:23[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+15-04-2018 18:04:23[ DEBUG ][ ERROR ] System.Net.Sockets.SocketException (0x80004005): Une requ?te d?envoi ou de r?ception de donn?es n?a pas ?t? autoris?e car le socket n?est pas connect? et (lors de l?envoi sur un socket datagramme en utilisant un appel sendto) aucune adresse n?a ?t? fournie
+   ? System.Net.Sockets.Socket.Disconnect(Boolean reuseSocket)
+   ? Client.Disconnect() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 106
+15-04-2018 18:04:23[ DEBUG ] Attents reception
+15-04-2018 18:04:23[ DEBUG ] Boucle 
+15-04-2018 18:04:23[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+15-04-2018 18:04:23[ DEBUG ][ ERROR ] System.Net.Sockets.SocketException (0x80004005): Une requ?te d?envoi ou de r?ception de donn?es n?a pas ?t? autoris?e car le socket n?est pas connect? et (lors de l?envoi sur un socket datagramme en utilisant un appel sendto) aucune adresse n?a ?t? fournie
+   ? System.Net.Sockets.Socket.Disconnect(Boolean reuseSocket)
+   ? Client.Disconnect() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 106
+15-04-2018 18:04:23[ DEBUG ] Boucle 
+15-04-2018 18:04:23[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+15-04-2018 18:04:23[ DEBUG ][ ERROR ] System.Net.Sockets.SocketException (0x80004005): Une requ?te d?envoi ou de r?ception de donn?es n?a pas ?t? autoris?e car le socket n?est pas connect? et (lors de l?envoi sur un socket datagramme en utilisant un appel sendto) aucune adresse n?a ?t? fournie
+   ? System.Net.Sockets.Socket.Disconnect(Boolean reuseSocket)
+   ? Client.Disconnect() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 106
+15-04-2018 18:04:23[ DEBUG ] Boucle 
+15-04-2018 18:04:23[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+15-04-2018 18:04:23[ DEBUG ][ ERROR ] System.Net.Sockets.SocketException (0x80004005): Une requ?te d?envoi ou de r?ception de donn?es n?a pas ?t? autoris?e car le socket n?est pas connect? et (lors de l?envoi sur un socket datagramme en utilisant un appel sendto) aucune adresse n?a ?t? fournie
+   ? System.Net.Sockets.Socket.Disconnect(Boolean reuseSocket)
+   ? Client.Disconnect() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 106
+15-04-2018 18:04:23[ DEBUG ] Boucle 
+15-04-2018 18:04:23[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+15-04-2018 18:04:23[ DEBUG ][ ERROR ] System.Net.Sockets.SocketException (0x80004005): Une requ?te d?envoi ou de r?ception de donn?es n?a pas ?t? autoris?e car le socket n?est pas connect? et (lors de l?envoi sur un socket datagramme en utilisant un appel sendto) aucune adresse n?a ?t? fournie
+   ? System.Net.Sockets.Socket.Disconnect(Boolean reuseSocket)
+   ? Client.Disconnect() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 106
+15-04-2018 18:04:24[ DEBUG ] Boucle 
+15-04-2018 18:04:24[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+15-04-2018 18:04:24[ DEBUG ][ ERROR ] System.Net.Sockets.SocketException (0x80004005): Une requ?te d?envoi ou de r?ception de donn?es n?a pas ?t? autoris?e car le socket n?est pas connect? et (lors de l?envoi sur un socket datagramme en utilisant un appel sendto) aucune adresse n?a ?t? fournie
+   ? System.Net.Sockets.Socket.Disconnect(Boolean reuseSocket)
+   ? Client.Disconnect() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 106
+15-04-2018 18:04:24[ DEBUG ] Boucle 
+15-04-2018 18:04:24[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+15-04-2018 18:04:24[ DEBUG ][ ERROR ] System.Net.Sockets.SocketException (0x80004005): Une requ?te d?envoi ou de r?ception de donn?es n?a pas ?t? autoris?e car le socket n?est pas connect? et (lors de l?envoi sur un socket datagramme en utilisant un appel sendto) aucune adresse n?a ?t? fournie
+   ? System.Net.Sockets.Socket.Disconnect(Boolean reuseSocket)
+   ? Client.Disconnect() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 106
+15-04-2018 18:04:24[ DEBUG ] Boucle 
+15-04-2018 18:04:24[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+15-04-2018 18:04:24[ DEBUG ][ ERROR ] System.Net.Sockets.SocketException (0x80004005): Une requ?te d?envoi ou de r?ception de donn?es n?a pas ?t? autoris?e car le socket n?est pas connect? et (lors de l?envoi sur un socket datagramme en utilisant un appel sendto) aucune adresse n?a ?t? fournie
+   ? System.Net.Sockets.Socket.Disconnect(Boolean reuseSocket)
+   ? Client.Disconnect() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 106
+15-04-2018 18:04:24[ DEBUG ] Boucle 
+15-04-2018 18:04:24[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+15-04-2018 18:04:24[ DEBUG ][ ERROR ] System.Net.Sockets.SocketException (0x80004005): Une requ?te d?envoi ou de r?ception de donn?es n?a pas ?t? autoris?e car le socket n?est pas connect? et (lors de l?envoi sur un socket datagramme en utilisant un appel sendto) aucune adresse n?a ?t? fournie
+   ? System.Net.Sockets.Socket.Disconnect(Boolean reuseSocket)
+   ? Client.Disconnect() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 106
+15-04-2018 18:04:24[ DEBUG ] Boucle 
+15-04-2018 18:04:25[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+15-04-2018 18:04:25[ DEBUG ][ ERROR ] System.Net.Sockets.SocketException (0x80004005): Une requ?te d?envoi ou de r?ception de donn?es n?a pas ?t? autoris?e car le socket n?est pas connect? et (lors de l?envoi sur un socket datagramme en utilisant un appel sendto) aucune adresse n?a ?t? fournie
+   ? System.Net.Sockets.Socket.Disconnect(Boolean reuseSocket)
+   ? Client.Disconnect() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 106
+15-04-2018 18:04:25[ DEBUG ] Boucle 
+15-04-2018 18:04:25[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+15-04-2018 18:04:25[ DEBUG ][ ERROR ] System.Net.Sockets.SocketException (0x80004005): Une requ?te d?envoi ou de r?ception de donn?es n?a pas ?t? autoris?e car le socket n?est pas connect? et (lors de l?envoi sur un socket datagramme en utilisant un appel sendto) aucune adresse n?a ?t? fournie
+   ? System.Net.Sockets.Socket.Disconnect(Boolean reuseSocket)
+   ? Client.Disconnect() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 106
+15-04-2018 18:04:25[ DEBUG ] Boucle 
+15-04-2018 18:04:25[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+15-04-2018 18:04:25[ DEBUG ][ ERROR ] System.Net.Sockets.SocketException (0x80004005): Une requ?te d?envoi ou de r?ception de donn?es n?a pas ?t? autoris?e car le socket n?est pas connect? et (lors de l?envoi sur un socket datagramme en utilisant un appel sendto) aucune adresse n?a ?t? fournie
+   ? System.Net.Sockets.Socket.Disconnect(Boolean reuseSocket)
+   ? Client.Disconnect() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 106
+15-04-2018 18:04:25[ DEBUG ] Boucle 
+15-04-2018 18:04:25[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+15-04-2018 18:04:25[ DEBUG ][ ERROR ] System.Net.Sockets.SocketException (0x80004005): Une requ?te d?envoi ou de r?ception de donn?es n?a pas ?t? autoris?e car le socket n?est pas connect? et (lors de l?envoi sur un socket datagramme en utilisant un appel sendto) aucune adresse n?a ?t? fournie
+   ? System.Net.Sockets.Socket.Disconnect(Boolean reuseSocket)
+   ? Client.Disconnect() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 106
+15-04-2018 18:04:25[ DEBUG ] Boucle 
+15-04-2018 18:04:25[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+15-04-2018 18:04:25[ DEBUG ][ ERROR ] System.Net.Sockets.SocketException (0x80004005): Une requ?te d?envoi ou de r?ception de donn?es n?a pas ?t? autoris?e car le socket n?est pas connect? et (lors de l?envoi sur un socket datagramme en utilisant un appel sendto) aucune adresse n?a ?t? fournie
+   ? System.Net.Sockets.Socket.Disconnect(Boolean reuseSocket)
+   ? Client.Disconnect() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 106
+15-04-2018 18:04:26[ DEBUG ] Boucle 
+15-04-2018 18:04:26[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+15-04-2018 18:04:26[ DEBUG ][ ERROR ] System.Net.Sockets.SocketException (0x80004005): Une requ?te d?envoi ou de r?ception de donn?es n?a pas ?t? autoris?e car le socket n?est pas connect? et (lors de l?envoi sur un socket datagramme en utilisant un appel sendto) aucune adresse n?a ?t? fournie
+   ? System.Net.Sockets.Socket.Disconnect(Boolean reuseSocket)
+   ? Client.Disconnect() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 106
+15-04-2018 18:04:26[ DEBUG ] Boucle 
+15-04-2018 18:04:26[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+15-04-2018 18:04:26[ DEBUG ][ ERROR ] System.Net.Sockets.SocketException (0x80004005): Une requ?te d?envoi ou de r?ception de donn?es n?a pas ?t? autoris?e car le socket n?est pas connect? et (lors de l?envoi sur un socket datagramme en utilisant un appel sendto) aucune adresse n?a ?t? fournie
+   ? System.Net.Sockets.Socket.Disconnect(Boolean reuseSocket)
+   ? Client.Disconnect() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 106
+15-04-2018 18:04:26[ DEBUG ] Boucle 
+15-04-2018 18:04:26[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+15-04-2018 18:04:26[ DEBUG ][ ERROR ] System.Net.Sockets.SocketException (0x80004005): Une requ?te d?envoi ou de r?ception de donn?es n?a pas ?t? autoris?e car le socket n?est pas connect? et (lors de l?envoi sur un socket datagramme en utilisant un appel sendto) aucune adresse n?a ?t? fournie
+   ? System.Net.Sockets.Socket.Disconnect(Boolean reuseSocket)
+   ? Client.Disconnect() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 106
+15-04-2018 18:04:26[ DEBUG ] Boucle 
+15-04-2018 18:04:26[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+15-04-2018 18:04:26[ DEBUG ][ ERROR ] System.Net.Sockets.SocketException (0x80004005): Une requ?te d?envoi ou de r?ception de donn?es n?a pas ?t? autoris?e car le socket n?est pas connect? et (lors de l?envoi sur un socket datagramme en utilisant un appel sendto) aucune adresse n?a ?t? fournie
+   ? System.Net.Sockets.Socket.Disconnect(Boolean reuseSocket)
+   ? Client.Disconnect() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 106
+15-04-2018 18:04:26[ DEBUG ] Boucle 
+15-04-2018 18:04:27[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+15-04-2018 18:04:27[ DEBUG ][ ERROR ] System.Net.Sockets.SocketException (0x80004005): Une requ?te d?envoi ou de r?ception de donn?es n?a pas ?t? autoris?e car le socket n?est pas connect? et (lors de l?envoi sur un socket datagramme en utilisant un appel sendto) aucune adresse n?a ?t? fournie
+   ? System.Net.Sockets.Socket.Disconnect(Boolean reuseSocket)
+   ? Client.Disconnect() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 106
+15-04-2018 18:04:27[ DEBUG ] Boucle 
+15-04-2018 18:04:27[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+15-04-2018 18:04:27[ DEBUG ][ ERROR ] System.Net.Sockets.SocketException (0x80004005): Une requ?te d?envoi ou de r?ception de donn?es n?a pas ?t? autoris?e car le socket n?est pas connect? et (lors de l?envoi sur un socket datagramme en utilisant un appel sendto) aucune adresse n?a ?t? fournie
+   ? System.Net.Sockets.Socket.Disconnect(Boolean reuseSocket)
+   ? Client.Disconnect() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 106
+15-04-2018 18:04:27[ DEBUG ] Boucle 
+15-04-2018 18:04:27[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+15-04-2018 18:04:27[ DEBUG ][ ERROR ] System.Net.Sockets.SocketException (0x80004005): Une requ?te d?envoi ou de r?ception de donn?es n?a pas ?t? autoris?e car le socket n?est pas connect? et (lors de l?envoi sur un socket datagramme en utilisant un appel sendto) aucune adresse n?a ?t? fournie
+   ? System.Net.Sockets.Socket.Disconnect(Boolean reuseSocket)
+   ? Client.Disconnect() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 106
+15-04-2018 18:04:27[ DEBUG ] Boucle 
+15-04-2018 18:04:27[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+15-04-2018 18:04:27[ DEBUG ][ ERROR ] System.Net.Sockets.SocketException (0x80004005): Une requ?te d?envoi ou de r?ception de donn?es n?a pas ?t? autoris?e car le socket n?est pas connect? et (lors de l?envoi sur un socket datagramme en utilisant un appel sendto) aucune adresse n?a ?t? fournie
+   ? System.Net.Sockets.Socket.Disconnect(Boolean reuseSocket)
+   ? Client.Disconnect() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 106
+15-04-2018 18:04:27[ DEBUG ] Boucle 
+15-04-2018 18:04:27[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+15-04-2018 18:04:27[ DEBUG ][ ERROR ] System.Net.Sockets.SocketException (0x80004005): Une requ?te d?envoi ou de r?ception de donn?es n?a pas ?t? autoris?e car le socket n?est pas connect? et (lors de l?envoi sur un socket datagramme en utilisant un appel sendto) aucune adresse n?a ?t? fournie
+   ? System.Net.Sockets.Socket.Disconnect(Boolean reuseSocket)
+   ? Client.Disconnect() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 106
+15-04-2018 18:04:27[ DEBUG ] Type :61
+15-04-2018 18:04:27[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 18:04:28[ DEBUG ] Boucle 
+15-04-2018 18:04:28[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+15-04-2018 18:04:28[ DEBUG ] Attents reception
+15-04-2018 18:04:28[ DEBUG ][ ERROR ] System.Net.Sockets.SocketException (0x80004005): Une requ?te d?envoi ou de r?ception de donn?es n?a pas ?t? autoris?e car le socket n?est pas connect? et (lors de l?envoi sur un socket datagramme en utilisant un appel sendto) aucune adresse n?a ?t? fournie
+   ? System.Net.Sockets.Socket.Disconnect(Boolean reuseSocket)
+   ? Client.Disconnect() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 106
+15-04-2018 18:04:28[ DEBUG ] Boucle 
+15-04-2018 18:04:28[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+15-04-2018 18:04:28[ DEBUG ][ ERROR ] System.Net.Sockets.SocketException (0x80004005): Une requ?te d?envoi ou de r?ception de donn?es n?a pas ?t? autoris?e car le socket n?est pas connect? et (lors de l?envoi sur un socket datagramme en utilisant un appel sendto) aucune adresse n?a ?t? fournie
+   ? System.Net.Sockets.Socket.Disconnect(Boolean reuseSocket)
+   ? Client.Disconnect() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 106
+15-04-2018 18:04:28[ DEBUG ] Boucle 
+15-04-2018 18:04:28[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+15-04-2018 18:04:28[ DEBUG ][ ERROR ] System.Net.Sockets.SocketException (0x80004005): Une requ?te d?envoi ou de r?ception de donn?es n?a pas ?t? autoris?e car le socket n?est pas connect? et (lors de l?envoi sur un socket datagramme en utilisant un appel sendto) aucune adresse n?a ?t? fournie
+   ? System.Net.Sockets.Socket.Disconnect(Boolean reuseSocket)
+   ? Client.Disconnect() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 106
+15-04-2018 18:04:28[ DEBUG ] Boucle 
+15-04-2018 18:04:28[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+15-04-2018 18:04:28[ DEBUG ][ ERROR ] System.Net.Sockets.SocketException (0x80004005): Une requ?te d?envoi ou de r?ception de donn?es n?a pas ?t? autoris?e car le socket n?est pas connect? et (lors de l?envoi sur un socket datagramme en utilisant un appel sendto) aucune adresse n?a ?t? fournie
+   ? System.Net.Sockets.Socket.Disconnect(Boolean reuseSocket)
+   ? Client.Disconnect() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 106
+15-04-2018 18:04:28[ DEBUG ] Boucle 
+15-04-2018 18:04:28[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+15-04-2018 18:04:28[ DEBUG ][ ERROR ] System.Net.Sockets.SocketException (0x80004005): Une requ?te d?envoi ou de r?ception de donn?es n?a pas ?t? autoris?e car le socket n?est pas connect? et (lors de l?envoi sur un socket datagramme en utilisant un appel sendto) aucune adresse n?a ?t? fournie
+   ? System.Net.Sockets.Socket.Disconnect(Boolean reuseSocket)
+   ? Client.Disconnect() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 106
+15-04-2018 18:04:29[ DEBUG ] Boucle 
+15-04-2018 18:04:29[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+15-04-2018 18:04:29[ DEBUG ][ ERROR ] System.Net.Sockets.SocketException (0x80004005): Une requ?te d?envoi ou de r?ception de donn?es n?a pas ?t? autoris?e car le socket n?est pas connect? et (lors de l?envoi sur un socket datagramme en utilisant un appel sendto) aucune adresse n?a ?t? fournie
+   ? System.Net.Sockets.Socket.Disconnect(Boolean reuseSocket)
+   ? Client.Disconnect() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 106
+15-04-2018 18:04:29[ DEBUG ] Boucle 
+15-04-2018 18:04:29[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+15-04-2018 18:04:29[ DEBUG ][ ERROR ] System.Net.Sockets.SocketException (0x80004005): Une requ?te d?envoi ou de r?ception de donn?es n?a pas ?t? autoris?e car le socket n?est pas connect? et (lors de l?envoi sur un socket datagramme en utilisant un appel sendto) aucune adresse n?a ?t? fournie
+   ? System.Net.Sockets.Socket.Disconnect(Boolean reuseSocket)
+   ? Client.Disconnect() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 106
+15-04-2018 18:04:29[ DEBUG ] Boucle 
+15-04-2018 18:04:29[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+15-04-2018 18:04:29[ DEBUG ][ ERROR ] System.Net.Sockets.SocketException (0x80004005): Une requ?te d?envoi ou de r?ception de donn?es n?a pas ?t? autoris?e car le socket n?est pas connect? et (lors de l?envoi sur un socket datagramme en utilisant un appel sendto) aucune adresse n?a ?t? fournie
+   ? System.Net.Sockets.Socket.Disconnect(Boolean reuseSocket)
+   ? Client.Disconnect() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 106
+15-04-2018 18:04:29[ DEBUG ] Boucle 
+15-04-2018 18:04:29[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+15-04-2018 18:04:29[ DEBUG ][ ERROR ] System.Net.Sockets.SocketException (0x80004005): Une requ?te d?envoi ou de r?ception de donn?es n?a pas ?t? autoris?e car le socket n?est pas connect? et (lors de l?envoi sur un socket datagramme en utilisant un appel sendto) aucune adresse n?a ?t? fournie
+   ? System.Net.Sockets.Socket.Disconnect(Boolean reuseSocket)
+   ? Client.Disconnect() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 106
+15-04-2018 18:04:29[ DEBUG ] Boucle 
+15-04-2018 18:04:30[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+15-04-2018 18:04:30[ DEBUG ][ ERROR ] System.Net.Sockets.SocketException (0x80004005): Une requ?te d?envoi ou de r?ception de donn?es n?a pas ?t? autoris?e car le socket n?est pas connect? et (lors de l?envoi sur un socket datagramme en utilisant un appel sendto) aucune adresse n?a ?t? fournie
+   ? System.Net.Sockets.Socket.Disconnect(Boolean reuseSocket)
+   ? Client.Disconnect() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 106
+15-04-2018 18:04:30[ DEBUG ] Boucle 
+15-04-2018 18:04:30[ ERROR ][ CLIENT ]  Probl?me lors de la deconnexion de 127.0.0.1
+15-04-2018 18:04:30[ DEBUG ][ ERROR ] System.Net.Sockets.SocketException (0x80004005): Une requ?te d?envoi ou de r?ception de donn?es n?a pas ?t? autoris?e car le socket n?est pas connect? et (lors de l?envoi sur un socket datagramme en utilisant un appel sendto) aucune adresse n?a ?t? fournie
+   ? System.Net.Sockets.Socket.Disconnect(Boolean reuseSocket)
+   ? Client.Disconnect() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 106
+15-04-2018 18:11:06[ INFO ] [ Configuration ] Erreur ? l'ouverture de ConfigServeur.xml
+15-04-2018 18:11:07[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+15-04-2018 18:11:08[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+15-04-2018 18:11:08[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+15-04-2018 18:11:08[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+15-04-2018 18:11:08[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+15-04-2018 18:11:09[ INTERFACE ]  Attente de l'interface
+15-04-2018 18:11:09[ INTERFACE ]  Interface connecte 
+15-04-2018 18:11:09[ INTERFACE ]  Attente de l'interface
+15-04-2018 18:11:09[ INTERFACE ]  Interface connecte 
+15-04-2018 18:11:09[ DEBUG ] Attents reception
+15-04-2018 18:11:10[ ERROR ][ UTILISATEUR ] Utilisateur avec id RFID 02006D7223 Inconnu 
+15-04-2018 18:11:12[ DEBUG ] Type :61
+15-04-2018 18:11:12[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 18:11:17[ DEBUG ] Attents reception
+15-04-2018 18:11:17[ DEBUG ] Type :61
+15-04-2018 18:11:17[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 18:11:17[ DEBUG ] Attents reception
+15-04-2018 18:11:17[ SERVEUR ][ ENTREE ] ClientRFID viens de ce connect?e
+15-04-2018 18:11:18[ DEBUG ] Boucle 
+15-04-2018 18:11:22[ DEBUG ] Type :61
+15-04-2018 18:11:22[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 18:11:22[ DEBUG ] Attents reception
+15-04-2018 18:11:26[ DEBUG ] Boucle 
+15-04-2018 18:11:26[ CLIENT ][ ENTREE ] ClientRFID viens de ce d?connect?e
+15-04-2018 18:11:27[ DEBUG ] Type :61
+15-04-2018 18:11:27[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 18:11:27[ DEBUG ] Attents reception
+15-04-2018 18:11:32[ DEBUG ] Type :61
+15-04-2018 18:11:32[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 18:11:32[ DEBUG ] Attents reception
+15-04-2018 18:11:37[ DEBUG ] Type :61
+15-04-2018 18:11:37[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 18:11:37[ DEBUG ] Attents reception
+15-04-2018 18:11:42[ DEBUG ] Type :61
+15-04-2018 18:11:42[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 18:11:42[ DEBUG ] Attents reception
+15-04-2018 18:11:43[ ERROR ][ UTILISATEUR ] Utilisateur avec id RFID 02006D7224 Inconnu 
+15-04-2018 18:11:47[ DEBUG ] Type :61
+15-04-2018 18:11:47[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 18:11:47[ DEBUG ] Attents reception
+15-04-2018 18:17:57[ INFO ] [ Configuration ] Erreur ? l'ouverture de ConfigServeur.xml
+15-04-2018 18:17:58[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+15-04-2018 18:17:59[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+15-04-2018 18:17:59[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+15-04-2018 18:17:59[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+15-04-2018 18:17:59[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+15-04-2018 18:18:00[ INTERFACE ]  Attente de l'interface
+15-04-2018 18:18:00[ INTERFACE ]  Interface connecte 
+15-04-2018 18:18:00[ INTERFACE ]  Attente de l'interface
+15-04-2018 18:18:00[ INTERFACE ]  Interface connecte 
+15-04-2018 18:18:00[ DEBUG ] Attents reception
+15-04-2018 18:18:01[ ERROR ][ UTILISATEUR ] Utilisateur avec id RFID 02006D7223 Inconnu 
+15-04-2018 18:18:03[ DEBUG ] Type :61
+15-04-2018 18:18:03[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 18:18:05[ SERVEUR ][ ENTREE ] ClientRFID viens de ce connect?e
+15-04-2018 18:18:08[ DEBUG ] Attents reception
+15-04-2018 18:18:08[ DEBUG ] Type :61
+15-04-2018 18:18:08[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 18:18:08[ DEBUG ] Attents reception
+15-04-2018 18:18:13[ DEBUG ] Type :61
+15-04-2018 18:18:47[ INFO ] [ Configuration ] Erreur ? l'ouverture de ConfigServeur.xml
+15-04-2018 18:18:47[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+15-04-2018 18:18:49[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+15-04-2018 18:18:49[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+15-04-2018 18:18:49[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+15-04-2018 18:18:49[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+15-04-2018 18:18:49[ INTERFACE ]  Attente de l'interface
+15-04-2018 18:18:49[ INTERFACE ]  Interface connecte 
+15-04-2018 18:18:49[ INTERFACE ]  Attente de l'interface
+15-04-2018 18:18:49[ INTERFACE ]  Interface connecte 
+15-04-2018 18:18:49[ DEBUG ] Attents reception
+15-04-2018 18:18:50[ ERROR ][ UTILISATEUR ] Utilisateur avec id RFID 02006D7223 Inconnu 
+15-04-2018 18:18:52[ DEBUG ] Type :61
+15-04-2018 18:18:52[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 18:18:52[ DEBUG ] Attents reception
+15-04-2018 18:18:57[ DEBUG ] Type :61
+15-04-2018 18:18:57[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 18:18:57[ DEBUG ] Attents reception
+15-04-2018 18:19:00[ SERVEUR ][ ENTREE ] ClientRFID viens de ce connect?e
+15-04-2018 18:19:01[ DEBUG ] Boucle 
+15-04-2018 18:19:02[ DEBUG ] Type :61
+15-04-2018 18:19:02[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 18:19:02[ DEBUG ] Attents reception
+15-04-2018 18:19:06[ INFO ] Sortie de l'event
+15-04-2018 18:19:06[ ENTREE ] [ RFID ] Demande d'acc?s avec l'id RFID iiiiiiiiii
+15-04-2018 18:19:07[ DEBUG ] Boucle 
+15-04-2018 18:19:07[ DEBUG ] Type :61
+15-04-2018 18:19:07[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 18:19:07[ DEBUG ] Attents reception
+15-04-2018 18:19:08[ ENTREE ] [ RFID ] Acc?s Refus?
+15-04-2018 18:19:08[ ENTREE ] Fin de procedure !
+15-04-2018 18:19:12[ INFO ] Sortie de l'event
+15-04-2018 18:19:12[ ENTREE ] [ RFID ] Demande d'acc?s avec l'id RFID iiiiiiiiii
+15-04-2018 18:19:12[ DEBUG ] Boucle 
+15-04-2018 18:19:12[ DEBUG ] Type :61
+15-04-2018 18:19:12[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 18:19:12[ DEBUG ] Attents reception
+15-04-2018 18:19:13[ ENTREE ] [ RFID ] Acc?s Refus?
+15-04-2018 18:19:13[ ENTREE ] Fin de procedure !
+15-04-2018 18:19:17[ ENTREE ] [ RFID ] Demande d'acc?s avec l'id RFID iiiiiiiiii
+15-04-2018 18:19:17[ INFO ] Sortie de l'event
+15-04-2018 18:19:17[ DEBUG ] Boucle 
+15-04-2018 18:19:17[ DEBUG ] Type :61
+15-04-2018 18:19:17[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 18:19:17[ DEBUG ] Attents reception
+15-04-2018 18:19:18[ ENTREE ] [ RFID ] Acc?s Refus?
+15-04-2018 18:19:18[ ENTREE ] Fin de procedure !
+15-04-2018 18:19:22[ ENTREE ] [ RFID ] Demande d'acc?s avec l'id RFID iiiiiiiiii
+15-04-2018 18:19:22[ DEBUG ] Type :61
+15-04-2018 18:19:22[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 18:19:22[ INFO ] Sortie de l'event
+15-04-2018 18:19:22[ DEBUG ] Attents reception
+15-04-2018 18:19:22[ DEBUG ] Boucle 
+15-04-2018 18:19:23[ ERROR ][ UTILISATEUR ] Utilisateur avec id RFID 02006D7224 Inconnu 
+15-04-2018 18:19:23[ ENTREE ] [ RFID ] Acc?s Refus?
+15-04-2018 18:19:23[ ENTREE ] Fin de procedure !
+15-04-2018 18:19:27[ DEBUG ] Type :61
+15-04-2018 18:19:27[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 18:19:27[ DEBUG ] Attents reception
+15-04-2018 20:07:50[ INFO ] [ Configuration ] Erreur ? l'ouverture de ConfigServeur.xml
+15-04-2018 20:07:51[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+15-04-2018 20:07:52[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+15-04-2018 20:07:52[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+15-04-2018 20:07:52[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+15-04-2018 20:07:52[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+15-04-2018 20:07:52[ INTERFACE ]  Attente de l'interface
+15-04-2018 20:07:52[ INTERFACE ]  Interface connecte 
+15-04-2018 20:07:52[ INTERFACE ]  Attente de l'interface
+15-04-2018 20:07:52[ INTERFACE ]  Interface connecte 
+15-04-2018 20:07:52[ DEBUG ] Attents reception
+15-04-2018 20:07:54[ ERROR ][ UTILISATEUR ] Utilisateur avec id RFID 02006D7223 Inconnu 
+15-04-2018 20:07:55[ DEBUG ] Type :61
+15-04-2018 20:07:55[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:07:56[ DEBUG ] Attents reception
+15-04-2018 20:08:00[ DEBUG ] Type :61
+15-04-2018 20:08:00[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:08:01[ DEBUG ] Attents reception
+15-04-2018 20:08:01[ SERVEUR ][ ENTREE ] ClientRFID viens de ce connect?e
+15-04-2018 20:08:05[ DEBUG ] Type :61
+15-04-2018 20:08:05[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:08:06[ DEBUG ] Attents reception
+15-04-2018 20:08:10[ DEBUG ] Type :61
+15-04-2018 20:08:10[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:08:11[ DEBUG ] Attents reception
+15-04-2018 20:08:15[ DEBUG ] Type :61
+15-04-2018 20:08:15[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:08:16[ DEBUG ] Attents reception
+15-04-2018 20:08:20[ DEBUG ] Type :61
+15-04-2018 20:08:20[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:08:21[ DEBUG ] Attents reception
+15-04-2018 20:08:25[ DEBUG ] Type :61
+15-04-2018 20:08:25[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:08:26[ DEBUG ] Attents reception
+15-04-2018 20:08:27[ ERROR ][ UTILISATEUR ] Utilisateur avec id RFID 02006D7224 Inconnu 
+15-04-2018 20:08:30[ DEBUG ] Type :61
+15-04-2018 20:08:30[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:08:31[ DEBUG ] Attents reception
+15-04-2018 20:08:35[ DEBUG ] Type :61
+15-04-2018 20:08:35[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:08:36[ DEBUG ] Attents reception
+15-04-2018 20:08:40[ DEBUG ] Type :61
+15-04-2018 20:08:40[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:08:41[ DEBUG ] Attents reception
+15-04-2018 20:08:45[ DEBUG ] Type :61
+15-04-2018 20:08:45[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:08:46[ DEBUG ] Attents reception
+15-04-2018 20:08:50[ DEBUG ] Type :61
+15-04-2018 20:08:50[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:08:51[ DEBUG ] Attents reception
+15-04-2018 20:08:55[ DEBUG ] Type :61
+15-04-2018 20:08:55[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:08:56[ DEBUG ] Attents reception
+15-04-2018 20:09:00[ ERROR ][ UTILISATEUR ] Utilisateur avec id RFID 02006D7225 Inconnu 
+15-04-2018 20:09:00[ DEBUG ] Type :61
+15-04-2018 20:09:00[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:09:01[ DEBUG ] Attents reception
+15-04-2018 20:09:05[ DEBUG ] Type :61
+15-04-2018 20:09:05[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:09:06[ DEBUG ] Attents reception
+15-04-2018 20:09:10[ DEBUG ] Type :61
+15-04-2018 20:09:10[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:09:11[ DEBUG ] Attents reception
+15-04-2018 20:10:06[ INFO ] [ Configuration ] Erreur ? l'ouverture de ConfigServeur.xml
+15-04-2018 20:10:07[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+15-04-2018 20:10:09[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+15-04-2018 20:10:09[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+15-04-2018 20:10:09[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+15-04-2018 20:10:09[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+15-04-2018 20:10:09[ INTERFACE ]  Attente de l'interface
+15-04-2018 20:10:09[ INTERFACE ]  Interface connecte 
+15-04-2018 20:10:09[ INTERFACE ]  Attente de l'interface
+15-04-2018 20:10:09[ INTERFACE ]  Interface connecte 
+15-04-2018 20:10:09[ DEBUG ] Attents reception
+15-04-2018 20:10:10[ SERVEUR ][ ENTREE ] ClientRFID viens de ce connect?e
+15-04-2018 20:10:10[ ERROR ][ UTILISATEUR ] Utilisateur avec id RFID 02006D7223 Inconnu 
+15-04-2018 20:10:12[ DEBUG ] Type :61
+15-04-2018 20:10:12[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:10:12[ DEBUG ] Attents reception
+15-04-2018 20:10:17[ DEBUG ] Type :61
+15-04-2018 20:10:17[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:10:17[ DEBUG ] Attents reception
+15-04-2018 20:10:22[ DEBUG ] Type :61
+15-04-2018 20:10:22[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:10:22[ DEBUG ] Attents reception
+15-04-2018 20:10:27[ DEBUG ] Type :61
+15-04-2018 20:10:27[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:10:27[ DEBUG ] Attents reception
+15-04-2018 20:10:45[ INFO ] [ Configuration ] Erreur ? l'ouverture de ConfigServeur.xml
+15-04-2018 20:10:47[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+15-04-2018 20:10:49[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+15-04-2018 20:10:49[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+15-04-2018 20:10:49[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+15-04-2018 20:10:49[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+15-04-2018 20:10:49[ INTERFACE ]  Attente de l'interface
+15-04-2018 20:10:49[ INTERFACE ]  Interface connecte 
+15-04-2018 20:10:49[ INTERFACE ]  Attente de l'interface
+15-04-2018 20:10:49[ INTERFACE ]  Interface connecte 
+15-04-2018 20:10:49[ DEBUG ] Attents reception
+15-04-2018 20:10:51[ ERROR ][ UTILISATEUR ] Utilisateur avec id RFID 02006D7223 Inconnu 
+15-04-2018 20:10:51[ DEBUG ] Type :61
+15-04-2018 20:10:51[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:10:51[ DEBUG ] Attents reception
+15-04-2018 20:10:56[ DEBUG ] Type :61
+15-04-2018 20:10:56[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:10:56[ DEBUG ] Attents reception
+15-04-2018 20:11:01[ DEBUG ] Type :61
+15-04-2018 20:11:01[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:11:01[ DEBUG ] Attents reception
+15-04-2018 20:11:06[ DEBUG ] Type :61
+15-04-2018 20:11:06[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:11:06[ DEBUG ] Attents reception
+15-04-2018 20:11:11[ DEBUG ] Type :61
+15-04-2018 20:11:11[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:11:11[ DEBUG ] Attents reception
+15-04-2018 20:11:14[ SERVEUR ][ ENTREE ] ClientRFID viens de ce connect?e
+15-04-2018 20:12:24[ DEBUG ] Type :61
+15-04-2018 20:12:25[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:13:16[ INFO ] [ Configuration ] Erreur ? l'ouverture de ConfigServeur.xml
+15-04-2018 20:13:17[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+15-04-2018 20:13:19[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+15-04-2018 20:13:19[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+15-04-2018 20:13:19[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+15-04-2018 20:13:19[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+15-04-2018 20:13:19[ INTERFACE ]  Attente de l'interface
+15-04-2018 20:13:19[ INTERFACE ]  Interface connecte 
+15-04-2018 20:13:19[ INTERFACE ]  Attente de l'interface
+15-04-2018 20:13:19[ INTERFACE ]  Interface connecte 
+15-04-2018 20:13:19[ DEBUG ] Attents reception
+15-04-2018 20:13:20[ ERROR ][ UTILISATEUR ] Utilisateur avec id RFID 02006D7223 Inconnu 
+15-04-2018 20:13:22[ DEBUG ] Type :61
+15-04-2018 20:13:22[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:13:22[ DEBUG ] Attents reception
+15-04-2018 20:13:27[ DEBUG ] Type :61
+15-04-2018 20:13:27[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:13:27[ DEBUG ] Attents reception
+15-04-2018 20:13:30[ SERVEUR ][ ENTREE ] ClientRFID viens de ce connect?e
+15-04-2018 20:13:32[ DEBUG ] Type :61
+15-04-2018 20:13:32[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:13:32[ DEBUG ] Attents reception
+15-04-2018 20:13:34[ ENTREE ] [ RFID ] Demande d'acc?s avec l'id RFID iiiiiiiiii
+15-04-2018 20:13:34[ INFO ] Sortie de l'event
+15-04-2018 20:13:35[ ENTREE ] [ RFID ] Acc?s Refus?
+15-04-2018 20:13:35[ ENTREE ] Fin de procedure !
+15-04-2018 20:13:37[ DEBUG ] Type :61
+15-04-2018 20:13:37[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:13:37[ DEBUG ] Attents reception
+15-04-2018 20:14:16[ INFO ] [ Configuration ] Erreur ? l'ouverture de ConfigServeur.xml
+15-04-2018 20:14:17[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+15-04-2018 20:14:18[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+15-04-2018 20:14:18[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+15-04-2018 20:14:18[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+15-04-2018 20:14:18[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+15-04-2018 20:14:18[ INTERFACE ]  Attente de l'interface
+15-04-2018 20:14:18[ INTERFACE ]  Interface connecte 
+15-04-2018 20:14:18[ INTERFACE ]  Attente de l'interface
+15-04-2018 20:14:19[ INTERFACE ]  Interface connecte 
+15-04-2018 20:14:19[ DEBUG ] Attents reception
+15-04-2018 20:14:20[ ERROR ][ UTILISATEUR ] Utilisateur avec id RFID 02006D7223 Inconnu 
+15-04-2018 20:14:21[ DEBUG ] Type :61
+15-04-2018 20:14:21[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:14:22[ DEBUG ] Attents reception
+15-04-2018 20:14:22[ SERVEUR ][ ENTREE ] ClientRFID viens de ce connect?e
+15-04-2018 20:14:26[ DEBUG ] Type :61
+15-04-2018 20:14:26[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:14:26[ DEBUG ] Attents reception
+15-04-2018 20:14:31[ DEBUG ] Type :61
+15-04-2018 20:14:31[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:14:31[ DEBUG ] Attents reception
+15-04-2018 20:14:36[ DEBUG ] Type :61
+15-04-2018 20:14:36[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:14:36[ DEBUG ] Attents reception
+15-04-2018 20:14:40[ SERVEUR ][ ENTREE ] ClientRFID viens de ce connect?e
+15-04-2018 20:14:41[ DEBUG ] Type :61
+15-04-2018 20:14:41[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:14:41[ DEBUG ] Attents reception
+15-04-2018 20:14:46[ DEBUG ] Type :61
+15-04-2018 20:14:46[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:14:46[ DEBUG ] Attents reception
+15-04-2018 20:14:51[ DEBUG ] Type :61
+15-04-2018 20:14:51[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:14:51[ DEBUG ] Attents reception
+15-04-2018 20:14:53[ ERROR ][ UTILISATEUR ] Utilisateur avec id RFID 02006D7224 Inconnu 
+15-04-2018 20:14:56[ DEBUG ] Type :61
+15-04-2018 20:14:56[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:14:56[ DEBUG ] Attents reception
+15-04-2018 20:15:11[ INFO ] [ Configuration ] Erreur ? l'ouverture de ConfigServeur.xml
+15-04-2018 20:15:12[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+15-04-2018 20:15:13[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+15-04-2018 20:15:14[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+15-04-2018 20:15:14[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+15-04-2018 20:15:14[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+15-04-2018 20:15:14[ INTERFACE ]  Attente de l'interface
+15-04-2018 20:15:14[ INTERFACE ]  Interface connecte 
+15-04-2018 20:15:14[ INTERFACE ]  Attente de l'interface
+15-04-2018 20:15:14[ INTERFACE ]  Interface connecte 
+15-04-2018 20:15:14[ DEBUG ] Attents reception
+15-04-2018 20:15:15[ ERROR ][ UTILISATEUR ] Utilisateur avec id RFID 02006D7223 Inconnu 
+15-04-2018 20:15:17[ DEBUG ] Type :61
+15-04-2018 20:15:17[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:15:17[ DEBUG ] Attents reception
+15-04-2018 20:15:21[ SERVEUR ][ ENTREE ] ClientRFID viens de ce connect?e
+15-04-2018 20:15:22[ DEBUG ] Type :61
+15-04-2018 20:15:22[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:15:22[ DEBUG ] Attents reception
+15-04-2018 20:15:24[ ENTREE ] [ RFID ] Demande d'acc?s avec l'id RFID iiiiiiiiii
+15-04-2018 20:15:24[ INFO ] Sortie de l'event
+15-04-2018 20:15:26[ ENTREE ] [ RFID ] Acc?s Refus?
+15-04-2018 20:15:26[ ENTREE ] Fin de procedure !
+15-04-2018 20:15:27[ DEBUG ] Type :61
+15-04-2018 20:15:27[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:15:27[ DEBUG ] Attents reception
+15-04-2018 20:15:57[ INFO ] [ Configuration ] Erreur ? l'ouverture de ConfigServeur.xml
+15-04-2018 20:15:58[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+15-04-2018 20:15:59[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+15-04-2018 20:15:59[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+15-04-2018 20:15:59[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+15-04-2018 20:15:59[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+15-04-2018 20:15:59[ INTERFACE ]  Attente de l'interface
+15-04-2018 20:15:59[ INTERFACE ]  Interface connecte 
+15-04-2018 20:15:59[ INTERFACE ]  Attente de l'interface
+15-04-2018 20:15:59[ INTERFACE ]  Interface connecte 
+15-04-2018 20:15:59[ DEBUG ] Attents reception
+15-04-2018 20:16:00[ ERROR ][ UTILISATEUR ] Utilisateur avec id RFID 02006D7223 Inconnu 
+15-04-2018 20:16:02[ DEBUG ] Type :61
+15-04-2018 20:16:02[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:16:08[ DEBUG ] Attents reception
+15-04-2018 20:16:08[ DEBUG ] Type :61
+15-04-2018 20:16:08[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:16:08[ DEBUG ] Attents reception
+15-04-2018 20:16:12[ DEBUG ] Type :61
+15-04-2018 20:16:12[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:16:12[ DEBUG ] Attents reception
+15-04-2018 20:16:17[ DEBUG ] Type :61
+15-04-2018 20:16:17[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:16:17[ DEBUG ] Attents reception
+15-04-2018 20:16:22[ DEBUG ] Type :61
+15-04-2018 20:16:22[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:16:22[ DEBUG ] Attents reception
+15-04-2018 20:16:27[ DEBUG ] Type :61
+15-04-2018 20:16:27[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:16:27[ DEBUG ] Attents reception
+15-04-2018 20:16:32[ DEBUG ] Type :61
+15-04-2018 20:16:32[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:16:32[ DEBUG ] Attents reception
+15-04-2018 20:16:33[ ERROR ][ UTILISATEUR ] Utilisateur avec id RFID 02006D7224 Inconnu 
+15-04-2018 20:16:36[ SERVEUR ][ ENTREE ] ClientRFID viens de ce connect?e
+15-04-2018 20:16:37[ DEBUG ] Type :61
+15-04-2018 20:16:37[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:16:37[ DEBUG ] Attents reception
+15-04-2018 20:16:42[ DEBUG ] Type :61
+15-04-2018 20:16:42[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:16:42[ DEBUG ] Attents reception
+15-04-2018 20:16:47[ DEBUG ] Type :61
+15-04-2018 20:16:47[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:16:47[ DEBUG ] Attents reception
+15-04-2018 20:16:52[ DEBUG ] Type :61
+15-04-2018 20:16:52[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:16:52[ DEBUG ] Attents reception
+15-04-2018 20:16:53[ SERVEUR ][ ENTREE ] ClientRFID viens de ce connect?e
+15-04-2018 20:16:57[ DEBUG ] Type :61
+15-04-2018 20:16:57[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:16:57[ DEBUG ] Attents reception
+15-04-2018 20:17:02[ DEBUG ] Type :61
+15-04-2018 20:17:02[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:17:02[ DEBUG ] Attents reception
+15-04-2018 20:17:07[ ERROR ][ UTILISATEUR ] Utilisateur avec id RFID 02006D7225 Inconnu 
+15-04-2018 20:17:07[ DEBUG ] Type :61
+15-04-2018 20:17:07[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:17:07[ DEBUG ] Attents reception
+15-04-2018 20:17:12[ DEBUG ] Type :61
+15-04-2018 20:17:12[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:17:12[ DEBUG ] Attents reception
+15-04-2018 20:17:17[ DEBUG ] Type :61
+15-04-2018 20:17:17[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:17:17[ DEBUG ] Attents reception
+15-04-2018 20:17:19[ CLIENT ][ ENTREE ] ClientRFID viens de ce d?connect?e
+15-04-2018 20:17:22[ DEBUG ] Type :61
+15-04-2018 20:17:22[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:17:22[ DEBUG ] Attents reception
+15-04-2018 20:17:27[ DEBUG ] Type :61
+15-04-2018 20:17:27[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:17:27[ DEBUG ] Attents reception
+15-04-2018 20:17:29[ SERVEUR ][ ENTREE ] ClientRFID viens de ce connect?e
+15-04-2018 20:17:32[ DEBUG ] Type :61
+15-04-2018 20:17:32[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:17:32[ DEBUG ] Attents reception
+15-04-2018 20:17:37[ DEBUG ] Type :61
+15-04-2018 20:17:37[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:17:37[ DEBUG ] Attents reception
+15-04-2018 20:17:40[ ERROR ] System.Exception: ID_RFID Introuvable
+   ? DataBddProxy.getUserByIdRFID(String id_Rfid) dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\databddproxy.cpp:ligne 172
+   ? Dechetterie.deleteUtilisateur(String id_rfid) dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\dechetterie.cpp:ligne 164
+15-04-2018 20:17:42[ DEBUG ] Type :61
+15-04-2018 20:17:42[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:17:42[ DEBUG ] Attents reception
+15-04-2018 20:17:47[ DEBUG ] Type :61
+15-04-2018 20:17:47[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:17:47[ DEBUG ] Attents reception
+15-04-2018 20:17:52[ DEBUG ] Type :61
+15-04-2018 20:17:52[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:17:52[ DEBUG ] Attents reception
+15-04-2018 20:17:57[ DEBUG ] Type :61
+15-04-2018 20:17:57[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:17:57[ DEBUG ] Attents reception
+15-04-2018 20:18:02[ DEBUG ] Type :61
+15-04-2018 20:18:02[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:18:02[ DEBUG ] Attents reception
+15-04-2018 20:18:07[ DEBUG ] Type :61
+15-04-2018 20:18:07[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:18:07[ DEBUG ] Attents reception
+15-04-2018 20:18:12[ DEBUG ] Type :61
+15-04-2018 20:18:12[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:18:12[ DEBUG ] Attents reception
+15-04-2018 20:18:16[ CLIENT ][ ENTREE ] ClientRFID viens de ce d?connect?e
+15-04-2018 20:18:18[ DEBUG ] Type :61
+15-04-2018 20:18:18[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:18:18[ DEBUG ] Attents reception
+15-04-2018 20:18:22[ DEBUG ] Type :61
+15-04-2018 20:18:22[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:18:22[ DEBUG ] Attents reception
+15-04-2018 20:18:27[ DEBUG ] Type :61
+15-04-2018 20:18:27[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:18:27[ DEBUG ] Attents reception
+15-04-2018 20:18:32[ DEBUG ] Type :61
+15-04-2018 20:18:32[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:18:32[ DEBUG ] Attents reception
+15-04-2018 20:18:37[ DEBUG ] Type :61
+15-04-2018 20:18:37[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:18:37[ DEBUG ] Attents reception
+15-04-2018 20:18:42[ DEBUG ] Type :61
+15-04-2018 20:18:42[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:18:42[ DEBUG ] Attents reception
+15-04-2018 20:18:47[ DEBUG ] Type :61
+15-04-2018 20:18:47[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:18:47[ DEBUG ] Attents reception
+15-04-2018 20:18:52[ DEBUG ] Type :61
+15-04-2018 20:18:52[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:18:53[ DEBUG ] Attents reception
+15-04-2018 20:18:57[ DEBUG ] Type :61
+15-04-2018 20:18:57[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:18:57[ DEBUG ] Attents reception
+15-04-2018 20:19:02[ DEBUG ] Type :61
+15-04-2018 20:19:02[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:19:02[ DEBUG ] Attents reception
+15-04-2018 20:19:06[ SERVEUR ][ ENTREE ] ClientRFID viens de ce connect?e
+15-04-2018 20:19:07[ DEBUG ] Type :61
+15-04-2018 20:19:07[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:19:07[ DEBUG ] Attents reception
+15-04-2018 20:19:11[ CLIENT ][ ENTREE ] ClientRFID viens de ce d?connect?e
+15-04-2018 20:19:12[ DEBUG ] Type :61
+15-04-2018 20:19:12[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:19:12[ DEBUG ] Attents reception
+15-04-2018 20:19:17[ DEBUG ] Type :61
+15-04-2018 20:19:17[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:19:17[ DEBUG ] Attents reception
+15-04-2018 20:19:19[ SERVEUR ][ ENTREE ] ClientRFID viens de ce connect?e
+15-04-2018 20:19:20[ CLIENT ][ ENTREE ] ClientRFID viens de ce d?connect?e
+15-04-2018 20:19:21[ SERVEUR ][ ENTREE ] ClientRFID viens de ce connect?e
+15-04-2018 20:19:22[ DEBUG ] Type :61
+15-04-2018 20:19:22[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:19:22[ DEBUG ] Attents reception
+15-04-2018 20:19:27[ CLIENT ][ ENTREE ] ClientRFID viens de ce d?connect?e
+15-04-2018 20:19:27[ DEBUG ] Type :61
+15-04-2018 20:19:27[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:19:27[ DEBUG ] Attents reception
+15-04-2018 20:19:32[ DEBUG ] Type :61
+15-04-2018 20:19:32[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:19:32[ DEBUG ] Attents reception
+15-04-2018 20:21:14[ INFO ] [ Configuration ] Erreur ? l'ouverture de ConfigServeur.xml
+15-04-2018 20:21:15[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+15-04-2018 20:21:16[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+15-04-2018 20:21:16[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+15-04-2018 20:21:16[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+15-04-2018 20:21:16[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+15-04-2018 20:21:16[ INTERFACE ]  Attente de l'interface
+15-04-2018 20:21:16[ INTERFACE ]  Interface connecte 
+15-04-2018 20:21:16[ INTERFACE ]  Attente de l'interface
+15-04-2018 20:21:16[ INTERFACE ]  Interface connecte 
+15-04-2018 20:21:16[ DEBUG ] Attents reception
+15-04-2018 20:21:17[ ERROR ][ UTILISATEUR ] Utilisateur avec id RFID 02006D7223 Inconnu 
+15-04-2018 20:21:19[ SERVEUR ][ ENTREE ] ClientRFID viens de ce connect?e
+15-04-2018 20:21:19[ DEBUG ] Type :61
+15-04-2018 20:21:19[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:21:21[ CLIENT ][ Ping ] Demande de ping de 127.0.0.1( ENTREE ClientRFID )
+15-04-2018 20:21:22[ CLIENT ][ Ping ] Demande de ping de 127.0.0.1( ENTREE ClientRFID )
+15-04-2018 20:21:23[ CLIENT ][ Ping ] Demande de ping de 127.0.0.1( ENTREE ClientRFID )
+15-04-2018 20:21:23[ CLIENT ][ Ping ] Demande de ping de 127.0.0.1( ENTREE ClientRFID )
+15-04-2018 20:21:24[ CLIENT ][ Ping ] Demande de ping de 127.0.0.1( ENTREE ClientRFID )
+15-04-2018 20:21:24[ CLIENT ][ Ping ] Demande de ping de 127.0.0.1( ENTREE ClientRFID )
+15-04-2018 20:21:25[ DEBUG ] Attents reception
+15-04-2018 20:21:25[ DEBUG ] Type :61
+15-04-2018 20:21:25[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:21:25[ DEBUG ] Attents reception
+15-04-2018 20:21:26[ CLIENT ][ Ping ] Demande de ping de 127.0.0.1( ENTREE ClientRFID )
+15-04-2018 20:21:27[ CLIENT ][ Ping ] Demande de ping de 127.0.0.1( ENTREE ClientRFID )
+15-04-2018 20:21:29[ DEBUG ] Type :61
+15-04-2018 20:21:29[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:21:30[ DEBUG ] Attents reception
+15-04-2018 20:21:34[ DEBUG ] Type :61
+15-04-2018 20:21:34[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:21:35[ DEBUG ] Attents reception
+15-04-2018 20:21:35[ SERVEUR ][ ENTREE ] ClientRFID viens de ce connect?e
+15-04-2018 20:21:38[ SERVEUR ][ ENTREE ] ClientRFID viens de ce connect?e
+15-04-2018 20:21:39[ DEBUG ] Type :61
+15-04-2018 20:21:39[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:21:40[ DEBUG ] Attents reception
+15-04-2018 20:21:44[ DEBUG ] Type :61
+15-04-2018 20:21:44[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:21:44[ DEBUG ] Attents reception
+15-04-2018 20:21:49[ DEBUG ] Type :61
+15-04-2018 20:21:49[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:21:49[ DEBUG ] Attents reception
+15-04-2018 20:21:51[ ERROR ][ UTILISATEUR ] Utilisateur avec id RFID 02006D7224 Inconnu 
+15-04-2018 20:23:49[ INFO ] [ Configuration ] Erreur ? l'ouverture de ConfigServeur.xml
+15-04-2018 20:23:49[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+15-04-2018 20:23:51[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+15-04-2018 20:23:51[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+15-04-2018 20:23:51[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+15-04-2018 20:23:51[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+15-04-2018 20:23:51[ INTERFACE ]  Attente de l'interface
+15-04-2018 20:23:51[ INTERFACE ]  Interface connecte 
+15-04-2018 20:23:51[ INTERFACE ]  Attente de l'interface
+15-04-2018 20:23:51[ INTERFACE ]  Interface connecte 
+15-04-2018 20:23:51[ DEBUG ] Attents reception
+15-04-2018 20:23:52[ ERROR ][ UTILISATEUR ] Utilisateur avec id RFID 02006D7223 Inconnu 
+15-04-2018 20:23:54[ DEBUG ] Type :61
+15-04-2018 20:23:54[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:23:54[ DEBUG ] Attents reception
+15-04-2018 20:23:59[ DEBUG ] Type :61
+15-04-2018 20:23:59[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:23:59[ DEBUG ] Attents reception
+15-04-2018 20:24:04[ DEBUG ] Type :61
+15-04-2018 20:24:04[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:24:04[ DEBUG ] Attents reception
+15-04-2018 20:24:09[ DEBUG ] Type :61
+15-04-2018 20:24:09[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:24:09[ DEBUG ] Attents reception
+15-04-2018 20:24:14[ DEBUG ] Type :61
+15-04-2018 20:24:14[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:24:14[ DEBUG ] Attents reception
+15-04-2018 20:24:19[ DEBUG ] Type :61
+15-04-2018 20:24:19[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:24:19[ DEBUG ] Attents reception
+15-04-2018 20:24:24[ DEBUG ] Type :61
+15-04-2018 20:24:24[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:24:24[ DEBUG ] Attents reception
+15-04-2018 20:24:25[ ERROR ][ UTILISATEUR ] Utilisateur avec id RFID 02006D7224 Inconnu 
+15-04-2018 20:24:29[ DEBUG ] Type :61
+15-04-2018 20:24:29[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:24:29[ DEBUG ] Attents reception
+15-04-2018 20:24:34[ DEBUG ] Type :61
+15-04-2018 20:24:34[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:24:34[ DEBUG ] Attents reception
+15-04-2018 20:24:39[ DEBUG ] Type :61
+15-04-2018 20:24:39[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:24:39[ DEBUG ] Attents reception
+15-04-2018 20:24:44[ DEBUG ] Type :61
+15-04-2018 20:24:44[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:24:44[ DEBUG ] Attents reception
+15-04-2018 20:24:49[ DEBUG ] Type :61
+15-04-2018 20:24:49[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:24:49[ DEBUG ] Attents reception
+15-04-2018 20:24:53[ SERVEUR ][ ENTREE ] ClientRFID viens de ce connect?e
+15-04-2018 20:24:54[ DEBUG ] Type :61
+15-04-2018 20:24:54[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:24:54[ DEBUG ] Attents reception
+15-04-2018 20:24:58[ ERROR ][ UTILISATEUR ] Utilisateur avec id RFID 02006D7225 Inconnu 
+15-04-2018 20:24:59[ DEBUG ] Type :61
+15-04-2018 20:24:59[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:24:59[ DEBUG ] Attents reception
+15-04-2018 20:25:03[ SERVEUR ][ ENTREE ] ClientRFID viens de ce connect?e
+15-04-2018 20:25:04[ DEBUG ] Type :61
+15-04-2018 20:25:04[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:25:04[ DEBUG ] Attents reception
+15-04-2018 20:25:06[ SERVEUR ][ ENTREE ] ClientRFID viens de ce connect?e
+15-04-2018 20:25:08[ SERVEUR ][ ENTREE ] ClientRFID viens de ce connect?e
+15-04-2018 20:25:09[ DEBUG ] Type :61
+15-04-2018 20:25:09[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:25:09[ DEBUG ] Attents reception
+15-04-2018 20:25:10[ SERVEUR ][ ENTREE ] ClientRFID viens de ce connect?e
+15-04-2018 20:25:13[ CLIENT ][ Ping ] Demande de ping de 127.0.0.1( ENTREE ClientRFID )
+15-04-2018 20:25:14[ CLIENT ][ Ping ] Demande de ping de 127.0.0.1( ENTREE ClientRFID )
+15-04-2018 20:25:14[ DEBUG ] Type :61
+15-04-2018 20:25:14[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:25:14[ CLIENT ][ Ping ] Demande de ping de 127.0.0.1( ENTREE ClientRFID )
+15-04-2018 20:25:14[ DEBUG ] Attents reception
+15-04-2018 20:25:14[ CLIENT ][ Ping ] Demande de ping de 127.0.0.1( ENTREE ClientRFID )
+15-04-2018 20:25:15[ CLIENT ][ Ping ] Demande de ping de 127.0.0.1( ENTREE ClientRFID )
+15-04-2018 20:25:15[ CLIENT ][ Ping ] Demande de ping de 127.0.0.1( ENTREE ClientRFID )
+15-04-2018 20:25:15[ CLIENT ][ Ping ] Demande de ping de 127.0.0.1( ENTREE ClientRFID )
+15-04-2018 20:25:15[ CLIENT ][ Ping ] Demande de ping de 127.0.0.1( ENTREE ClientRFID )
+15-04-2018 20:25:15[ CLIENT ][ Ping ] Demande de ping de 127.0.0.1( ENTREE ClientRFID )
+15-04-2018 20:25:15[ CLIENT ][ Ping ] Demande de ping de 127.0.0.1( ENTREE ClientRFID )
+15-04-2018 20:25:16[ CLIENT ][ Ping ] Demande de ping de 127.0.0.1( ENTREE ClientRFID )
+15-04-2018 20:25:16[ CLIENT ][ Ping ] Demande de ping de 127.0.0.1( ENTREE ClientRFID )
+15-04-2018 20:25:16[ CLIENT ][ Ping ] Demande de ping de 127.0.0.1( ENTREE ClientRFID )
+15-04-2018 20:25:16[ CLIENT ][ Ping ] Demande de ping de 127.0.0.1( ENTREE ClientRFID )
+15-04-2018 20:25:16[ CLIENT ][ Ping ] Demande de ping de 127.0.0.1( ENTREE ClientRFID )
+15-04-2018 20:25:17[ CLIENT ][ Ping ] Demande de ping de 127.0.0.1( ENTREE ClientRFID )
+15-04-2018 20:25:17[ CLIENT ][ Ping ] Demande de ping de 127.0.0.1( ENTREE ClientRFID )
+15-04-2018 20:25:17[ CLIENT ][ Ping ] Demande de ping de 127.0.0.1( ENTREE ClientRFID )
+15-04-2018 20:25:17[ CLIENT ][ Ping ] Demande de ping de 127.0.0.1( ENTREE ClientRFID )
+15-04-2018 20:25:18[ CLIENT ][ Ping ] Demande de ping de 127.0.0.1( ENTREE ClientRFID )
+15-04-2018 20:25:18[ CLIENT ][ Ping ] Demande de ping de 127.0.0.1( ENTREE ClientRFID )
+15-04-2018 20:25:19[ DEBUG ] Type :61
+15-04-2018 20:25:19[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:25:19[ DEBUG ] Attents reception
+15-04-2018 20:25:51[ INFO ] [ Configuration ] Erreur ? l'ouverture de ConfigServeur.xml
+15-04-2018 20:25:52[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+15-04-2018 20:25:53[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+15-04-2018 20:25:53[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+15-04-2018 20:25:53[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+15-04-2018 20:25:54[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+15-04-2018 20:25:54[ INTERFACE ]  Attente de l'interface
+15-04-2018 20:25:54[ INTERFACE ]  Interface connecte 
+15-04-2018 20:25:54[ INTERFACE ]  Attente de l'interface
+15-04-2018 20:25:54[ INTERFACE ]  Interface connecte 
+15-04-2018 20:25:54[ DEBUG ] Attents reception
+15-04-2018 20:25:55[ ERROR ][ UTILISATEUR ] Utilisateur avec id RFID 02006D7223 Inconnu 
+15-04-2018 20:25:57[ DEBUG ] Type :61
+15-04-2018 20:25:57[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:25:57[ DEBUG ] Attents reception
+15-04-2018 20:26:02[ DEBUG ] Type :61
+15-04-2018 20:26:02[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:26:02[ DEBUG ] Attents reception
+15-04-2018 20:26:03[ SERVEUR ][ ENTREE ] ClientRFID viens de ce connect?e
+15-04-2018 20:26:07[ DEBUG ] Type :61
+15-04-2018 20:26:07[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:26:07[ DEBUG ] Attents reception
+15-04-2018 20:26:10[ CLIENT ][ Ping ] Demande de ping de 127.0.0.1( ENTREE ClientRFID )
+15-04-2018 20:26:12[ CLIENT ][ Ping ] Demande de ping de 127.0.0.1( ENTREE ClientRFID )
+15-04-2018 20:26:12[ DEBUG ] Type :61
+15-04-2018 20:26:12[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:26:12[ DEBUG ] Attents reception
+15-04-2018 20:26:13[ CLIENT ][ Ping ] Demande de ping de 127.0.0.1( ENTREE ClientRFID )
+15-04-2018 20:26:17[ DEBUG ] Type :61
+15-04-2018 20:26:17[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:26:17[ DEBUG ] Attents reception
+15-04-2018 20:26:17[ CLIENT ][ Ping ] Demande de ping de 127.0.0.1( ENTREE ClientRFID )
+15-04-2018 20:26:22[ DEBUG ] Type :61
+15-04-2018 20:26:22[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:26:22[ DEBUG ] Attents reception
+15-04-2018 20:26:25[ ENTREE ] [ RFID ] Demande d'acc?s avec l'id RFID 02006D7223
+15-04-2018 20:26:25[ INFO ] Sortie de l'event
+15-04-2018 20:26:26[ ENTREE ] [ RFID ] Acc?s Refus?
+15-04-2018 20:26:26[ ENTREE ] Fin de procedure !
+15-04-2018 20:26:27[ DEBUG ] Type :61
+15-04-2018 20:26:27[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:26:27[ DEBUG ] Attents reception
+15-04-2018 20:26:28[ ERROR ][ UTILISATEUR ] Utilisateur avec id RFID 02006D7224 Inconnu 
+15-04-2018 20:26:30[ INFO ] Sortie de l'event
+15-04-2018 20:26:30[ ENTREE ] [ RFID ] Demande d'acc?s avec l'id RFID 02006D7223
+15-04-2018 20:26:31[ ENTREE ] [ RFID ] Acc?s Refus?
+15-04-2018 20:26:31[ ENTREE ] Fin de procedure !
+15-04-2018 20:26:32[ DEBUG ] Type :61
+15-04-2018 20:26:32[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:26:32[ DEBUG ] Attents reception
+15-04-2018 20:26:34[ DEBUG ] dechet :1
+15-04-2018 20:26:37[ DEBUG ] dechet :1
+15-04-2018 20:26:37[ DEBUG ] Type :61
+15-04-2018 20:26:37[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:26:37[ DEBUG ] Attents reception
+15-04-2018 20:26:42[ DEBUG ] Type :61
+15-04-2018 20:26:42[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:26:42[ DEBUG ] Attents reception
+15-04-2018 20:26:47[ DEBUG ] Type :61
+15-04-2018 20:26:47[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:26:47[ DEBUG ] Attents reception
+15-04-2018 20:26:52[ DEBUG ] Type :61
+15-04-2018 20:26:52[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:26:52[ DEBUG ] Attents reception
+15-04-2018 20:26:57[ DEBUG ] Type :61
+15-04-2018 20:26:57[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:26:57[ DEBUG ] Attents reception
+15-04-2018 20:27:01[ ERROR ][ UTILISATEUR ] Utilisateur avec id RFID 02006D7225 Inconnu 
+15-04-2018 20:27:02[ DEBUG ] Type :61
+15-04-2018 20:27:02[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:27:02[ DEBUG ] Attents reception
+15-04-2018 20:27:07[ DEBUG ] Type :61
+15-04-2018 20:27:07[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:27:07[ DEBUG ] Attents reception
+15-04-2018 20:27:12[ DEBUG ] Type :61
+15-04-2018 20:27:12[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:27:12[ DEBUG ] Attents reception
+15-04-2018 20:27:13[ SERVEUR ][ ENTREE ] ClientRFID viens de ce connect?e
+15-04-2018 20:27:17[ DEBUG ] Type :61
+15-04-2018 20:27:17[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:27:17[ DEBUG ] Attents reception
+15-04-2018 20:27:22[ DEBUG ] Type :61
+15-04-2018 20:27:22[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:27:22[ DEBUG ] Attents reception
+15-04-2018 20:27:27[ DEBUG ] Type :61
+15-04-2018 20:27:27[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:27:27[ DEBUG ] Attents reception
+15-04-2018 20:27:32[ DEBUG ] Type :61
+15-04-2018 20:27:32[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:27:32[ DEBUG ] Attents reception
+15-04-2018 20:27:34[ ERROR ] System.Exception: ID_RFID Introuvable
+   ? DataBddProxy.getUserByIdRFID(String id_Rfid) dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\databddproxy.cpp:ligne 172
+   ? Dechetterie.deleteUtilisateur(String id_rfid) dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\dechetterie.cpp:ligne 164
+15-04-2018 20:27:37[ DEBUG ] Type :61
+15-04-2018 20:27:37[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:27:37[ DEBUG ] Attents reception
+15-04-2018 20:27:42[ DEBUG ] Type :61
+15-04-2018 20:27:42[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:27:42[ DEBUG ] Attents reception
+15-04-2018 20:27:47[ DEBUG ] Type :61
+15-04-2018 20:27:47[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:27:47[ DEBUG ] Attents reception
+15-04-2018 20:27:52[ DEBUG ] Type :61
+15-04-2018 20:27:52[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:27:52[ DEBUG ] Attents reception
+15-04-2018 20:27:57[ DEBUG ] Type :61
+15-04-2018 20:27:57[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:27:57[ DEBUG ] Attents reception
+15-04-2018 20:28:02[ DEBUG ] Type :61
+15-04-2018 20:28:02[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:28:02[ DEBUG ] Attents reception
+15-04-2018 20:28:07[ DEBUG ] Type :61
+15-04-2018 20:28:07[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:28:07[ DEBUG ] Attents reception
+15-04-2018 20:28:12[ DEBUG ] Type :61
+15-04-2018 20:28:12[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:28:12[ DEBUG ] Attents reception
+15-04-2018 20:28:17[ DEBUG ] Type :61
+15-04-2018 20:28:17[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:28:17[ DEBUG ] Attents reception
+15-04-2018 20:28:22[ DEBUG ] Type :61
+15-04-2018 20:28:22[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:28:22[ DEBUG ] Attents reception
+15-04-2018 20:28:27[ DEBUG ] Type :61
+15-04-2018 20:28:27[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:28:27[ DEBUG ] Attents reception
+15-04-2018 20:28:32[ DEBUG ] Type :61
+15-04-2018 20:28:32[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:28:32[ DEBUG ] Attents reception
+15-04-2018 20:28:37[ DEBUG ] Type :61
+15-04-2018 20:28:37[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:28:37[ DEBUG ] Attents reception
+15-04-2018 20:29:07[ INFO ] [ Configuration ] Erreur ? l'ouverture de ConfigServeur.xml
+15-04-2018 20:29:08[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+15-04-2018 20:29:09[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+15-04-2018 20:29:09[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+15-04-2018 20:29:09[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+15-04-2018 20:29:09[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+15-04-2018 20:29:09[ INTERFACE ]  Attente de l'interface
+15-04-2018 20:29:09[ INTERFACE ]  Interface connecte 
+15-04-2018 20:29:09[ INTERFACE ]  Attente de l'interface
+15-04-2018 20:29:10[ INTERFACE ]  Interface connecte 
+15-04-2018 20:29:10[ DEBUG ] Attents reception
+15-04-2018 20:29:11[ ERROR ][ UTILISATEUR ] Utilisateur avec id RFID 02006D7223 Inconnu 
+15-04-2018 20:29:13[ DEBUG ] Type :61
+15-04-2018 20:29:13[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:29:18[ SERVEUR ][ ENTREE ] ClientRFID viens de ce connect?e
+15-04-2018 20:29:18[ DEBUG ] Attents reception
+15-04-2018 20:29:18[ DEBUG ] Type :61
+15-04-2018 20:29:18[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:29:18[ DEBUG ] Attents reception
+15-04-2018 20:29:23[ DEBUG ] Type :61
+15-04-2018 20:29:23[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:29:23[ DEBUG ] Attents reception
+15-04-2018 20:29:25[ CLIENT ][ Ping ] Demande de ping de 127.0.0.1( ENTREE ClientRFID )
+15-04-2018 20:29:26[ CLIENT ][ Ping ] Demande de ping de 127.0.0.1( ENTREE ClientRFID )
+15-04-2018 20:29:27[ CLIENT ][ Ping ] Demande de ping de 127.0.0.1( ENTREE ClientRFID )
+15-04-2018 20:29:27[ CLIENT ][ Ping ] Demande de ping de 127.0.0.1( ENTREE ClientRFID )
+15-04-2018 20:29:27[ CLIENT ][ Ping ] Demande de ping de 127.0.0.1( ENTREE ClientRFID )
+15-04-2018 20:29:28[ CLIENT ][ Ping ] Demande de ping de 127.0.0.1( ENTREE ClientRFID )
+15-04-2018 20:29:28[ DEBUG ] Type :61
+15-04-2018 20:29:28[ CLIENT ][ Ping ] Demande de ping de 127.0.0.1( ENTREE ClientRFID )
+15-04-2018 20:29:28[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:29:28[ DEBUG ] Attents reception
+15-04-2018 20:29:28[ CLIENT ][ Ping ] Demande de ping de 127.0.0.1( ENTREE ClientRFID )
+15-04-2018 20:29:28[ CLIENT ][ Ping ] Demande de ping de 127.0.0.1( ENTREE ClientRFID )
+15-04-2018 20:29:29[ CLIENT ][ Ping ] Demande de ping de 127.0.0.1( ENTREE ClientRFID )
+15-04-2018 20:29:29[ CLIENT ][ Ping ] Demande de ping de 127.0.0.1( ENTREE ClientRFID )
+15-04-2018 20:29:33[ DEBUG ] Type :61
+15-04-2018 20:29:33[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:29:33[ DEBUG ] Attents reception
+15-04-2018 20:30:59[ INFO ] [ Configuration ] Erreur ? l'ouverture de ConfigServeur.xml
+15-04-2018 20:31:21[ INFO ] [ Configuration ] Erreur ? l'ouverture de ConfigServeur.xml
+15-04-2018 20:31:21[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+15-04-2018 20:31:23[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+15-04-2018 20:31:23[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+15-04-2018 20:31:23[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+15-04-2018 20:31:23[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+15-04-2018 20:31:23[ INTERFACE ]  Attente de l'interface
+15-04-2018 20:31:23[ INTERFACE ]  Interface connecte 
+15-04-2018 20:31:23[ INTERFACE ]  Attente de l'interface
+15-04-2018 20:31:23[ INTERFACE ]  Interface connecte 
+15-04-2018 20:31:23[ DEBUG ] Attents reception
+15-04-2018 20:31:24[ ERROR ][ UTILISATEUR ] Utilisateur avec id RFID 02006D7223 Inconnu 
+15-04-2018 20:31:26[ DEBUG ] Type :61
+15-04-2018 20:31:26[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:31:26[ DEBUG ] Attents reception
+15-04-2018 20:31:27[ SERVEUR ][ ENTREE ] ClientRFID viens de ce connect?e
+15-04-2018 20:31:31[ DEBUG ] Type :61
+15-04-2018 20:31:31[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:31:31[ DEBUG ] Attents reception
+15-04-2018 20:31:36[ DEBUG ] Type :61
+15-04-2018 20:31:36[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:31:36[ DEBUG ] Attents reception
+15-04-2018 20:31:38[ INFO ] Sortie de l'event
+15-04-2018 20:31:38[ ENTREE ] [ RFID ] Demande d'acc?s avec l'id RFID 02006D7223
+15-04-2018 20:31:39[ ENTREE ] [ RFID ] Acc?s Refus?
+15-04-2018 20:31:39[ ENTREE ] Fin de procedure !
+15-04-2018 20:34:42[ INFO ] [ Configuration ] Erreur ? l'ouverture de ConfigServeur.xml
+15-04-2018 20:34:43[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+15-04-2018 20:34:44[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+15-04-2018 20:34:44[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+15-04-2018 20:34:44[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+15-04-2018 20:34:45[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+15-04-2018 20:34:45[ INTERFACE ]  Attente de l'interface
+15-04-2018 20:34:45[ INTERFACE ]  Interface connecte 
+15-04-2018 20:34:45[ INTERFACE ]  Attente de l'interface
+15-04-2018 20:34:45[ INTERFACE ]  Interface connecte 
+15-04-2018 20:34:45[ DEBUG ] Attents reception
+15-04-2018 20:34:46[ ERROR ][ UTILISATEUR ] Utilisateur avec id RFID 02006D7223 Inconnu 
+15-04-2018 20:34:48[ DEBUG ] Type :61
+15-04-2018 20:34:48[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:34:48[ DEBUG ] Attents reception
+15-04-2018 20:34:53[ DEBUG ] Type :61
+15-04-2018 20:34:53[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:34:53[ DEBUG ] Attents reception
+15-04-2018 20:34:54[ SERVEUR ][ ENTREE ] ClientRFID viens de ce connect?e
+15-04-2018 20:34:58[ DEBUG ] Type :61
+15-04-2018 20:34:58[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:34:58[ ENTREE ] [ RFID ] Demande d'acc?s avec l'id RFID 02006D7223
+15-04-2018 20:34:58[ INFO ] Sortie de l'event
+15-04-2018 20:34:58[ DEBUG ] Attents reception
+15-04-2018 20:34:59[ ENTREE ] [ RFID ] Acc?s Refus?
+15-04-2018 20:34:59[ ENTREE ] Fin de procedure !
+15-04-2018 20:35:00[ CLIENT ][ ENTREE ] ClientRFID viens de ce d?connect?e
+15-04-2018 20:35:03[ DEBUG ] Type :61
+15-04-2018 20:35:03[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:35:03[ DEBUG ] Attents reception
+15-04-2018 20:35:08[ DEBUG ] Type :61
+15-04-2018 20:35:08[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:35:08[ DEBUG ] Attents reception
+15-04-2018 20:35:46[ INFO ] [ Configuration ] Erreur ? l'ouverture de ConfigServeur.xml
+15-04-2018 20:35:47[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+15-04-2018 20:35:48[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+15-04-2018 20:35:48[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+15-04-2018 20:35:48[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+15-04-2018 20:35:48[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+15-04-2018 20:35:48[ INTERFACE ]  Attente de l'interface
+15-04-2018 20:35:48[ INTERFACE ]  Interface connecte 
+15-04-2018 20:35:48[ INTERFACE ]  Attente de l'interface
+15-04-2018 20:35:48[ INTERFACE ]  Interface connecte 
+15-04-2018 20:35:48[ DEBUG ] Attents reception
+15-04-2018 20:35:50[ ERROR ][ UTILISATEUR ] Utilisateur avec id RFID 02006D7223 Inconnu 
+15-04-2018 20:35:51[ SERVEUR ][ ENTREE ] ClientRFID viens de ce connect?e
+15-04-2018 20:35:52[ DEBUG ] Type :61
+15-04-2018 20:35:52[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:35:57[ DEBUG ] Attents reception
+15-04-2018 20:35:57[ DEBUG ] Type :61
+15-04-2018 20:35:57[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:35:57[ DEBUG ] Attents reception
+15-04-2018 20:36:02[ DEBUG ] Type :61
+15-04-2018 20:36:02[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:36:02[ DEBUG ] Attents reception
+15-04-2018 20:36:03[ CLIENT ][ ENTREE ] ClientRFID viens de ce d?connect?e
+15-04-2018 20:36:07[ DEBUG ] Type :61
+15-04-2018 20:36:07[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:36:07[ DEBUG ] Attents reception
+15-04-2018 20:36:09[ SERVEUR ][ ENTREE ] ClientRFID viens de ce connect?e
+15-04-2018 20:36:11[ CLIENT ][ ENTREE ] ClientRFID viens de ce d?connect?e
+15-04-2018 20:36:12[ DEBUG ] Type :61
+15-04-2018 20:36:12[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:36:12[ DEBUG ] Attents reception
+15-04-2018 20:36:14[ SERVEUR ][ ENTREE ] ClientRFID viens de ce connect?e
+15-04-2018 20:36:17[ DEBUG ] Type :61
+15-04-2018 20:36:17[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:36:17[ DEBUG ] Attents reception
+15-04-2018 20:37:05[ INFO ] [ Configuration ] Erreur ? l'ouverture de ConfigServeur.xml
+15-04-2018 20:37:06[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+15-04-2018 20:37:26[ INFO ] [ Configuration ] Erreur ? l'ouverture de ConfigServeur.xml
+15-04-2018 20:37:27[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+15-04-2018 20:37:28[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+15-04-2018 20:37:28[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+15-04-2018 20:37:28[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+15-04-2018 20:37:28[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+15-04-2018 20:37:28[ INTERFACE ]  Attente de l'interface
+15-04-2018 20:37:28[ INTERFACE ]  Interface connecte 
+15-04-2018 20:37:28[ INTERFACE ]  Attente de l'interface
+15-04-2018 20:37:28[ INTERFACE ]  Interface connecte 
+15-04-2018 20:37:28[ DEBUG ] Attents reception
+15-04-2018 20:37:30[ ERROR ][ UTILISATEUR ] Utilisateur avec id RFID 02006D7223 Inconnu 
+15-04-2018 20:37:32[ DEBUG ] Type :61
+15-04-2018 20:37:32[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:37:32[ SERVEUR ][ ENTREE ] ClientRFID viens de ce connect?e
+15-04-2018 20:37:32[ DEBUG ] Attents reception
+15-04-2018 20:37:37[ DEBUG ] Type :61
+15-04-2018 20:37:37[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:37:37[ DEBUG ] Attents reception
+15-04-2018 20:37:37[ CLIENT ][ Ping ] Demande de ping de 127.0.0.1( ENTREE ClientRFID )
+15-04-2018 20:37:42[ DEBUG ] Type :61
+15-04-2018 20:37:42[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:37:42[ DEBUG ] Attents reception
+15-04-2018 20:37:42[ CLIENT ][ Ping ] Demande de ping de 127.0.0.1( ENTREE ClientRFID )
+15-04-2018 20:37:47[ DEBUG ] Type :61
+15-04-2018 20:37:47[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:37:47[ DEBUG ] Attents reception
+15-04-2018 20:37:52[ DEBUG ] Type :61
+15-04-2018 20:37:52[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:37:52[ DEBUG ] Attents reception
+15-04-2018 20:37:57[ DEBUG ] Type :61
+15-04-2018 20:37:57[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:37:57[ DEBUG ] Attents reception
+15-04-2018 20:37:57[ CLIENT ][ Ping ] Demande de ping de 127.0.0.1( ENTREE ClientRFID )
+15-04-2018 20:38:02[ DEBUG ] Type :61
+15-04-2018 20:38:02[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:38:02[ DEBUG ] Attents reception
+15-04-2018 20:38:03[ ERROR ][ UTILISATEUR ] Utilisateur avec id RFID 02006D7224 Inconnu 
+15-04-2018 20:38:07[ DEBUG ] Type :61
+15-04-2018 20:38:07[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:38:07[ DEBUG ] Attents reception
+15-04-2018 20:38:12[ DEBUG ] Type :61
+15-04-2018 20:38:12[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:38:12[ DEBUG ] Attents reception
+15-04-2018 20:38:17[ DEBUG ] Type :61
+15-04-2018 20:38:17[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:38:17[ DEBUG ] Attents reception
+15-04-2018 20:38:22[ DEBUG ] Type :61
+15-04-2018 20:38:22[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:38:22[ DEBUG ] Attents reception
+15-04-2018 20:38:27[ DEBUG ] Type :61
+15-04-2018 20:38:27[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:38:27[ DEBUG ] Attents reception
+15-04-2018 20:38:32[ DEBUG ] Type :61
+15-04-2018 20:38:32[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:38:32[ DEBUG ] Attents reception
+15-04-2018 20:38:36[ ERROR ][ UTILISATEUR ] Utilisateur avec id RFID 02006D7225 Inconnu 
+15-04-2018 20:38:37[ DEBUG ] Type :61
+15-04-2018 20:38:37[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:38:37[ DEBUG ] Attents reception
+15-04-2018 20:40:35[ INFO ] [ Configuration ] Erreur ? l'ouverture de ConfigServeur.xml
+15-04-2018 20:40:35[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+15-04-2018 20:40:37[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+15-04-2018 20:40:37[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+15-04-2018 20:40:37[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+15-04-2018 20:40:37[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+15-04-2018 20:40:37[ INTERFACE ]  Attente de l'interface
+15-04-2018 20:40:37[ INTERFACE ]  Interface connecte 
+15-04-2018 20:40:37[ INTERFACE ]  Attente de l'interface
+15-04-2018 20:40:37[ INTERFACE ]  Interface connecte 
+15-04-2018 20:40:37[ DEBUG ] Attents reception
+15-04-2018 20:40:39[ ERROR ][ UTILISATEUR ] Utilisateur avec id RFID 02006D7223 Inconnu 
+15-04-2018 20:40:40[ DEBUG ] Type :61
+15-04-2018 20:40:40[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:40:40[ DEBUG ] Attents reception
+15-04-2018 20:40:41[ SERVEUR ][ ENTREE ] ClientRFID viens de ce connect?e
+15-04-2018 20:40:44[ CLIENT ][ Ping ] Demande de ping de 127.0.0.1( ENTREE ClientRFID )
+15-04-2018 20:40:45[ DEBUG ] Type :61
+15-04-2018 20:40:45[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:40:45[ DEBUG ] Attents reception
+15-04-2018 20:40:50[ DEBUG ] Type :61
+15-04-2018 20:40:50[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:40:50[ DEBUG ] Attents reception
+15-04-2018 20:40:54[ CLIENT ][ Ping ] Demande de ping de 127.0.0.1( ENTREE ClientRFID )
+15-04-2018 20:40:55[ DEBUG ] Type :61
+15-04-2018 20:40:55[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:40:55[ DEBUG ] Attents reception
+15-04-2018 20:40:56[ ENTREE ] [ RFID ] Demande d'acc?s avec l'id RFID 02006D7223
+15-04-2018 20:40:56[ INFO ] Sortie de l'event
+15-04-2018 20:40:57[ ENTREE ] [ RFID ] Acc?s Refus?
+15-04-2018 20:40:57[ ENTREE ] Fin de procedure !
+15-04-2018 20:40:57[ ENTREE ] [ RFID ] Demande d'acc?s avec l'id RFID 02006D7223
+15-04-2018 20:40:57[ INFO ] Sortie de l'event
+15-04-2018 20:40:57[ ENTREE ] [ RFID ] Demande d'acc?s avec l'id RFID 02006D7223
+15-04-2018 20:40:57[ INFO ] Sortie de l'event
+15-04-2018 20:40:58[ ENTREE ] [ RFID ] Acc?s Refus?
+15-04-2018 20:40:58[ INFO ] Sortie de l'event
+15-04-2018 20:40:58[ ENTREE ] Fin de procedure !
+15-04-2018 20:40:59[ ENTREE ] [ RFID ] Acc?s Refus?
+15-04-2018 20:40:59[ ENTREE ] Fin de procedure !
+15-04-2018 20:41:00[ DEBUG ] Type :61
+15-04-2018 20:41:00[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:41:00[ DEBUG ] Attents reception
+15-04-2018 20:41:45[ INFO ] [ Configuration ] Erreur ? l'ouverture de ConfigServeur.xml
+15-04-2018 20:41:46[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+15-04-2018 20:41:48[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+15-04-2018 20:41:48[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+15-04-2018 20:41:48[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+15-04-2018 20:41:48[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+15-04-2018 20:41:48[ INTERFACE ]  Attente de l'interface
+15-04-2018 20:41:48[ INTERFACE ]  Interface connecte 
+15-04-2018 20:41:48[ INTERFACE ]  Attente de l'interface
+15-04-2018 20:41:48[ INTERFACE ]  Interface connecte 
+15-04-2018 20:41:48[ DEBUG ] Attents reception
+15-04-2018 20:41:49[ SERVEUR ][ ENTREE ] ClientRFID viens de ce connect?e
+15-04-2018 20:41:49[ ERROR ][ UTILISATEUR ] Utilisateur avec id RFID 02006D7223 Inconnu 
+15-04-2018 20:41:51[ DEBUG ] Type :61
+15-04-2018 20:41:51[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:41:51[ DEBUG ] Attents reception
+15-04-2018 20:41:56[ DEBUG ] Type :61
+15-04-2018 20:41:56[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:41:56[ DEBUG ] Attents reception
+15-04-2018 20:41:57[ CLIENT ][ ENTREE ] ClientRFID viens de ce d?connect?e
+15-04-2018 20:42:01[ DEBUG ] Type :61
+15-04-2018 20:42:01[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:42:01[ DEBUG ] Attents reception
+15-04-2018 20:42:06[ DEBUG ] Type :61
+15-04-2018 20:42:06[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:42:06[ DEBUG ] Attents reception
+15-04-2018 20:42:11[ DEBUG ] Type :61
+15-04-2018 20:42:11[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:42:11[ DEBUG ] Attents reception
+15-04-2018 20:42:16[ DEBUG ] Type :61
+15-04-2018 20:42:16[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:42:16[ DEBUG ] Attents reception
+15-04-2018 20:42:21[ DEBUG ] Type :61
+15-04-2018 20:42:21[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:42:21[ DEBUG ] Attents reception
+15-04-2018 20:42:23[ ERROR ][ UTILISATEUR ] Utilisateur avec id RFID 02006D7224 Inconnu 
+15-04-2018 20:42:26[ DEBUG ] Type :61
+15-04-2018 20:42:26[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:42:26[ DEBUG ] Attents reception
+15-04-2018 20:42:31[ DEBUG ] Type :61
+15-04-2018 20:42:31[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:42:31[ DEBUG ] Attents reception
+15-04-2018 20:42:34[ DEBUG ] Type :63
+15-04-2018 20:42:34[ INTERFACE ]  Ouvrir Barriere 1
+15-04-2018 20:42:34[ DEBUG ] Attents reception
+15-04-2018 20:42:36[ DEBUG ] Type :61
+15-04-2018 20:42:36[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:42:36[ DEBUG ] Attents reception
+15-04-2018 20:42:41[ DEBUG ] Type :61
+15-04-2018 20:42:41[ INTERFACE ]  Demande de l'etat des clients 
+15-04-2018 20:42:41[ DEBUG ] Attents reception
+15-04-2018 20:42:43[ DEBUG ] Type :64
+15-04-2018 20:42:43[ INTERFACE ]  Fermer Barriere 1
+15-04-2018 20:42:43[ DEBUG ] Attents reception
+15-04-2018 20:42:49[ INTERFACE ]  Attente de l'interface
+15-04-2018 20:42:54[ SERVEUR ][ ENTREE ] ClientRFID viens de ce connect?e
+15-04-2018 20:42:56[ CLIENT ][ Ping ] Demande de ping de 127.0.0.1( ENTREE ClientRFID )
+15-04-2018 20:42:56[ ERROR ][ UTILISATEUR ] Utilisateur avec id RFID 02006D7225 Inconnu 
+15-04-2018 20:42:56[ CLIENT ][ Ping ] Demande de ping de 127.0.0.1( ENTREE ClientRFID )
+15-04-2018 20:42:56[ CLIENT ][ Ping ] Demande de ping de 127.0.0.1( ENTREE ClientRFID )
+15-04-2018 20:42:56[ CLIENT ][ Ping ] Demande de ping de 127.0.0.1( ENTREE ClientRFID )
+15-04-2018 20:42:56[ CLIENT ][ Ping ] Demande de ping de 127.0.0.1( ENTREE ClientRFID )
+15-04-2018 20:42:58[ ENTREE ] [ RFID ] Demande d'acc?s avec l'id RFID 02006D7223
+15-04-2018 20:42:58[ INFO ] Sortie de l'event
+15-04-2018 20:43:00[ ENTREE ] [ RFID ] Acc?s Refus?
+15-04-2018 20:43:00[ ENTREE ] Fin de procedure !
+15-04-2018 20:43:29[ ERROR ] System.Exception: ID_RFID Introuvable
+   ? DataBddProxy.getUserByIdRFID(String id_Rfid) dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\databddproxy.cpp:ligne 172
+   ? Dechetterie.deleteUtilisateur(String id_rfid) dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\dechetterie.cpp:ligne 164

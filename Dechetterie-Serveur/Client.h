@@ -2,6 +2,8 @@
 #include "Enum.h"
 #include "Logger.h"
 #include "Protocole\Protocole.h"
+#include "Dechetterie.h"
+
 
 
 using namespace System;
@@ -12,6 +14,8 @@ using namespace System::Net::Sockets;
 using namespace System::Collections::Generic;
 
 delegate void SetIntDelegate(int);
+
+ref class Dechetterie;
 
 ref class Client
 {
@@ -26,7 +30,7 @@ protected:
 	Thread^ _thread;
 	array<Byte>^ bufferRecv = nullptr;
 
-	virtual void fctThread()
+	void fctThreadReceive()
 	{
 		while (true)
 		{
@@ -34,24 +38,43 @@ protected:
 			{
 				try
 				{
-					if (_clientSocket->Connected)
+					if (verifyConnected())
 					{
-						array<Byte>^ data = gcnew array<Byte>(1024);
-						_clientSocket->Receive(data);
-						ProtocolMsg^ pm = protocole->translateReceive(data);
-						if (pm->type == protocole->GetTypeProtocoleByID("AllPing"))
+						
+						if (_clientSocket->Available != 0)
 						{
-							this->Send(protocole->RetourPing());
-							Logger::PrintLog(EnteteCode::CLIENT, "Ping", "Demande de ping de " + _ip->ToString() + "( " + id_groupe(_groupe).ToString() + " " + id_client(_type).ToString() + " )");
+							array<Byte>^ data = gcnew array<Byte>(1024);
+							_clientSocket->Receive(data);
+							ProtocolMsg^ pm = protocole->translateReceive(data);
+							if (pm->type == protocole->GetTypeProtocoleByID("AllPing"))
+							{
+								this->Send(protocole->RetourPing());
+								Logger::PrintLog(EnteteCode::CLIENT, "Ping", "Demande de ping de " + _ip->ToString() + "( " + id_groupe(_groupe).ToString() + " " + id_client(_type).ToString() + " )");
+							}
+							else
+							{
+								fonctionReceive(pm, data);
+							}
+							_isConnected = true;
 						}
-						else
-						{
-							bufferRecv = data;
-						}
+
 					}
 					else
 					{
+						if (_isConnected)
+						{
+							this->Disconnect();
+							_isConnected = false;
+						}
+					}
+
+				}
+				catch (System::Net::Sockets::SocketException^ e)
+				{
+					if (_isConnected)
+					{
 						this->Disconnect();
+						_isConnected = false;
 					}
 				}
 				catch (Exception^e)
@@ -61,14 +84,17 @@ protected:
 
 				}
 			}
-			Thread::Sleep(100);
+			else
+			{
+				Thread::Sleep(100);
+			}
+			
 		}
 	}
-	virtual void startReceive()
+
+	virtual void fonctionReceive(ProtocolMsg^ pm, array<Byte>^ data)
 	{
-		_thread = gcnew Thread(gcnew ThreadStart(this, &Client::fctThread));
-		_thread->Name = "Client IP " + _ip->ToString();
-		_thread->Start();
+		bufferRecv = data;
 	}
 
 public:
@@ -77,7 +103,9 @@ public:
 		_groupe = groupe;
 		_type = type; 
 		_ip = ip; 
-		startReceive();
+		_thread = gcnew Thread(gcnew ThreadStart(this, &Client::fctThreadReceive));
+		_thread->Name = "[ "+_groupe.ToString()+" ] Client "+_type.ToString()+" IP :" + _ip->ToString();
+		_thread->Start();
 	}
 
 
@@ -99,20 +127,37 @@ public:
 
 	void Disconnect()
 	{
-		try
+		if (_clientSocket != nullptr)
 		{
-			_clientSocket->Disconnect(true);
-			_isConnected = false;
-			Logger::PrintLog(EnteteCode::CLIENT, _groupe.ToString(), _type.ToString() + " viens de ce déconnectée");
+			Monitor::Enter(_clientSocket);
+			try
+			{
+				_clientSocket->Disconnect(true);
+				_isConnected = false;
+				Logger::PrintLog(EnteteCode::CLIENT, _groupe.ToString(), _type.ToString() + " viens de ce déconnectée");
+				_clientSocket = nullptr;
+				
 			
+			}
+			catch (Exception^ e)
+			{
+				Logger::PrintLog(EnteteCode::ERROR, EnteteCode::CLIENT, " Problème lors de la deconnexion de " + _ip->ToString());
+				Logger::PrintLog(EnteteCode::DEBUG, EnteteCode::ERROR,e->ToString());
+			}
+			finally
+			{
+				Monitor::Exit(_clientSocket);
+			}
+			Dechetterie::UpdateClientState();
 		}
-		catch (Exception^ e)
-		{
-			Logger::PrintLog(EnteteCode::ERROR, EnteteCode::CLIENT, " Problème lors de la deconnexion de " + _ip->ToString());
-			Logger::PrintLog(EnteteCode::DEBUG, EnteteCode::ERROR,e->ToString());
-		}
-		
 
+	}
+
+	Boolean verifyConnected()
+	{
+		Boolean read = _clientSocket->Poll(5, SelectMode::SelectRead);
+		Boolean connected = (_clientSocket->Available != 0 && read) || !read;
+		return connected;
 	}
 
 	Boolean Send(array<Byte>^ data)
@@ -137,7 +182,6 @@ public:
 			return false;
 		}
 	}
-
 	array<Byte>^ Receive()
 	{
 		array<Byte>^ data = gcnew array<Byte>(1024);

@@ -15,92 +15,45 @@ protected:
 	array<Byte>^ _photo = nullptr;
 	String^ _RFID = nullptr;
 	int _dechet = 0;
-	SetIntDelegate^ setDechetDelegate;
+
 	Thread^ accesDemandThread;
 
-	void fctThread() override
+
+	void fonctionReceive(ProtocolMsg^ pm, array<Byte>^ data) override
 	{
-		while (true)
+		if (pm->type == protocole->GetTypeProtocoleByID("RfDAcces"))
 		{
-			
-			if (_clientSocket != nullptr)
+			_RFID = pm->getData1String();
+			accesDemandThread = gcnew Thread(gcnew ParameterizedThreadStart(this, &ClientRFID::AccesDemandEvent));
+			accesDemandThread->Name = "Thread Acces Demand";
+			accesDemandThread->Start(_RFID);
+
+			Logger::PrintLog("Sortie de l'event");
+		}
+		else
+		{
+			if (pm->type == protocole->GetTypeProtocoleByID("RfPhotoInit"))
 			{
-				Logger::PrintLog(EnteteCode::DEBUG, "Boucle ");
-				try
+				int nbPacket = pm->getData1Int();
+				ReceptionPhoto(nbPacket);
+			}
+			else
+			{
+				if (pm->type == protocole->GetTypeProtocoleByID("RfDechet"))
 				{
-					if (_clientSocket->Connected)
-					{
-						//Logger::PrintLog(EnteteCode::DEBUG, "J'attends ");
-						array<Byte>^ data = gcnew array<Byte>(1024);
-						_clientSocket->Receive(data);
-						//Logger::PrintLog(EnteteCode::DEBUG, "Je recois ");
-						ProtocolMsg^ pm = protocole->translateReceive(data);
+					//m->WaitOne();
+					Logger::PrintLog(EnteteCode::DEBUG, "dechet :" + pm->getData1Int());
+					this->_dechet = pm->getData1Int();
+					//m->ReleaseMutex();
 
-						Encoding^ encoder = Encoding::ASCII;
-						//Logger::PrintLog(EnteteCode::DEBUG, encoder->GetString(data));
-						//Logger::PrintLog(EnteteCode::DEBUG,"Type :" + pm->type);
-						if (pm->type == protocole->GetTypeProtocoleByID("AllPing"))
-						{
-							this->Send(protocole->RetourPing());
-							Logger::PrintLog("PING", "Demande de ping de " + _ip->ToString() + "( " + _groupe.ToString() + " " + _type.ToString() + " )");
-						}
-						else
-						{
-							if (pm->type == protocole->GetTypeProtocoleByID("RfDAcces"))
-							{
-								_RFID = pm->getData1String();
-								accesDemandThread = gcnew Thread(gcnew ParameterizedThreadStart(this, &ClientRFID::AccesDemandEvent));
-								accesDemandThread->Name = "Thread Acces Demand";
-								accesDemandThread->Start(_RFID);
-								
-								Logger::PrintLog("Sortie de l'event");
-							}
-							else
-							{
-								if (pm->type == protocole->GetTypeProtocoleByID("RfPhotoInit"))
-								{
-									int nbPacket = pm->getData1Int();
-									ReceptionPhoto(nbPacket);
-								}
-								else
-								{
-									if (pm->type == protocole->GetTypeProtocoleByID("RfDechet"))
-									{
-										//m->WaitOne();
-										Logger::PrintLog(EnteteCode::DEBUG, "dechet :" + pm->getData1Int());
-										this->_dechet = pm->getData1Int();
-										//m->ReleaseMutex();
-										
-									}
-									else
-									{
-
-										bufferRecv = data;
-									}
-								}
-							}
-						}
-					}
-					else
-					{
-						this->Disconnect();
-					}
 				}
-				catch (Exception^e)
+				else
 				{
 
-					Console::WriteLine("[ Client ][ Thread Receive ]" + e);
-
+					bufferRecv = data;
 				}
 			}
-			Thread::Sleep(100);
 		}
-	}
-	void startReceive() override
-	{
-		_thread = gcnew Thread(gcnew ThreadStart(this, &ClientRFID::fctThread));
-		_thread->Name = "Client RFID IP " + _ip->ToString();
-		_thread->Start();
 	}
 	void ReceptionPhoto(int nbPacket)
 	{
@@ -152,12 +105,11 @@ protected:
 		Console::WriteLine("event acces" + accesDemandThread->IsAlive);
 		
 	}
+
 public:
 	event AccesDemandDelegate^ AccesDemand;
 	ClientRFID(id_groupe groupe, IPAddress^ip) : Client(groupe, id_client::ClientRFID, ip)
 	{
-
-		setDechetDelegate += gcnew SetIntDelegate(this, &ClientRFID::setDechet);
 
 	}
 
@@ -176,10 +128,6 @@ public:
 	void retourAccesDemand(Boolean t)
 	{
 		this->Send(protocole->RetourRFIDAccesDemand(t));
-	}
-
-	void setDechet(int t) {
-		_dechet = t;
 	}
 
 	int getTypeDechet()

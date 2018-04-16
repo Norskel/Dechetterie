@@ -2,6 +2,13 @@
 #define FILE_NAME_USER "user.xml"
 
 
+void Dechetterie::UpdateClientState()
+{
+	EventUpdateClientState();
+}
+
+
+
 Dechetterie::Dechetterie(String^ configFile)
 {
 	if (loadConfigFile(configFile))

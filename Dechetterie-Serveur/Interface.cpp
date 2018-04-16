@@ -11,6 +11,7 @@ Interface::Interface(String ^ name_serveur, Entree ^% e, Sortie ^% s)
 	_threadRecev = gcnew Thread(gcnew ThreadStart(this, &Interface::fctThreadRecev));
 	_threadRecev->Name = "Thread Wait connection server";
 	_threadRecev->Start();
+	Dechetterie::EventUpdateClientState += gcnew EventUpdateClientStateDelegate(this, &Interface::OnUpdateClientState);
 }
 void Interface::updateListClient()
 {
@@ -256,3 +257,11 @@ int Interface::PositionBarriere(int i)
 	}
 }
 
+
+
+void Interface::OnUpdateClientState()
+{
+	Logger::PrintLog(EnteteCode::INTERFACE, " Update etat des clients ");
+	array<Byte>^ send = protocole->InterfaceRetourGetEtatClients(this->getState());
+	_pipeOutServerInterface->Write(send, 0, send->Length);
+}

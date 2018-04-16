@@ -3,9 +3,9 @@
   <Entree>
     <portServeur>2501</portServeur>
     <Interface>0.0.0.0</Interface>
-    <IPBalance>192.168.0.10</IPBalance>
-    <IPBarriere>127.0.0.1</IPBarriere>
-    <IPRFID>192.0.0.1</IPRFID>
+    <IPBalance>192.168.137.20</IPBalance>
+    <IPBarriere>192.168.137.10</IPBarriere>
+    <IPRFID>127.0.0.1</IPRFID>
   </Entree>
   <Sortie>
     <portServeur>2502</portServeur>
@@ -15,8 +15,8 @@
     <IPRFID>127.0.0.1</IPRFID>
   </Sortie>
   <NomBDD>Dechetterie</NomBDD>
-  <IPBDD>192.168.0.150</IPBDD>
+  <IPBDD>127.0.0.1</IPBDD>
   <PortBDD>3306</PortBDD>
   <UsernameBDD>root</UsernameBDD>
-  <PasswordBDD>root</PasswordBDD>
+  <PasswordBDD></PasswordBDD>
 </DataConfigServeur>
