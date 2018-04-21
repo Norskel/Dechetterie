@@ -7,6 +7,12 @@ ref class ClientBalance : public Client
 
 protected:
 	int _poids = 0;
+	/*---------------------------------------------------------------
+	Nom          :
+	Description  :
+	Arguments    :
+	Valeur renvoyée :
+	-----------------------------------------------------------------*/
 	void fonctionReceive(ProtocolMsg^ pm, array<Byte>^ data) override
 	{
 		if (pm->type == protocole->GetTypeProtocoleByID("baRDPoids"))
@@ -21,7 +27,12 @@ protected:
 	}
 
 public:
-
+	/*---------------------------------------------------------------
+	Nom          :
+	Description  :
+	Arguments    :
+	Valeur renvoyée :
+	-----------------------------------------------------------------*/
 	int getPoids()
 	{
 		this->Send(protocole->GetBalancePoids());
@@ -43,6 +54,12 @@ public:
 			return r;
 		}
 	}
+	/*---------------------------------------------------------------
+	Nom          :
+	Description  :
+	Arguments    :
+	Valeur renvoyée :
+	-----------------------------------------------------------------*/
 	ClientBalance(id_groupe groupe, IPAddress^ip) : Client(groupe, id_client::ClientBalance, ip){}
 
 

@@ -1,6 +1,11 @@
 #include "Groupe.h"
 
-
+/*---------------------------------------------------------------
+Nom          :
+Description  :
+Arguments    :
+Valeur renvoyée :
+-----------------------------------------------------------------*/
 Groupe::Groupe(id_groupe id,IPAddress ^ listenip, int listenPort, IPAddress ^ ipBarriere, IPAddress ^ ipBalance, IPAddress ^ ipRfid)
 {
 	Logger::PrintLog(id.ToString(), "Interface d'écoute : " + listenip + " Port d'écoute : " + listenPort);
@@ -20,13 +25,23 @@ Groupe::Groupe(id_groupe id,IPAddress ^ listenip, int listenPort, IPAddress ^ ip
 	protocole = Protocole::getProtocole();
 
 }
-
+/*---------------------------------------------------------------
+Nom          :
+Description  :
+Arguments    :
+Valeur renvoyée :
+-----------------------------------------------------------------*/
 void Groupe::AccesDemandEvent(String ^ rfid)
 {
 	Console::WriteLine("FAILLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL");
 }
 
-
+/*---------------------------------------------------------------
+Nom          :
+Description  :
+Arguments    :
+Valeur renvoyée :
+-----------------------------------------------------------------*/
 void Groupe::OuvrirBarriere()
 {
 	if (_listClient->ClientBarriere->getState())
@@ -56,13 +71,23 @@ int Groupe::GetPositionBarriere()
 	}
 	
 }
-
+/*---------------------------------------------------------------
+Nom          :
+Description  :
+Arguments    :
+Valeur renvoyée :
+-----------------------------------------------------------------*/
 Boolean Groupe::AllClientConnected()
 {
 	//return	_listClient->ClientBalance->getState() && _listClient->ClientBarriere->getState() && _listClient->ClientRFID->getState();
 	return true;
 }
-
+/*---------------------------------------------------------------
+Nom          :
+Description  :
+Arguments    :
+Valeur renvoyée :
+-----------------------------------------------------------------*/
 Boolean Groupe::TestRfidID(String ^ rfid)
 {
 	try
@@ -82,7 +107,12 @@ Boolean Groupe::TestRfidID(String ^ rfid)
 	}
 
 }
-
+/*---------------------------------------------------------------
+Nom          : GetStateAllClient
+Description  :
+Arguments    :
+Valeur renvoyée :
+-----------------------------------------------------------------*/
 String ^ Groupe::GetStateAllClient()
 {
 	String^ r = "";

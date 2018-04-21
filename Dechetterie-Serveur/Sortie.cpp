@@ -9,7 +9,12 @@ Sortie::Sortie(IPAddress ^ listenip, int listenPort, IPAddress ^ ipBarriere, IPA
 {
 
 }
-
+/*---------------------------------------------------------------
+Nom          :
+Description  :
+Arguments    :
+Valeur renvoyée :
+-----------------------------------------------------------------*/
 void Sortie::AccesDemandEvent(String ^ rfid)
 {
 	Logger::PrintLog(_idGroupe.ToString(), "[ RFID ] Demande d'accès avec l'id RFID " + rfid);
@@ -20,12 +25,12 @@ void Sortie::AccesDemandEvent(String ^ rfid)
 		_listClient->ClientRFID->retourAccesDemand(true);
 		try
 		{
-			int poids = 2500;
+			int poids = 2000;
 			//int poids = _listClient->ClientBalance->getPoids();
 			Logger::PrintLog(_idGroupe.ToString(), "[ RFID ] Poids du vehicule : " + poids);
 
 
-			Dechetterie::deleteUtilisateur(rfid);
+			Dechetterie::deleteUtilisateur(rfid,poids);
 
 			_listClient->ClientBarriere->OuvrirBarriere();
 			Thread::Sleep(TEMPO_BARRIERE);

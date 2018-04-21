@@ -1,31 +1,23 @@
 #include "Dechetterie.h"
-#define FILE_NAME_USER "user.xml"
-
-
-void Dechetterie::UpdateClientState()
-{
-	EventUpdateClientState();
-}
-
+#define FILE_NAME_USER "user.xml" // nom du fichier de sauvegarde des utilisateur dans la dechetterie
 
 
 Dechetterie::Dechetterie(String^ configFile)
 {
-	if (loadConfigFile(configFile))
+	if (loadConfigFile(configFile)) // Si on arrive a charger les configurations 
 	{
 
-		_bdd = DataBddProxy::getDataBddProxy(_config->IPBDD, _config->PortBDD.ToString(), _config->NomBDD, _config->UsernameBDD, _config->PasswordBDD);
+		_bdd = DataBddProxy::getDataBddProxy(_config->IPBDD, _config->PortBDD.ToString(), _config->NomBDD, _config->UsernameBDD, _config->PasswordBDD); // on instancie le proxy de la BDD
 
-		_entree = gcnew Entree(IPAddress::Parse(_config->Entree->Interface), _config->Entree->portServeur, IPAddress::Parse(_config->Entree->IPBarriere), IPAddress::Parse(_config->Entree->IPBalance), IPAddress::Parse(_config->Entree->IPRFID));
-		_sortie = gcnew Sortie(IPAddress::Parse(_config->Sortie->Interface), _config->Sortie->portServeur, IPAddress::Parse(_config->Sortie->IPBarriere), IPAddress::Parse(_config->Sortie->IPBalance), IPAddress::Parse(_config->Sortie->IPRFID));
-		servInter = gcnew Interface(PIPE_NAME_INTER_SERV, _entree, _sortie);
-		//Console::WriteLine(_entree->GetStateAllClient());
+		_entree = gcnew Entree(IPAddress::Parse(_config->Entree->Interface), _config->Entree->portServeur, IPAddress::Parse(_config->Entree->IPBarriere), IPAddress::Parse(_config->Entree->IPBalance), IPAddress::Parse(_config->Entree->IPRFID)); //Instanciation du groupe Entree
+		_sortie = gcnew Sortie(IPAddress::Parse(_config->Sortie->Interface), _config->Sortie->portServeur, IPAddress::Parse(_config->Sortie->IPBarriere), IPAddress::Parse(_config->Sortie->IPBalance), IPAddress::Parse(_config->Sortie->IPRFID)); //Instanciation du groupe Sortie
+		servInter = InterfacePipe::getInterfacePipe(_entree, _sortie); //première instanciation
 	}
-	else
+	else //si on arrive pas a charger le fichier de configutation
 	{
 		Logger::PrintLog(EnteteCode::ERROR,"[ Dechetterie ] Impossible de démarrer ");
 		Thread::Sleep(2000);
-		this->~Dechetterie();
+		this->~Dechetterie(); // on arrete l'application
 	}
 
 
@@ -35,6 +27,12 @@ Dechetterie::~Dechetterie()
 	Logger::PrintLog("Dechetterie","Arret");
 
 }
+/*---------------------------------------------------------------
+Nom          :  loadConfigFile
+Description  :  Charge le fichier de configuration
+Arguments    :  file: nom du fichier de configuration
+Valeur renvoyée : Boolean : resultat
+-----------------------------------------------------------------*/
 Boolean Dechetterie::loadConfigFile(String ^ file)
 {
 	if (System::IO::File::Exists(file))
@@ -67,13 +65,22 @@ Boolean Dechetterie::loadConfigFile(String ^ file)
 		return false;
 	}
 }
-
-
-
-List<Utilisateur^>^ Dechetterie::GetListUtilisateur()
+/*---------------------------------------------------------------
+Nom          :  getListUtilisateur
+Description  :  Retour la liste des utilisateur qui sont dans la dechetterie
+Arguments    : 
+Valeur renvoyée : Liste d'utilisateur 
+-----------------------------------------------------------------*/
+List<Utilisateur^>^ Dechetterie::getListUtilisateur()
 {
 	return _listUtilisateur;
 }
+/*---------------------------------------------------------------
+Nom          : updateUserFile
+Description  : Mets à jour le fichier user.xml
+Arguments    :
+Valeur renvoyée :
+-----------------------------------------------------------------*/
 void Dechetterie::updateUserFile()
 {
 	FileStream^ fs;
@@ -102,15 +109,21 @@ void Dechetterie::updateUserFile()
 		fs = File::Create(FILE_NAME_USER);
 
 	}
-	if (Dechetterie::GetListUtilisateur()->Count > 0)
+	if (Dechetterie::getListUtilisateur()->Count > 0)
 	{
 		XmlSerializer^ serializer = gcnew XmlSerializer(List<Utilisateur^>::typeid);
-		serializer->Serialize(fs, Dechetterie::GetListUtilisateur());
+		serializer->Serialize(fs, Dechetterie::getListUtilisateur());
 		Console::WriteLine("[ Send User Msg ] Envoie");
 	}
 	fs->Close();
 		Thread::Sleep(2000);
 }
+/*---------------------------------------------------------------
+Nom          : addUtilisateur
+Description  : Ajoute un utilisateur dans la liste des utilisateurs et rajoute une entrée a la table entree
+Arguments    : id_rfid : son id RFID, tDechet : type de dechey selectionne, poids : poids du vehicule à l'éntrée, photo : la photo
+Valeur renvoyée :
+-----------------------------------------------------------------*/
 void Dechetterie::addUtilisateur(String ^ id_rfid, int tDechet, int poids, array<Byte>^ photo)
 {
 	DataBddProxy^ bdd = DataBddProxy::getDataBddProxy();
@@ -143,7 +156,7 @@ void Dechetterie::addUtilisateur(String ^ id_rfid, int tDechet, int poids, array
 	try
 	{
 		Dechetterie::updateUserFile();
-		Dechetterie::servInter->updateListClient();
+		(InterfacePipe::getInterfacePipe())->updateListClient();
 	}
 	catch (Exception^e)
 	{
@@ -151,39 +164,66 @@ void Dechetterie::addUtilisateur(String ^ id_rfid, int tDechet, int poids, array
 	}
 
 }
-void Dechetterie::deleteUtilisateur(String ^ id_rfid)
+/*---------------------------------------------------------------
+Nom          : getUtilisateurByIdRFID
+Description  : Renvoie l'utilisateur qui a l'id rfid indiqué
+Arguments    :	id_rfid : id rfid de l'utilisateur
+Valeur renvoyée : renvoie l'utilisateur qui porte cette id rfid ,  si il n'existe pas renvoie une excption "Utilisateur_existe_pas"
+-----------------------------------------------------------------*/
+Utilisateur^ Dechetterie::getUtilisateurByIdRFID(String ^ id_rfid)
 {
-	DataBddProxy^ bdd = DataBddProxy::getDataBddProxy();
-	
 	for (int i = 0; i < _listUtilisateur->Count; i++)
 	{
 		if (_listUtilisateur[i]->getRFIDID() == id_rfid)
 		{
-			Logger::PrintLog(EnteteCode::INFO, "[ Utilisateur ] L'utilisateur quitte la dechetterie : " + _listUtilisateur[i]->getNom() + " " + _listUtilisateur[i]->getPrenom() + " ID_RFID = " + id_rfid);
-			_listUtilisateur->RemoveAt(i);
-			Console::WriteLine(_listUtilisateur->Count);
-
+			
+			return _listUtilisateur[i];
 			break;
 		}
 	}
+
+	throw gcnew Exception("Utilisateur_existe_pas");
+}
+/*---------------------------------------------------------------
+Nom          : deleteUtilisateur
+Description  : Supprime l'utilisateur et supprime l'entre de la table entree  créé a l'entree dans la dechetterie
+				fait le calcul du poids et cree une entrée dans la table historique
+Arguments    : id_rfid : id rfid de l'utilisateur, poidsSortie : poids à la sortie du véhicule
+Valeur renvoyée :
+-----------------------------------------------------------------*/
+void Dechetterie::deleteUtilisateur(String ^ id_rfid,int poidsSortie)
+{
 	try
 	{
-		int iduser = bdd->getUserByIdRFID(id_rfid)->ID;
-		int idEntree = bdd->getEntreeByUserID(iduser)->ID;
+		DataBddProxy^ bdd = DataBddProxy::getDataBddProxy();
+		Utilisateur^user = getUtilisateurByIdRFID(id_rfid);
+
+		DataHistorique^ dh = gcnew DataHistorique();
+		dh->Poids = (user->_poidsEntree - poidsSortie);
+		dh->ID_Dechet = user->_typeDechet;
+		dh->ID_User = user->ID_User;
+		dh->dt = DateTime::Now;
+		bdd->addHistorique(dh);
+
+		Logger::PrintLog(EnteteCode::INFO, "[ Utilisateur ] L'utilisateur quitte la dechetterie : " + user->getNom() + " " + user->getPrenom() + " ID_RFID = " + id_rfid);
+
+		int idEntree = bdd->getEntreeByUserID(user->ID_User)->ID;
 		bdd->deleteEntreeByID(idEntree);
-		
+		_listUtilisateur->Remove(user);
+
+		Dechetterie::updateUserFile();
+		(InterfacePipe::getInterfacePipe())->updateListClient();
 	}
 	catch (Exception^ e)
 	{
-		Logger::PrintLog(EnteteCode::ERROR, e->ToString());
+		if (e->Message == "Timeout Get Poids")
+		{
+			
+		}
 	}
-	try
-	{
-		Dechetterie::updateUserFile();
-		Dechetterie::servInter->updateListClient();
-	}
-	catch (Exception^e)
-	{
-		Logger::PrintLog(EnteteCode::ERROR, EnteteCode::UTILISATEUR, "addUtilisateur", e->ToString());
-	}
+
+
+	
 }
+
+

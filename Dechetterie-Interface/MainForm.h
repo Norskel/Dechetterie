@@ -35,26 +35,13 @@ public:
 	MainForm(void)
 	{
 
-		Screen^ s = Screen::PrimaryScreen;
+		Screen^ s = Screen::PrimaryScreen; // On recupere l'ecran principal
 		InitializeComponent();
-		this->Width = s->WorkingArea.Width;
+		this->Width = s->WorkingArea.Width; // On modifie la taille de la fenêtre pour quelle prends tous l'ecran
 		this->Height = s->WorkingArea.Height;
 		pipeServeur->UpdateClientList += gcnew System::EventHandler<int>(this, &MainForm::OnUpdateClientList);
-		UpdateAffClient();
-		//_thWaitServerMsg = gcnew Thread(gcnew ThreadStart(this, &MainForm::fctWaitClientListFromServer));
-		//_thWaitServerMsg->Name = "ThreadWaitMsgUserFromSrv";
-		//_thWaitServerMsg->Start();
-		
-		//Bitmap^ i = gcnew Bitmap("test2.jpeg");
-		//ImageConverter^ converter = gcnew ImageConverter();
-
-		//array<Byte>^ rt = (array<Byte>^)converter->ConvertTo(i, array<Byte>::typeid);
-		
-	
-
-		//list->Add(gcnew Utilisateur("KLEIN-NORTH", "Martin", 2, "5sfd5d", 54, rt));
-		//AfficherControlUser(list, 200, 300);
-		this->timerUpdate->Enabled = true;
+		UpdateAffClient(); // on update  l'affichage des clients
+		this->timerUpdate->Enabled = true; // on start le timer
 		this->timerUpdateState->Enabled = true;
 		
 	}
@@ -81,7 +68,7 @@ private: System::Windows::Forms::Button^  btSortieOuvrirBarriere;
 
 
 protected:
-	List<Utilisateur^>^ list = gcnew List<Utilisateur^>();
+	List<Utilisateur^>^ list = gcnew List<Utilisateur^>(); // instanciation de la list des utilisateurs
 	/// <summary>
 	/// Nettoyage des ressources utilis�es.
 	/// </summary>
@@ -95,7 +82,6 @@ protected:
 
 private: System::ComponentModel::IContainer^  components;
 		 List<ControlInterface::ControlUtilisateur^>^_listControlUser = gcnew List<ControlInterface::ControlUtilisateur^>();
-		 Thread^ _thWaitServerMsg;
 		 DelegateUser^ _DAfficherControlUser = gcnew DelegateUser(this, &MainForm::AfficherControlUser);
 		 DelegateUpdate^ _DUpdateAffClient = gcnew DelegateUpdate(this, &MainForm::UpdateAffClient);
 		 ConfigForm^ configForm = gcnew ConfigForm();
@@ -449,14 +435,20 @@ private: System::Windows::Forms::ToolStripMenuItem^  optionToolStripMenuItem1;
 
 
 
-private: System::Void MainForm_Load(System::Object^  sender, System::EventArgs^  e) {
-}
+private: System::Void MainForm_Load(System::Object^  sender, System::EventArgs^  e) {}
+
+
+//==========================================================================================================
+//		AfficheControlUser(List<Utilisateur^>^ list, int hauteur_des_controles, int Largeur_des_controles)
+//---------------------------------------------------------------------------------------------------------
+//						Affiche les photo des utilisateur présent dans la list
+//==========================================================================================================
 private: void AfficherControlUser(List<Utilisateur^>^ list, int h, int w)
 {
-	if (list->Count != nbUser)
+	if (list->Count != nbUser) // si le nombre d'utilisateur est différent du nombre de controles afficher
 	{
 
-		nbUser = list->Count;
+		nbUser = list->Count; // on recupere le nouveau nombre de controle
 		for (int i = 0; i < _listControlUser->Count; i++)
 		{
 			delete _listControlUser[i];
@@ -487,6 +479,8 @@ private: void AfficherControlUser(List<Utilisateur^>^ list, int h, int w)
 		this->Refresh();
 	}
 }
+
+
 private: System::Void timerUpdate_Tick(System::Object^  sender, System::EventArgs^  e) {
 
 
@@ -543,7 +537,6 @@ private: void fctWaitClientListFromServer()
 }
 
 private: System::Void optionToolStripMenuItem1_Click(System::Object^  sender, System::EventArgs^  e) {
-
 
 	configForm->Show();
 }

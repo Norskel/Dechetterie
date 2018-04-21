@@ -55,7 +55,7 @@ void Serveur::WaitClient()
 				_listClient->ClientBalance->setSocket(cliSocket);
 				_listClient->ClientBalance->setState(true);
 				Logger::PrintLog(EnteteCode::SERVEUR, _groupe.ToString(), id_client::ClientBalance.ToString() + " viens de ce connectée");
-				Dechetterie::UpdateClientState();
+				(InterfacePipe::getInterfacePipe())->updateClientState();
 			}
 			else
 			{
@@ -64,7 +64,7 @@ void Serveur::WaitClient()
 					_listClient->ClientBarriere->setSocket(cliSocket);
 					_listClient->ClientBarriere->setState(true);
 					Logger::PrintLog(EnteteCode::SERVEUR, _groupe.ToString(), id_client::ClientBarrière.ToString() + " viens de ce connectée");
-					Dechetterie::UpdateClientState();
+					(InterfacePipe::getInterfacePipe())->updateClientState();
 				}
 				else
 				{
@@ -73,7 +73,7 @@ void Serveur::WaitClient()
 						_listClient->ClientRFID->setSocket(cliSocket);
 						_listClient->ClientRFID->setState(true);
 						Logger::PrintLog(EnteteCode::SERVEUR, _groupe.ToString(), id_client::ClientRFID.ToString() + " viens de ce connectée");
-						Dechetterie::UpdateClientState();
+						(InterfacePipe::getInterfacePipe())->updateClientState();
 					}
 					else
 					{

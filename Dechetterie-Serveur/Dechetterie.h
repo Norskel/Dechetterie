@@ -10,7 +10,7 @@
 #include "Protocole\StructTypeMessage.h"
 #include "StructDataConfigServeur.h"
 #include "Logger.h"
-#include "Interface.h"
+#include "InterfacePipe.h"
 
 #define PIPE_NAME_INTER_SERV "InterServeur"
 #define PIPE_NAME_USER_INFOS_SERV "UserServeur"
@@ -30,7 +30,7 @@ delegate void EventUpdateClientStateDelegate();
 
 ref class Entree;
 ref class Sortie;
-ref class Interface;
+ref class InterfacePipe;
 
 ref class Dechetterie
 {
@@ -41,7 +41,7 @@ private:
 	Sortie^ _sortie;
 	Entree^ _entree;
 
-	static Interface^ servInter;
+	InterfacePipe^ servInter;
 
 	static List<Client^>^ _listClient = gcnew List<Client^>;
 
@@ -55,7 +55,7 @@ public:
 
 	static event EventUpdateClientStateDelegate^ EventUpdateClientState;
 	static Boolean Debug = false;
-	static void UpdateClientState();
+
 
 
 	Dechetterie(String^ configFile);
@@ -65,8 +65,9 @@ public:
 
 	//================ Utilisateur =================================
 	static void addUtilisateur(String ^ id_rfid, int tDechet, int poids, array<Byte>^ photo);
-	static void deleteUtilisateur(String ^ id_rfid);
-	static List<Utilisateur^>^ GetListUtilisateur();
+	static void deleteUtilisateur(String ^ id_rfid, int poidsSortie);
+	static Utilisateur^ getUtilisateurByIdRFID(String ^ id_rfid);
+	static List<Utilisateur^>^ getListUtilisateur();
 	static void updateUserFile();
 
 

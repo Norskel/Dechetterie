@@ -2,9 +2,6 @@
 #include "Enum.h"
 #include "Logger.h"
 #include "Protocole\Protocole.h"
-#include "Dechetterie.h"
-
-
 
 using namespace System;
 using namespace System::Threading;
@@ -14,8 +11,6 @@ using namespace System::Net::Sockets;
 using namespace System::Collections::Generic;
 
 delegate void SetIntDelegate(int);
-
-ref class Dechetterie;
 
 ref class Client
 {
@@ -30,6 +25,12 @@ protected:
 	Thread^ _thread;
 	array<Byte>^ bufferRecv = nullptr;
 
+	/*---------------------------------------------------------------
+	Nom          :
+	Description  :
+	Arguments    :
+	Valeur renvoyée :
+	-----------------------------------------------------------------*/
 	void fctThreadReceive()
 	{
 		while (true)
@@ -91,7 +92,12 @@ protected:
 			
 		}
 	}
-
+	/*---------------------------------------------------------------
+	Nom          :
+	Description  :
+	Arguments    :
+	Valeur renvoyée :
+	-----------------------------------------------------------------*/
 	virtual void fonctionReceive(ProtocolMsg^ pm, array<Byte>^ data)
 	{
 		bufferRecv = data;
@@ -125,6 +131,12 @@ public:
 	void setState(Boolean i) { _isConnected = i; }
 	void setSocket(Socket^ s) { _clientSocket = s; }
 
+	/*---------------------------------------------------------------
+	Nom          :  
+	Description  :  
+	Arguments    :  
+	Valeur renvoyée : 
+	-----------------------------------------------------------------*/
 	void Disconnect()
 	{
 		if (_clientSocket != nullptr)
@@ -148,18 +160,28 @@ public:
 			{
 				Monitor::Exit(_clientSocket);
 			}
-			Dechetterie::UpdateClientState();
+			//(InterfacePipe::getInterfacePipe())->updateClientState();
 		}
 
 	}
-
+	/*---------------------------------------------------------------
+	Nom          :
+	Description  :
+	Arguments    :
+	Valeur renvoyée :
+	-----------------------------------------------------------------*/
 	Boolean verifyConnected()
 	{
 		Boolean read = _clientSocket->Poll(5, SelectMode::SelectRead);
 		Boolean connected = (_clientSocket->Available != 0 && read) || !read;
 		return connected;
 	}
-
+	/*---------------------------------------------------------------
+	Nom          :
+	Description  :
+	Arguments    :
+	Valeur renvoyée :
+	-----------------------------------------------------------------*/
 	Boolean Send(array<Byte>^ data)
 	{
 		try
@@ -182,6 +204,12 @@ public:
 			return false;
 		}
 	}
+	/*---------------------------------------------------------------
+	Nom          :
+	Description  :
+	Arguments    :
+	Valeur renvoyée :
+	-----------------------------------------------------------------*/
 	array<Byte>^ Receive()
 	{
 		array<Byte>^ data = gcnew array<Byte>(1024);

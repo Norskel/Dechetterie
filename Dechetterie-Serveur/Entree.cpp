@@ -10,6 +10,12 @@ Entree::Entree(IPAddress ^ listenip, int listenPort, IPAddress ^ ipBarriere, IPA
 
 }
 
+/*---------------------------------------------------------------
+Nom          :
+Description  :
+Arguments    :
+Valeur renvoyée :
+-----------------------------------------------------------------*/
 void Entree::AccesDemandEvent(String ^ rfid)
 {
 	Logger::PrintLog(_idGroupe.ToString(), "[ RFID ] Demande d'accès avec l'id RFID " + rfid);
@@ -22,8 +28,8 @@ void Entree::AccesDemandEvent(String ^ rfid)
 		{
 			int dechet_type = _listClient->ClientRFID->getTypeDechet();
 			Logger::PrintLog(_idGroupe.ToString(), "[ RFID ] Type de dechet selectionner : " + dechet_type);
-			//int poids = 2500;
-			int poids = _listClient->ClientBalance->getPoids();
+			int poids = 2500;
+			//int poids = _listClient->ClientBalance->getPoids();
 			Logger::PrintLog(_idGroupe.ToString(), "[ RFID ] Poids du vehicule : " + poids);
 
 			array<Byte>^ photo = _listClient->ClientRFID->getPhoto();

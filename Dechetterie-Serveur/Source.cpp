@@ -50,7 +50,7 @@ int main(array<System::String ^> ^args)
 	Thread::Sleep(30000);
 	Dechetterie::addUtilisateur("02006D7225", 1, 2500, rt);
 	Thread::Sleep(30000);
-	Dechetterie::deleteUtilisateur("02006D7223");
+	Dechetterie::deleteUtilisateur("02006D7223",2000);
 
 	return 0;
 }

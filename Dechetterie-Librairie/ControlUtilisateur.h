@@ -56,13 +56,24 @@ namespace ControlInterface {
 			}
 		}
 		[Category("Configuration")]
-		[Description("Type de dechet !//")]
-		property int typeDechet
+		[Description("ListDechet")]
+		property array<String^>^ listDechet
 		{
-			int get() { return _typeDechet; }
+			array<String^>^ get() { return _listDechet; }
+			void set(array<String^>^ value)
+			{
+				_listDechet = value;
+
+			}
+		}
+		[Category("Configuration")]
+		[Description("Type de dechet !//")]
+		property int IdTypeDechet
+		{
+			int get() { return _IDTypeDechet; }
 			void set(int value)
 			{
-				_typeDechet = value;
+				_IDTypeDechet = value;
 
 			}
 		}
@@ -85,10 +96,16 @@ namespace ControlInterface {
 	private: System::Windows::Forms::Label^  lTypeDechet;
 	private: Bitmap^ _photo;
 	private: Bitmap^ _photoF;
+	private: Bitmap^ _typeDechet;
+	private: Bitmap^ _typeDechetF;
+
 	private: String^ _nom = "";
 	private: String^ _prenom = "";
-	private: int _typeDechet = 0;
+	private: int _IDTypeDechet = 0;
+	private: array<String^>^ _listDechet;
 	private: System::Windows::Forms::Timer^  timerUpdate;
+	private: System::Windows::Forms::PictureBox^  pbTypeDechet;
+
 
 	private: DateTime _temp = DateTime::Parse("00:00:00");
 
@@ -138,7 +155,9 @@ namespace ControlInterface {
 			this->l1 = (gcnew System::Windows::Forms::Label());
 			this->lTypeDechet = (gcnew System::Windows::Forms::Label());
 			this->timerUpdate = (gcnew System::Windows::Forms::Timer(this->components));
+			this->pbTypeDechet = (gcnew System::Windows::Forms::PictureBox());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pbTypeDechet))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// pictureBox1
@@ -221,11 +240,20 @@ namespace ControlInterface {
 			this->timerUpdate->Interval = 500;
 			this->timerUpdate->Tick += gcnew System::EventHandler(this, &ControlUtilisateur::timerUpdate_Tick);
 			// 
+			// pbTypeDechet
+			// 
+			this->pbTypeDechet->Location = System::Drawing::Point(496, 308);
+			this->pbTypeDechet->Name = L"pbTypeDechet";
+			this->pbTypeDechet->Size = System::Drawing::Size(132, 132);
+			this->pbTypeDechet->TabIndex = 6;
+			this->pbTypeDechet->TabStop = false;
+			// 
 			// ControlUtilisateur
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::SystemColors::ActiveBorder;
+			this->Controls->Add(this->pbTypeDechet);
 			this->Controls->Add(this->lTypeDechet);
 			this->Controls->Add(this->l1);
 			this->Controls->Add(this->lTemp);
@@ -235,6 +263,7 @@ namespace ControlInterface {
 			this->Name = L"ControlUtilisateur";
 			this->Size = System::Drawing::Size(648, 488);
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pbTypeDechet))->EndInit();
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
@@ -261,27 +290,27 @@ namespace ControlInterface {
 		{
 			this->lNom->Text = _nom;
 			this->lPrenom->Text = _prenom;
-			this->lTemp->Text = (DateTime::Now.Subtract(_temp)).ToString();
-			this->lTypeDechet->Text = Convert::ToString(_typeDechet);
-		}
-		catch (...)
-		{
+			this->lTemp->Text = (DateTime::Now.Subtract(_temp)).ToString("hh\\:mm\\:ss");
+			this->lTypeDechet->Text = Convert::ToString(_IDTypeDechet);
+		}catch (...){}
 
-
-		}
 		try
 		{
 			_photoF = gcnew Bitmap(_photo, this->pictureBox1->Size.Width, this->pictureBox1->Size.Height);
 			this->pictureBox1->Image = _photoF;
 		}
-		catch (...)
+		catch (...){}
+
+		try
 		{
-
-
+			_typeDechet = gcnew Bitmap(_listDechet[IdTypeDechet]);
+			_typeDechetF = gcnew Bitmap(_typeDechet, this->pbTypeDechet->Size.Width, this->pbTypeDechet->Size.Height);
+			this->pbTypeDechet->Image = _typeDechet;
 		}
+		catch (...){}
 
 
 	}
 
-	};
+};
 }

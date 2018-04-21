@@ -1,15 +1,104 @@
-﻿  Entree.cpp
+﻿  AssemblyInfo.cpp
+  DataBdd.cpp
+  DataBddProxy.cpp
+DataBddProxy.cpp(96): warning C4244: '=' : conversion de '__int64' en 'int', perte possible de données
+DataBddProxy.cpp(97): warning C4244: '=' : conversion de '__int64' en 'int', perte possible de données
+DataBddProxy.cpp(98): warning C4244: '=' : conversion de '__int64' en 'int', perte possible de données
+DataBddProxy.cpp(99): warning C4244: '=' : conversion de '__int64' en 'int', perte possible de données
+DataBddProxy.cpp(123): warning C4244: '=' : conversion de '__int64' en 'int', perte possible de données
+DataBddProxy.cpp(150): warning C4244: '=' : conversion de '__int64' en 'int', perte possible de données
+  Dechetterie.cpp
 c:\users\a125\source\repos\dechetterie\dechetterie-serveur\Enum.h(3): warning C4091: 'static value ' : ignoré à gauche de 'id_groupe' quand aucune variable n'est déclarée
 c:\users\a125\source\repos\dechetterie\dechetterie-serveur\Enum.h(4): warning C4091: 'static value ' : ignoré à gauche de 'id_client' quand aucune variable n'est déclarée
 c:\users\a125\source\repos\dechetterie\dechetterie-serveur\Logger.h(8): warning C4091: 'static value ' : ignoré à gauche de 'EnteteCode' quand aucune variable n'est déclarée
-c:\users\a125\source\repos\dechetterie\dechetterie-serveur\Logger.h(24): warning C4091: 'static ' : ignoré à gauche de 'Logger' quand aucune variable n'est déclarée
-c:\users\a125\source\repos\dechetterie\dechetterie-serveur\Client.h(57): warning C4101: 'e' : variable locale non référencée
-c:\users\a125\source\repos\dechetterie\dechetterie-serveur\Client.h(154): warning C4101: 'e' : variable locale non référencée
-c:\users\a125\source\repos\dechetterie\dechetterie-serveur\ClientBarriere.h(57): warning C4101: 'e' : variable locale non référencée
-c:\users\a125\source\repos\dechetterie\dechetterie-serveur\ClientBalance.h(48): warning C4101: 'e' : variable locale non référencée
-c:\users\a125\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h(349): warning C4715: 'Protocole::getTypeMessageByType' : les chemins de contrôle ne retournent pas tous une valeur
-c:\users\a125\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h(360): warning C4715: 'Protocole::GetTypeProtocoleByID' : les chemins de contrôle ne retournent pas tous une valeur
-c:\users\a125\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h(337): warning C4715: 'Protocole::translateByID' : les chemins de contrôle ne retournent pas tous une valeur
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\Logger.h(79): warning C4091: 'static ' : ignoré à gauche de 'Logger' quand aucune variable n'est déclarée
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\Client.h(73): warning C4101: 'e' : variable locale non référencée
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\Client.h(81): warning C4101: 'e' : variable locale non référencée
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\Client.h(227): warning C4101: 'e' : variable locale non référencée
+  Entree.cpp
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\Enum.h(3): warning C4091: 'static value ' : ignoré à gauche de 'id_groupe' quand aucune variable n'est déclarée
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\Enum.h(4): warning C4091: 'static value ' : ignoré à gauche de 'id_client' quand aucune variable n'est déclarée
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\Logger.h(8): warning C4091: 'static value ' : ignoré à gauche de 'EnteteCode' quand aucune variable n'est déclarée
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\Logger.h(79): warning C4091: 'static ' : ignoré à gauche de 'Logger' quand aucune variable n'est déclarée
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\Client.h(73): warning C4101: 'e' : variable locale non référencée
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\Client.h(81): warning C4101: 'e' : variable locale non référencée
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\Client.h(227): warning C4101: 'e' : variable locale non référencée
+  Groupe.cpp
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\Enum.h(3): warning C4091: 'static value ' : ignoré à gauche de 'id_groupe' quand aucune variable n'est déclarée
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\Enum.h(4): warning C4091: 'static value ' : ignoré à gauche de 'id_client' quand aucune variable n'est déclarée
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\Logger.h(8): warning C4091: 'static value ' : ignoré à gauche de 'EnteteCode' quand aucune variable n'est déclarée
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\Logger.h(79): warning C4091: 'static ' : ignoré à gauche de 'Logger' quand aucune variable n'est déclarée
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\Client.h(73): warning C4101: 'e' : variable locale non référencée
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\Client.h(81): warning C4101: 'e' : variable locale non référencée
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\Client.h(227): warning C4101: 'e' : variable locale non référencée
+Groupe.cpp(119): warning C4965: boxing implicite de l'entier 0 ; utilisez nullptr ou effectuez un cast explicite
+  Groupe.cpp(119): note: Rencontré lors d'une tentative de synthèse d'opérateur pour '+='
+Groupe.cpp(120): warning C4965: boxing implicite de l'entier 0 ; utilisez nullptr ou effectuez un cast explicite
+  Groupe.cpp(120): note: Rencontré lors d'une tentative de synthèse d'opérateur pour '+='
+Groupe.cpp(121): warning C4965: boxing implicite de l'entier 0 ; utilisez nullptr ou effectuez un cast explicite
+  Groupe.cpp(121): note: Rencontré lors d'une tentative de synthèse d'opérateur pour '+='
+  InterfacePipe.cpp
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\Enum.h(3): warning C4091: 'static value ' : ignoré à gauche de 'id_groupe' quand aucune variable n'est déclarée
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\Enum.h(4): warning C4091: 'static value ' : ignoré à gauche de 'id_client' quand aucune variable n'est déclarée
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\Logger.h(8): warning C4091: 'static value ' : ignoré à gauche de 'EnteteCode' quand aucune variable n'est déclarée
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\Logger.h(79): warning C4091: 'static ' : ignoré à gauche de 'Logger' quand aucune variable n'est déclarée
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\Client.h(73): warning C4101: 'e' : variable locale non référencée
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\Client.h(81): warning C4101: 'e' : variable locale non référencée
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\Client.h(227): warning C4101: 'e' : variable locale non référencée
+  Serveur.cpp
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\Enum.h(3): warning C4091: 'static value ' : ignoré à gauche de 'id_groupe' quand aucune variable n'est déclarée
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\Enum.h(4): warning C4091: 'static value ' : ignoré à gauche de 'id_client' quand aucune variable n'est déclarée
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\Logger.h(8): warning C4091: 'static value ' : ignoré à gauche de 'EnteteCode' quand aucune variable n'est déclarée
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\Logger.h(79): warning C4091: 'static ' : ignoré à gauche de 'Logger' quand aucune variable n'est déclarée
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\Client.h(73): warning C4101: 'e' : variable locale non référencée
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\Client.h(81): warning C4101: 'e' : variable locale non référencée
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\Client.h(227): warning C4101: 'e' : variable locale non référencée
+  Sortie.cpp
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\Enum.h(3): warning C4091: 'static value ' : ignoré à gauche de 'id_groupe' quand aucune variable n'est déclarée
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\Enum.h(4): warning C4091: 'static value ' : ignoré à gauche de 'id_client' quand aucune variable n'est déclarée
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\Logger.h(8): warning C4091: 'static value ' : ignoré à gauche de 'EnteteCode' quand aucune variable n'est déclarée
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\Logger.h(79): warning C4091: 'static ' : ignoré à gauche de 'Logger' quand aucune variable n'est déclarée
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\Client.h(73): warning C4101: 'e' : variable locale non référencée
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\Client.h(81): warning C4101: 'e' : variable locale non référencée
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\Client.h(227): warning C4101: 'e' : variable locale non référencée
+  Source.cpp
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\Enum.h(3): warning C4091: 'static value ' : ignoré à gauche de 'id_groupe' quand aucune variable n'est déclarée
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\Enum.h(4): warning C4091: 'static value ' : ignoré à gauche de 'id_client' quand aucune variable n'est déclarée
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\Logger.h(8): warning C4091: 'static value ' : ignoré à gauche de 'EnteteCode' quand aucune variable n'est déclarée
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\Logger.h(79): warning C4091: 'static ' : ignoré à gauche de 'Logger' quand aucune variable n'est déclarée
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\Client.h(73): warning C4101: 'e' : variable locale non référencée
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\Client.h(81): warning C4101: 'e' : variable locale non référencée
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\Client.h(227): warning C4101: 'e' : variable locale non référencée
+Source.cpp(7): warning C4005: 'PIPE_NAME_USER_INFOS_SERV' : redéfinition de macro
+  c:\users\a125\source\repos\dechetterie\dechetterie-serveur\Dechetterie.h(16): note: voir la définition précédente de 'PIPE_NAME_USER_INFOS_SERV'
+  Génération de code en cours...
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h(354): warning C4715: 'Protocole::getTypeMessageByType' : les chemins de contrôle ne retournent pas tous une valeur
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h(365): warning C4715: 'Protocole::GetTypeProtocoleByID' : les chemins de contrôle ne retournent pas tous une valeur
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h(342): warning C4715: 'Protocole::translateByID' : les chemins de contrôle ne retournent pas tous une valeur
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h(354): warning C4715: 'Protocole::getTypeMessageByType' : les chemins de contrôle ne retournent pas tous une valeur
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h(365): warning C4715: 'Protocole::GetTypeProtocoleByID' : les chemins de contrôle ne retournent pas tous une valeur
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h(342): warning C4715: 'Protocole::translateByID' : les chemins de contrôle ne retournent pas tous une valeur
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h(354): warning C4715: 'Protocole::getTypeMessageByType' : les chemins de contrôle ne retournent pas tous une valeur
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h(365): warning C4715: 'Protocole::GetTypeProtocoleByID' : les chemins de contrôle ne retournent pas tous une valeur
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h(342): warning C4715: 'Protocole::translateByID' : les chemins de contrôle ne retournent pas tous une valeur
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h(354): warning C4715: 'Protocole::getTypeMessageByType' : les chemins de contrôle ne retournent pas tous une valeur
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h(365): warning C4715: 'Protocole::GetTypeProtocoleByID' : les chemins de contrôle ne retournent pas tous une valeur
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\interfacepipe.cpp(309): warning C4715: 'InterfacePipe::PositionBarriere' : les chemins de contrôle ne retournent pas tous une valeur
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h(342): warning C4715: 'Protocole::translateByID' : les chemins de contrôle ne retournent pas tous une valeur
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h(354): warning C4715: 'Protocole::getTypeMessageByType' : les chemins de contrôle ne retournent pas tous une valeur
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h(365): warning C4715: 'Protocole::GetTypeProtocoleByID' : les chemins de contrôle ne retournent pas tous une valeur
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h(342): warning C4715: 'Protocole::translateByID' : les chemins de contrôle ne retournent pas tous une valeur
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h(354): warning C4715: 'Protocole::getTypeMessageByType' : les chemins de contrôle ne retournent pas tous une valeur
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h(365): warning C4715: 'Protocole::GetTypeProtocoleByID' : les chemins de contrôle ne retournent pas tous une valeur
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h(342): warning C4715: 'Protocole::translateByID' : les chemins de contrôle ne retournent pas tous une valeur
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h(354): warning C4715: 'Protocole::getTypeMessageByType' : les chemins de contrôle ne retournent pas tous une valeur
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h(365): warning C4715: 'Protocole::GetTypeProtocoleByID' : les chemins de contrôle ne retournent pas tous une valeur
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h(342): warning C4715: 'Protocole::translateByID' : les chemins de contrôle ne retournent pas tous une valeur
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\databdd.cpp(28): warning C4715: 'DataBdd::getUserByID' : les chemins de contrôle ne retournent pas tous une valeur
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\databdd.cpp(38): warning C4715: 'DataBdd::getDechetByID' : les chemins de contrôle ne retournent pas tous une valeur
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\databdd.cpp(48): warning C4715: 'DataBdd::getEntreeByID' : les chemins de contrôle ne retournent pas tous une valeur
+c:\users\a125\source\repos\dechetterie\dechetterie-serveur\databdd.cpp(58): warning C4715: 'DataBdd::getEntreeByUserID' : les chemins de contrôle ne retournent pas tous une valeur
+  .NETFramework,Version=v4.6.1.AssemblyAttributes.cpp
   AssemblyInfo.obj : /DEBUG:FASTLINK n'est pas pris en charge en présence de code managé ; redémarrage de l'édition des liens avec /DEBUG:FULL
   Dechetterie-Serveur.vcxproj -> C:\Users\A125\Source\Repos\Dechetterie\Debug\Dechetterie-Serveur.exe
   Dechetterie-Serveur.vcxproj -> C:\Users\A125\Source\Repos\Dechetterie\Debug\Dechetterie-Serveur.pdb (Partial PDB)

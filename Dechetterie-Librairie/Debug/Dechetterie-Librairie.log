@@ -1,2 +1,5 @@
-﻿  Dechetterie-Librairie.vcxproj -> C:\Users\A125\Source\Repos\Dechetterie\Debug\Dechetterie-Librairie.dll
+﻿  ControlUtilisateur.cpp
+c:\users\a125\source\repos\dechetterie\dechetterie-librairie\ControlUtilisateur.h(267): warning C4101: 'e' : variable locale non référencée
+  AssemblyInfo.obj : /DEBUG:FASTLINK n'est pas pris en charge en présence de code managé ; redémarrage de l'édition des liens avec /DEBUG:FULL
+  Dechetterie-Librairie.vcxproj -> C:\Users\A125\Source\Repos\Dechetterie\Debug\Dechetterie-Librairie.dll
   Dechetterie-Librairie.vcxproj -> C:\Users\A125\Source\Repos\Dechetterie\Debug\Dechetterie-Librairie.pdb (Partial PDB)
