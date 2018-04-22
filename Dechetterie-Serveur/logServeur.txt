@@ -9310,3 +9310,28 @@
 20-04-2018 11:19:10[ DEBUG ] Type :61
 20-04-2018 11:19:10[ INTERFACE ]  Demande de l'etat des clients 
 20-04-2018 11:19:10[ DEBUG ] Attents reception
+22-04-2018 01:37:51[ INFO ] [ Configuration ] Erreur ? l'ouverture de ConfigServeur.xml
+22-04-2018 01:37:52[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+22-04-2018 01:37:53[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+22-04-2018 01:37:53[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+22-04-2018 01:37:53[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+22-04-2018 01:37:53[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+22-04-2018 01:37:53[ INTERFACE ]  Attente de l'interface
+22-04-2018 01:37:53[ INTERFACE ]  Interface connecte 
+22-04-2018 01:37:53[ INTERFACE ]  Attente de l'interface
+22-04-2018 01:37:53[ INTERFACE ]  Interface connecte 
+22-04-2018 01:37:53[ DEBUG ] Attents reception
+22-04-2018 01:37:55[ ERROR ][ UTILISATEUR ] Utilisateur avec id RFID 02006D7223 Inconnu 
+22-04-2018 01:37:57[ INTERFACE ]  Attente de l'interface
+22-04-2018 02:12:14[ INFO ] [ Configuration ] Erreur ? l'ouverture de ConfigServeur.xml
+22-04-2018 02:12:15[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+22-04-2018 02:12:16[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+22-04-2018 02:12:16[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+22-04-2018 02:12:16[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+22-04-2018 02:12:16[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+22-04-2018 02:12:16[ INTERFACE ]  Attente de l'interface
+22-04-2018 02:12:16[ INTERFACE ]  Interface connecte 
+22-04-2018 02:12:16[ INTERFACE ]  Attente de l'interface
+22-04-2018 02:12:16[ INTERFACE ]  Interface connecte 
+22-04-2018 02:12:16[ DEBUG ] Attents reception
+22-04-2018 02:12:17[ ERROR ][ UTILISATEUR ] Utilisateur avec id RFID 02006D7223 Inconnu 

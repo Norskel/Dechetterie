@@ -3,7 +3,7 @@
 #define FILE_CONFIG "ConfigServeur.xml"
 #define FILE_NAME_USER "user.xml"
 
-#define SRV_PROCESS_NAME "Dechetterie-Serveur"
+
 #define PIPE_NAME_STATE_SERV "StateServeur"
 #define PIPE_NAME_USER_INFOS_SERV "UserServeur"
 
@@ -18,6 +18,7 @@ using namespace System::Collections::Generic;
 using namespace System::Windows::Forms;
 using namespace System::Data;
 using namespace System::Drawing;
+using namespace System::Diagnostics;
 using namespace System::Diagnostics;
 using namespace System::Threading;
 using namespace System::IO::Pipes;
@@ -58,20 +59,17 @@ private: ControlInterface::ControlEtat^  ceSoBa;
 private: ControlInterface::ControlEtat^  ceSoRf;
 private: System::Windows::Forms::Timer^  timerUpdateState;
 private: System::Windows::Forms::Button^  btEntreeOuvrirBarriere;
-
 private: System::Windows::Forms::Button^  btEntreeFermerBarriere;
-
 private: System::Windows::Forms::Button^  btSortieFermerBarriere;
 private: System::Windows::Forms::Button^  btSortieOuvrirBarriere;
+private: System::Windows::Forms::ToolStripMenuItem^  aideToolStripMenuItem;
+private: System::Windows::Forms::ToolStripMenuItem^  aProposToolStripMenuItem;
 
 
 
 
 protected:
 	List<Utilisateur^>^ list = gcnew List<Utilisateur^>(); // instanciation de la list des utilisateurs
-	/// <summary>
-	/// Nettoyage des ressources utilis�es.
-	/// </summary>
 	~MainForm()
 	{
 		if (components)
@@ -80,21 +78,14 @@ protected:
 		}
 	}
 
-private: System::ComponentModel::IContainer^  components;
-		 List<ControlInterface::ControlUtilisateur^>^_listControlUser = gcnew List<ControlInterface::ControlUtilisateur^>();
-		 DelegateUser^ _DAfficherControlUser = gcnew DelegateUser(this, &MainForm::AfficherControlUser);
-		 DelegateUpdate^ _DUpdateAffClient = gcnew DelegateUpdate(this, &MainForm::UpdateAffClient);
-		 ConfigForm^ configForm = gcnew ConfigForm();
-		 int nbUser = 0;
-		 PipeServeur^ pipeServeur = PipeServeur::GetPipeServeur();
-		
-
-
 private:
-	/// <summary>
-	/// Variable n�cessaire au concepteur.
-	/// </summary>
-
+	System::ComponentModel::IContainer^  components;
+	List<ControlInterface::ControlUtilisateur^>^_listControlUser = gcnew List<ControlInterface::ControlUtilisateur^>();
+	DelegateUser^ _DAfficherControlUser = gcnew DelegateUser(this, &MainForm::AfficherControlUser);
+	DelegateUpdate^ _DUpdateAffClient = gcnew DelegateUpdate(this, &MainForm::UpdateAffClient);
+	ConfigForm^ configForm = gcnew ConfigForm();
+	int nbUser = 0;
+	PipeServeur^ pipeServeur = PipeServeur::GetPipeServeur();
 
 
 private: ControlInterface::ControlEtat^  controlEtat1;
@@ -122,6 +113,8 @@ private: System::Windows::Forms::ToolStripMenuItem^  optionToolStripMenuItem1;
 			 this->menuStrip1 = (gcnew System::Windows::Forms::MenuStrip());
 			 this->optionToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			 this->optionToolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			 this->aideToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			 this->aProposToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			 this->PhotoClientLayout = (gcnew System::Windows::Forms::FlowLayoutPanel());
 			 this->button1 = (gcnew System::Windows::Forms::Button());
 			 this->btServeurStart = (gcnew System::Windows::Forms::Button());
@@ -168,7 +161,10 @@ private: System::Windows::Forms::ToolStripMenuItem^  optionToolStripMenuItem1;
 			 // menuStrip1
 			 // 
 			 this->menuStrip1->BackColor = System::Drawing::SystemColors::ControlDarkDark;
-			 this->menuStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(1) { this->optionToolStripMenuItem });
+			 this->menuStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(2) {
+				 this->optionToolStripMenuItem,
+					 this->aideToolStripMenuItem
+			 });
 			 this->menuStrip1->Location = System::Drawing::Point(0, 0);
 			 this->menuStrip1->Name = L"menuStrip1";
 			 this->menuStrip1->Size = System::Drawing::Size(1362, 24);
@@ -188,6 +184,19 @@ private: System::Windows::Forms::ToolStripMenuItem^  optionToolStripMenuItem1;
 			 this->optionToolStripMenuItem1->Size = System::Drawing::Size(111, 22);
 			 this->optionToolStripMenuItem1->Text = L"Option";
 			 this->optionToolStripMenuItem1->Click += gcnew System::EventHandler(this, &MainForm::optionToolStripMenuItem1_Click);
+			 // 
+			 // aideToolStripMenuItem
+			 // 
+			 this->aideToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(1) { this->aProposToolStripMenuItem });
+			 this->aideToolStripMenuItem->Name = L"aideToolStripMenuItem";
+			 this->aideToolStripMenuItem->Size = System::Drawing::Size(43, 20);
+			 this->aideToolStripMenuItem->Text = L"Aide";
+			 // 
+			 // aProposToolStripMenuItem
+			 // 
+			 this->aProposToolStripMenuItem->Name = L"aProposToolStripMenuItem";
+			 this->aProposToolStripMenuItem->Size = System::Drawing::Size(152, 22);
+			 this->aProposToolStripMenuItem->Text = L"A propos";
 			 // 
 			 // PhotoClientLayout
 			 // 
@@ -213,8 +222,9 @@ private: System::Windows::Forms::ToolStripMenuItem^  optionToolStripMenuItem1;
 			 this->btServeurStart->Name = L"btServeurStart";
 			 this->btServeurStart->Size = System::Drawing::Size(119, 23);
 			 this->btServeurStart->TabIndex = 5;
-			 this->btServeurStart->Text = L"Start Serveur";
+			 this->btServeurStart->Text = L" ";
 			 this->btServeurStart->UseVisualStyleBackColor = true;
+			 this->btServeurStart->Click += gcnew System::EventHandler(this, &MainForm::btServeurStart_Click);
 			 // 
 			 // btServeurStop
 			 // 
@@ -224,6 +234,7 @@ private: System::Windows::Forms::ToolStripMenuItem^  optionToolStripMenuItem1;
 			 this->btServeurStop->TabIndex = 6;
 			 this->btServeurStop->Text = L"Stop Serveur";
 			 this->btServeurStop->UseVisualStyleBackColor = true;
+			 this->btServeurStop->Click += gcnew System::EventHandler(this, &MainForm::btServeurStop_Click);
 			 // 
 			 // button4
 			 // 
@@ -236,7 +247,7 @@ private: System::Windows::Forms::ToolStripMenuItem^  optionToolStripMenuItem1;
 			 // 
 			 // gb1
 			 // 
-			 this->gb1->BackColor = System::Drawing::SystemColors::ControlLight;
+			 this->gb1->BackColor = System::Drawing::SystemColors::ControlDark;
 			 this->gb1->Controls->Add(this->btEntreeFermerBarriere);
 			 this->gb1->Controls->Add(this->btEntreeOuvrirBarriere);
 			 this->gb1->Controls->Add(this->ceEnBr);
@@ -319,7 +330,7 @@ private: System::Windows::Forms::ToolStripMenuItem^  optionToolStripMenuItem1;
 			 // 
 			 // groupBox1
 			 // 
-			 this->groupBox1->BackColor = System::Drawing::SystemColors::ControlLight;
+			 this->groupBox1->BackColor = System::Drawing::SystemColors::ControlDark;
 			 this->groupBox1->Controls->Add(this->btSortieFermerBarriere);
 			 this->groupBox1->Controls->Add(this->btSortieOuvrirBarriere);
 			 this->groupBox1->Controls->Add(this->ceSoBr);
@@ -443,7 +454,7 @@ private: System::Void MainForm_Load(System::Object^  sender, System::EventArgs^ 
 //---------------------------------------------------------------------------------------------------------
 //						Affiche les photo des utilisateur présent dans la list
 //==========================================================================================================
-private: void AfficherControlUser(List<Utilisateur^>^ list, int h, int w)
+private: System::Void AfficherControlUser(List<Utilisateur^>^ list, int h, int w)
 {
 	if (list->Count != nbUser) // si le nombre d'utilisateur est différent du nombre de controles afficher
 	{
@@ -471,7 +482,7 @@ private: void AfficherControlUser(List<Utilisateur^>^ list, int h, int w)
 			_listControlUser[_listControlUser->Count - 1]->prenom = list[i]->getPrenom();
 			_listControlUser[_listControlUser->Count - 1]->Size = System::Drawing::Size(w, h);
 			_listControlUser[_listControlUser->Count - 1]->temp = list[i]->getArrivee();
-			_listControlUser[_listControlUser->Count - 1]->typeDechet = 0;
+			//_listControlUser[_listControlUser->Count - 1]->typeDechet = 0;
 			this->PhotoClientLayout->Controls->Add(this->_listControlUser[_listControlUser->Count - 1]);
 			//this->Controls->Add(_listControlUser[_listControlUser->Count - 1]);
 
@@ -481,19 +492,16 @@ private: void AfficherControlUser(List<Utilisateur^>^ list, int h, int w)
 }
 
 
-private: System::Void timerUpdate_Tick(System::Object^  sender, System::EventArgs^  e) {
-
-
+private: System::Void timerUpdate_Tick(System::Object^  sender, System::EventArgs^  e) 
+{
 	this->PhotoClientLayout->Size = System::Drawing::Size(this->Width - this->PhotoClientLayout->Location.X, (this->	Height - this->PhotoClientLayout->Location.Y));
-
 	UpdateServeurState();
-	
-
-
-
+}
+private: System::Void timerUpdateState_Tick(System::Object^  sender, System::EventArgs^  e) {
+	UpdateClientState(pipeServeur->getClientState());
 }
 
-private: void fctWaitClientListFromServer()
+private: System::Void fctWaitClientListFromServer()
 {
 
 	while (true)
@@ -541,7 +549,7 @@ private: System::Void optionToolStripMenuItem1_Click(System::Object^  sender, Sy
 	configForm->Show();
 }
 
-private: void UpdateClientState(array<Byte>^ t)
+private: System::Void UpdateClientState(array<Byte>^ t)
 {
 	if (t != nullptr)
 	{
@@ -569,27 +577,19 @@ private: void UpdateClientState(array<Byte>^ t)
 		
 	}
 }
-private: void UpdateServeurState()
+private: System::Void UpdateServeurState()
 {
-	array<Process^>^ listProcess = Process::GetProcessesByName(SRV_PROCESS_NAME);
-
-	for each (Process^ var in listProcess)
+	if (pipeServeur->getServeurState())
 	{
-		if (var->ToString() == "System.Diagnostics.Process (" + SRV_PROCESS_NAME + ")")
-		{
-
-			controlEtat1->state = true;
-			break;
-		}
-		else
-		{
-			controlEtat1->state = false;
-		}
-
+		controlEtat1->state = true;
+		btServeurStop->Enabled = true;
+		btServeurStart->Enabled = false;
 	}
-	if (listProcess->Length == 0)
+	else
 	{
 		controlEtat1->state = false;
+		btServeurStop->Enabled = false;
+		btServeurStart->Enabled = true;
 	}
 }
 
@@ -605,11 +605,6 @@ private: System::Void button1_Click(System::Object^  sender, System::EventArgs^ 
 	AfficherControlUser(list, 350, 550);
 }
 
-private: System::Void timerUpdateState_Tick(System::Object^  sender, System::EventArgs^  e) {
-	UpdateClientState(pipeServeur->getState());
-
-
-}
 private: System::Void btEntreeOuvrirBarriere_Click(System::Object^  sender, System::EventArgs^  e) {
 	pipeServeur->ouvrirBarriere(id_groupe::ENTREE);
 }
@@ -623,7 +618,7 @@ private: System::Void btEntreeFermerBarriere_Click(System::Object^  sender, Syst
 	pipeServeur->fermerBarriere(id_groupe::ENTREE);
 }
 
-void UpdateAffClient()
+private: System::Void UpdateAffClient()
 		 {
 			 if (System::IO::File::Exists(FILE_NAME_USER))
 			 {
@@ -659,12 +654,19 @@ void UpdateAffClient()
 
 			 }
 		 }
-void OnUpdateClientList(System::Object ^sender, int e)
+private: System::Void OnUpdateClientList(System::Object ^sender, int e)
 {
 	this->Invoke(_DUpdateAffClient);
 }
-
 		 
+private: System::Void btServeurStart_Click(System::Object^  sender, System::EventArgs^  e) 
+{
+	Process::Start("Dechetterie-Serveur.exe");
+}
+private: System::Void btServeurStop_Click(System::Object^  sender, System::EventArgs^  e) 
+{
+	pipeServeur->stopServeur();
+}
 };
 
 

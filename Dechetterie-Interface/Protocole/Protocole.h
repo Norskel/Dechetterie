@@ -263,7 +263,10 @@ public:
 		cpyTableByteI(t, 3, addData(3, pos));
 		return translate(GetTypeProtocoleByID("brRDPos"), t);
 	}
-
+	array<Byte>^ InterfaceStopServeur()
+	{
+		return translate(GetTypeProtocoleByID("inStop"),"");
+	}
 
 
 	List<TypeMessage^>^  GetListTypeMessage()
