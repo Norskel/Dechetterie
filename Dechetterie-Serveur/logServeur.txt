@@ -9335,3 +9335,11 @@
 22-04-2018 02:12:16[ INTERFACE ]  Interface connecte 
 22-04-2018 02:12:16[ DEBUG ] Attents reception
 22-04-2018 02:12:17[ ERROR ][ UTILISATEUR ] Utilisateur avec id RFID 02006D7223 Inconnu 
+24-04-2018 04:59:12[ INFO ] [ Configuration ] Erreur ? l'ouverture de ConfigServeur.xml
+24-04-2018 04:59:13[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+24-04-2018 04:59:14[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+24-04-2018 04:59:14[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+24-04-2018 04:59:14[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+24-04-2018 04:59:14[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+24-04-2018 04:59:14[ INTERFACE ]  Attente de l'interface
+24-04-2018 04:59:16[ ERROR ][ UTILISATEUR ] Utilisateur avec id RFID 02006D7223 Inconnu 

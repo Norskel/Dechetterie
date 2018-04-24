@@ -16,11 +16,14 @@
     <Filter Include="Fichiers d%27en-tête\BDD">
       <UniqueIdentifier>{8cbc43ce-f584-4bfc-80eb-36cac0375bda}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Fichiers sources\BDD">
-      <UniqueIdentifier>{34392571-0408-4e37-8892-5c6863db8d4b}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Fichiers d%27en-tête\Protocole">
       <UniqueIdentifier>{e2f57181-d6c8-4850-be22-fa356ba64cfd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Groupe">
+      <UniqueIdentifier>{25330e08-2ed6-4dfb-8e5f-61d7d2931187}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Client">
+      <UniqueIdentifier>{be9300fd-f91c-46d7-bdbf-1c2b559c2df4}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -33,16 +36,10 @@
     <ClInclude Include="Dechetterie.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
-    <ClInclude Include="Entree.h">
-      <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
     <ClInclude Include="Enum.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
     <ClInclude Include="Serveur.h">
-      <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
-    <ClInclude Include="Sortie.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
     <ClInclude Include="Utilisateur.h">
@@ -87,26 +84,32 @@
     <ClInclude Include="Logger.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
-    <ClInclude Include="Groupe.h">
-      <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
-    <ClInclude Include="StructGroupeClient.h">
-      <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
     <ClInclude Include="InterfacePipe.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
-    <ClInclude Include="ClientRFID.h">
-      <Filter>Fichiers d%27en-tête</Filter>
+    <ClInclude Include="Groupe.h">
+      <Filter>Fichiers d%27en-tête\Groupe</Filter>
     </ClInclude>
-    <ClInclude Include="ClientBalance.h">
-      <Filter>Fichiers d%27en-tête</Filter>
+    <ClInclude Include="Entree.h">
+      <Filter>Fichiers d%27en-tête\Groupe</Filter>
     </ClInclude>
-    <ClInclude Include="ClientBarriere.h">
-      <Filter>Fichiers d%27en-tête</Filter>
+    <ClInclude Include="Sortie.h">
+      <Filter>Fichiers d%27en-tête\Groupe</Filter>
     </ClInclude>
     <ClInclude Include="Client.h">
-      <Filter>Fichiers d%27en-tête</Filter>
+      <Filter>Fichiers d%27en-tête\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientRFID.h">
+      <Filter>Fichiers d%27en-tête\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientBarriere.h">
+      <Filter>Fichiers d%27en-tête\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientBalance.h">
+      <Filter>Fichiers d%27en-tête\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="StructGroupeClient.h">
+      <Filter>Fichiers d%27en-tête\Groupe</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -118,31 +121,7 @@
     <ClCompile Include="AssemblyInfo.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
-    <ClCompile Include="Dechetterie.cpp">
-      <Filter>Fichiers sources</Filter>
-    </ClCompile>
-    <ClCompile Include="Entree.cpp">
-      <Filter>Fichiers sources</Filter>
-    </ClCompile>
-    <ClCompile Include="Serveur.cpp">
-      <Filter>Fichiers sources</Filter>
-    </ClCompile>
-    <ClCompile Include="Sortie.cpp">
-      <Filter>Fichiers sources</Filter>
-    </ClCompile>
     <ClCompile Include="Source.cpp">
-      <Filter>Fichiers sources</Filter>
-    </ClCompile>
-    <ClCompile Include="DataBddProxy.cpp">
-      <Filter>Fichiers sources\BDD</Filter>
-    </ClCompile>
-    <ClCompile Include="DataBdd.cpp">
-      <Filter>Fichiers sources\BDD</Filter>
-    </ClCompile>
-    <ClCompile Include="Groupe.cpp">
-      <Filter>Fichiers sources</Filter>
-    </ClCompile>
-    <ClCompile Include="InterfacePipe.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
   </ItemGroup>

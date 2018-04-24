@@ -174,14 +174,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AssemblyInfo.cpp" />
-    <ClCompile Include="DataBdd.cpp" />
-    <ClCompile Include="DataBddProxy.cpp" />
-    <ClCompile Include="Dechetterie.cpp" />
-    <ClCompile Include="Entree.cpp" />
-    <ClCompile Include="Groupe.cpp" />
-    <ClCompile Include="InterfacePipe.cpp" />
-    <ClCompile Include="Serveur.cpp" />
-    <ClCompile Include="Sortie.cpp" />
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>

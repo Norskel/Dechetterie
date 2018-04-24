@@ -13,26 +13,119 @@ private:
 public:
 
 	// ========================================= GET ===========================================
-	List<DataEntree^>^ getTableEntree() override;
-	List<DataUser^>^ getTableUser() override;
-	List<DataDechet^>^ getTableDechet() override;
+	List<DataEntree^>^ getTableEntree() override
+	{
+		return tableEntree;
+	}
+	List<DataUser^>^ getTableUser() override
+	{
+		return tableUser;
+	}
+	List<DataDechet^>^ getTableDechet() override
+	{
+		return tableDechet;
+	}
 	// -------------------------------
-	DataUser^ getUserByID(int id) override;
-	DataDechet^ getDechetByID(int id) override;
-	DataEntree^ getEntreeByID(int id) override;
-	DataEntree^ getEntreeByUserID(int id) override;
+	DataUser^ getUserByID(int id) override
+	{
+		for each (DataUser^ var in tableUser)
+		{
+			if (var->ID == id)
+			{
+				return var;
+			}
+		}
+	}
+	DataDechet^ getDechetByID(int id) override
+	{
+		for each (DataDechet^ var in tableDechet)
+		{
+			if (var->ID == id)
+			{
+				return var;
+			}
+		}
+	}
+	DataEntree^ getEntreeByID(int id) override
+	{
+		for each (DataEntree^ var in tableEntree)
+		{
+			if (var->ID == id)
+			{
+				return var;
+			}
+		}
+	}
+	DataEntree^ getEntreeByUserID(int id) override
+	{
+		for each (DataEntree^ var in tableEntree)
+		{
+			if (var->ID_User == id)
+			{
+				return var;
+			}
+		}
+	}
 	// ========================================= SET ===========================================
-	void setTableEntree(List<DataEntree^>^ t);
-	void setTableUser(List<DataUser^>^ t);
-	void setTableDechet(List<DataDechet^>^ t);
+	void setTableEntree(List<DataEntree^>^ t)
+	{
+		tableEntree = t;
+	}
+	void setTableUser(List<DataUser^>^ t)
+	{
+		tableUser = t;
+	}
+	void setTableDechet(List<DataDechet^>^ t)
+	{
+		tableDechet = t;
+	}
 	// ========================================= INSERT ===========================================
-	void addEntree(DataEntree^ e) override;
-	void addUser(DataUser^ e) override;
-	void addDechet(DataDechet^ e) override;
+	void addEntree(DataEntree^ e) override
+	{
+		tableEntree->Add(e);
+	}
+	void addUser(DataUser^ e) override
+	{
+		tableUser->Add(e);
+	}
+	void addDechet(DataDechet^ e) override
+	{
+		tableDechet->Add(e);
+	}
 	// ========================================= DELETE ===========================================
-	void deleteEntreeByID(int id) override;
-	void deleteUserByID(int id) override;
-	void deleteDechetByID(int id) override;
+	void deleteEntreeByID(int id) override
+	{
+		for (int i = 0; i < tableEntree->Count; i++)
+		{
+			if (tableEntree[i]->ID == id)
+			{
+				tableEntree->RemoveAt(i);
+				break;
+			}
+		}
+	}
+	void deleteUserByID(int id) override
+	{
+		for (int i = 0; i < tableUser->Count; i++)
+		{
+			if (tableUser[i]->ID == id)
+			{
+				tableUser->RemoveAt(i);
+				break;
+			}
+		}
+	}
+	void deleteDechetByID(int id) override
+	{
+		for (int i = 0; i < tableDechet->Count; i++)
+		{
+			if (tableDechet[i]->ID == id)
+			{
+				tableDechet->RemoveAt(i);
+				break;
+			}
+		}
+	}
 
 };
 

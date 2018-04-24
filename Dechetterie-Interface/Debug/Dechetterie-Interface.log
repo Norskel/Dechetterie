@@ -1,4 +1,9 @@
-﻿  Dechetterie-Interface.cpp
+﻿  stdafx.cpp
+  AssemblyInfo.cpp
+  ConfigForm.cpp
+c:\users\martin klein-north\source\repos\dechetterie\dechetterie-interface\ConfigForm.h(872): warning C4566: le caractère représenté par le nom de caractère universel '\uFFFD' ne peut pas être représenté dans la page de codes actuelle (1252)
+c:\users\martin klein-north\source\repos\dechetterie\dechetterie-interface\ConfigForm.h(964): warning C4566: le caractère représenté par le nom de caractère universel '\uFFFD' ne peut pas être représenté dans la page de codes actuelle (1252)
+  Dechetterie-Interface.cpp
 c:\users\martin klein-north\source\repos\dechetterie\dechetterie-interface\ConfigForm.h(872): warning C4566: le caractère représenté par le nom de caractère universel '\uFFFD' ne peut pas être représenté dans la page de codes actuelle (1252)
 c:\users\martin klein-north\source\repos\dechetterie\dechetterie-interface\ConfigForm.h(964): warning C4566: le caractère représenté par le nom de caractère universel '\uFFFD' ne peut pas être représenté dans la page de codes actuelle (1252)
 c:\users\martin klein-north\source\repos\dechetterie\dechetterie-interface\Logger.h(8): warning C4091: 'static value ' : ignoré à gauche de 'EnteteCode' quand aucune variable n'est déclarée
