@@ -9357,3 +9357,31 @@
 24-04-2018 05:21:56[ ERROR ][ UTILISATEUR ] Utilisateur avec id RFID 02006D7223 Inconnu 
 24-04-2018 05:21:56[ INTERFACE ]  Attente de l'interface
 24-04-2018 19:26:05[ INFO ] [ Configuration ] Erreur ? l'ouverture de ConfigServeur.xml
+07-05-2018 09:25:55[ INFO ] [ Configuration ] Erreur ? l'ouverture de ConfigServeur.xml
+07-05-2018 09:25:55[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+07-05-2018 09:25:56[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+07-05-2018 09:25:56[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+07-05-2018 09:25:56[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+07-05-2018 09:25:56[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+07-05-2018 09:25:56[ INTERFACE ]  Attente de l'interface
+07-05-2018 09:26:44[ INTERFACE ]  Interface connecte 
+07-05-2018 09:26:44[ INTERFACE ]  Attente de l'interface
+07-05-2018 09:26:44[ INTERFACE ]  Interface connecte 
+07-05-2018 09:26:44[ DEBUG ] Attents reception
+07-05-2018 09:26:49[ DEBUG ] Type :61
+07-05-2018 09:26:49[ INTERFACE ]  Demande de l'etat des clients 
+07-05-2018 09:26:49[ DEBUG ] Attents reception
+07-05-2018 09:26:54[ DEBUG ] Type :61
+07-05-2018 09:26:54[ INTERFACE ]  Demande de l'etat des clients 
+07-05-2018 09:26:54[ DEBUG ] Attents reception
+07-05-2018 09:26:59[ DEBUG ] Type :61
+07-05-2018 09:26:59[ INTERFACE ]  Demande de l'etat des clients 
+07-05-2018 09:26:59[ DEBUG ] Attents reception
+07-05-2018 09:27:02[ SERVEUR ][ ENTREE ] ClientBarri?re viens de ce connect?e
+07-05-2018 09:27:04[ DEBUG ] Type :61
+07-05-2018 09:27:04[ INTERFACE ]  Demande de l'etat des clients 
+07-05-2018 09:27:04[ DEBUG ] Attents reception
+07-05-2018 09:27:09[ DEBUG ] Type :61
+07-05-2018 09:27:09[ INTERFACE ]  Demande de l'etat des clients 
+07-05-2018 09:27:09[ DEBUG ] Attents reception
+07-05-2018 09:27:19[ CLIENT ][ ENTREE ] ClientBarri?re viens de ce d?connect?e

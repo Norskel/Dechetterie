@@ -915,6 +915,7 @@ private:
 	-----------------------------------------------------------------*/
 	private: System::Void btSav_Click(System::Object^  sender, System::EventArgs^  e) 
 	{
+		_dataConfig = gcnew DataConfigServeur();
 		_dataConfig->Entree->IPBalance = this->controlIPBoxBaE->IP;
 		_dataConfig->Sortie->IPBalance = this->controlIPBoxBaS->IP;
 
@@ -936,9 +937,6 @@ private:
 		_dataConfig->IPBDD = tbBddIP->IP;
 		_dataConfig->PortBDD = Convert::ToInt32(this->nudPortBdd->Value);
 		config->setDataConfig(_dataConfig);
-
-		this->Close();
-		this->~ConfigForm();
 	}
 
 	/*---------------------------------------------------------------

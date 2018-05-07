@@ -1,0 +1,91 @@
+07-05-2018 09:28:31[ INFO ] [ Configuration ] Erreur ? l'ouverture de ConfigServeur.xml
+07-05-2018 09:28:31[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+07-05-2018 09:28:31[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+07-05-2018 09:28:31[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+07-05-2018 09:28:31[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+07-05-2018 09:28:31[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+07-05-2018 09:28:31[ INTERFACE ]  Attente de l'interface
+07-05-2018 09:28:31[ INTERFACE ]  Interface connecte 
+07-05-2018 09:28:31[ INTERFACE ]  Attente de l'interface
+07-05-2018 09:28:31[ INTERFACE ]  Interface connecte 
+07-05-2018 09:28:31[ DEBUG ] Attents reception
+07-05-2018 09:28:31[ DEBUG ] Type :61
+07-05-2018 09:28:31[ INTERFACE ]  Demande de l'etat des clients 
+07-05-2018 09:28:32[ DEBUG ] Attents reception
+07-05-2018 09:28:36[ DEBUG ] Type :61
+07-05-2018 09:28:36[ INTERFACE ]  Demande de l'etat des clients 
+07-05-2018 09:28:37[ DEBUG ] Attents reception
+07-05-2018 09:28:41[ DEBUG ] Type :61
+07-05-2018 09:28:41[ INTERFACE ]  Demande de l'etat des clients 
+07-05-2018 09:28:42[ DEBUG ] Attents reception
+07-05-2018 09:28:46[ DEBUG ] Type :61
+07-05-2018 09:28:46[ INTERFACE ]  Demande de l'etat des clients 
+07-05-2018 09:28:47[ DEBUG ] Attents reception
+07-05-2018 09:28:48[ SERVEUR ][ ENTREE ] ClientBarri?re viens de ce connect?e
+07-05-2018 09:28:51[ DEBUG ] Type :61
+07-05-2018 09:28:51[ INTERFACE ]  Demande de l'etat des clients 
+07-05-2018 09:28:52[ DEBUG ] Attents reception
+07-05-2018 09:28:56[ DEBUG ] Type :61
+07-05-2018 09:28:56[ INTERFACE ]  Demande de l'etat des clients 
+07-05-2018 09:28:57[ DEBUG ] Attents reception
+07-05-2018 09:28:57[ CLIENT ][ ENTREE ] ClientBarri?re viens de ce d?connect?e
+07-05-2018 09:29:01[ DEBUG ] Type :61
+07-05-2018 09:29:01[ INTERFACE ]  Demande de l'etat des clients 
+07-05-2018 09:29:02[ DEBUG ] Attents reception
+07-05-2018 09:30:36[ INFO ] [ Configuration ] Erreur ? l'ouverture de ConfigServeur.xml
+07-05-2018 09:30:36[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+07-05-2018 09:30:36[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+07-05-2018 09:30:36[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+07-05-2018 09:30:36[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+07-05-2018 09:30:36[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+07-05-2018 09:30:36[ INTERFACE ]  Attente de l'interface
+07-05-2018 09:30:37[ INTERFACE ]  Interface connecte 
+07-05-2018 09:30:37[ INTERFACE ]  Attente de l'interface
+07-05-2018 09:30:37[ INTERFACE ]  Interface connecte 
+07-05-2018 09:30:37[ DEBUG ] Attents reception
+07-05-2018 09:30:37[ DEBUG ] Type :61
+07-05-2018 09:30:37[ INTERFACE ]  Demande de l'etat des clients 
+07-05-2018 09:30:37[ DEBUG ] Attents reception
+07-05-2018 09:30:42[ DEBUG ] Type :61
+07-05-2018 09:30:42[ INTERFACE ]  Demande de l'etat des clients 
+07-05-2018 09:30:42[ DEBUG ] Attents reception
+07-05-2018 09:30:47[ DEBUG ] Type :61
+07-05-2018 09:30:47[ INTERFACE ]  Demande de l'etat des clients 
+07-05-2018 09:30:47[ DEBUG ] Attents reception
+07-05-2018 09:30:52[ SERVEUR ][ ENTREE ] ClientBarri?re viens de ce connect?e
+07-05-2018 09:30:52[ DEBUG ] Type :61
+07-05-2018 09:30:52[ INTERFACE ]  Demande de l'etat des clients 
+07-05-2018 09:30:52[ DEBUG ] Attents reception
+07-05-2018 09:30:57[ DEBUG ] Type :61
+07-05-2018 09:30:57[ INTERFACE ]  Demande de l'etat des clients 
+07-05-2018 09:30:57[ DEBUG ] Attents reception
+07-05-2018 09:31:02[ DEBUG ] Type :61
+07-05-2018 09:31:02[ INTERFACE ]  Demande de l'etat des clients 
+07-05-2018 09:31:02[ DEBUG ] Attents reception
+07-05-2018 09:31:07[ DEBUG ] Type :61
+07-05-2018 09:31:07[ INTERFACE ]  Demande de l'etat des clients 
+07-05-2018 09:31:07[ DEBUG ] Attents reception
+07-05-2018 09:31:12[ DEBUG ] Type :61
+07-05-2018 09:31:12[ INTERFACE ]  Demande de l'etat des clients 
+07-05-2018 09:31:12[ DEBUG ] Attents reception
+07-05-2018 09:31:17[ DEBUG ] Type :61
+07-05-2018 09:31:17[ INTERFACE ]  Demande de l'etat des clients 
+07-05-2018 09:31:17[ DEBUG ] Attents reception
+07-05-2018 09:31:22[ DEBUG ] Type :61
+07-05-2018 09:31:22[ INTERFACE ]  Demande de l'etat des clients 
+07-05-2018 09:31:22[ DEBUG ] Attents reception
+07-05-2018 09:31:22[ CLIENT ][ Ping ] Demande de ping de 127.0.0.1( ENTREE ClientBarri?re )
+07-05-2018 09:31:27[ DEBUG ] Type :61
+07-05-2018 09:31:27[ INTERFACE ]  Demande de l'etat des clients 
+07-05-2018 09:31:27[ DEBUG ] Attents reception
+07-05-2018 09:31:32[ DEBUG ] Type :61
+07-05-2018 09:31:32[ INTERFACE ]  Demande de l'etat des clients 
+07-05-2018 09:31:32[ DEBUG ] Attents reception
+07-05-2018 09:31:33[ CLIENT ][ ENTREE ] ClientBarri?re viens de ce d?connect?e
+07-05-2018 09:31:37[ DEBUG ] Type :61
+07-05-2018 09:31:37[ INTERFACE ]  Demande de l'etat des clients 
+07-05-2018 09:31:37[ DEBUG ] Attents reception
+07-05-2018 09:31:42[ DEBUG ] Type :61
+07-05-2018 09:31:42[ INTERFACE ]  Demande de l'etat des clients 
+07-05-2018 09:31:42[ DEBUG ] Attents reception
+07-05-2018 09:31:46[ INTERFACE ]  Attente de l'interface

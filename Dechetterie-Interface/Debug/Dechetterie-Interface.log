@@ -1,4 +1,8 @@
-﻿  Dechetterie-Interface.cpp
+﻿  ConfigForm.cpp
+c:\users\martin klein-north\source\repos\dechetterie\dechetterie-interface\Logger.h(8): warning C4091: 'static value ' : ignoré à gauche de 'EnteteCode' quand aucune variable n'est déclarée
+c:\users\martin klein-north\source\repos\dechetterie\dechetterie-interface\Logger.h(81): warning C4091: 'static ' : ignoré à gauche de 'Logger' quand aucune variable n'est déclarée
+c:\users\martin klein-north\source\repos\dechetterie\dechetterie-interface\PipeServeur.h(20): warning C4091: 'static value ' : ignoré à gauche de 'id_groupe' quand aucune variable n'est déclarée
+  Dechetterie-Interface.cpp
 c:\users\martin klein-north\source\repos\dechetterie\dechetterie-interface\Logger.h(8): warning C4091: 'static value ' : ignoré à gauche de 'EnteteCode' quand aucune variable n'est déclarée
 c:\users\martin klein-north\source\repos\dechetterie\dechetterie-interface\Logger.h(81): warning C4091: 'static ' : ignoré à gauche de 'Logger' quand aucune variable n'est déclarée
 c:\users\martin klein-north\source\repos\dechetterie\dechetterie-interface\PipeServeur.h(20): warning C4091: 'static value ' : ignoré à gauche de 'id_groupe' quand aucune variable n'est déclarée
@@ -10,6 +14,12 @@ c:\users\martin klein-north\source\repos\dechetterie\dechetterie-interface\Logge
 c:\users\martin klein-north\source\repos\dechetterie\dechetterie-interface\PipeServeur.h(20): warning C4091: 'static value ' : ignoré à gauche de 'id_groupe' quand aucune variable n'est déclarée
 c:\users\martin klein-north\source\repos\dechetterie\dechetterie-interface\MainForm.h(545): warning C4566: le caractère représenté par le nom de caractère universel '\uFFFD' ne peut pas être représenté dans la page de codes actuelle (1252)
   Génération de code en cours...
+c:\users\martin klein-north\source\repos\dechetterie\dechetterie-interface\protocole\protocole.h(360): warning C4715: 'Protocole::getTypeMessageByType' : les chemins de contrôle ne retournent pas tous une valeur
+c:\users\martin klein-north\source\repos\dechetterie\dechetterie-interface\protocole\protocole.h(371): warning C4715: 'Protocole::GetTypeProtocoleByID' : les chemins de contrôle ne retournent pas tous une valeur
+c:\users\martin klein-north\source\repos\dechetterie\dechetterie-interface\pipeserveur.h(233): warning C4715: 'PipeServeur::getServeurState' : les chemins de contrôle ne retournent pas tous une valeur
+c:\users\martin klein-north\source\repos\dechetterie\dechetterie-interface\protocole\protocole.h(348): warning C4715: 'Protocole::translateByID' : les chemins de contrôle ne retournent pas tous une valeur
+c:\users\martin klein-north\source\repos\dechetterie\dechetterie-interface\pipeserveur.h(211): warning C4715: 'PipeServeur::getClientState' : les chemins de contrôle ne retournent pas tous une valeur
+c:\users\martin klein-north\source\repos\dechetterie\dechetterie-interface\pipeserveur.h(278): warning C4715: 'PipeServeur::getPositionBarriere' : les chemins de contrôle ne retournent pas tous une valeur
 c:\users\martin klein-north\source\repos\dechetterie\dechetterie-interface\protocole\protocole.h(360): warning C4715: 'Protocole::getTypeMessageByType' : les chemins de contrôle ne retournent pas tous une valeur
 c:\users\martin klein-north\source\repos\dechetterie\dechetterie-interface\protocole\protocole.h(371): warning C4715: 'Protocole::GetTypeProtocoleByID' : les chemins de contrôle ne retournent pas tous une valeur
 c:\users\martin klein-north\source\repos\dechetterie\dechetterie-interface\pipeserveur.h(233): warning C4715: 'PipeServeur::getServeurState' : les chemins de contrôle ne retournent pas tous une valeur
