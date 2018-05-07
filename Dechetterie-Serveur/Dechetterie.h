@@ -12,6 +12,7 @@
 #include "Logger.h"
 #include "InterfacePipe.h"
 
+
 #define PIPE_NAME_INTER_SERV "InterServeur"
 #define PIPE_NAME_USER_INFOS_SERV "UserServeur"
 #define INTERFACE_PROCESS_NAME "Dechetterie-Interface"  

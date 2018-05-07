@@ -10,6 +10,7 @@
 #include "Utilisateur.h"
 #include "ConfigForm.h"
 #include "PipeServeur.h"
+#include "InfoForm.h"
 
 using namespace System;
 using namespace System::ComponentModel;
@@ -44,6 +45,14 @@ public:
 		UpdateAffClient(); // on update  l'affichage des clients
 		this->timerUpdate->Enabled = true; // on start le timer
 		this->timerUpdateState->Enabled = true;
+		_listIconDechet = gcnew array<Bitmap^>(9);
+		Bitmap^ tempIcon;
+		for (int i = 0; i < 9; i++)
+		{
+			tempIcon = gcnew Bitmap(Bitmap::FromFile(pathImageFile + i.ToString()+".png"));
+			
+			_listIconDechet[i] = tempIcon;
+		}
 		
 	}
 private: System::Windows::Forms::Button^  btServeurStart;
@@ -64,7 +73,13 @@ private: System::Windows::Forms::Button^  btSortieFermerBarriere;
 private: System::Windows::Forms::Button^  btSortieOuvrirBarriere;
 private: System::Windows::Forms::ToolStripMenuItem^  aideToolStripMenuItem;
 private: System::Windows::Forms::ToolStripMenuItem^  aProposToolStripMenuItem;
-
+private: ControlInterface::ControlEtat^  controlEtat1;
+private: System::Windows::Forms::Timer^  timerUpdate;
+private: System::Windows::Forms::MenuStrip^  menuStrip1;
+private: System::Windows::Forms::ToolStripMenuItem^  optionToolStripMenuItem;
+private: System::Windows::Forms::FlowLayoutPanel^  PhotoClientLayout;
+private: System::Windows::Forms::Button^  button1;
+private: System::Windows::Forms::ToolStripMenuItem^  optionToolStripMenuItem1;
 
 
 
@@ -83,18 +98,16 @@ private:
 	List<ControlInterface::ControlUtilisateur^>^_listControlUser = gcnew List<ControlInterface::ControlUtilisateur^>();
 	DelegateUser^ _DAfficherControlUser = gcnew DelegateUser(this, &MainForm::AfficherControlUser);
 	DelegateUpdate^ _DUpdateAffClient = gcnew DelegateUpdate(this, &MainForm::UpdateAffClient);
-	ConfigForm^ configForm = gcnew ConfigForm();
+	
 	int nbUser = 0;
 	PipeServeur^ pipeServeur = PipeServeur::GetPipeServeur();
+	String^ pathImageFile = "image/iconDechet/";
+
+	array<String^>^ _listDechet;
+	array<Bitmap^>^ _listIconDechet;
 
 
-private: ControlInterface::ControlEtat^  controlEtat1;
-private: System::Windows::Forms::Timer^  timerUpdate;
-private: System::Windows::Forms::MenuStrip^  menuStrip1;
-private: System::Windows::Forms::ToolStripMenuItem^  optionToolStripMenuItem;
-private: System::Windows::Forms::FlowLayoutPanel^  PhotoClientLayout;
-private: System::Windows::Forms::Button^  button1;
-private: System::Windows::Forms::ToolStripMenuItem^  optionToolStripMenuItem1;
+
 
 
 
@@ -197,6 +210,7 @@ private: System::Windows::Forms::ToolStripMenuItem^  optionToolStripMenuItem1;
 			 this->aProposToolStripMenuItem->Name = L"aProposToolStripMenuItem";
 			 this->aProposToolStripMenuItem->Size = System::Drawing::Size(152, 22);
 			 this->aProposToolStripMenuItem->Text = L"A propos";
+			 this->aProposToolStripMenuItem->Click += gcnew System::EventHandler(this, &MainForm::aProposToolStripMenuItem_Click);
 			 // 
 			 // PhotoClientLayout
 			 // 
@@ -222,7 +236,7 @@ private: System::Windows::Forms::ToolStripMenuItem^  optionToolStripMenuItem1;
 			 this->btServeurStart->Name = L"btServeurStart";
 			 this->btServeurStart->Size = System::Drawing::Size(119, 23);
 			 this->btServeurStart->TabIndex = 5;
-			 this->btServeurStart->Text = L" ";
+			 this->btServeurStart->Text = L" Start Serveur";
 			 this->btServeurStart->UseVisualStyleBackColor = true;
 			 this->btServeurStart->Click += gcnew System::EventHandler(this, &MainForm::btServeurStart_Click);
 			 // 
@@ -446,226 +460,239 @@ private: System::Windows::Forms::ToolStripMenuItem^  optionToolStripMenuItem1;
 
 
 
-private: System::Void MainForm_Load(System::Object^  sender, System::EventArgs^  e) {}
+	private: System::Void MainForm_Load(System::Object^  sender, System::EventArgs^  e) {}
 
 
-//==========================================================================================================
-//		AfficheControlUser(List<Utilisateur^>^ list, int hauteur_des_controles, int Largeur_des_controles)
-//---------------------------------------------------------------------------------------------------------
-//						Affiche les photo des utilisateur présent dans la list
-//==========================================================================================================
-private: System::Void AfficherControlUser(List<Utilisateur^>^ list, int h, int w)
-{
-	if (list->Count != nbUser) // si le nombre d'utilisateur est différent du nombre de controles afficher
+	//==========================================================================================================
+	//		AfficheControlUser(List<Utilisateur^>^ list, int hauteur_des_controles, int Largeur_des_controles)
+	//---------------------------------------------------------------------------------------------------------
+	//						Affiche les photo des utilisateur présent dans la list
+	//==========================================================================================================
+	private: System::Void AfficherControlUser(List<Utilisateur^>^ list, int h, int w)
 	{
-
-		nbUser = list->Count; // on recupere le nouveau nombre de controle
-		for (int i = 0; i < _listControlUser->Count; i++)
-		{
-			delete _listControlUser[i];
-		}
-
-		ImageConverter^ converter = gcnew ImageConverter();
-
-		for (int i = 0; i < list->Count; i++)
+		if (list->Count != nbUser) // si le nombre d'utilisateur est différent du nombre de controles afficher
 		{
 
-			_listControlUser->Add(gcnew ControlInterface::ControlUtilisateur());
-
-			Image^ image = (Image^)converter->ConvertFrom(list[i]->getPhoto());
-
-			_listControlUser[_listControlUser->Count - 1]->BackColor = System::Drawing::SystemColors::ActiveBorder;
-			//_listControlUser[_listControlUser->Count - 1]->Location = System::Drawing::Point(x, y);
-			_listControlUser[_listControlUser->Count - 1]->Name = L"controlUtilisateur" + i;
-			_listControlUser[_listControlUser->Count - 1]->nom = list[i]->getNom();
-			_listControlUser[_listControlUser->Count - 1]->photo = gcnew Bitmap(image);
-			_listControlUser[_listControlUser->Count - 1]->prenom = list[i]->getPrenom();
-			_listControlUser[_listControlUser->Count - 1]->Size = System::Drawing::Size(w, h);
-			_listControlUser[_listControlUser->Count - 1]->temp = list[i]->getArrivee();
-			//_listControlUser[_listControlUser->Count - 1]->typeDechet = 0;
-			this->PhotoClientLayout->Controls->Add(this->_listControlUser[_listControlUser->Count - 1]);
-			//this->Controls->Add(_listControlUser[_listControlUser->Count - 1]);
-
-		}
-		this->Refresh();
-	}
-}
-
-
-private: System::Void timerUpdate_Tick(System::Object^  sender, System::EventArgs^  e) 
-{
-	this->PhotoClientLayout->Size = System::Drawing::Size(this->Width - this->PhotoClientLayout->Location.X, (this->	Height - this->PhotoClientLayout->Location.Y));
-	UpdateServeurState();
-}
-private: System::Void timerUpdateState_Tick(System::Object^  sender, System::EventArgs^  e) {
-	UpdateClientState(pipeServeur->getClientState());
-}
-
-private: System::Void fctWaitClientListFromServer()
-{
-
-	while (true)
-	{
-		if (System::IO::File::Exists(FILE_NAME_USER))
-		{
-			FileStream^ fs;
-			bool fileOpened = false;
-			do
+			nbUser = list->Count; // on recupere le nouveau nombre de controle
+			for (int i = 0; i < _listControlUser->Count; i++)
 			{
-				try
+				delete _listControlUser[i];
+			}
+
+			ImageConverter^ converter = gcnew ImageConverter();
+
+			for (int i = 0; i < list->Count; i++)
+			{
+
+				_listControlUser->Add(gcnew ControlInterface::ControlUtilisateur());
+
+				Image^ image = (Image^)converter->ConvertFrom(list[i]->getPhoto());
+
+				_listControlUser[_listControlUser->Count - 1]->BackColor = System::Drawing::SystemColors::ActiveBorder;
+				//_listControlUser[_listControlUser->Count - 1]->Location = System::Drawing::Point(x, y);
+				_listControlUser[_listControlUser->Count - 1]->Name = L"controlUtilisateur" + i;
+				_listControlUser[_listControlUser->Count - 1]->nom = list[i]->getNom();
+				_listControlUser[_listControlUser->Count - 1]->photo = gcnew Bitmap(image);
+				_listControlUser[_listControlUser->Count - 1]->prenom = list[i]->getPrenom();
+				_listControlUser[_listControlUser->Count - 1]->Size = System::Drawing::Size(w, h);
+				_listControlUser[_listControlUser->Count - 1]->temp = list[i]->getArrivee();
+				_listControlUser[_listControlUser->Count - 1]->IdTypeDechet = list[i]->getTypeDechet();
+				_listControlUser[_listControlUser->Count - 1]->listDechet = _listIconDechet;
+
+
+				this->PhotoClientLayout->Controls->Add(this->_listControlUser[_listControlUser->Count - 1]);
+				//this->Controls->Add(_listControlUser[_listControlUser->Count - 1]);
+
+			}
+			this->Refresh();
+		}
+	}
+
+	/*---------------------------------------------------------------
+	Nom          :  UpdateClientState
+	Description  :  Mets à jours les états des client sur l'affichage
+	Arguments    :  array<Byte>^ : tableau des états des clients
+	Valeur renvoyée : .
+	-----------------------------------------------------------------*/
+	private: System::Void timerUpdate_Tick(System::Object^  sender, System::EventArgs^  e) 
+	{
+		this->PhotoClientLayout->Size = System::Drawing::Size(this->Width - this->PhotoClientLayout->Location.X, (this->	Height - this->PhotoClientLayout->Location.Y));
+		UpdateServeurState();
+	}
+	private: System::Void timerUpdateState_Tick(System::Object^  sender, System::EventArgs^  e) {
+		UpdateClientState(pipeServeur->getClientState());
+	}
+
+	private: System::Void fctWaitClientListFromServer()
+	{
+
+		while (true)
+		{
+			if (System::IO::File::Exists(FILE_NAME_USER))
+			{
+				FileStream^ fs;
+				bool fileOpened = false;
+				do
 				{
-					fileOpened = false;
-					fs = File::Open(FILE_NAME_USER, System::IO::FileMode::Open);
+					try
+					{
+						fileOpened = false;
+						fs = File::Open(FILE_NAME_USER, System::IO::FileMode::Open);
 
-				}
-				catch (...)
-				{
-					Console::WriteLine("[ Configuration ] Erreur � l'ouverture de " + FILE_NAME_USER);
-					fileOpened = true;
-				}
-			} while (fileOpened);
+					}
+					catch (...)
+					{
+						Console::WriteLine("[ Configuration ] Erreur � l'ouverture de " + FILE_NAME_USER);
+						fileOpened = true;
+					}
+				} while (fileOpened);
 
-			XmlSerializer^ serializer = gcnew XmlSerializer(List<Utilisateur^>::typeid);
-			List<Utilisateur^>^ t = (List<Utilisateur^>^)serializer->Deserialize(fs);
-			//array<Byte>^ buffer = gcnew array<Byte>(6);
-			//_pipeClient->Read(buffer, 0, 6);
+				XmlSerializer^ serializer = gcnew XmlSerializer(List<Utilisateur^>::typeid);
+				List<Utilisateur^>^ t = (List<Utilisateur^>^)serializer->Deserialize(fs);
+				//array<Byte>^ buffer = gcnew array<Byte>(6);
+				//_pipeClient->Read(buffer, 0, 6);
 
-			Console::WriteLine("[ Client User Srv ] Reception ");
-			this->Invoke(_DAfficherControlUser, t, 300, 400);
-			fs->Close();
+				Console::WriteLine("[ Client User Srv ] Reception ");
+				this->Invoke(_DAfficherControlUser, t, 300, 400);
+				fs->Close();
 
+			}
+			else
+			{
+
+			}
+			Thread::Sleep(2000);
+		}
+
+	}
+
+	private: System::Void optionToolStripMenuItem1_Click(System::Object^  sender, System::EventArgs^  e) {
+		ConfigForm^ configForm = gcnew ConfigForm();
+		configForm->Show();
+	}
+
+	private: System::Void UpdateClientState(array<Byte>^ t)
+	{
+		if (t != nullptr)
+		{
+			Console::WriteLine("reload state");
+			Encoding^ encoder = Encoding::ASCII;
+			Console::WriteLine(encoder->GetString(t));
+			//======================================== Entree ========================
+			if (t[0] == '1') { ceEnBr->state = true; }// Barrière
+			else { ceEnBr->state = false; }
+
+			if (t[1] == '1') { ceEnBa->state = true; }// Balance
+			else { ceEnBa->state = false; }
+
+			if (t[2] == '1') { ceEnRf->state = true; Console::WriteLine("reload statddddde"); }// RFID
+			else { ceEnRf->state = false; }
+			//======================================== Sortie ========================
+			if (t[3] == '1') { ceSoBr->state = true; }// Barrière
+			else { ceSoBr->state = false; }
+
+			if (t[4] == '1') { ceSoBa->state = true; }// Balance
+			else { ceSoBa->state = false; }
+
+			if (t[5] == '1') { ceSoRf->state = true; }// RFID
+			else { ceSoRf->state = false; }
+		
+		}
+	}
+	private: System::Void UpdateServeurState()
+	{
+		if (pipeServeur->getServeurState())
+		{
+			controlEtat1->state = true;
+			btServeurStop->Enabled = true;
+			btServeurStart->Enabled = false;
 		}
 		else
 		{
-
+			controlEtat1->state = false;
+			btServeurStop->Enabled = false;
+			btServeurStart->Enabled = true;
 		}
-		Thread::Sleep(2000);
 	}
 
-}
-
-private: System::Void optionToolStripMenuItem1_Click(System::Object^  sender, System::EventArgs^  e) {
-
-	configForm->Show();
-}
-
-private: System::Void UpdateClientState(array<Byte>^ t)
-{
-	if (t != nullptr)
-	{
-		Console::WriteLine("reload state");
-		Encoding^ encoder = Encoding::ASCII;
-		Console::WriteLine(encoder->GetString(t));
-		//======================================== Entree ========================
-		if (t[0] == '1') { ceEnBr->state = true; }// Barrière
-		else { ceEnBr->state = false; }
-
-		if (t[1] == '1') { ceEnBa->state = true; }// Balance
-		else { ceEnBa->state = false; }
-
-		if (t[2] == '1') { ceEnRf->state = true; Console::WriteLine("reload statddddde"); }// RFID
-		else { ceEnRf->state = false; }
-		//======================================== Sortie ========================
-		if (t[3] == '1') { ceSoBr->state = true; }// Barrière
-		else { ceSoBr->state = false; }
-
-		if (t[4] == '1') { ceSoBa->state = true; }// Balance
-		else { ceSoBa->state = false; }
-
-		if (t[5] == '1') { ceSoRf->state = true; }// RFID
-		else { ceSoRf->state = false; }
-		
-	}
-}
-private: System::Void UpdateServeurState()
-{
-	if (pipeServeur->getServeurState())
-	{
-		controlEtat1->state = true;
-		btServeurStop->Enabled = true;
-		btServeurStart->Enabled = false;
-	}
-	else
-	{
-		controlEtat1->state = false;
-		btServeurStop->Enabled = false;
-		btServeurStart->Enabled = true;
-	}
-}
-
-private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) {
+	private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) {
 	
 
-	Bitmap^ i = gcnew Bitmap("test2.jpeg");
-	ImageConverter^ converter = gcnew ImageConverter();
+		Bitmap^ i = gcnew Bitmap("test2.jpeg");
+		ImageConverter^ converter = gcnew ImageConverter();
 
-	array<Byte>^ rt = (array<Byte>^)converter->ConvertTo(i, array<Byte>::typeid);
+		array<Byte>^ rt = (array<Byte>^)converter->ConvertTo(i, array<Byte>::typeid);
 
-	list->Add(gcnew Utilisateur("KLEIN-NORTH", "Martin", 2, "5sfd5d", 54, rt));
-	AfficherControlUser(list, 350, 550);
-}
+		list->Add(gcnew Utilisateur("KLEIN-NORTH", "Martin", 5, "5sfd5d", 54, rt));
+		AfficherControlUser(list, 310, 410);
+	}
 
-private: System::Void btEntreeOuvrirBarriere_Click(System::Object^  sender, System::EventArgs^  e) {
-	pipeServeur->ouvrirBarriere(id_groupe::ENTREE);
-}
-private: System::Void btSortieFermerBarriere_Click(System::Object^  sender, System::EventArgs^  e) {
-	pipeServeur->fermerBarriere(id_groupe::SORTIE);
-}
-private: System::Void btSortieOuvrirBarriere_Click(System::Object^  sender, System::EventArgs^  e) {
-	pipeServeur->ouvrirBarriere(id_groupe::SORTIE);
-}
-private: System::Void btEntreeFermerBarriere_Click(System::Object^  sender, System::EventArgs^  e) {
-	pipeServeur->fermerBarriere(id_groupe::ENTREE);
-}
+	private: System::Void btEntreeOuvrirBarriere_Click(System::Object^  sender, System::EventArgs^  e) {
+		pipeServeur->ouvrirBarriere(id_groupe::ENTREE);
+	}
+	private: System::Void btSortieFermerBarriere_Click(System::Object^  sender, System::EventArgs^  e) {
+		pipeServeur->fermerBarriere(id_groupe::SORTIE);
+	}
+	private: System::Void btSortieOuvrirBarriere_Click(System::Object^  sender, System::EventArgs^  e) {
+		pipeServeur->ouvrirBarriere(id_groupe::SORTIE);
+	}
+	private: System::Void btEntreeFermerBarriere_Click(System::Object^  sender, System::EventArgs^  e) {
+		pipeServeur->fermerBarriere(id_groupe::ENTREE);
+	}
 
-private: System::Void UpdateAffClient()
-		 {
-			 if (System::IO::File::Exists(FILE_NAME_USER))
+	private: System::Void UpdateAffClient()
 			 {
-				 FileStream^ fs;
-				 bool fileOpened = false;
-				 do
+				 if (System::IO::File::Exists(FILE_NAME_USER))
 				 {
-					 try
+					 FileStream^ fs;
+					 bool fileOpened = false;
+					 do
 					 {
-						 fileOpened = false;
-						 fs = File::Open(FILE_NAME_USER, System::IO::FileMode::Open);
+						 try
+						 {
+							 fileOpened = false;
+							 fs = File::Open(FILE_NAME_USER, System::IO::FileMode::Open);
 
-					 }
-					 catch (...)
-					 {
-						 Console::WriteLine("[ Configuration ] Erreur � l'ouverture de " + FILE_NAME_USER);
-						 fileOpened = true;
-					 }
-				 } while (fileOpened);
+						 }
+						 catch (...)
+						 {
+							 Console::WriteLine("[ Configuration ] Erreur à l'ouverture de " + FILE_NAME_USER);
+							 fileOpened = true;
+						 }
+					 } while (fileOpened);
 
-				 XmlSerializer^ serializer = gcnew XmlSerializer(List<Utilisateur^>::typeid);
-				 List<Utilisateur^>^ t = (List<Utilisateur^>^)serializer->Deserialize(fs);
-				 //array<Byte>^ buffer = gcnew array<Byte>(6);
-				 //_pipeClient->Read(buffer, 0, 6);
+					 XmlSerializer^ serializer = gcnew XmlSerializer(List<Utilisateur^>::typeid);
+					 List<Utilisateur^>^ t = (List<Utilisateur^>^)serializer->Deserialize(fs);
+					 //array<Byte>^ buffer = gcnew array<Byte>(6);
+					 //_pipeClient->Read(buffer, 0, 6);
 
-				 Console::WriteLine("[ Client User Srv ] Reception ");
-				 _DAfficherControlUser(t, 300, 400);
-				 fs->Close();
+					 Console::WriteLine("[ Client User Srv ] Reception ");
+					 _DAfficherControlUser(t, 300, 400);
+					 fs->Close();
 
+				 }
+				 else
+				 {
+
+				 }
 			 }
-			 else
-			 {
-
-			 }
-		 }
-private: System::Void OnUpdateClientList(System::Object ^sender, int e)
-{
-	this->Invoke(_DUpdateAffClient);
-}
+	private: System::Void OnUpdateClientList(System::Object ^sender, int e)
+	{
+		this->Invoke(_DUpdateAffClient);
+	}
 		 
-private: System::Void btServeurStart_Click(System::Object^  sender, System::EventArgs^  e) 
+	private: System::Void btServeurStart_Click(System::Object^  sender, System::EventArgs^  e) 
+	{
+		Process::Start("Dechetterie-Serveur.exe");
+	}
+	private: System::Void btServeurStop_Click(System::Object^  sender, System::EventArgs^  e) 
+	{
+		pipeServeur->stopServeur();
+	}
+private: System::Void aProposToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) 
 {
-	Process::Start("Dechetterie-Serveur.exe");
-}
-private: System::Void btServeurStop_Click(System::Object^  sender, System::EventArgs^  e) 
-{
-	pipeServeur->stopServeur();
+	InfoForm^ infoForm = gcnew InfoForm();
+	infoForm->Show();
 }
 };
 

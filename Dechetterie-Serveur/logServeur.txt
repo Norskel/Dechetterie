@@ -9343,3 +9343,17 @@
 24-04-2018 04:59:14[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
 24-04-2018 04:59:14[ INTERFACE ]  Attente de l'interface
 24-04-2018 04:59:16[ ERROR ][ UTILISATEUR ] Utilisateur avec id RFID 02006D7223 Inconnu 
+24-04-2018 05:21:52[ INFO ] [ Configuration ] Erreur ? l'ouverture de ConfigServeur.xml
+24-04-2018 05:21:53[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+24-04-2018 05:21:54[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+24-04-2018 05:21:55[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+24-04-2018 05:21:55[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+24-04-2018 05:21:55[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+24-04-2018 05:21:55[ INTERFACE ]  Attente de l'interface
+24-04-2018 05:21:55[ INTERFACE ]  Interface connecte 
+24-04-2018 05:21:55[ INTERFACE ]  Attente de l'interface
+24-04-2018 05:21:55[ INTERFACE ]  Interface connecte 
+24-04-2018 05:21:55[ DEBUG ] Attents reception
+24-04-2018 05:21:56[ ERROR ][ UTILISATEUR ] Utilisateur avec id RFID 02006D7223 Inconnu 
+24-04-2018 05:21:56[ INTERFACE ]  Attente de l'interface
+24-04-2018 19:26:05[ INFO ] [ Configuration ] Erreur ? l'ouverture de ConfigServeur.xml

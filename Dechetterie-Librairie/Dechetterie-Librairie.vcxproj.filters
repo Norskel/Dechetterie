@@ -45,7 +45,7 @@
       <Filter>Fichiers sources</Filter>
     </ClCompile>
     <ClCompile Include="ControlEtat.cpp">
-      <Filter>Fichiers d%27en-tête</Filter>
+      <Filter>Fichiers sources</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -60,5 +60,52 @@
     <Image Include="app.ico">
       <Filter>Fichiers de ressources</Filter>
     </Image>
+    <Image Include="..\Dechetterie-Gestionnaire\Icon\icons8-addUser.png">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="..\Dechetterie-Gestionnaire\Icon\icons8-Config.png">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="..\Dechetterie-Gestionnaire\Icon\icons8-Dechet.png">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="..\Dechetterie-Gestionnaire\Icon\icons8-deleteUser.png">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="..\Dechetterie-Gestionnaire\Icon\icons8-editUser.png">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="..\Dechetterie-Gestionnaire\Icon\icons8-facture.png">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="..\Dechetterie-Gestionnaire\Icon\icons8-fermer.png">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="..\Dechetterie-Gestionnaire\Icon\icons8-save.png">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="..\Dechetterie-Gestionnaire\Icon\icons8-stats.png">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="..\Dechetterie-Gestionnaire\Icon\icons8-User.png">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="..\Dechetterie-Gestionnaire\Icon\icons8-utilisateur-96-1.png">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="..\Dechetterie-Gestionnaire\Icon\icons8-utilisateur-96-2.png">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ControlUtilisateur.resx">
+      <Filter>Fichiers de ressources</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlButtonIcon.resx">
+      <Filter>Fichiers de ressources</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource.resx">
+      <Filter>Fichiers de ressources</Filter>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>

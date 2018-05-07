@@ -5,4 +5,5 @@ ref struct DataDechet
 {
 	int ID;
 	String^ Nom;
+	float Prix;
 };

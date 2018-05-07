@@ -40,17 +40,17 @@ int main(array<System::String ^> ^args)
 
 	Dechetterie^ d = gcnew Dechetterie(FILE_CONFIG);
 
-	Bitmap^ i = gcnew Bitmap("test.jpeg");
-	ImageConverter^ converter = gcnew ImageConverter();
+	//Bitmap^ i = gcnew Bitmap("test.jpeg");
+	//ImageConverter^ converter = gcnew ImageConverter();
 
-	array<Byte>^ rt = (array<Byte>^)converter->ConvertTo(i, array<Byte>::typeid);
-	Dechetterie::addUtilisateur("02006D7223", 1, 2500, rt);
-	Thread::Sleep(30000);
-	Dechetterie::addUtilisateur("02006D7224", 1, 2500, rt);
-	Thread::Sleep(30000);
-	Dechetterie::addUtilisateur("02006D7225", 1, 2500, rt);
-	Thread::Sleep(30000);
-	Dechetterie::deleteUtilisateur("02006D7223",2000);
+	//array<Byte>^ rt = (array<Byte>^)converter->ConvertTo(i, array<Byte>::typeid);
+	//Dechetterie::addUtilisateur("02006D7223", 1, 2500, rt);
+	//Thread::Sleep(30000);
+	//Dechetterie::addUtilisateur("02006D7224", 1, 2500, rt);
+	//Thread::Sleep(30000);
+	//Dechetterie::addUtilisateur("02006D7225", 1, 2500, rt);
+	//Thread::Sleep(30000);
+	//Dechetterie::deleteUtilisateur("02006D7223",2000);
 
 	return 0;
 }

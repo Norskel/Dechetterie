@@ -1,4 +1,5 @@
   DechetterieLibrairie.ControlUtilisateur.resources - Embedded, ContainedInManifestFile, 
+  DechetterieLibrairie.Resource.resources - Embedded, ContainedInManifestFile, 
 ImageRuntimeVersion: v4.0.30319
 Assembly Dechetterie-Librairie, Version=1.0.*, Culture=Langue indifférente (Pays indifférent): 
 	hash=SHA1, flags=PublicKey
@@ -55,7 +56,7 @@ Class ControlInterface.ControlUtilisateur: AutoLayout, AnsiClass, Class, Public,
   Properties:
     System.DateTime temp 'get set' : 
     Int32 IdTypeDechet 'get set' : 
-    System.String[] listDechet 'get set' : 
+    System.Drawing.Bitmap[] listDechet 'get set' : 
     System.String prenom 'get set' : 
     System.String nom 'get set' : 
     System.Drawing.Bitmap photo 'get set' : 
@@ -67,7 +68,7 @@ Class ControlInterface.ControlUtilisateur: AutoLayout, AnsiClass, Class, Public,
     get_prenom(): PrivateScope, Public, HideBySig, SpecialName
     set_prenom(String): PrivateScope, Public, HideBySig, SpecialName
     get_listDechet(): PrivateScope, Public, HideBySig, SpecialName
-    set_listDechet(String[]): PrivateScope, Public, HideBySig, SpecialName
+    set_listDechet(Bitmap[]): PrivateScope, Public, HideBySig, SpecialName
     get_IdTypeDechet(): PrivateScope, Public, HideBySig, SpecialName
     set_IdTypeDechet(Int32): PrivateScope, Public, HideBySig, SpecialName
     get_temp(): PrivateScope, Public, HideBySig, SpecialName

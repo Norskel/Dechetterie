@@ -1,11 +1,22 @@
 // Dechetterie-Gestionnaire.cpp : fichier projet principal.
 
+#include "MainForm.h"
 #include "stdafx.h"
+#include "ConfigBddForm.h"
 
 using namespace System;
+using namespace System::Windows::Forms;
 
-int main(array<System::String ^> ^args)
+int Main(array<System::String ^> ^args)
 {
-    Console::WriteLine(L"Hello World");
-    return 0;
+
+	Application::EnableVisualStyles();
+	Application::SetCompatibleTextRenderingDefault(false);
+
+	MainForm mainnForm;
+	//ConfigBddForm mainnForm;
+
+	Application::Run(%mainnForm);
+	Console::WriteLine(L"Hello World");
+	return 0;
 }

@@ -7,4 +7,8 @@ ref struct DataUser
 	String^ Nom;
 	String^ Prenom;
 	String^ ID_RFID;
+	String^ Adresse;
+	int numero;
+	String^ Ville;
+	int Code_Postal;
 };

@@ -56,18 +56,18 @@ namespace ControlInterface {
 			}
 		}
 		[Category("Configuration")]
-		[Description("ListDechet")]
-		property array<String^>^ listDechet
+		[Description("Liste des icones de type de dechet")]
+		property array<Bitmap^>^ listDechet
 		{
-			array<String^>^ get() { return _listDechet; }
-			void set(array<String^>^ value)
+			array<Bitmap^>^ get() { return _listDechet; }
+			void set(array<Bitmap^>^ value)
 			{
 				_listDechet = value;
 
 			}
 		}
 		[Category("Configuration")]
-		[Description("Type de dechet !//")]
+		[Description("Type de dechet ")]
 		property int IdTypeDechet
 		{
 			int get() { return _IDTypeDechet; }
@@ -91,9 +91,11 @@ namespace ControlInterface {
 		}
 
 
+
+
 	private: System::Windows::Forms::Label^  lTemp;
-	private: System::Windows::Forms::Label^  l1;
-	private: System::Windows::Forms::Label^  lTypeDechet;
+
+
 	private: Bitmap^ _photo;
 	private: Bitmap^ _photoF;
 	private: Bitmap^ _typeDechet;
@@ -102,10 +104,15 @@ namespace ControlInterface {
 	private: String^ _nom = "";
 	private: String^ _prenom = "";
 	private: int _IDTypeDechet = 0;
-	private: array<String^>^ _listDechet;
+	private: array<Bitmap^>^ _listDechet;
 	private: System::Windows::Forms::Timer^  timerUpdate;
-	private: System::Windows::Forms::PictureBox^  pbTypeDechet;
 
+	private: System::Windows::Forms::Timer^  timer1;
+	private: System::Windows::Forms::Label^  labelTypeDechet;
+	private: System::Windows::Forms::PictureBox^  pictureBox1;
+	private: System::Windows::Forms::Label^  lNom;
+	private: System::Windows::Forms::Label^  lPrenom;
+	private: System::ComponentModel::IContainer^  components;
 
 	private: DateTime _temp = DateTime::Parse("00:00:00");
 
@@ -129,10 +136,7 @@ namespace ControlInterface {
 				delete components;
 			}
 		}
-	private: System::Windows::Forms::PictureBox^  pictureBox1;
-	private: System::Windows::Forms::Label^  lNom;
-	private: System::Windows::Forms::Label^  lPrenom;
-	private: System::ComponentModel::IContainer^  components;
+
 
 	private:
 		/// <summary>
@@ -152,17 +156,15 @@ namespace ControlInterface {
 			this->lNom = (gcnew System::Windows::Forms::Label());
 			this->lPrenom = (gcnew System::Windows::Forms::Label());
 			this->lTemp = (gcnew System::Windows::Forms::Label());
-			this->l1 = (gcnew System::Windows::Forms::Label());
-			this->lTypeDechet = (gcnew System::Windows::Forms::Label());
 			this->timerUpdate = (gcnew System::Windows::Forms::Timer(this->components));
-			this->pbTypeDechet = (gcnew System::Windows::Forms::PictureBox());
+			this->timer1 = (gcnew System::Windows::Forms::Timer(this->components));
+			this->labelTypeDechet = (gcnew System::Windows::Forms::Label());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pbTypeDechet))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// pictureBox1
 			// 
-			this->pictureBox1->BackColor = System::Drawing::SystemColors::ControlDarkDark;
+			this->pictureBox1->BackColor = System::Drawing::Color::Transparent;
 			this->pictureBox1->Location = System::Drawing::Point(3, 3);
 			this->pictureBox1->Name = L"pictureBox1";
 			this->pictureBox1->Size = System::Drawing::Size(640, 480);
@@ -173,12 +175,12 @@ namespace ControlInterface {
 			// 
 			this->lNom->AutoSize = true;
 			this->lNom->BackColor = System::Drawing::Color::Transparent;
-			this->lNom->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 20, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->lNom->Font = (gcnew System::Drawing::Font(L"Calibri", 26.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->lNom->ForeColor = System::Drawing::Color::White;
 			this->lNom->Location = System::Drawing::Point(15, 400);
 			this->lNom->Name = L"lNom";
-			this->lNom->Size = System::Drawing::Size(77, 31);
+			this->lNom->Size = System::Drawing::Size(94, 42);
 			this->lNom->TabIndex = 1;
 			this->lNom->Text = L"NOM";
 			// 
@@ -186,12 +188,12 @@ namespace ControlInterface {
 			// 
 			this->lPrenom->AutoSize = true;
 			this->lPrenom->BackColor = System::Drawing::Color::Transparent;
-			this->lPrenom->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 20, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->lPrenom->Font = (gcnew System::Drawing::Font(L"Calibri", 26.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->lPrenom->ForeColor = System::Drawing::Color::White;
 			this->lPrenom->Location = System::Drawing::Point(15, 443);
 			this->lPrenom->Name = L"lPrenom";
-			this->lPrenom->Size = System::Drawing::Size(108, 31);
+			this->lPrenom->Size = System::Drawing::Size(129, 42);
 			this->lPrenom->TabIndex = 2;
 			this->lPrenom->Text = L"Prenom";
 			// 
@@ -208,54 +210,31 @@ namespace ControlInterface {
 			this->lTemp->TabIndex = 3;
 			this->lTemp->Text = L"00:00:00";
 			// 
-			// l1
-			// 
-			this->l1->AutoSize = true;
-			this->l1->BackColor = System::Drawing::Color::Transparent;
-			this->l1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 20, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->l1->ForeColor = System::Drawing::Color::White;
-			this->l1->Location = System::Drawing::Point(392, 443);
-			this->l1->Name = L"l1";
-			this->l1->Size = System::Drawing::Size(201, 31);
-			this->l1->TabIndex = 4;
-			this->l1->Text = L"Type de dechet";
-			// 
-			// lTypeDechet
-			// 
-			this->lTypeDechet->AutoSize = true;
-			this->lTypeDechet->BackColor = System::Drawing::Color::Transparent;
-			this->lTypeDechet->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 20, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->lTypeDechet->ForeColor = System::Drawing::Color::White;
-			this->lTypeDechet->Location = System::Drawing::Point(599, 443);
-			this->lTypeDechet->Name = L"lTypeDechet";
-			this->lTypeDechet->Size = System::Drawing::Size(29, 31);
-			this->lTypeDechet->TabIndex = 5;
-			this->lTypeDechet->Text = L"0";
-			// 
 			// timerUpdate
 			// 
 			this->timerUpdate->Enabled = true;
 			this->timerUpdate->Interval = 500;
 			this->timerUpdate->Tick += gcnew System::EventHandler(this, &ControlUtilisateur::timerUpdate_Tick);
 			// 
-			// pbTypeDechet
+			// labelTypeDechet
 			// 
-			this->pbTypeDechet->Location = System::Drawing::Point(496, 308);
-			this->pbTypeDechet->Name = L"pbTypeDechet";
-			this->pbTypeDechet->Size = System::Drawing::Size(132, 132);
-			this->pbTypeDechet->TabIndex = 6;
-			this->pbTypeDechet->TabStop = false;
+			this->labelTypeDechet->AutoSize = true;
+			this->labelTypeDechet->BackColor = System::Drawing::Color::Transparent;
+			this->labelTypeDechet->Font = (gcnew System::Drawing::Font(L"Calibri", 26.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->labelTypeDechet->ForeColor = System::Drawing::Color::White;
+			this->labelTypeDechet->Location = System::Drawing::Point(528, 388);
+			this->labelTypeDechet->Name = L"labelTypeDechet";
+			this->labelTypeDechet->Size = System::Drawing::Size(0, 42);
+			this->labelTypeDechet->TabIndex = 7;
+			this->labelTypeDechet->Visible = false;
 			// 
 			// ControlUtilisateur
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::SystemColors::ActiveBorder;
-			this->Controls->Add(this->pbTypeDechet);
-			this->Controls->Add(this->lTypeDechet);
-			this->Controls->Add(this->l1);
+			this->Controls->Add(this->labelTypeDechet);
 			this->Controls->Add(this->lTemp);
 			this->Controls->Add(this->lPrenom);
 			this->Controls->Add(this->lNom);
@@ -263,26 +242,17 @@ namespace ControlInterface {
 			this->Name = L"ControlUtilisateur";
 			this->Size = System::Drawing::Size(648, 488);
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pbTypeDechet))->EndInit();
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
 		}
 #pragma endregion
 
-	private: System::Void timerUpdate_Tick(System::Object^  sender, System::EventArgs^  e) {
-
-		//debug->Text = ("H = " + this->Size.Height + " W = " + this->Size.Width);
-
+	private: System::Void timerUpdate_Tick(System::Object^  sender, System::EventArgs^  e) 
+	{
 		this->pictureBox1->Size = System::Drawing::Size((this->Size.Width - 8), (this->Size.Height - 8));
-		//debug->Text += (" -H = " + (this->Size.Height - 8) + " W = " + (this->Size.Width - 8));
-		//debug->Text += ("pb H = " + this->pictureBox1->Size.Height + " W = " + pictureBox1->Size.Width);
-
 		this->lNom->Location = System::Drawing::Point(15, (this->Size.Height - 88));
 		this->lPrenom->Location = System::Drawing::Point(15, (this->Size.Height - 41));
-
-		this->l1->Location = System::Drawing::Point((this->Size.Width - 256), (this->Size.Height - 41));
-		this->lTypeDechet->Location = System::Drawing::Point((this->Size.Width - 49), (this->Size.Height - 41));
 
 		this->Refresh();
 
@@ -291,24 +261,26 @@ namespace ControlInterface {
 			this->lNom->Text = _nom;
 			this->lPrenom->Text = _prenom;
 			this->lTemp->Text = (DateTime::Now.Subtract(_temp)).ToString("hh\\:mm\\:ss");
-			this->lTypeDechet->Text = Convert::ToString(_IDTypeDechet);
 		}catch (...){}
 
 		try
 		{
 			_photoF = gcnew Bitmap(_photo, this->pictureBox1->Size.Width, this->pictureBox1->Size.Height);
-			this->pictureBox1->Image = _photoF;
 		}
 		catch (...){}
 
 		try
 		{
-			_typeDechet = gcnew Bitmap(_listDechet[IdTypeDechet]);
-			_typeDechetF = gcnew Bitmap(_typeDechet, this->pbTypeDechet->Size.Width, this->pbTypeDechet->Size.Height);
-			this->pbTypeDechet->Image = _typeDechet;
+			labelTypeDechet->Visible = false;
+			Graphics^ g = Graphics::FromImage(_photoF);
+			g->DrawImage(_listDechet[IdTypeDechet], this->Width - 110, this->Height - 110, 100, 100);
 		}
-		catch (...){}
-
+		catch (...)
+		{
+			labelTypeDechet->Visible = true;
+			labelTypeDechet->Text = IdTypeDechet.ToString();
+		}
+		this->pictureBox1->Image = _photoF;
 
 	}
 

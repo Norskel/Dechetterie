@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<DataConfigGestionnaire xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <NomBDD>Dechetterie</NomBDD>
+  <IPBDD>192.168.0.150</IPBDD>
+  <PortBDD>3306</PortBDD>
+  <UsernameBDD>root</UsernameBDD>
+  <PasswordBDD>root</PasswordBDD>
+</DataConfigGestionnaire>

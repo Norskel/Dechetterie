@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Fichiers d%27en-tête\BDD">
+      <UniqueIdentifier>{8d391498-03a6-406d-9ba0-0cb891e69aab}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -23,6 +26,30 @@
     </ClInclude>
     <ClInclude Include="resource.h">
       <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="MainForm.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfigBddForm.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="StructDataConfigGestionnaire.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="BDD.h">
+      <Filter>Fichiers d%27en-tête\BDD</Filter>
+    </ClInclude>
+    <ClInclude Include="StructDataUser.h">
+      <Filter>Fichiers d%27en-tête\BDD</Filter>
+    </ClInclude>
+    <ClInclude Include="StructDataDechet.h">
+      <Filter>Fichiers d%27en-tête\BDD</Filter>
+    </ClInclude>
+    <ClInclude Include="StructDataEntree.h">
+      <Filter>Fichiers d%27en-tête\BDD</Filter>
+    </ClInclude>
+    <ClInclude Include="StructDataHistorique.h">
+      <Filter>Fichiers d%27en-tête\BDD</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -40,10 +67,39 @@
     <ClCompile Include="stdafx.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
+    <ClCompile Include="ConfigBddForm.cpp">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClCompile>
+    <ClCompile Include="MainForm.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="app.ico">
       <Filter>Fichiers de ressources</Filter>
     </Image>
+    <Image Include="Icon\icons8-addUser.png">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="Icon\icons8-Config.png">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="Icon\icons8-Dechet.png">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="Icon\icons8-User.png">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ConfigBddForm.resx">
+      <Filter>Fichiers de ressources</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <Filter>Fichiers de ressources</Filter>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
 </Project>

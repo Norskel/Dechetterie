@@ -93,6 +93,7 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies />
+      <SubSystem>Windows</SubSystem>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -110,10 +111,11 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
     </ClCompile>
     <Link>
       <AdditionalDependencies />
+      <SubSystem>Windows</SubSystem>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -160,12 +162,25 @@
     <ResourceCompile Include="app.rc" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="..\Dechetterie-Gestionnaire\Icon\icons8-addUser.png" />
+    <Image Include="..\Dechetterie-Gestionnaire\Icon\icons8-Config.png" />
+    <Image Include="..\Dechetterie-Gestionnaire\Icon\icons8-Dechet.png" />
+    <Image Include="..\Dechetterie-Gestionnaire\Icon\icons8-deleteUser.png" />
+    <Image Include="..\Dechetterie-Gestionnaire\Icon\icons8-editUser.png" />
+    <Image Include="..\Dechetterie-Gestionnaire\Icon\icons8-facture.png" />
+    <Image Include="..\Dechetterie-Gestionnaire\Icon\icons8-fermer.png" />
+    <Image Include="..\Dechetterie-Gestionnaire\Icon\icons8-save.png" />
+    <Image Include="..\Dechetterie-Gestionnaire\Icon\icons8-stats.png" />
+    <Image Include="..\Dechetterie-Gestionnaire\Icon\icons8-User.png" />
+    <Image Include="..\Dechetterie-Gestionnaire\Icon\icons8-utilisateur-96-1.png" />
+    <Image Include="..\Dechetterie-Gestionnaire\Icon\icons8-utilisateur-96-2.png" />
     <Image Include="app.ico" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="ControlUtilisateur.resx">
       <DependentUpon>ControlUtilisateur.h</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Resource.resx" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
