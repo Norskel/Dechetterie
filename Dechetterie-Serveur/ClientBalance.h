@@ -6,7 +6,7 @@ ref class ClientBalance : public Client
 {
 
 protected:
-	int _poids = 0;
+	float _poids = 0;
 	/*---------------------------------------------------------------
 	Nom          :
 	Description  :
@@ -33,11 +33,11 @@ public:
 	Arguments    :
 	Valeur renvoyée :
 	-----------------------------------------------------------------*/
-	int getPoids()
+	float getPoids()
 	{
 		this->Send(protocole->GetBalancePoids());
 		int timeout = 0;
-		int r;
+		float r;
 		while (_poids == 0 && timeout < TIMEOUT_GET_POIDS)
 		{
 			Thread::Sleep(500);

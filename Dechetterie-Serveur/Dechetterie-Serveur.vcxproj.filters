@@ -124,6 +124,24 @@
     <ClCompile Include="Source.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
+    <ClCompile Include="Entree.cpp">
+      <Filter>Fichiers d%27en-tête\Groupe</Filter>
+    </ClCompile>
+    <ClCompile Include="Sortie.cpp">
+      <Filter>Fichiers d%27en-tête\Groupe</Filter>
+    </ClCompile>
+    <ClCompile Include="Groupe.cpp">
+      <Filter>Fichiers d%27en-tête\Groupe</Filter>
+    </ClCompile>
+    <ClCompile Include="InterfacePipe.cpp">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClCompile>
+    <ClCompile Include="Dechetterie.cpp">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClCompile>
+    <ClCompile Include="Serveur.cpp">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="app.ico">

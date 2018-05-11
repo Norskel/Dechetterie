@@ -9385,3 +9385,17 @@
 07-05-2018 09:27:09[ INTERFACE ]  Demande de l'etat des clients 
 07-05-2018 09:27:09[ DEBUG ] Attents reception
 07-05-2018 09:27:19[ CLIENT ][ ENTREE ] ClientBarri?re viens de ce d?connect?e
+09-05-2018 14:18:12[ INFO ] [ Configuration ] Erreur ? l'ouverture de ConfigServeur.xml
+09-05-2018 14:18:13[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+09-05-2018 14:18:13[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+09-05-2018 14:18:13[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+09-05-2018 14:18:13[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+09-05-2018 14:18:13[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+09-05-2018 14:18:13[ INTERFACE ]  Attente de l'interface
+09-05-2018 14:20:04[ INFO ] [ Configuration ] Erreur ? l'ouverture de ConfigServeur.xml
+09-05-2018 14:20:05[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+09-05-2018 14:20:05[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+09-05-2018 14:20:05[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+09-05-2018 14:20:05[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+09-05-2018 14:20:05[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+09-05-2018 14:20:05[ INTERFACE ]  Attente de l'interface

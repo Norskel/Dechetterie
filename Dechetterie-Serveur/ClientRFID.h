@@ -2,8 +2,8 @@
 #include "Protocole\Protocole.h"
 #include "Client.h"
 
-#define TIMEOUT_GET_DECHET 30 //*0.5s
-#define TIMEOUT_GET_PHOTO 60 //*0.5s
+#define TIMEOUT_GET_DECHET 60 //*0.5s
+#define TIMEOUT_GET_PHOTO 120 //*0.5s
 
 using namespace System::Windows::Forms;
 
@@ -113,23 +113,22 @@ public:
 
 	}
 
-	String^ getAccesDemand()
+	//String^ getAccesDemand()
+	//{
+	//	String^ r;
+	//	while (_RFID == nullptr)
+	//	{
+	//		Thread::Sleep(500);
+	//	}
+	//	r = _RFID;
+	//	_RFID = nullptr;
+	//	return r;
+	//	
+	//}
+	void retourAccesDemand(Boolean autorisation)
 	{
-		String^ r;
-		while (_RFID == nullptr)
-		{
-			Thread::Sleep(500);
-		}
-		r = _RFID;
-		_RFID = nullptr;
-		return r;
-		
+		this->Send(protocole->RetourRFIDAccesDemand(autorisation));
 	}
-	void retourAccesDemand(Boolean t)
-	{
-		this->Send(protocole->RetourRFIDAccesDemand(t));
-	}
-
 	int getTypeDechet()
 	{
 		int timeout = 0;

@@ -29,6 +29,7 @@ using namespace System::Text;
 using namespace System::Threading;
 using namespace System::IO::Pipes;
 using namespace System::Diagnostics;
+using namespace ControlInterface;
 
 
 /// <summary>
@@ -915,7 +916,10 @@ private:
 	-----------------------------------------------------------------*/
 	private: System::Void btSav_Click(System::Object^  sender, System::EventArgs^  e) 
 	{
-		_dataConfig = gcnew DataConfigServeur();
+		if (_dataConfig == nullptr)
+		{
+			_dataConfig = gcnew DataConfigServeur();
+		}
 		_dataConfig->Entree->IPBalance = this->controlIPBoxBaE->IP;
 		_dataConfig->Sortie->IPBalance = this->controlIPBoxBaS->IP;
 

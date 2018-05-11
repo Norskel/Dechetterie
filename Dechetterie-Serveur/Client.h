@@ -3,6 +3,7 @@
 #include "Logger.h"
 #include "Protocole\Protocole.h"
 
+
 using namespace System;
 using namespace System::Threading;
 using namespace System::Threading::Tasks;
@@ -11,6 +12,8 @@ using namespace System::Net::Sockets;
 using namespace System::Collections::Generic;
 
 delegate void SetIntDelegate(int);
+delegate void DisconnectionDelegate();
+
 
 ref class Client
 {
@@ -26,8 +29,8 @@ protected:
 	array<Byte>^ bufferRecv = nullptr;
 
 	/*---------------------------------------------------------------
-	Nom          :
-	Description  :
+	Nom          :fctThreadReceive
+	Description  :Fonction qui attend la reception d'un message du client.
 	Arguments    :
 	Valeur renvoyée :
 	-----------------------------------------------------------------*/
@@ -35,34 +38,34 @@ protected:
 	{
 		while (true)
 		{
-			if (_clientSocket != nullptr)
+			if (_clientSocket != nullptr)  //Si le client est connecté
 			{
 				try
 				{
-					if (verifyConnected())
+					if (verifyConnected()) //  On verifie qu'il est bien encore connecté
 					{
 						
-						if (_clientSocket->Available != 0)
+						if (_clientSocket->Available != 0) // Si on a recu quelque chose
 						{
 							array<Byte>^ data = gcnew array<Byte>(1024);
 							_clientSocket->Receive(data);
-							ProtocolMsg^ pm = protocole->translateReceive(data);
-							if (pm->type == protocole->GetTypeProtocoleByID("AllPing"))
+							ProtocolMsg^ pm = protocole->translateReceive(data);  //On traduit ce qu'on recoi avec le protocole
+							if (pm->type == protocole->GetTypeProtocoleByID("AllPing")) // Si le type de message est un ping
 							{
 								this->Send(protocole->RetourPing());
 								Logger::PrintLog(EnteteCode::CLIENT, "Ping", "Demande de ping de " + _ip->ToString() + "( " + id_groupe(_groupe).ToString() + " " + id_client(_type).ToString() + " )");
 							}
 							else
 							{
-								fonctionReceive(pm, data);
+								fonctionReceive(pm, data); 
 							}
 							_isConnected = true;
 						}
 
 					}
-					else
+					else // si il est plus connectée
 					{
-						if (_isConnected)
+						if (_isConnected)  // Si la deconnexion n'a pas encore était faite
 						{
 							this->Disconnect();
 							_isConnected = false;
@@ -80,7 +83,7 @@ protected:
 				}
 				catch (Exception^e)
 				{
-				
+					Logger::PrintLog(EnteteCode::ERROR, EnteteCode::CLIENT, "[ Receive ]" + e->ToString());
 					//Console::WriteLine("[ Client ][ Thread Receive ]" + e);
 
 				}
@@ -93,9 +96,9 @@ protected:
 		}
 	}
 	/*---------------------------------------------------------------
-	Nom          :
-	Description  :
-	Arguments    :
+	Nom          :fonctionReceive
+	Description  :C'est une fonction virtuel qui permet d'étre redefini par les class fille pour d'autre reception
+	Arguments    : ProtocolMsg^; le message traduit,array<Byte>^ data:  les donnée brut
 	Valeur renvoyée :
 	-----------------------------------------------------------------*/
 	virtual void fonctionReceive(ProtocolMsg^ pm, array<Byte>^ data)
@@ -104,6 +107,14 @@ protected:
 	}
 
 public:
+	event DisconnectionDelegate^ disconnection;
+
+	/*---------------------------------------------------------------
+	Nom          :Client
+	Description  :Constructeur du client
+	Arguments    : groupe : le groupe au quelle il appartient , type : le type de client, ip : l'ip du client 
+	Valeur renvoyée :
+	-----------------------------------------------------------------*/
 	Client(id_groupe groupe, id_client type, IPAddress^ip)
 	{ 
 		_groupe = groupe;
@@ -114,7 +125,12 @@ public:
 		_thread->Start();
 	}
 
-
+	/*---------------------------------------------------------------
+	Nom          :~Client
+	Description  :Destructeur du client
+	Arguments    :
+	Valeur renvoyée :
+	-----------------------------------------------------------------*/
 	~Client()
 	{
 		_thread->Abort();
@@ -128,12 +144,11 @@ public:
 	void setGroupe(id_groupe i) { _groupe = i; }
 	void setType(id_client i) { _type = i; }
 	void setIP(IPAddress^ i) { _ip = i; }
-	void setState(Boolean i) { _isConnected = i; }
 	void setSocket(Socket^ s) { _clientSocket = s; }
 
 	/*---------------------------------------------------------------
-	Nom          :  
-	Description  :  
+	Nom          :  Disconnect
+	Description  :  Permet de deconnecté le client
 	Arguments    :  
 	Valeur renvoyée : 
 	-----------------------------------------------------------------*/
@@ -141,14 +156,14 @@ public:
 	{
 		if (_clientSocket != nullptr)
 		{
-			Monitor::Enter(_clientSocket);
+			//Monitor::Enter(_clientSocket);
 			try
 			{
 				_clientSocket->Disconnect(true);
 				_isConnected = false;
 				Logger::PrintLog(EnteteCode::CLIENT, _groupe.ToString(), _type.ToString() + " viens de ce déconnectée");
 				_clientSocket = nullptr;
-				
+				disconnection();
 			
 			}
 			catch (Exception^ e)
@@ -156,11 +171,11 @@ public:
 				Logger::PrintLog(EnteteCode::ERROR, EnteteCode::CLIENT, " Problème lors de la deconnexion de " + _ip->ToString());
 				Logger::PrintLog(EnteteCode::DEBUG, EnteteCode::ERROR,e->ToString());
 			}
-			finally
-			{
-				Monitor::Exit(_clientSocket);
-			}
-			//(InterfacePipe::getInterfacePipe())->updateClientState();
+			//finally
+			//{
+			//	Monitor::Exit(_clientSocket);
+			//}
+//			(InterfacePipe::getInterfacePipe())->updateClientState();
 		}
 
 	}

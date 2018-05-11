@@ -394,6 +394,74 @@ public:
 		_dataBdd->deleteEntreeByID(id);
 	}
 
+	void EntrerUtilisateur(String^id_RFID, int typeDechet, float poids)
+	{
+		_pingServeur();
+		if (_serveurPresent)
+		{
+			MySqlConnection^ con = gcnew MySqlConnection(_infoConnection);
+			con->Open();
+			MySqlCommand^ request = gcnew MySqlCommand("call Dechetterie.EntreeUtilisateur(@p_ID_RFID, @p_TypeDechet_ID, @p_Poids, @p_DateTime);", con);
+			request->Parameters->AddWithValue("@p_ID_RFID", id_RFID);
+			request->Parameters->AddWithValue("@p_TypeDechet_ID", typeDechet);
+			request->Parameters->AddWithValue("@p_Poids", poids);
+			request->Parameters->AddWithValue("@p_DateTime", DateTime::Now.ToString("yyyy-MM-dd HH:mm:ss"));
+			request->ExecuteNonQuery();
+			con->Close();
+
+		}
+		else
+		{
+			BddTask^ bt = gcnew BddTask();
+			bt->type = 1;
+			bt->table = "call Dechetterie.EntreeUtilisateur("+ id_RFID +", "+ typeDechet.ToString()+", "+ poids.ToString() +", "+ DateTime::Now.ToString("yyyy-MM-dd HH:mm:ss") +");";
+			_tableTask->Add(bt);
+		}
+		//_dataBdd->addEntree(e);
+	}
+	void SortieUtilisateur(String^id_RFID, float poids)
+	{
+		_pingServeur();
+		if (_serveurPresent)
+		{
+			MySqlConnection^ con = gcnew MySqlConnection(_infoConnection);
+			con->Open();
+			MySqlCommand^ request = gcnew MySqlCommand("call Dechetterie.SortieUtilisateur(@p_ID_RFID, @p_Poids, @p_DateTime);", con);
+			request->Parameters->AddWithValue("@p_ID_RFID", id_RFID);
+			request->Parameters->AddWithValue("@p_Poids", poids);
+			request->Parameters->AddWithValue("@p_DateTime", DateTime::Now.ToString("yyyy-MM-dd HH:mm:ss"));
+			request->ExecuteNonQuery();
+			con->Close();
+
+		}
+		else
+		{
+			BddTask^ bt = gcnew BddTask();
+			bt->type = 1;
+			bt->table = "call Dechetterie.EntreeUtilisateur(" + id_RFID + ", " + poids.ToString() + ", " + DateTime::Now.ToString("yyyy-MM-dd HH:mm:ss") + ");";
+			_tableTask->Add(bt);
+		}
+		//_dataBdd->addEntree(e);
+	}
+	Boolean TestRfidID(String ^ rfid)
+	{
+		try
+		{
+			DataUser^ user = getUserByIdRFID(rfid);
+			return true;
+		}
+		catch (Exception^ e)
+		{
+
+			if (e->Message != "ID_RFID Introuvable")
+			{
+				
+			}
+
+			return false;
+		}
+
+	}
 
 
 };

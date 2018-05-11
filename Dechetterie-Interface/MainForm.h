@@ -42,7 +42,14 @@ public:
 		this->Width = s->WorkingArea.Width; // On modifie la taille de la fenêtre pour quelle prends tous l'ecran
 		this->Height = s->WorkingArea.Height;
 		pipeServeur->UpdateClientList += gcnew System::EventHandler<int>(this, &MainForm::OnUpdateClientList);
-		UpdateAffClient(); // on update  l'affichage des clients
+		try
+		{
+			UpdateAffClient(); // on update  l'affichage des clients
+		}
+		catch (...)
+		{
+
+		}
 		this->timerUpdate->Enabled = true; // on start le timer
 		this->timerUpdateState->Enabled = true;
 		_listIconDechet = gcnew array<Bitmap^>(9);

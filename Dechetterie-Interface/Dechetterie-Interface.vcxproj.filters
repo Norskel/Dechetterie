@@ -95,5 +95,8 @@
     <EmbeddedResource Include="ConfigForm.resx">
       <Filter>Fichiers de ressources</Filter>
     </EmbeddedResource>
+    <EmbeddedResource Include="InfoForm.resx">
+      <Filter>Fichiers de ressources</Filter>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>
