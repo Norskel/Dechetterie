@@ -41,19 +41,11 @@ private:
 	Sortie^ _sortie;
 	Entree^ _entree;
 
-	InterfacePipe^ servInter;
+	InterfacePipe^ servInter; // a modifier e, pipeInterface
 
-	static List<Client^>^ _listClient = gcnew List<Client^>;
-
-	NamedPipeServerStream^ _pipeServerState;
-	NamedPipeServerStream^ _pipeServerUser;
-
-	Thread^ _tServerStateMsg;
-	Thread^ _tServerUserMsg;
 
 public:
 
-	static event EventUpdateClientStateDelegate^ EventUpdateClientState;
 	static Boolean Debug = false;
 
 

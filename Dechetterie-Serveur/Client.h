@@ -145,6 +145,8 @@ public:
 	void setType(id_client i) { _type = i; }
 	void setIP(IPAddress^ i) { _ip = i; }
 	void setSocket(Socket^ s) { _clientSocket = s; }
+	void setState(Boolean s) { _isConnected = s; }
+
 
 	/*---------------------------------------------------------------
 	Nom          :  Disconnect
