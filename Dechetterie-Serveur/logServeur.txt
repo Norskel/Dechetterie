@@ -9399,3 +9399,462 @@
 09-05-2018 14:20:05[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
 09-05-2018 14:20:05[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
 09-05-2018 14:20:05[ INTERFACE ]  Attente de l'interface
+22-05-2018 03:16:07[ INFO ] [ Configuration ] Erreur ? l'ouverture de ConfigServeur.xml
+22-05-2018 03:16:08[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+22-05-2018 03:16:08[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+22-05-2018 03:16:19[ INFO ] [ Configuration ] Erreur ? l'ouverture de ConfigServeur.xml
+22-05-2018 03:16:21[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+22-05-2018 03:16:22[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+22-05-2018 03:16:22[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+22-05-2018 03:16:22[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+22-05-2018 03:16:22[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+22-05-2018 03:16:22[ INTERFACE ]  Attente de l'interface
+22-05-2018 03:16:27[ SERVEUR ][ ENTREE ] ClientBalance viens de ce connect?e
+22-05-2018 03:16:27[ INTERFACE ]  Update etat des clients 
+22-05-2018 03:16:28[ ERROR ][ SERVEUR ][ ENTREE ] [ WaitClient ] System.InvalidOperationException: Le canal n'a pas encore ?t? connect?.
+   ? System.IO.Pipes.PipeStream.CheckWriteOperations()
+   ? System.IO.Pipes.PipeStream.Write(Byte[] buffer, Int32 offset, Int32 count)
+   ? InterfacePipe.updateClientState() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\interfacepipe.cpp:ligne 316
+   ? Serveur.WaitClient() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\serveur.cpp:ligne 50
+22-05-2018 03:16:30[ SERVEUR ][ ENTREE ] ClientBarri?re viens de ce connect?e
+22-05-2018 03:16:30[ INTERFACE ]  Update etat des clients 
+22-05-2018 03:16:30[ ERROR ][ SERVEUR ][ ENTREE ] [ WaitClient ] System.InvalidOperationException: Le canal n'a pas encore ?t? connect?.
+   ? System.IO.Pipes.PipeStream.CheckWriteOperations()
+   ? System.IO.Pipes.PipeStream.Write(Byte[] buffer, Int32 offset, Int32 count)
+   ? InterfacePipe.updateClientState() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\interfacepipe.cpp:ligne 316
+   ? Serveur.WaitClient() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\serveur.cpp:ligne 59
+22-05-2018 03:16:42[ SERVEUR ][ ENTREE ] ClientRFID viens de ce connect?e
+22-05-2018 03:16:59[ CLIENT ][ ENTREE ] ClientRFID viens de ce d?connect?e
+22-05-2018 03:17:03[ CLIENT ][ ENTREE ] ClientBalance viens de ce d?connect?e
+22-05-2018 03:17:11[ INFO ] [ Configuration ] Erreur ? l'ouverture de ConfigServeur.xml
+22-05-2018 03:17:13[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+22-05-2018 03:17:14[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+22-05-2018 03:17:14[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+22-05-2018 03:17:14[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+22-05-2018 03:17:14[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+22-05-2018 03:17:14[ INTERFACE ]  Attente de l'interface
+22-05-2018 03:18:06[ SERVEUR ][ ENTREE ] ClientBarri?re viens de ce connect?e
+22-05-2018 03:18:06[ INTERFACE ]  Update etat des clients 
+22-05-2018 03:18:06[ ERROR ][ SERVEUR ][ ENTREE ] [ WaitClient ] System.InvalidOperationException: Le canal n'a pas encore ?t? connect?.
+   ? System.IO.Pipes.PipeStream.CheckWriteOperations()
+   ? System.IO.Pipes.PipeStream.Write(Byte[] buffer, Int32 offset, Int32 count)
+   ? InterfacePipe.updateClientState() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\interfacepipe.cpp:ligne 316
+   ? Serveur.WaitClient() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\serveur.cpp:ligne 59
+22-05-2018 03:19:46[ INFO ] [ Configuration ] Erreur ? l'ouverture de ConfigServeur.xml
+22-05-2018 03:19:48[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+22-05-2018 03:19:49[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+22-05-2018 03:19:49[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+22-05-2018 03:19:50[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+22-05-2018 03:19:50[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+22-05-2018 03:19:50[ INTERFACE ]  Attente de l'interface
+22-05-2018 03:19:56[ SERVEUR ][ ENTREE ] ClientBarri?re viens de ce connect?e
+22-05-2018 03:20:04[ SERVEUR ][ ENTREE ] ClientRFID viens de ce connect?e
+22-05-2018 03:20:07[ INFO ] Sortie de l'event
+22-05-2018 03:20:07[ ENTREE ] [ RFID ] Demande d'acc?s avec l'id RFID 02002B5ABB
+22-05-2018 03:20:07[ ENTREE ] [ RFID ] Acc?s autoris?
+22-05-2018 03:20:18[ DEBUG ] dechet :4
+22-05-2018 03:20:18[ ENTREE ] [ RFID ] Type de dechet selectionner : 4
+22-05-2018 03:20:19[ ERROR ][ CLIENT ][ ENTREE ] [ Send ] System.NullReferenceException: La r?f?rence d'objet n'est pas d?finie ? une instance d'un objet.
+   ? System.Net.Sockets.Socket.get_Connected()
+   ? Client.Send(Byte[] data) dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 206
+22-05-2018 03:20:27[ ERROR ][ ENTREE ] Pas de poids
+22-05-2018 03:20:27[ ENTREE ] Fin de procedure !
+22-05-2018 03:21:07[ CLIENT ][ ENTREE ] ClientRFID viens de ce d?connect?e
+22-05-2018 03:21:17[ SERVEUR ][ ENTREE ] ClientRFID viens de ce connect?e
+22-05-2018 03:21:21[ ENTREE ] [ RFID ] Demande d'acc?s avec l'id RFID 02002B5ABB
+22-05-2018 03:21:21[ INFO ] Sortie de l'event
+22-05-2018 03:21:21[ ENTREE ] [ RFID ] Acc?s autoris?
+22-05-2018 03:21:22[ ENTREE ] [ RFID ] Demande d'acc?s avec l'id RFID 02002B5ABB
+22-05-2018 03:21:22[ INFO ] Sortie de l'event
+22-05-2018 03:21:22[ ENTREE ] [ RFID ] Acc?s autoris?
+22-05-2018 03:21:23[ ENTREE ] [ RFID ] Demande d'acc?s avec l'id RFID 02002B5ABB
+22-05-2018 03:21:23[ ENTREE ] [ RFID ] Acc?s autoris?
+22-05-2018 03:21:23[ INFO ] Sortie de l'event
+22-05-2018 03:21:24[ ENTREE ] [ RFID ] Demande d'acc?s avec l'id RFID 02002B5ABB
+22-05-2018 03:21:24[ INFO ] Sortie de l'event
+22-05-2018 03:21:24[ ENTREE ] [ RFID ] Acc?s autoris?
+22-05-2018 03:21:25[ INFO ] Sortie de l'event
+22-05-2018 03:21:25[ ENTREE ] [ RFID ] Demande d'acc?s avec l'id RFID 02002B5ABB
+22-05-2018 03:21:26[ ENTREE ] [ RFID ] Acc?s autoris?
+22-05-2018 03:21:26[ DEBUG ] dechet :4
+22-05-2018 03:21:26[ ENTREE ] [ RFID ] Type de dechet selectionner : 4
+22-05-2018 03:21:26[ ERROR ][ CLIENT ][ ENTREE ] [ Send ] System.NullReferenceException: La r?f?rence d'objet n'est pas d?finie ? une instance d'un objet.
+   ? System.Net.Sockets.Socket.get_Connected()
+   ? Client.Send(Byte[] data) dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 206
+22-05-2018 03:21:34[ ERROR ][ ENTREE ] Pas de poids
+22-05-2018 03:21:34[ ENTREE ] Fin de procedure !
+22-05-2018 03:21:34[ ERROR ][ ENTREE ] [ AccesDemandEvent ]System.Threading.ThreadAbortException: Le thread a ?t? abandonn?.
+   ? System.Threading.Thread.SleepInternal(Int32 millisecondsTimeout)
+   ? System.Threading.Thread.Sleep(Int32 millisecondsTimeout)
+   ? ClientRFID.getTypeDechet() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\clientrfid.h:ligne 135
+   ? Entree.AccesDemandEvent(String rfid) dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\entree.cpp:ligne 24
+22-05-2018 03:21:53[ ERROR ][ ENTREE ]  Pas de type de dechet
+22-05-2018 03:21:53[ ENTREE ] Fin de procedure !
+22-05-2018 03:21:54[ ERROR ][ ENTREE ]  Pas de type de dechet
+22-05-2018 03:21:54[ ENTREE ] Fin de procedure !
+22-05-2018 03:21:56[ ERROR ][ ENTREE ]  Pas de type de dechet
+22-05-2018 03:21:56[ ENTREE ] Fin de procedure !
+22-05-2018 03:22:14[ CLIENT ][ ENTREE ] ClientRFID viens de ce d?connect?e
+22-05-2018 03:23:54[ SERVEUR ][ ENTREE ] ClientRFID viens de ce connect?e
+22-05-2018 03:25:21[ SERVEUR ][ ENTREE ] ClientBalance viens de ce connect?e
+22-05-2018 03:25:36[ INFO ] 
+22-05-2018 03:25:47[ INFO ] Sortie de l'event
+22-05-2018 03:25:47[ ENTREE ] [ RFID ] Demande d'acc?s avec l'id RFID 02002B5ABB
+22-05-2018 03:25:47[ ENTREE ] [ RFID ] Acc?s autoris?
+22-05-2018 03:25:53[ DEBUG ] dechet :4
+22-05-2018 03:25:53[ ENTREE ] [ RFID ] Type de dechet selectionner : 4
+22-05-2018 03:25:53[ ENTREE ] [ RFID ] Poids du vehicule : 5000
+22-05-2018 03:25:55[ ERROR ][ CLIENT ] [ Receive ]System.FormatException: Le format de la cha?ne d'entr?e est incorrect.
+   ? System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   ? System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   ? System.Int16.Parse(String s, NumberStyles style, NumberFormatInfo info)
+   ? System.Convert.ToInt16(String value)
+   ? Protocole.translateReceive(Byte[] t) dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h:ligne 284
+   ? ClientRFID.ReceptionPhoto(Int32 nbPacket) dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\clientrfid.h:ligne 69
+   ? ClientRFID.fonctionReceive(ProtocolMsg pm, Byte[] data) dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\clientrfid.h:ligne 38
+   ? Client.fctThreadReceive() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 62
+22-05-2018 03:25:55[ ERROR ][ CLIENT ] [ Receive ]System.FormatException: Le format de la cha?ne d'entr?e est incorrect.
+   ? System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   ? System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   ? System.Int16.Parse(String s, NumberStyles style, NumberFormatInfo info)
+   ? System.Convert.ToInt16(String value)
+   ? Protocole.translateReceive(Byte[] t) dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h:ligne 284
+   ? Client.fctThreadReceive() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 52
+22-05-2018 03:25:55[ ERROR ][ CLIENT ] [ Receive ]System.FormatException: Le format de la cha?ne d'entr?e est incorrect.
+   ? System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   ? System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   ? System.Int16.Parse(String s, NumberStyles style, NumberFormatInfo info)
+   ? System.Convert.ToInt16(String value)
+   ? Protocole.translateReceive(Byte[] t) dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h:ligne 284
+   ? Client.fctThreadReceive() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 52
+22-05-2018 03:25:55[ ERROR ][ CLIENT ] [ Receive ]System.FormatException: Le format de la cha?ne d'entr?e est incorrect.
+   ? System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   ? System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   ? System.Int16.Parse(String s, NumberStyles style, NumberFormatInfo info)
+   ? System.Convert.ToInt16(String value)
+   ? Protocole.translateReceive(Byte[] t) dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h:ligne 284
+   ? Client.fctThreadReceive() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 52
+22-05-2018 03:25:56[ ERROR ][ CLIENT ] [ Receive ]System.FormatException: Le format de la cha?ne d'entr?e est incorrect.
+   ? System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   ? System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   ? System.Int16.Parse(String s, NumberStyles style, NumberFormatInfo info)
+   ? System.Convert.ToInt16(String value)
+   ? Protocole.translateReceive(Byte[] t) dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h:ligne 284
+   ? Client.fctThreadReceive() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 52
+22-05-2018 03:25:56[ ERROR ][ CLIENT ] [ Receive ]System.FormatException: Le format de la cha?ne d'entr?e est incorrect.
+   ? System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   ? System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   ? System.Int16.Parse(String s, NumberStyles style, NumberFormatInfo info)
+   ? System.Convert.ToInt16(String value)
+   ? Protocole.translateReceive(Byte[] t) dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h:ligne 284
+   ? Client.fctThreadReceive() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 52
+22-05-2018 03:25:56[ ERROR ][ CLIENT ] [ Receive ]System.FormatException: Le format de la cha?ne d'entr?e est incorrect.
+   ? System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   ? System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   ? System.Int16.Parse(String s, NumberStyles style, NumberFormatInfo info)
+   ? System.Convert.ToInt16(String value)
+   ? Protocole.translateReceive(Byte[] t) dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h:ligne 284
+   ? Client.fctThreadReceive() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 52
+22-05-2018 03:25:56[ ERROR ][ CLIENT ] [ Receive ]System.FormatException: Le format de la cha?ne d'entr?e est incorrect.
+   ? System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   ? System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   ? System.Int16.Parse(String s, NumberStyles style, NumberFormatInfo info)
+   ? System.Convert.ToInt16(String value)
+   ? Protocole.translateReceive(Byte[] t) dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h:ligne 284
+   ? Client.fctThreadReceive() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 52
+22-05-2018 03:25:56[ ERROR ][ CLIENT ] [ Receive ]System.FormatException: Le format de la cha?ne d'entr?e est incorrect.
+   ? System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   ? System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   ? System.Int16.Parse(String s, NumberStyles style, NumberFormatInfo info)
+   ? System.Convert.ToInt16(String value)
+   ? Protocole.translateReceive(Byte[] t) dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h:ligne 284
+   ? Client.fctThreadReceive() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 52
+22-05-2018 03:25:56[ ERROR ][ CLIENT ] [ Receive ]System.FormatException: Le format de la cha?ne d'entr?e est incorrect.
+   ? System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   ? System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   ? System.Int16.Parse(String s, NumberStyles style, NumberFormatInfo info)
+   ? System.Convert.ToInt16(String value)
+   ? Protocole.translateReceive(Byte[] t) dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h:ligne 284
+   ? Client.fctThreadReceive() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 52
+22-05-2018 03:25:56[ ERROR ][ CLIENT ] [ Receive ]System.FormatException: Le format de la cha?ne d'entr?e est incorrect.
+   ? System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   ? System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   ? System.Int16.Parse(String s, NumberStyles style, NumberFormatInfo info)
+   ? System.Convert.ToInt16(String value)
+   ? Protocole.translateReceive(Byte[] t) dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h:ligne 284
+   ? Client.fctThreadReceive() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 52
+22-05-2018 03:25:56[ ERROR ][ CLIENT ] [ Receive ]System.FormatException: Le format de la cha?ne d'entr?e est incorrect.
+   ? System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   ? System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   ? System.Int16.Parse(String s, NumberStyles style, NumberFormatInfo info)
+   ? System.Convert.ToInt16(String value)
+   ? Protocole.translateReceive(Byte[] t) dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h:ligne 284
+   ? Client.fctThreadReceive() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 52
+22-05-2018 03:25:56[ ERROR ][ CLIENT ] [ Receive ]System.FormatException: Le format de la cha?ne d'entr?e est incorrect.
+   ? System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   ? System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   ? System.Int16.Parse(String s, NumberStyles style, NumberFormatInfo info)
+   ? System.Convert.ToInt16(String value)
+   ? Protocole.translateReceive(Byte[] t) dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h:ligne 284
+   ? Client.fctThreadReceive() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 52
+22-05-2018 03:25:56[ ERROR ][ CLIENT ] [ Receive ]System.FormatException: Le format de la cha?ne d'entr?e est incorrect.
+   ? System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   ? System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   ? System.Int16.Parse(String s, NumberStyles style, NumberFormatInfo info)
+   ? System.Convert.ToInt16(String value)
+   ? Protocole.translateReceive(Byte[] t) dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h:ligne 284
+   ? Client.fctThreadReceive() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 52
+22-05-2018 03:25:56[ ERROR ][ CLIENT ] [ Receive ]System.FormatException: Le format de la cha?ne d'entr?e est incorrect.
+   ? System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   ? System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   ? System.Int16.Parse(String s, NumberStyles style, NumberFormatInfo info)
+   ? System.Convert.ToInt16(String value)
+   ? Protocole.translateReceive(Byte[] t) dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h:ligne 284
+   ? Client.fctThreadReceive() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 52
+22-05-2018 03:25:57[ ERROR ][ CLIENT ] [ Receive ]System.FormatException: Le format de la cha?ne d'entr?e est incorrect.
+   ? System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   ? System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   ? System.Int16.Parse(String s, NumberStyles style, NumberFormatInfo info)
+   ? System.Convert.ToInt16(String value)
+   ? Protocole.translateReceive(Byte[] t) dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h:ligne 284
+   ? Client.fctThreadReceive() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 52
+22-05-2018 03:25:57[ ERROR ][ CLIENT ] [ Receive ]System.FormatException: Le format de la cha?ne d'entr?e est incorrect.
+   ? System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   ? System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   ? System.Int16.Parse(String s, NumberStyles style, NumberFormatInfo info)
+   ? System.Convert.ToInt16(String value)
+   ? Protocole.translateReceive(Byte[] t) dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h:ligne 284
+   ? Client.fctThreadReceive() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 52
+22-05-2018 03:25:58[ ERROR ][ CLIENT ] [ Receive ]System.FormatException: Le format de la cha?ne d'entr?e est incorrect.
+   ? System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   ? System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   ? System.Int16.Parse(String s, NumberStyles style, NumberFormatInfo info)
+   ? System.Convert.ToInt16(String value)
+   ? Protocole.translateReceive(Byte[] t) dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h:ligne 284
+   ? Client.fctThreadReceive() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 52
+22-05-2018 03:25:58[ ERROR ][ CLIENT ] [ Receive ]System.FormatException: Le format de la cha?ne d'entr?e est incorrect.
+   ? System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   ? System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   ? System.Int16.Parse(String s, NumberStyles style, NumberFormatInfo info)
+   ? System.Convert.ToInt16(String value)
+   ? Protocole.translateReceive(Byte[] t) dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h:ligne 284
+   ? Client.fctThreadReceive() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 52
+22-05-2018 03:25:58[ ERROR ][ CLIENT ] [ Receive ]System.FormatException: Le format de la cha?ne d'entr?e est incorrect.
+   ? System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   ? System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   ? System.Int16.Parse(String s, NumberStyles style, NumberFormatInfo info)
+   ? System.Convert.ToInt16(String value)
+   ? Protocole.translateReceive(Byte[] t) dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h:ligne 284
+   ? Client.fctThreadReceive() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 52
+22-05-2018 03:25:58[ ERROR ][ CLIENT ] [ Receive ]System.FormatException: Le format de la cha?ne d'entr?e est incorrect.
+   ? System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   ? System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   ? System.Int16.Parse(String s, NumberStyles style, NumberFormatInfo info)
+   ? System.Convert.ToInt16(String value)
+   ? Protocole.translateReceive(Byte[] t) dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h:ligne 284
+   ? Client.fctThreadReceive() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 52
+22-05-2018 03:25:59[ ERROR ][ CLIENT ] [ Receive ]System.FormatException: Le format de la cha?ne d'entr?e est incorrect.
+   ? System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   ? System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   ? System.Int16.Parse(String s, NumberStyles style, NumberFormatInfo info)
+   ? System.Convert.ToInt16(String value)
+   ? Protocole.translateReceive(Byte[] t) dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h:ligne 284
+   ? Client.fctThreadReceive() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 52
+22-05-2018 03:25:59[ ERROR ][ CLIENT ] [ Receive ]System.FormatException: Le format de la cha?ne d'entr?e est incorrect.
+   ? System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   ? System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   ? System.Int16.Parse(String s, NumberStyles style, NumberFormatInfo info)
+   ? System.Convert.ToInt16(String value)
+   ? Protocole.translateReceive(Byte[] t) dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h:ligne 284
+   ? Client.fctThreadReceive() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 52
+22-05-2018 03:25:59[ ERROR ][ CLIENT ] [ Receive ]System.FormatException: Le format de la cha?ne d'entr?e est incorrect.
+   ? System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   ? System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   ? System.Int16.Parse(String s, NumberStyles style, NumberFormatInfo info)
+   ? System.Convert.ToInt16(String value)
+   ? Protocole.translateReceive(Byte[] t) dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h:ligne 284
+   ? Client.fctThreadReceive() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 52
+22-05-2018 03:25:59[ ERROR ][ CLIENT ] [ Receive ]System.FormatException: Le format de la cha?ne d'entr?e est incorrect.
+   ? System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   ? System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   ? System.Int16.Parse(String s, NumberStyles style, NumberFormatInfo info)
+   ? System.Convert.ToInt16(String value)
+   ? Protocole.translateReceive(Byte[] t) dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h:ligne 284
+   ? Client.fctThreadReceive() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 52
+22-05-2018 03:25:59[ ERROR ][ CLIENT ] [ Receive ]System.FormatException: Le format de la cha?ne d'entr?e est incorrect.
+   ? System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   ? System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   ? System.Int16.Parse(String s, NumberStyles style, NumberFormatInfo info)
+   ? System.Convert.ToInt16(String value)
+   ? Protocole.translateReceive(Byte[] t) dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h:ligne 284
+   ? Client.fctThreadReceive() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 52
+22-05-2018 03:25:59[ ERROR ][ CLIENT ] [ Receive ]System.FormatException: Le format de la cha?ne d'entr?e est incorrect.
+   ? System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   ? System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   ? System.Int16.Parse(String s, NumberStyles style, NumberFormatInfo info)
+   ? System.Convert.ToInt16(String value)
+   ? Protocole.translateReceive(Byte[] t) dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h:ligne 284
+   ? Client.fctThreadReceive() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 52
+22-05-2018 03:25:59[ ERROR ][ CLIENT ] [ Receive ]System.FormatException: Le format de la cha?ne d'entr?e est incorrect.
+   ? System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   ? System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   ? System.Int16.Parse(String s, NumberStyles style, NumberFormatInfo info)
+   ? System.Convert.ToInt16(String value)
+   ? Protocole.translateReceive(Byte[] t) dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h:ligne 284
+   ? Client.fctThreadReceive() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 52
+22-05-2018 03:25:59[ ERROR ][ CLIENT ] [ Receive ]System.FormatException: Le format de la cha?ne d'entr?e est incorrect.
+   ? System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   ? System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   ? System.Int16.Parse(String s, NumberStyles style, NumberFormatInfo info)
+   ? System.Convert.ToInt16(String value)
+   ? Protocole.translateReceive(Byte[] t) dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h:ligne 284
+   ? Client.fctThreadReceive() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 52
+22-05-2018 03:25:59[ ERROR ][ CLIENT ] [ Receive ]System.FormatException: Le format de la cha?ne d'entr?e est incorrect.
+   ? System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   ? System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   ? System.Int16.Parse(String s, NumberStyles style, NumberFormatInfo info)
+   ? System.Convert.ToInt16(String value)
+   ? Protocole.translateReceive(Byte[] t) dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h:ligne 284
+   ? Client.fctThreadReceive() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 52
+22-05-2018 03:25:59[ ERROR ][ CLIENT ] [ Receive ]System.FormatException: Le format de la cha?ne d'entr?e est incorrect.
+   ? System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   ? System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   ? System.Int16.Parse(String s, NumberStyles style, NumberFormatInfo info)
+   ? System.Convert.ToInt16(String value)
+   ? Protocole.translateReceive(Byte[] t) dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h:ligne 284
+   ? Client.fctThreadReceive() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 52
+22-05-2018 03:25:59[ ERROR ][ CLIENT ] [ Receive ]System.FormatException: Le format de la cha?ne d'entr?e est incorrect.
+   ? System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   ? System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   ? System.Int16.Parse(String s, NumberStyles style, NumberFormatInfo info)
+   ? System.Convert.ToInt16(String value)
+   ? Protocole.translateReceive(Byte[] t) dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h:ligne 284
+   ? Client.fctThreadReceive() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 52
+22-05-2018 03:26:00[ ERROR ][ CLIENT ] [ Receive ]System.FormatException: Le format de la cha?ne d'entr?e est incorrect.
+   ? System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   ? System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   ? System.Int16.Parse(String s, NumberStyles style, NumberFormatInfo info)
+   ? System.Convert.ToInt16(String value)
+   ? Protocole.translateReceive(Byte[] t) dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h:ligne 284
+   ? Client.fctThreadReceive() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 52
+22-05-2018 03:26:00[ ERROR ][ CLIENT ] [ Receive ]System.FormatException: Le format de la cha?ne d'entr?e est incorrect.
+   ? System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   ? System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   ? System.Int16.Parse(String s, NumberStyles style, NumberFormatInfo info)
+   ? System.Convert.ToInt16(String value)
+   ? Protocole.translateReceive(Byte[] t) dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h:ligne 284
+   ? Client.fctThreadReceive() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 52
+22-05-2018 03:26:01[ ERROR ][ CLIENT ] [ Receive ]System.FormatException: Le format de la cha?ne d'entr?e est incorrect.
+   ? System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   ? System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   ? System.Int16.Parse(String s, NumberStyles style, NumberFormatInfo info)
+   ? System.Convert.ToInt16(String value)
+   ? Protocole.translateReceive(Byte[] t) dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h:ligne 284
+   ? Client.fctThreadReceive() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 52
+22-05-2018 03:26:01[ ERROR ][ CLIENT ] [ Receive ]System.FormatException: Le format de la cha?ne d'entr?e est incorrect.
+   ? System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   ? System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   ? System.Int16.Parse(String s, NumberStyles style, NumberFormatInfo info)
+   ? System.Convert.ToInt16(String value)
+   ? Protocole.translateReceive(Byte[] t) dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h:ligne 284
+   ? Client.fctThreadReceive() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 52
+22-05-2018 03:26:01[ ERROR ][ CLIENT ] [ Receive ]System.FormatException: Le format de la cha?ne d'entr?e est incorrect.
+   ? System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   ? System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   ? System.Int16.Parse(String s, NumberStyles style, NumberFormatInfo info)
+   ? System.Convert.ToInt16(String value)
+   ? Protocole.translateReceive(Byte[] t) dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h:ligne 284
+   ? Client.fctThreadReceive() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 52
+22-05-2018 03:26:01[ ERROR ][ CLIENT ] [ Receive ]System.FormatException: Le format de la cha?ne d'entr?e est incorrect.
+   ? System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   ? System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   ? System.Int16.Parse(String s, NumberStyles style, NumberFormatInfo info)
+   ? System.Convert.ToInt16(String value)
+   ? Protocole.translateReceive(Byte[] t) dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h:ligne 284
+   ? Client.fctThreadReceive() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 52
+22-05-2018 03:26:01[ ERROR ][ CLIENT ] [ Receive ]System.FormatException: Le format de la cha?ne d'entr?e est incorrect.
+   ? System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   ? System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   ? System.Int16.Parse(String s, NumberStyles style, NumberFormatInfo info)
+   ? System.Convert.ToInt16(String value)
+   ? Protocole.translateReceive(Byte[] t) dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h:ligne 284
+   ? Client.fctThreadReceive() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 52
+22-05-2018 03:26:01[ ERROR ][ CLIENT ] [ Receive ]System.FormatException: Le format de la cha?ne d'entr?e est incorrect.
+   ? System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   ? System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   ? System.Int16.Parse(String s, NumberStyles style, NumberFormatInfo info)
+   ? System.Convert.ToInt16(String value)
+   ? Protocole.translateReceive(Byte[] t) dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h:ligne 284
+   ? Client.fctThreadReceive() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 52
+22-05-2018 03:26:01[ ERROR ][ CLIENT ] [ Receive ]System.FormatException: Le format de la cha?ne d'entr?e est incorrect.
+   ? System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   ? System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   ? System.Int16.Parse(String s, NumberStyles style, NumberFormatInfo info)
+   ? System.Convert.ToInt16(String value)
+   ? Protocole.translateReceive(Byte[] t) dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h:ligne 284
+   ? Client.fctThreadReceive() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 52
+22-05-2018 03:26:02[ ERROR ][ CLIENT ] [ Receive ]System.FormatException: Le format de la cha?ne d'entr?e est incorrect.
+   ? System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   ? System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   ? System.Int16.Parse(String s, NumberStyles style, NumberFormatInfo info)
+   ? System.Convert.ToInt16(String value)
+   ? Protocole.translateReceive(Byte[] t) dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h:ligne 284
+   ? Client.fctThreadReceive() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 52
+22-05-2018 03:26:02[ ERROR ][ CLIENT ] [ Receive ]System.FormatException: Le format de la cha?ne d'entr?e est incorrect.
+   ? System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   ? System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   ? System.Int16.Parse(String s, NumberStyles style, NumberFormatInfo info)
+   ? System.Convert.ToInt16(String value)
+   ? Protocole.translateReceive(Byte[] t) dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\protocole\protocole.h:ligne 284
+   ? Client.fctThreadReceive() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\client.h:ligne 52
+22-05-2018 03:27:10[ INFO ] [ Configuration ] Erreur ? l'ouverture de ConfigServeur.xml
+22-05-2018 03:27:11[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+22-05-2018 03:27:13[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+22-05-2018 03:27:13[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+22-05-2018 03:27:13[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+22-05-2018 03:27:13[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+22-05-2018 03:27:13[ INTERFACE ]  Attente de l'interface
+22-05-2018 03:27:14[ SERVEUR ][ ENTREE ] ClientRFID viens de ce connect?e
+22-05-2018 03:27:18[ SERVEUR ][ ENTREE ] ClientBarri?re viens de ce connect?e
+22-05-2018 03:27:19[ SERVEUR ][ ENTREE ] ClientBalance viens de ce connect?e
+22-05-2018 03:27:25[ INFO ] Sortie de l'event
+22-05-2018 03:27:25[ ENTREE ] [ RFID ] Demande d'acc?s avec l'id RFID 02002B5ABB
+22-05-2018 03:27:25[ ENTREE ] [ RFID ] Acc?s autoris?
+22-05-2018 03:27:31[ DEBUG ] dechet :4
+22-05-2018 03:27:31[ ENTREE ] [ RFID ] Type de dechet selectionner : 4
+22-05-2018 03:27:35[ INFO ] 
+22-05-2018 03:27:36[ ENTREE ] [ RFID ] Poids du vehicule : 5000
+22-05-2018 03:27:59[ CLIENT ][ ENTREE ] ClientRFID viens de ce d?connect?e
+22-05-2018 03:28:12[ SERVEUR ][ ENTREE ] ClientRFID viens de ce connect?e
+22-05-2018 03:28:22[ INFO ] Sortie de l'event
+22-05-2018 03:28:22[ ENTREE ] [ RFID ] Demande d'acc?s avec l'id RFID 02002B5ABB
+22-05-2018 03:28:22[ ENTREE ] [ RFID ] Acc?s autoris?
+22-05-2018 03:28:33[ DEBUG ] dechet :4
+22-05-2018 03:28:34[ ENTREE ] [ RFID ] Type de dechet selectionner : 4
+22-05-2018 03:28:39[ INFO ] 
+22-05-2018 03:28:39[ ENTREE ] [ RFID ] Poids du vehicule : 5000
+22-05-2018 03:29:10[ ERROR ][ ENTREE ]  Pas de photo
+22-05-2018 03:29:10[ ENTREE ] Fin de procedure !
+22-05-2018 03:29:16[ ERROR ][ ENTREE ] [ AccesDemandEvent ]System.Threading.ThreadAbortException: Le thread a ?t? abandonn?.
+   ? System.Threading.Thread.SleepInternal(Int32 millisecondsTimeout)
+   ? System.Threading.Thread.Sleep(Int32 millisecondsTimeout)
+   ? ClientRFID.getPhoto() dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\clientrfid.h:ligne 158
+   ? Entree.AccesDemandEvent(String rfid) dans c:\users\martin klein-north\source\repos\dechetterie\dechetterie-serveur\entree.cpp:ligne 30
+22-05-2018 03:34:11[ INFO ] [ Configuration ] Erreur ? l'ouverture de ConfigServeur.xml
+22-05-2018 03:34:13[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+22-05-2018 03:34:16[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+22-05-2018 03:34:17[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+22-05-2018 03:34:17[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+22-05-2018 03:34:17[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+22-05-2018 03:34:18[ INTERFACE ]  Attente de l'interface
+22-05-2018 03:34:19[ SERVEUR ][ ENTREE ] ClientBalance viens de ce connect?e
+22-05-2018 03:44:40[ INFO ] [ Configuration ] Erreur ? l'ouverture de ConfigServeur.xml
+22-05-2018 03:44:42[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
+22-05-2018 03:44:43[ ENTREE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2501
+22-05-2018 03:44:43[ SERVEUR ][ ENTREE ] D?marage du serveur TCP ENTREE qui ecoute sur le port 2501 et l'interface 0.0.0.0  
+22-05-2018 03:44:43[ SORTIE ] Interface d'?coute : 0.0.0.0 Port d'?coute : 2502
+22-05-2018 03:44:43[ SERVEUR ][ SORTIE ] D?marage du serveur TCP SORTIE qui ecoute sur le port 2502 et l'interface 0.0.0.0  
+22-05-2018 03:44:43[ INTERFACE ]  Attente de l'interface
+22-05-2018 03:44:43[ INTERFACE ]  Interface connecte 
+22-05-2018 03:44:43[ INTERFACE ]  Attente de l'interface
+22-05-2018 03:44:43[ INTERFACE ]  Interface connecte 

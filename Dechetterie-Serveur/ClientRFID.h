@@ -41,11 +41,8 @@ protected:
 			{
 				if (pm->type == protocole->GetTypeProtocoleByID("RfDechet"))
 				{
-					//m->WaitOne();
 					Logger::PrintLog(EnteteCode::DEBUG, "dechet :" + pm->getData1Int());
 					this->_dechet = pm->getData1Int();
-					//m->ReleaseMutex();
-
 				}
 				else
 				{

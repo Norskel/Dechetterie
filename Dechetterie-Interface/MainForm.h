@@ -42,6 +42,17 @@ public:
 		this->Width = s->WorkingArea.Width; // On modifie la taille de la fenêtre pour quelle prends tous l'ecran
 		this->Height = s->WorkingArea.Height;
 		pipeServeur->UpdateClientList += gcnew System::EventHandler<int>(this, &MainForm::OnUpdateClientList);
+
+		this->timerUpdate->Enabled = true; // on start le timer
+		this->timerUpdateState->Enabled = true;
+		_listIconDechet = gcnew array<Bitmap^>(9);
+		Bitmap^ tempIcon;
+		for (int i = 0; i < 9; i++)
+		{
+			tempIcon = gcnew Bitmap(Bitmap::FromFile(pathImageFile + i.ToString()+".png"));
+			Console::WriteLine(pathImageFile + i.ToString() + ".png");
+			_listIconDechet[i] = tempIcon;
+		}
 		try
 		{
 			UpdateAffClient(); // on update  l'affichage des clients
@@ -50,21 +61,12 @@ public:
 		{
 
 		}
-		this->timerUpdate->Enabled = true; // on start le timer
-		this->timerUpdateState->Enabled = true;
-		_listIconDechet = gcnew array<Bitmap^>(9);
-		Bitmap^ tempIcon;
-		for (int i = 0; i < 9; i++)
-		{
-			tempIcon = gcnew Bitmap(Bitmap::FromFile(pathImageFile + i.ToString()+".png"));
-			
-			_listIconDechet[i] = tempIcon;
-		}
+
 		
 	}
 private: System::Windows::Forms::Button^  btServeurStart;
 private: System::Windows::Forms::Button^  btServeurStop;
-private: System::Windows::Forms::Button^  button4;
+
 private: System::Windows::Forms::GroupBox^  gb1;
 private: ControlInterface::ControlEtat^  ceEnBr;
 private: ControlInterface::ControlEtat^  ceEnRf;
@@ -84,9 +86,11 @@ private: ControlInterface::ControlEtat^  controlEtat1;
 private: System::Windows::Forms::Timer^  timerUpdate;
 private: System::Windows::Forms::MenuStrip^  menuStrip1;
 private: System::Windows::Forms::ToolStripMenuItem^  optionToolStripMenuItem;
-private: System::Windows::Forms::FlowLayoutPanel^  PhotoClientLayout;
+
 private: System::Windows::Forms::Button^  button1;
 private: System::Windows::Forms::ToolStripMenuItem^  optionToolStripMenuItem1;
+private: ControlInterface::ControlUtilisateur^  controlUtilisateur1;
+private: System::Windows::Forms::FlowLayoutPanel^  PhotoClientLayout;
 
 
 
@@ -135,11 +139,9 @@ private:
 			 this->optionToolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			 this->aideToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			 this->aProposToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			 this->PhotoClientLayout = (gcnew System::Windows::Forms::FlowLayoutPanel());
 			 this->button1 = (gcnew System::Windows::Forms::Button());
 			 this->btServeurStart = (gcnew System::Windows::Forms::Button());
 			 this->btServeurStop = (gcnew System::Windows::Forms::Button());
-			 this->button4 = (gcnew System::Windows::Forms::Button());
 			 this->gb1 = (gcnew System::Windows::Forms::GroupBox());
 			 this->btEntreeFermerBarriere = (gcnew System::Windows::Forms::Button());
 			 this->btEntreeOuvrirBarriere = (gcnew System::Windows::Forms::Button());
@@ -153,9 +155,12 @@ private:
 			 this->ceSoBa = (gcnew ControlInterface::ControlEtat());
 			 this->ceSoRf = (gcnew ControlInterface::ControlEtat());
 			 this->timerUpdateState = (gcnew System::Windows::Forms::Timer(this->components));
+			 this->controlUtilisateur1 = (gcnew ControlInterface::ControlUtilisateur());
+			 this->PhotoClientLayout = (gcnew System::Windows::Forms::FlowLayoutPanel());
 			 this->menuStrip1->SuspendLayout();
 			 this->gb1->SuspendLayout();
 			 this->groupBox1->SuspendLayout();
+			 this->PhotoClientLayout->SuspendLayout();
 			 this->SuspendLayout();
 			 // 
 			 // controlEtat1
@@ -201,7 +206,7 @@ private:
 			 // optionToolStripMenuItem1
 			 // 
 			 this->optionToolStripMenuItem1->Name = L"optionToolStripMenuItem1";
-			 this->optionToolStripMenuItem1->Size = System::Drawing::Size(111, 22);
+			 this->optionToolStripMenuItem1->Size = System::Drawing::Size(152, 22);
 			 this->optionToolStripMenuItem1->Text = L"Option";
 			 this->optionToolStripMenuItem1->Click += gcnew System::EventHandler(this, &MainForm::optionToolStripMenuItem1_Click);
 			 // 
@@ -215,17 +220,9 @@ private:
 			 // aProposToolStripMenuItem
 			 // 
 			 this->aProposToolStripMenuItem->Name = L"aProposToolStripMenuItem";
-			 this->aProposToolStripMenuItem->Size = System::Drawing::Size(152, 22);
+			 this->aProposToolStripMenuItem->Size = System::Drawing::Size(122, 22);
 			 this->aProposToolStripMenuItem->Text = L"A propos";
 			 this->aProposToolStripMenuItem->Click += gcnew System::EventHandler(this, &MainForm::aProposToolStripMenuItem_Click);
-			 // 
-			 // PhotoClientLayout
-			 // 
-			 this->PhotoClientLayout->BackColor = System::Drawing::SystemColors::ButtonShadow;
-			 this->PhotoClientLayout->Location = System::Drawing::Point(137, 22);
-			 this->PhotoClientLayout->Name = L"PhotoClientLayout";
-			 this->PhotoClientLayout->Size = System::Drawing::Size(1225, 723);
-			 this->PhotoClientLayout->TabIndex = 3;
 			 // 
 			 // button1
 			 // 
@@ -235,6 +232,7 @@ private:
 			 this->button1->TabIndex = 4;
 			 this->button1->Text = L"button1";
 			 this->button1->UseVisualStyleBackColor = true;
+			 this->button1->Visible = false;
 			 this->button1->Click += gcnew System::EventHandler(this, &MainForm::button1_Click);
 			 // 
 			 // btServeurStart
@@ -256,15 +254,6 @@ private:
 			 this->btServeurStop->Text = L"Stop Serveur";
 			 this->btServeurStop->UseVisualStyleBackColor = true;
 			 this->btServeurStop->Click += gcnew System::EventHandler(this, &MainForm::btServeurStop_Click);
-			 // 
-			 // button4
-			 // 
-			 this->button4->Location = System::Drawing::Point(9, 123);
-			 this->button4->Name = L"button4";
-			 this->button4->Size = System::Drawing::Size(119, 23);
-			 this->button4->TabIndex = 7;
-			 this->button4->Text = L"button4";
-			 this->button4->UseVisualStyleBackColor = true;
 			 // 
 			 // gb1
 			 // 
@@ -437,13 +426,35 @@ private:
 			 this->timerUpdateState->Interval = 5000;
 			 this->timerUpdateState->Tick += gcnew System::EventHandler(this, &MainForm::timerUpdateState_Tick);
 			 // 
+			 // controlUtilisateur1
+			 // 
+			 this->controlUtilisateur1->BackColor = System::Drawing::SystemColors::ActiveBorder;
+			 this->controlUtilisateur1->IdTypeDechet = 0;
+			 this->controlUtilisateur1->listDechet = nullptr;
+			 this->controlUtilisateur1->Location = System::Drawing::Point(3, 3);
+			 this->controlUtilisateur1->Name = L"controlUtilisateur1";
+			 this->controlUtilisateur1->nom = L"";
+			 this->controlUtilisateur1->photo = nullptr;
+			 this->controlUtilisateur1->prenom = L"";
+			 this->controlUtilisateur1->Size = System::Drawing::Size(513, 318);
+			 this->controlUtilisateur1->TabIndex = 0;
+			 this->controlUtilisateur1->temp = System::DateTime(2018, 5, 22, 0, 0, 0, 0);
+			 // 
+			 // PhotoClientLayout
+			 // 
+			 this->PhotoClientLayout->BackColor = System::Drawing::SystemColors::ButtonShadow;
+			 this->PhotoClientLayout->Controls->Add(this->controlUtilisateur1);
+			 this->PhotoClientLayout->Location = System::Drawing::Point(137, 22);
+			 this->PhotoClientLayout->Name = L"PhotoClientLayout";
+			 this->PhotoClientLayout->Size = System::Drawing::Size(1225, 723);
+			 this->PhotoClientLayout->TabIndex = 3;
+			 // 
 			 // MainForm
 			 // 
 			 this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::None;
 			 this->ClientSize = System::Drawing::Size(1362, 741);
 			 this->Controls->Add(this->groupBox1);
 			 this->Controls->Add(this->gb1);
-			 this->Controls->Add(this->button4);
 			 this->Controls->Add(this->btServeurStop);
 			 this->Controls->Add(this->btServeurStart);
 			 this->Controls->Add(this->button1);
@@ -459,6 +470,7 @@ private:
 			 this->menuStrip1->PerformLayout();
 			 this->gb1->ResumeLayout(false);
 			 this->groupBox1->ResumeLayout(false);
+			 this->PhotoClientLayout->ResumeLayout(false);
 			 this->ResumeLayout(false);
 			 this->PerformLayout();
 
@@ -497,6 +509,7 @@ private:
 
 				_listControlUser[_listControlUser->Count - 1]->BackColor = System::Drawing::SystemColors::ActiveBorder;
 				//_listControlUser[_listControlUser->Count - 1]->Location = System::Drawing::Point(x, y);
+				_listControlUser[_listControlUser->Count - 1]->listDechet = _listIconDechet;
 				_listControlUser[_listControlUser->Count - 1]->Name = L"controlUtilisateur" + i;
 				_listControlUser[_listControlUser->Count - 1]->nom = list[i]->getNom();
 				_listControlUser[_listControlUser->Count - 1]->photo = gcnew Bitmap(image);
@@ -504,7 +517,6 @@ private:
 				_listControlUser[_listControlUser->Count - 1]->Size = System::Drawing::Size(w, h);
 				_listControlUser[_listControlUser->Count - 1]->temp = list[i]->getArrivee();
 				_listControlUser[_listControlUser->Count - 1]->IdTypeDechet = list[i]->getTypeDechet();
-				_listControlUser[_listControlUser->Count - 1]->listDechet = _listIconDechet;
 
 
 				this->PhotoClientLayout->Controls->Add(this->_listControlUser[_listControlUser->Count - 1]);
@@ -631,7 +643,7 @@ private:
 		array<Byte>^ rt = (array<Byte>^)converter->ConvertTo(i, array<Byte>::typeid);
 
 		list->Add(gcnew Utilisateur("KLEIN-NORTH", "Martin", 5, "5sfd5d", 54, rt));
-		AfficherControlUser(list, 310, 410);
+		AfficherControlUser(list, 300, 400);
 	}
 
 	private: System::Void btEntreeOuvrirBarriere_Click(System::Object^  sender, System::EventArgs^  e) {

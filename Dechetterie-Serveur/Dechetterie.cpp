@@ -130,16 +130,13 @@ void Dechetterie::addUtilisateur(String ^ id_rfid, int tDechet, float poids, arr
 	try
 	{
 		DataUser^ du = bdd->getUserByIdRFID(id_rfid); // On recupere les info de la personne grace a son id rfid
-
-		_listUtilisateur->Add(gcnew Utilisateur(du->Nom, du->Prenom, tDechet, id_rfid,poids,photo)); // on rajoute la personne dans le tableau utilisateur de toutes les personne  qui sont dans la dechetterie
-		
+		_listUtilisateur->Add(gcnew Utilisateur(du->Nom, du->Prenom, tDechet, id_rfid,poids,photo)); // on rajoute la personne dans le tableau utilisateur 
 		bdd->EntrerUtilisateur(id_rfid, tDechet, poids);
-
 		Logger::PrintLog(EnteteCode::INFO,EnteteCode::UTILISATEUR,"Nouvelle utilisateur dans la dechetterie : " + du->Nom +" "+ du->Prenom + " ID_RFID = " + id_rfid);
 	}
 	catch (Exception^e)
 	{
-		if (e->Message == "ID_RFID Introuvable")
+		if (e->Message == "ID_RFID Introuvable") 
 		{
 			Logger::PrintLog(EnteteCode::ERROR, EnteteCode::UTILISATEUR, "Utilisateur avec id RFID " + id_rfid + " Inconnu ");
 		}

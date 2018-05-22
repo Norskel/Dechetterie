@@ -3,9 +3,9 @@
   <Entree>
     <portServeur>2501</portServeur>
     <Interface>0.0.0.0</Interface>
-    <IPBalance>192.168.23.30</IPBalance>
+    <IPBalance>192.168.245.128</IPBalance>
     <IPBarriere>127.0.0.1</IPBarriere>
-    <IPRFID>192.168.23.20</IPRFID>
+    <IPRFID>192.168.0.12</IPRFID>
   </Entree>
   <Sortie>
     <portServeur>2502</portServeur>

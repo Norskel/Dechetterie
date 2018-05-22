@@ -280,6 +280,10 @@ public:
 		cpyTableByteRI(t, 0, ttaille);
 		cpyTableByteRI(t, _nbByteTaille, ttype);
 
+		//Console::WriteLine(encoder->GetString(t));
+
+		Console::WriteLine(encoder->GetString(ttaille));
+		Console::WriteLine(encoder->GetString(ttype));
 
 		tPM->lenght = Convert::ToInt16(encoder->GetString(ttaille));
 		tPM->type = Convert::ToInt16(encoder->GetString(ttype));

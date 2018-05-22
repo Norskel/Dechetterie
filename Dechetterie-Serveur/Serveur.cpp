@@ -33,49 +33,47 @@ Boolean Serveur::Start()
 
 void Serveur::WaitClient()
 {
-	while (_isRunning)
+	while (_isRunning) // si le serveur est en marche
 	{
 		try
 		{
-			Socket^ cliSocket;
-			cliSocket = _socketServeur->Accept();
+			Socket^ cliSocket; // on defini un socket
+			cliSocket = _socketServeur->Accept(); //on attend les demande de connexion et quand il y a une on met le socket de cliSocket
 
-			IPAddress^ ipAdresseClient = (IPAddress^)(((IPEndPoint^)cliSocket->RemoteEndPoint)->Address);
-
-			if (_listClient->ClientBalance->getIP()->ToString() == ipAdresseClient->ToString())
+			IPAddress^ ipAdresseClient = (IPAddress^)(((IPEndPoint^)cliSocket->RemoteEndPoint)->Address); // on recupere l'ip du client qui demande une connexion
+			 
+			if (_listClient->ClientBalance->getIP()->ToString() == ipAdresseClient->ToString()) // si l'ip est la meme que celle defini pour le client balance
 			{
-				_listClient->ClientBalance->setSocket(cliSocket);
-				_listClient->ClientBalance->setState(true);
+				_listClient->ClientBalance->setSocket(cliSocket); // on defini le socket du client balance avec le socket du client qui demande la connection
+				_listClient->ClientBalance->setState(true); // on dit que le client balance est connecté
 				Logger::PrintLog(EnteteCode::SERVEUR, _groupe.ToString(), id_client::ClientBalance.ToString() + " viens de ce connectée");
-				(InterfacePipe::getInterfacePipe())->updateClientState();
+				(InterfacePipe::getInterfacePipe())->updateClientState(); // on envois une  update a l'interface pour dire qu'un client c'est connecté
 			}
 			else
 			{
-				if (_listClient->ClientBarriere->getIP()->ToString() == ipAdresseClient->ToString())
+				if (_listClient->ClientBarriere->getIP()->ToString() == ipAdresseClient->ToString())// si l'ip est la meme que celle defini pour le client barriere
 				{
-					_listClient->ClientBarriere->setSocket(cliSocket);
-					_listClient->ClientBarriere->setState(true);
+					_listClient->ClientBarriere->setSocket(cliSocket);// on defini le socket du client barriere avec le socket du client qui demande la connection
+					_listClient->ClientBarriere->setState(true); // on dit que le client barriere est connecté
 					Logger::PrintLog(EnteteCode::SERVEUR, _groupe.ToString(), id_client::ClientBarrière.ToString() + " viens de ce connectée");
-					(InterfacePipe::getInterfacePipe())->updateClientState();
+					(InterfacePipe::getInterfacePipe())->updateClientState();// on envois une  update a l'interface pour dire qu'un client c'est connecté
 				}
 				else
 				{
-					if (_listClient->ClientRFID->getIP()->ToString() == ipAdresseClient->ToString())
+					if (_listClient->ClientRFID->getIP()->ToString() == ipAdresseClient->ToString())// si l'ip est la meme que celle defini pour le client RFID
 					{
-						_listClient->ClientRFID->setSocket(cliSocket);
-						_listClient->ClientRFID->setState(true);
+						_listClient->ClientRFID->setSocket(cliSocket);// on defini le socket du client RFID avec le socket du client qui demande la connection
+						_listClient->ClientRFID->setState(true); // on dit que le client RFID est connecté
 						Logger::PrintLog(EnteteCode::SERVEUR, _groupe.ToString(), id_client::ClientRFID.ToString() + " viens de ce connectée");
-						(InterfacePipe::getInterfacePipe())->updateClientState();
+						(InterfacePipe::getInterfacePipe())->updateClientState();// on envois une  update a l'interface pour dire qu'un client c'est connecté
 					}
-					else
+					else // sinon on force le client qui demande a ce deconnecter
 					{
 						Logger::PrintLog(EnteteCode::SERVEUR, _groupe.ToString(), "Un Client avec l'ip " + ipAdresseClient->ToString() + " a essayé de ce connectée");
 						cliSocket->Close();
 					}
 				}
-
 			}
-
 		}
 		catch (Exception^ e)
 		{

@@ -107,7 +107,7 @@ namespace ControlInterface {
 	private: array<Bitmap^>^ _listDechet;
 	private: System::Windows::Forms::Timer^  timerUpdate;
 
-	private: System::Windows::Forms::Timer^  timer1;
+
 	private: System::Windows::Forms::Label^  labelTypeDechet;
 	private: System::Windows::Forms::PictureBox^  pictureBox1;
 	private: System::Windows::Forms::Label^  lNom;
@@ -157,7 +157,6 @@ namespace ControlInterface {
 			this->lPrenom = (gcnew System::Windows::Forms::Label());
 			this->lTemp = (gcnew System::Windows::Forms::Label());
 			this->timerUpdate = (gcnew System::Windows::Forms::Timer(this->components));
-			this->timer1 = (gcnew System::Windows::Forms::Timer(this->components));
 			this->labelTypeDechet = (gcnew System::Windows::Forms::Label());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			this->SuspendLayout();

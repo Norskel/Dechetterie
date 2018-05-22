@@ -118,7 +118,9 @@
 	private: System::Windows::Forms::Button^  userBtFactures;
 	private: System::Windows::Forms::Button^  userBtEdit;
 	private: System::Windows::Forms::Panel^  userPanelBt;
-private: System::Windows::Forms::TabPage^  tabPage3;
+	private: System::Windows::Forms::TabPage^  tabPage3;
+
+
 private: System::Windows::Forms::DataVisualization::Charting::Chart^  statsChartQuantiter;
 private: System::Windows::Forms::DataGridView^  userDgvFacture;
 private: System::Windows::Forms::DataGridViewTextBoxColumn^  userDgvFactureDate;
@@ -679,7 +681,7 @@ private: System::Windows::Forms::DataGridViewButtonColumn^  userDgvFactureBt;
 			this->tabPage2->Padding = System::Windows::Forms::Padding(3);
 			this->tabPage2->Size = System::Drawing::Size(1491, 559);
 			this->tabPage2->TabIndex = 1;
-			this->tabPage2->Text = L"tabPage2";
+			this->tabPage2->Text = L"Type de dechet";
 			this->tabPage2->UseVisualStyleBackColor = true;
 			// 
 			// tabPage3
@@ -690,7 +692,7 @@ private: System::Windows::Forms::DataGridViewButtonColumn^  userDgvFactureBt;
 			this->tabPage3->Padding = System::Windows::Forms::Padding(3);
 			this->tabPage3->Size = System::Drawing::Size(1491, 559);
 			this->tabPage3->TabIndex = 2;
-			this->tabPage3->Text = L"tabPage3";
+			this->tabPage3->Text = L"Facturation";
 			this->tabPage3->UseVisualStyleBackColor = true;
 			// 
 			// statsChartQuantiter
@@ -720,6 +722,7 @@ private: System::Windows::Forms::DataGridViewButtonColumn^  userDgvFactureBt;
 			this->optionToolStripMenuItem->Name = L"optionToolStripMenuItem";
 			this->optionToolStripMenuItem->Size = System::Drawing::Size(56, 20);
 			this->optionToolStripMenuItem->Text = L"Option";
+			this->optionToolStripMenuItem->Click += gcnew System::EventHandler(this, &MainForm::optionToolStripMenuItem_Click);
 			// 
 			// MainForm
 			// 
@@ -988,6 +991,8 @@ private: System::Void userDgvFacture_CellContentClick(System::Object^  sender, S
 	{
 		userDgvFacture->Rows[e->RowIndex];
 	}
+}
+private: System::Void optionToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
 }
 };
 

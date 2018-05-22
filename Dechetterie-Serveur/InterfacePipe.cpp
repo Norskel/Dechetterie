@@ -11,8 +11,8 @@ InterfacePipe::InterfacePipe(Entree ^% e, Sortie ^% s)
 	_sortie = s;
 	protocole = Protocole::getProtocole();
 	
-	_pipeOutServerInterface = gcnew NamedPipeServerStream(PIPE_NAME_INTER_SERV_OUT, PipeDirection::InOut, 1);
-	_pipeInServerInterface = gcnew NamedPipeServerStream(PIPE_NAME_INTER_SERV_IN, PipeDirection::InOut, 1);
+	_pipeOutServerInterface = gcnew NamedPipeServerStream(PIPE_NAME_INTER_SERV_OUT, PipeDirection::InOut, 2);
+	_pipeInServerInterface = gcnew NamedPipeServerStream(PIPE_NAME_INTER_SERV_IN, PipeDirection::InOut, 2);
 	_threadRecev = gcnew Thread(gcnew ThreadStart(this, &InterfacePipe::fctThreadRecev));
 	_threadRecev->Name = "Thread Wait connection server";
 	_threadRecev->Start();
@@ -311,7 +311,11 @@ int InterfacePipe::PositionBarriere(int i)
 
 void InterfacePipe::updateClientState()
 {
-	Logger::PrintLog(EnteteCode::INTERFACE, " Update etat des clients ");
-	array<Byte>^ send = protocole->InterfaceRetourGetEtatClients(this->getState());
-	_pipeOutServerInterface->Write(send, 0, send->Length);
+	if (_isConnectedOut)
+	{
+		Logger::PrintLog(EnteteCode::INTERFACE, " Update etat des clients ");
+		array<Byte>^ send = protocole->InterfaceRetourGetEtatClients(this->getState());
+		_pipeOutServerInterface->Write(send, 0, send->Length);
+	}
+
 }

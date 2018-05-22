@@ -30,7 +30,7 @@ protected:
 
 	/*---------------------------------------------------------------
 	Nom          :fctThreadReceive
-	Description  :Fonction qui attend la reception d'un message du client.
+	Description  :Fonction du thread qui attend la reception d'un message du client.
 	Arguments    :
 	Valeur renvoyée :
 	-----------------------------------------------------------------*/
@@ -52,8 +52,10 @@ protected:
 							ProtocolMsg^ pm = protocole->translateReceive(data);  //On traduit ce qu'on recoi avec le protocole
 							if (pm->type == protocole->GetTypeProtocoleByID("AllPing")) // Si le type de message est un ping
 							{
-								this->Send(protocole->RetourPing());
-								Logger::PrintLog(EnteteCode::CLIENT, "Ping", "Demande de ping de " + _ip->ToString() + "( " + id_groupe(_groupe).ToString() + " " + id_client(_type).ToString() + " )");
+								this->Send(protocole->RetourPing()); // On renvois le retour du ping
+
+								Logger::PrintLog(EnteteCode::CLIENT, "Ping", "Demande de ping de " + _ip->ToString() + 
+									"( " + id_groupe(_groupe).ToString() + " " + id_client(_type).ToString() + " )");
 							}
 							else
 							{
@@ -73,7 +75,7 @@ protected:
 					}
 
 				}
-				catch (System::Net::Sockets::SocketException^ e)
+				catch (System::Net::Sockets::SocketException^ e) // si on a un probleme au niveau du socket
 				{
 					if (_isConnected)
 					{
@@ -84,8 +86,6 @@ protected:
 				catch (Exception^e)
 				{
 					Logger::PrintLog(EnteteCode::ERROR, EnteteCode::CLIENT, "[ Receive ]" + e->ToString());
-					//Console::WriteLine("[ Client ][ Thread Receive ]" + e);
-
 				}
 			}
 			else

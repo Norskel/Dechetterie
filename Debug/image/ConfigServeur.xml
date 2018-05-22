@@ -5,18 +5,18 @@
     <Interface>0.0.0.0</Interface>
     <IPBalance>192.168.0.244</IPBalance>
     <IPBarriere>192.168.0.245</IPBarriere>
-    <IPRFID>192.168.0.243</IPRFID>
+    <IPRFID>127.0.0.1</IPRFID>
   </Entree>
   <Sortie>
     <portServeur>2502</portServeur>
     <Interface>0.0.0.0</Interface>
     <IPBalance>192.168.1.244</IPBalance>
     <IPBarriere>192.168.1.245</IPBarriere>
-    <IPRFID>192.168.1.243</IPRFID>
+    <IPRFID>127.0.0.1</IPRFID>
   </Sortie>
   <NomBDD>Dechetterie</NomBDD>
-  <IPBDD />
-  <PortBDD>3307</PortBDD>
+  <IPBDD>192.168.0.150</IPBDD>
+  <PortBDD>3306</PortBDD>
   <UsernameBDD>root</UsernameBDD>
   <PasswordBDD>root</PasswordBDD>
 </DataConfigServeur>
