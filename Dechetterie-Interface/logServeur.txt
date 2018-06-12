@@ -167,3 +167,5 @@
 22-05-2018 04:06:56[ INTERFACE ]  Interface connecte 
 22-05-2018 04:06:56[ INTERFACE ]  Attente de l'interface
 22-05-2018 04:06:56[ INTERFACE ]  Interface connecte 
+13-06-2018 00:57:56[ INFO ] [ Configuration ] Erreur ? l'ouverture de ConfigServeur.xml
+13-06-2018 00:57:56[ INFO ] [ Configuration ] Fichier de configuration bien charg?e
