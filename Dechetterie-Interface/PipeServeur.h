@@ -230,6 +230,7 @@ public:
 		{
 			return false;
 		}
+		
 	}
 	int getPositionBarriere(id_groupe id)
 	{
@@ -315,6 +316,6 @@ public:
 		array<Byte>^ send = protocole->InterfaceStopServeur();
 		_pipeOutClientInterface->Write(send, 0, send->Length);
 	}
-
+	~PipeServeur();
 };
 

@@ -8,5 +8,6 @@ ref struct DataHistorique
 	int Poids;
 	int ID_User;
 	int ID_Dechet;
+	int ID_Facture;
 	TimeSpan^ temps;
 };

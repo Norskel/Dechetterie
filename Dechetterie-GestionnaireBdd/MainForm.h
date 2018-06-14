@@ -121,7 +121,7 @@
 	private: System::Windows::Forms::TabPage^  tabPage3;
 
 
-private: System::Windows::Forms::DataVisualization::Charting::Chart^  statsChartQuantiter;
+
 private: System::Windows::Forms::DataGridView^  userDgvFacture;
 private: System::Windows::Forms::DataGridViewTextBoxColumn^  userDgvFactureDate;
 private: System::Windows::Forms::DataGridViewTextBoxColumn^  userDgvFactureTotal;
@@ -148,8 +148,6 @@ private: System::Windows::Forms::DataGridViewButtonColumn^  userDgvFactureBt;
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			System::Windows::Forms::DataVisualization::Charting::ChartArea^  chartArea1 = (gcnew System::Windows::Forms::DataVisualization::Charting::ChartArea());
-			System::Windows::Forms::DataVisualization::Charting::Title^  title1 = (gcnew System::Windows::Forms::DataVisualization::Charting::Title());
 			this->chID = (gcnew System::Windows::Forms::ColumnHeader());
 			this->userLv = (gcnew System::Windows::Forms::ListView());
 			this->chNom = (gcnew System::Windows::Forms::ColumnHeader());
@@ -199,7 +197,6 @@ private: System::Windows::Forms::DataGridViewButtonColumn^  userDgvFactureBt;
 			this->label3 = (gcnew System::Windows::Forms::Label());
 			this->tabPage2 = (gcnew System::Windows::Forms::TabPage());
 			this->tabPage3 = (gcnew System::Windows::Forms::TabPage());
-			this->statsChartQuantiter = (gcnew System::Windows::Forms::DataVisualization::Charting::Chart());
 			this->menuStrip1 = (gcnew System::Windows::Forms::MenuStrip());
 			this->optionToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->tabControl1->SuspendLayout();
@@ -213,8 +210,6 @@ private: System::Windows::Forms::DataGridViewButtonColumn^  userDgvFactureBt;
 			this->userPanelTextBoxInfo->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->userNudNum))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->userNudCodePostal))->BeginInit();
-			this->tabPage3->SuspendLayout();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->statsChartQuantiter))->BeginInit();
 			this->menuStrip1->SuspendLayout();
 			this->SuspendLayout();
 			// 
@@ -686,7 +681,6 @@ private: System::Windows::Forms::DataGridViewButtonColumn^  userDgvFactureBt;
 			// 
 			// tabPage3
 			// 
-			this->tabPage3->Controls->Add(this->statsChartQuantiter);
 			this->tabPage3->Location = System::Drawing::Point(4, 22);
 			this->tabPage3->Name = L"tabPage3";
 			this->tabPage3->Padding = System::Windows::Forms::Padding(3);
@@ -694,19 +688,6 @@ private: System::Windows::Forms::DataGridViewButtonColumn^  userDgvFactureBt;
 			this->tabPage3->TabIndex = 2;
 			this->tabPage3->Text = L"Facturation";
 			this->tabPage3->UseVisualStyleBackColor = true;
-			// 
-			// statsChartQuantiter
-			// 
-			chartArea1->Name = L"ChartArea1";
-			this->statsChartQuantiter->ChartAreas->Add(chartArea1);
-			this->statsChartQuantiter->Location = System::Drawing::Point(58, 47);
-			this->statsChartQuantiter->Name = L"statsChartQuantiter";
-			this->statsChartQuantiter->Size = System::Drawing::Size(300, 300);
-			this->statsChartQuantiter->TabIndex = 0;
-			this->statsChartQuantiter->Text = L"chart1";
-			title1->Name = L"Title1";
-			title1->Text = L"Dechets";
-			this->statsChartQuantiter->Titles->Add(title1);
 			// 
 			// menuStrip1
 			// 
@@ -750,8 +731,6 @@ private: System::Windows::Forms::DataGridViewButtonColumn^  userDgvFactureBt;
 			this->userPanelTextBoxInfo->PerformLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->userNudNum))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->userNudCodePostal))->EndInit();
-			this->tabPage3->ResumeLayout(false);
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->statsChartQuantiter))->EndInit();
 			this->menuStrip1->ResumeLayout(false);
 			this->menuStrip1->PerformLayout();
 			this->ResumeLayout(false);
@@ -777,14 +756,15 @@ private: System::Windows::Forms::DataGridViewButtonColumn^  userDgvFactureBt;
 	}
 	void updateFactureList(int idUser)
 	{
+		bddConnection->UpdateFacture(idUser);
 		userDgvFacture->Rows->Clear();
 		List<DataFacture^>^ ldf = gcnew List<DataFacture^>;
-		ldf = bddConnection->getFacture(idUser);
+		ldf = bddConnection->getTableFactureByUserID(idUser);
 		for each (DataFacture^ var in ldf)
 		{
 
 			float t = 0;
-			for each (DataHistorique^ var in var->listHistorique)
+			for each (DataHistorique^ var in bddConnection->getTableHistoriqueByFactureID(var->ID))
 			{
 				t += (var->Poids) * (bddConnection->getDechetByID(var->ID_Dechet)->Prix);
 
@@ -982,8 +962,7 @@ private: System::Void userBtDelUser_Click(System::Object^  sender, System::Event
 	}
 }
 private: System::Void tabControl1_Click(System::Object^  sender, System::EventArgs^  e) {
-	statsChartQuantiter->Series->Add("Dechet");
-	statsChartQuantiter->Series["Dechet"]->Points->AddXY("Bois", 120);
+
 }
 
 private: System::Void userDgvFacture_CellContentClick(System::Object^  sender, System::Windows::Forms::DataGridViewCellEventArgs^  e) {

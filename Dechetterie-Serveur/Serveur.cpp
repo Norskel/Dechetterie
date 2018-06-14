@@ -13,6 +13,12 @@ Serveur::Serveur(IPAddress^ listenip, int listenPort, id_groupe groupe, GroupeCl
 	_listClient = l;
 }
 
+Serveur::~Serveur()
+{
+	_isRunning = false;
+	_socketServeur->Close();
+}
+
 Boolean Serveur::Start()
 {
 	//try

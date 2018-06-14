@@ -46,6 +46,12 @@ public:
 	{
 
 	}
+	~ClientBarriere()
+	{
+		Disconnect();
+		_thread->Abort();
+	}
+
 	/*---------------------------------------------------------------
 	Nom          :
 	Description  :

@@ -133,6 +133,7 @@ public:
 	-----------------------------------------------------------------*/
 	~Client()
 	{
+		Disconnect();
 		_thread->Abort();
 	}
 	id_groupe getGroupe() { return _groupe; }

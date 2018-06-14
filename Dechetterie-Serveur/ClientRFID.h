@@ -109,6 +109,11 @@ public:
 	{
 
 	}
+	~ClientRFID()
+	{
+		Disconnect();
+		_thread->Abort();
+	}
 
 	//String^ getAccesDemand()
 	//{

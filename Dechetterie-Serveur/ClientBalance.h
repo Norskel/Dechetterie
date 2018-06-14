@@ -61,7 +61,11 @@ public:
 	Valeur renvoyée :
 	-----------------------------------------------------------------*/
 	ClientBalance(id_groupe groupe, IPAddress^ip) : Client(groupe, id_client::ClientBalance, ip){}
-
+	~ClientBalance()
+	{
+		Disconnect();
+		_thread->Abort();
+	}
 
 
 };

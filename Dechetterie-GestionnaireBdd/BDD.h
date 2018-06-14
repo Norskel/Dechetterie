@@ -179,8 +179,9 @@ public:
 			{
 				DataHistorique^ dt = gcnew DataHistorique();
 				dt->ID = Convert::ToInt64(DR["ID"]);
-				dt->ID_Dechet = Convert::ToInt64(DR["ID_Dechet"]);
-				dt->ID_User = Convert::ToInt64(DR["ID_User"]);
+				dt->ID_Dechet = Convert::ToInt64(DR["TypeDechet_ID"]);
+				dt->ID_User = Convert::ToInt64(DR["Utilisateur_ID"]);
+				dt->ID_Facture = Convert::ToInt64(DR["Facture_ID"]);
 				dt->Poids = Convert::ToInt64(DR["Poids"]);
 				dt->dt = DateTime::Parse(Convert::ToString(DR["DateTime"]));
 				dt->temps = TimeSpan::Parse((DR["Temps"]->ToString()));
@@ -195,7 +196,100 @@ public:
 		}
 
 	}
+	List<DataFacture^>^ getTableFacture()
+	{
+		if (ping())
+		{
+			List<DataFacture^>^ t = gcnew List<DataFacture^>;
+			MySqlCommand^ request = gcnew MySqlCommand("SELECT * FROM Facture;", _con);
 
+			MySqlDataReader^ DR = request->ExecuteReader();
+			while (DR->Read())
+			{
+				DataFacture^ dt = gcnew DataFacture();
+				dt->ID = Convert::ToInt64(DR["ID"]);
+				dt->ID_Utilisateur = Convert::ToInt64(DR["Utilisateur_ID"]);
+				dt->dt = DateTime::Parse(Convert::ToString(DR["Date"]));
+				if (Convert::ToInt64(DR["Etat"]) == 0)
+				{
+					dt->state = false;
+				}
+				else
+				{
+					dt->state = true;
+				}
+				t->Add(dt);
+
+
+			}
+			DR->Close();
+
+			return t;
+
+		}
+	}
+	List<DataFacture^>^ getTableFactureByUserID(int id_user)
+	{
+		if (ping())
+		{
+			List<DataFacture^>^ t = gcnew List<DataFacture^>;
+			MySqlCommand^ request = gcnew MySqlCommand("SELECT * FROM Facture WHERE Utilisateur_ID = @idUser;", _con);
+			request->Parameters->AddWithValue("@idUser", id_user);
+
+			MySqlDataReader^ DR = request->ExecuteReader();
+			while (DR->Read())
+			{
+				DataFacture^ dt = gcnew DataFacture();
+				dt->ID = Convert::ToInt64(DR["ID"]);
+				dt->ID_Utilisateur = Convert::ToInt64(DR["Utilisateur_ID"]);
+				dt->dt = DateTime::Parse(Convert::ToString(DR["Date"]));
+				if (Convert::ToInt64(DR["Etat"]) == 0)
+				{
+					dt->state = false;
+				}
+				else
+				{
+					dt->state = true;
+				}
+				t->Add(dt);
+
+
+			}
+			DR->Close();
+
+			return t;
+
+		}
+	}
+	List<DataHistorique^>^ getTableHistoriqueByFactureID(int id_facture)
+	{
+		if (ping())
+		{
+			List<DataHistorique^>^ t = gcnew List<DataHistorique^>;
+			MySqlCommand^ request = gcnew MySqlCommand("SELECT * FROM Historique WHERE Facture_ID = @idFacture;", _con);
+			request->Parameters->AddWithValue("@idFacture", id_facture);
+
+			MySqlDataReader^ DR = request->ExecuteReader();
+			while (DR->Read())
+			{
+				DataHistorique^ dt = gcnew DataHistorique();
+				dt->ID = Convert::ToInt64(DR["ID"]);
+				dt->ID_Dechet = Convert::ToInt64(DR["TypeDechet_ID"]);
+				dt->ID_User = Convert::ToInt64(DR["Utilisateur_ID"]);
+				dt->ID_Facture = Convert::ToInt64(DR["Facture_ID"]);
+				dt->Poids = Convert::ToInt64(DR["Poids"]);
+				dt->dt = DateTime::Parse(Convert::ToString(DR["DateTime"]));
+				dt->temps = TimeSpan::Parse((DR["Temps"]->ToString()));
+				t->Add(dt);
+
+
+			}
+			DR->Close();
+
+			return t;
+
+		}
+	}
 	List<DataHistorique^>^ getTableHistoriqueByIdUser(int id_User)
 	{
 		if (ping())
@@ -252,6 +346,29 @@ public:
 
 		throw gcnew System::MissingMemberException();
 	}
+	DataFacture^ getFactureByID(int id)
+	{
+		for each (DataFacture^ var in this->getTableFacture())
+		{
+			if (var->ID == id)
+			{
+				return var;
+			}
+		}
+		throw gcnew System::MissingMemberException();
+	}
+	DataFacture^ getFactureByDateTime(DateTime^ date)
+	{
+		for each (DataFacture^ var in this->getTableFacture())
+		{
+			if (var->dt->Month == date->Month && var->dt->Year == date->Year)
+			{
+			
+				return var;
+			}
+		}
+		throw gcnew System::MissingMemberException();
+	}
 
 	void addUser(DataUser^ e) override
 	{
@@ -298,34 +415,65 @@ public:
 		}
 	}
 
-	List<DataFacture^>^ getFacture(int id_user)
+	void UpdateFacture(int id_user)
 	{
-		List<DataFacture^>^ dfL = gcnew List<DataFacture^>;
+		List<DataFacture^>^ dfL = getTableFacture();
 		List<DataHistorique^>^ dhL = getTableHistoriqueByIdUser(id_user);
-		DataUser^ du = getUserByID(id_user);
-		DataFacture^ df = gcnew DataFacture();
 		if (dhL->Count > 0)
 		{
-			df->dt = dhL[0]->dt; //recupere la dernier date
-
-			for each (DataHistorique^ var in dhL)
+			//df->dt = dhL[0]->dt; //recupere la dernier date
+			
+			for each (DataHistorique^ dh in dhL)
 			{
-				if (var->dt->Month < df->dt->Month || var->dt->Year < df->dt->Year) //si c'est un autre mois
+				Console::WriteLine(dh->ID_Facture);
+				if (dh->ID_Facture < 1)
 				{
-					df->utilisateur = du;
-					dfL->Add(df);
-					df = gcnew DataFacture();
-					df->dt = var->dt;
+					
+					for each (DataFacture^ df in dfL)
+					{
+						if (df->dt->Month == dh->dt->Month && df->dt->Year == dh->dt->Year)
+						{
+							dh->ID_Facture = df->ID;
+							MySqlCommand^ request = gcnew MySqlCommand("UPDATE `Dechetterie`.`Historique` SET `Facture_ID`=@idFacture WHERE `ID`=@ID;", _con);
+							request->Parameters->AddWithValue("@ID", dh->ID);
+							request->Parameters->AddWithValue("@idFacture", df->ID);
+							request->ExecuteNonQuery();
+							
+							break;
+						}
+					}
+					if (dh->ID_Facture < 1)
+					{
+						DataFacture^ ndf = gcnew DataFacture();
+						ndf->ID_Utilisateur = id_user;
+						ndf->dt = gcnew DateTime(dh->dt->Year, dh->dt->Month, 1);
+						Console::WriteLine(ndf->dt->ToString());
+						ndf->state = false;
+						
+						MySqlCommand^ request = gcnew MySqlCommand("INSERT INTO `Dechetterie`.`Facture` (`Utilisateur_ID`, `Date`,`Total`,`Etat`) VALUES(@IdUser, @Date,0,0);", _con);
+						request->Parameters->AddWithValue("@IdUser", ndf->ID_Utilisateur);
+						request->Parameters->AddWithValue("@Date", ndf->dt->ToString("yyyy-MM-dd hh:mm:ss"));
+						
+
+						request->ExecuteNonQuery();
+						List<DataFacture^>^ dfL = getTableFacture();
+						try
+						{
+							
+							MySqlCommand^ request = gcnew MySqlCommand("UPDATE `Dechetterie`.`Historique` SET `Facture_ID`=@idFacture WHERE `ID`=@ID;", _con);
+							request->Parameters->AddWithValue("@ID", dh->ID);
+							request->Parameters->AddWithValue("@idFacture", getFactureByDateTime(dh->dt)->ID);
+							request->ExecuteNonQuery();
+						}
+						catch (...)
+						{
+								
+						}
+						
+					}
 				}
-
-				df->listHistorique->Add(var);
-
 			}
 		}
-
-		
-
-		return dfL;
 	}
 };
 

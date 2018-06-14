@@ -5,10 +5,11 @@ Description  :
 Arguments    :
 Valeur renvoyée :
 -----------------------------------------------------------------*/
-InterfacePipe::InterfacePipe(Entree ^% e, Sortie ^% s)
+InterfacePipe::InterfacePipe(Entree ^% e, Sortie ^% s, Dechetterie^ const %d)
 {
 	_entree = e;
 	_sortie = s;
+	_dechetterie = d;
 	protocole = Protocole::getProtocole();
 	
 	_pipeOutServerInterface = gcnew NamedPipeServerStream(PIPE_NAME_INTER_SERV_OUT, PipeDirection::InOut, 2);
@@ -38,11 +39,11 @@ Description  :
 Arguments    :
 Valeur renvoyée :
 -----------------------------------------------------------------*/
-InterfacePipe ^ InterfacePipe::getInterfacePipe(Entree ^% e, Sortie ^% s)
+InterfacePipe ^ InterfacePipe::getInterfacePipe(Entree ^% e, Sortie ^% s, Dechetterie^ const %d)
 {
 	if (_interfacePipe == nullptr)
 	{
-		_interfacePipe = gcnew InterfacePipe(e, s);
+		_interfacePipe = gcnew InterfacePipe(e, s,d);
 	}
 	return _interfacePipe;
 }
@@ -234,7 +235,14 @@ void InterfacePipe::fctThreadRecev()
 							}
 							else
 							{
+								if (pm->type == protocole->GetTypeProtocoleByID("inStop"))
+								{
+									_dechetterie->~Dechetterie();
+								}
+								else
+								{
 
+								}
 								
 							}
 						}
@@ -316,6 +324,14 @@ void InterfacePipe::updateClientState()
 		Logger::PrintLog(EnteteCode::INTERFACE, " Update etat des clients ");
 		array<Byte>^ send = protocole->InterfaceRetourGetEtatClients(this->getState());
 		_pipeOutServerInterface->Write(send, 0, send->Length);
+		
 	}
 
+}
+
+InterfacePipe::~InterfacePipe()
+{
+	_threadRecev->Abort();
+	_pipeInServerInterface->Close();
+	_pipeOutServerInterface->Close();
 }

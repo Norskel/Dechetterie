@@ -1,10 +1,15 @@
 #include "Sortie.h"
 #include "ClientRFID.h"
 
-#define TEMPO_BARRIERE 20000
+#define TEMPO_BARRIERE 2000
 
 
 Sortie::Sortie(IPAddress ^ listenip, int listenPort, IPAddress ^ ipBarriere, IPAddress ^ ipBalance, IPAddress ^ ipRfid) : Groupe(id_groupe::SORTIE, listenip, listenPort, ipBarriere, ipBalance, ipRfid){}
+Sortie::~Sortie()
+{
+	_srv->~Serveur();
+	delete _listClient;
+}
 /*---------------------------------------------------------------
 Nom          : AccesDemandEvent
 Description  : Lorsqu'on a une demande d'acces à la sortie

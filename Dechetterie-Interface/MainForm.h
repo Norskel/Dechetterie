@@ -89,7 +89,7 @@ private: System::Windows::Forms::ToolStripMenuItem^  optionToolStripMenuItem;
 
 private: System::Windows::Forms::Button^  button1;
 private: System::Windows::Forms::ToolStripMenuItem^  optionToolStripMenuItem1;
-private: ControlInterface::ControlUtilisateur^  controlUtilisateur1;
+
 private: System::Windows::Forms::FlowLayoutPanel^  PhotoClientLayout;
 
 
@@ -155,12 +155,10 @@ private:
 			 this->ceSoBa = (gcnew ControlInterface::ControlEtat());
 			 this->ceSoRf = (gcnew ControlInterface::ControlEtat());
 			 this->timerUpdateState = (gcnew System::Windows::Forms::Timer(this->components));
-			 this->controlUtilisateur1 = (gcnew ControlInterface::ControlUtilisateur());
 			 this->PhotoClientLayout = (gcnew System::Windows::Forms::FlowLayoutPanel());
 			 this->menuStrip1->SuspendLayout();
 			 this->gb1->SuspendLayout();
 			 this->groupBox1->SuspendLayout();
-			 this->PhotoClientLayout->SuspendLayout();
 			 this->SuspendLayout();
 			 // 
 			 // controlEtat1
@@ -206,7 +204,7 @@ private:
 			 // optionToolStripMenuItem1
 			 // 
 			 this->optionToolStripMenuItem1->Name = L"optionToolStripMenuItem1";
-			 this->optionToolStripMenuItem1->Size = System::Drawing::Size(152, 22);
+			 this->optionToolStripMenuItem1->Size = System::Drawing::Size(111, 22);
 			 this->optionToolStripMenuItem1->Text = L"Option";
 			 this->optionToolStripMenuItem1->Click += gcnew System::EventHandler(this, &MainForm::optionToolStripMenuItem1_Click);
 			 // 
@@ -426,24 +424,9 @@ private:
 			 this->timerUpdateState->Interval = 5000;
 			 this->timerUpdateState->Tick += gcnew System::EventHandler(this, &MainForm::timerUpdateState_Tick);
 			 // 
-			 // controlUtilisateur1
-			 // 
-			 this->controlUtilisateur1->BackColor = System::Drawing::SystemColors::ActiveBorder;
-			 this->controlUtilisateur1->IdTypeDechet = 0;
-			 this->controlUtilisateur1->listDechet = nullptr;
-			 this->controlUtilisateur1->Location = System::Drawing::Point(3, 3);
-			 this->controlUtilisateur1->Name = L"controlUtilisateur1";
-			 this->controlUtilisateur1->nom = L"";
-			 this->controlUtilisateur1->photo = nullptr;
-			 this->controlUtilisateur1->prenom = L"";
-			 this->controlUtilisateur1->Size = System::Drawing::Size(513, 318);
-			 this->controlUtilisateur1->TabIndex = 0;
-			 this->controlUtilisateur1->temp = System::DateTime(2018, 5, 22, 0, 0, 0, 0);
-			 // 
 			 // PhotoClientLayout
 			 // 
 			 this->PhotoClientLayout->BackColor = System::Drawing::SystemColors::ButtonShadow;
-			 this->PhotoClientLayout->Controls->Add(this->controlUtilisateur1);
 			 this->PhotoClientLayout->Location = System::Drawing::Point(137, 22);
 			 this->PhotoClientLayout->Name = L"PhotoClientLayout";
 			 this->PhotoClientLayout->Size = System::Drawing::Size(1225, 723);
@@ -470,7 +453,6 @@ private:
 			 this->menuStrip1->PerformLayout();
 			 this->gb1->ResumeLayout(false);
 			 this->groupBox1->ResumeLayout(false);
-			 this->PhotoClientLayout->ResumeLayout(false);
 			 this->ResumeLayout(false);
 			 this->PerformLayout();
 
@@ -707,6 +689,7 @@ private:
 	private: System::Void btServeurStop_Click(System::Object^  sender, System::EventArgs^  e) 
 	{
 		pipeServeur->stopServeur();
+		
 	}
 private: System::Void aProposToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) 
 {

@@ -1,9 +1,15 @@
 #include "Entree.h"
 #include "ClientRFID.h"
-#define TEMPO_BARRIERE 20000
+#define TEMPO_BARRIERE 2000
 
 
 Entree::Entree(IPAddress ^ listenip, int listenPort, IPAddress ^ ipBarriere, IPAddress ^ ipBalance, IPAddress ^ ipRfid) : Groupe(id_groupe::ENTREE, listenip, listenPort, ipBarriere, ipBalance, ipRfid){}
+
+Entree::~Entree()
+{
+	_srv->~Serveur();
+	delete _listClient;
+}
 
 /*---------------------------------------------------------------
 Nom          : AccesDemandEvent

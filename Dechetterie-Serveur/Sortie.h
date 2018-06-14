@@ -14,5 +14,6 @@ protected:
 	void AccesDemandEvent(String^ rfid) override;
 public:
 	Sortie(IPAddress ^ listenip, int listenPort, IPAddress ^ ipBarriere, IPAddress ^ ipBalance, IPAddress ^ ipRfid);
+	~Sortie();
 };
 

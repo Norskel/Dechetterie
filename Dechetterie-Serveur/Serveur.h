@@ -26,6 +26,7 @@ protected:
 	id_groupe _groupe;
 public:
 	Serveur(IPAddress^ listenip, int listenPort, id_groupe groupe, GroupeClient^ %l);
+	~Serveur();
 	Boolean Start();
 	void WaitClient();
 	

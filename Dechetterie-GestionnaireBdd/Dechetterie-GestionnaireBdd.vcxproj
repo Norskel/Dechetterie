@@ -152,6 +152,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BDD.h" />
+    <ClInclude Include="FactureForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="MainForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -170,6 +173,7 @@
   <ItemGroup>
     <ClCompile Include="AssemblyInfo.cpp" />
     <ClCompile Include="Dechetterie-GestionnaireBdd.cpp" />
+    <ClCompile Include="FactureForm.cpp" />
     <ClCompile Include="MainForm.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
@@ -182,6 +186,9 @@
     <Image Include="app.ico" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="FactureForm.resx">
+      <DependentUpon>FactureForm.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.h</DependentUpon>
     </EmbeddedResource>

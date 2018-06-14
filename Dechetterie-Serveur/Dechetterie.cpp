@@ -11,7 +11,7 @@ Dechetterie::Dechetterie(String^ configFile)
 
 		_entree = gcnew Entree(IPAddress::Parse(_config->Entree->Interface), _config->Entree->portServeur, IPAddress::Parse(_config->Entree->IPBarriere), IPAddress::Parse(_config->Entree->IPBalance), IPAddress::Parse(_config->Entree->IPRFID)); //Instanciation du groupe Entree
 		_sortie = gcnew Sortie(IPAddress::Parse(_config->Sortie->Interface), _config->Sortie->portServeur, IPAddress::Parse(_config->Sortie->IPBarriere), IPAddress::Parse(_config->Sortie->IPBalance), IPAddress::Parse(_config->Sortie->IPRFID)); //Instanciation du groupe Sortie
-		servInter = InterfacePipe::getInterfacePipe(_entree, _sortie); //première instanciation
+		servInter = InterfacePipe::getInterfacePipe(_entree, _sortie,this); //première instanciation
 	}
 	else //si on arrive pas a charger le fichier de configutation
 	{
@@ -24,8 +24,10 @@ Dechetterie::Dechetterie(String^ configFile)
 }
 Dechetterie::~Dechetterie()
 {
-	Logger::PrintLog("Dechetterie","Arret");
-
+	_entree->~Entree();
+	_sortie->~Sortie();
+	servInter->~InterfacePipe();
+	Logger::PrintLog("Dechetterie", "Arret");
 }
 /*---------------------------------------------------------------
 Nom          :  loadConfigFile

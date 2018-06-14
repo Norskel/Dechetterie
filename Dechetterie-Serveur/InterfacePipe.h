@@ -19,6 +19,7 @@ using namespace System::Diagnostics;
 
 ref class Entree;
 ref class Sortie;
+ref class Dechetterie;
 
 ref class InterfacePipe
 {
@@ -29,6 +30,7 @@ private:
 	void fctThreadRecev();
 	Entree^ _entree;
 	Sortie^ _sortie;
+	Dechetterie^ _dechetterie;
 	String^ getState();
 	Protocole^ protocole;
 	void OuvrirBarriere(int i);
@@ -42,11 +44,12 @@ private:
 	static InterfacePipe^ _interfacePipe;
 
 
-	InterfacePipe(Entree^ %e, Sortie^ %s);
+	InterfacePipe(Entree^ %e, Sortie^ %s, Dechetterie^ const %d);
 public:
 	static InterfacePipe^ getInterfacePipe();
-	static InterfacePipe^ getInterfacePipe(Entree^ %e, Sortie^ %s);
+	static InterfacePipe^ getInterfacePipe(Entree^ %e, Sortie^ %s,  Dechetterie^ const %d);
 	void updateListClient();
 	void updateClientState();
+	~InterfacePipe();
 };
 

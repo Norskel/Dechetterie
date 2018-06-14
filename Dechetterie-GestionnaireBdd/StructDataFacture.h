@@ -9,9 +9,9 @@ ref class DataFacture
 {
 public:
 
-
-	List<DataHistorique^>^ listHistorique = gcnew List<DataHistorique^>;
-	DataUser^ utilisateur;
+	int ID;
+	int ID_Utilisateur;
 	DateTime^ dt;
+	Boolean^ state;
 	
 };
